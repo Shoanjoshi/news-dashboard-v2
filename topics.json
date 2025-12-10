@@ -1,0 +1,167 @@
+{
+  "T0": {
+    "topic_id": "T0",
+    "bertopic_id": 0,
+    "title": "TOPIC 0",
+    "summary": "Summary unavailable.",
+    "article_count": 43,
+    "topicality": 43.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 1.0232558139534884,
+    "theme": "Inflation"
+  },
+  "T1": {
+    "topic_id": "T1",
+    "bertopic_id": 1,
+    "title": "TOPIC 1",
+    "summary": "Summary unavailable.",
+    "article_count": 37,
+    "topicality": 37.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 1.0054054054054056,
+    "theme": "Others"
+  },
+  "T2": {
+    "topic_id": "T2",
+    "bertopic_id": 2,
+    "title": "TOPIC 2",
+    "summary": "Summary unavailable.",
+    "article_count": 36,
+    "topicality": 36.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 0.9916666666666667,
+    "theme": "Others"
+  },
+  "T3": {
+    "topic_id": "T3",
+    "bertopic_id": 3,
+    "title": "TOPIC 3",
+    "summary": "Summary unavailable.",
+    "article_count": 36,
+    "topicality": 36.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 1.1611111111111114,
+    "theme": "Bank lending and credit risk"
+  },
+  "T4": {
+    "topic_id": "T4",
+    "bertopic_id": 4,
+    "title": "TOPIC 4",
+    "summary": "Summary unavailable.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 0.9515151515151514,
+    "theme": "Digital assets"
+  },
+  "T5": {
+    "topic_id": "T5",
+    "bertopic_id": 5,
+    "title": "TOPIC 5",
+    "summary": "Summary unavailable.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 0.9848484848484849,
+    "theme": "Cyber attacks"
+  },
+  "T6": {
+    "topic_id": "T6",
+    "bertopic_id": 6,
+    "title": "TOPIC 6",
+    "summary": "Summary unavailable.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 0.964516129032258,
+    "theme": "Inflation"
+  },
+  "T7": {
+    "topic_id": "T7",
+    "bertopic_id": 7,
+    "title": "TOPIC 7",
+    "summary": "Summary unavailable.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 1.0,
+    "theme": "Cyber attacks"
+  },
+  "T8": {
+    "topic_id": "T8",
+    "bertopic_id": 8,
+    "title": "TOPIC 8",
+    "summary": "Summary unavailable.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 1.0346153846153847,
+    "theme": "Inflation"
+  },
+  "T9": {
+    "topic_id": "T9",
+    "bertopic_id": 9,
+    "title": "TOPIC 9",
+    "summary": "Summary unavailable.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 0.7875,
+    "theme": "Digital assets"
+  },
+  "T10": {
+    "topic_id": "T10",
+    "bertopic_id": 10,
+    "title": "TOPIC 10",
+    "summary": "Summary unavailable.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 1.0,
+    "theme": "AI"
+  },
+  "T11": {
+    "topic_id": "T11",
+    "bertopic_id": 11,
+    "title": "TOPIC 11",
+    "summary": "Summary unavailable.",
+    "article_count": 22,
+    "topicality": 22.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 0.9727272727272727,
+    "theme": "Others"
+  },
+  "T12": {
+    "topic_id": "T12",
+    "bertopic_id": 12,
+    "title": "TOPIC 12",
+    "summary": "Summary unavailable.",
+    "article_count": 22,
+    "topicality": 22.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 0.9045454545454544,
+    "theme": "Others"
+  },
+  "T13": {
+    "topic_id": "T13",
+    "bertopic_id": 13,
+    "title": "TOPIC 13",
+    "summary": "Summary unavailable.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 1.0,
+    "theme": "Others"
+  },
+  "T14": {
+    "topic_id": "T14",
+    "bertopic_id": 14,
+    "title": "TOPIC 14",
+    "summary": "Summary unavailable.",
+    "article_count": 19,
+    "topicality": 19.0,
+    "delta_topicality_pct": 0.0,
+    "theme_weight": 1.0315789473684212,
+    "theme": "Others"
+  }
+}
