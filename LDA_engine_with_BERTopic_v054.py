@@ -38,13 +38,63 @@ client = OpenAI(api_key=_api_key)
 # ============================================================
 
 RSS_FEEDS = [
-    # (unchanged – feeds omitted for brevity; keep your list)
     "https://feeds.reuters.com/reuters/businessNews",
     "https://feeds.reuters.com/reuters/markets",
     "https://www.ft.com/rss/home/us",
     "https://www.wsj.com/xml/rss/3_7014.xml",
     "https://www.wsj.com/xml/rss/3_7085.xml",
-    # ... (keep rest of your feed list)
+    "https://feeds.marketwatch.com/marketwatch/topstories/",
+    "https://feeds.marketwatch.com/marketwatch/marketpulse/",
+    "http://feeds.bbci.co.uk/news/business/rss.xml",
+    "http://rss.cnn.com/rss/edition_business.rss",
+    "https://www.ft.com/rss/home/europe",
+    "https://www.ft.com/rss/home/asia",
+    "https://asia.nikkei.com/rss/feed",
+    "https://www.scmp.com/rss/91/feed",
+    "https://feeds.reuters.com/reuters/technologyNews",
+    # "https://feeds.feedburner.com/TechCrunch/",
+    "https://www.ft.com/rss/home",
+    "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+    "https://www.investing.com/rss/news_25.rss",
+    "https://www.investing.com/rss/news_1.rss",
+    "https://www.investing.com/rss/news_285.rss",
+    "https://www.federalreserve.gov/feeds/data.xml",
+    "https://www.federalreserve.gov/feeds/press_all.xml",
+    "https://markets.businessinsider.com/rss",
+    "https://www.risk.net/feeds/rss",
+    "https://www.forbes.com/finance/feed",
+    "https://feeds.feedburner.com/alternativeinvestmentnews",
+    "https://www.eba.europa.eu/eba-news-rss",
+    "https://www.bis.org/rss/press_rss.xml",
+    "https://www.imf.org/external/np/exr/feeds/rss.aspx?type=imfnews",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Economy.xml",
+    "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+    "https://feeds.washingtonpost.com/rss/business",
+    "https://feeds.washingtonpost.com/rss/business/economy",
+    "https://krebsonsecurity.com/feed/",
+    "https://www.bleepingcomputer.com/feed/",
+    "https://www.darkreading.com/rss.xml",
+    "https://www.scmagazine.com/section/feed",
+    "https://feeds.arstechnica.com/arstechnica/technology-lab",
+    "https://www.bls.gov/feed/news-release.htm?view=all&format=rss",
+    "https://www.bea.gov/rss.xml",
+    "https://www.cbo.gov/publications/all/rss.xml",
+    "https://fredblog.stlouisfed.org/feed/",
+    "https://libertystreeteconomics.newyorkfed.org/feed/",
+    "https://pitchbook.com/news/feed",
+    "https://www.preqin.com/insights/rss",
+    "https://www.privatedebtinvestor.com/feed/",
+    "https://www.directlendingdeals.com/rss",
+    "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "https://www.theblock.co/rss",
+    "https://blog.chainalysis.com/feed/",
+    "https://www.trmlabs.com/blog?format=rss",
+    "https://cryptoslate.com/feed/",
+    "https://cointelegraph.com/rss",
+    "https://www.circle.com/blog/rss.xml",
+    "https://tether.to/en/feed/",
+    "https://forum.makerdao.com/latest.rss",
+]
 ]
 
 THEMES = [
@@ -101,9 +151,11 @@ def _normalize_rows(mat: np.ndarray) -> np.ndarray:
 
 
 def fetch_articles():
-    """Fetch RSS feeds with logging, robust to failures."""
+    """Fetch RSS feeds with safe skipping and clear logging."""
     docs = []
     print("🔍 Starting RSS fetch...")
+
+    import requests
 
     headers = {"User-Agent": "Mozilla/5.0"}
 
@@ -111,17 +163,21 @@ def fetch_articles():
         print(f"\n--- Checking feed: {feed}")
 
         try:
+            # Try to fetch raw feed content
             r = requests.get(feed, timeout=12, headers=headers)
             print(f"HTTP status: {r.status_code}")
 
+            # Skip non-200 statuses
             if r.status_code != 200:
                 print("❌ Non-200 response, skipping.")
                 continue
 
+            # Parse feed content
             parsed = feedparser.parse(r.text)
             entries = len(parsed.entries)
             print(f"Entries parsed: {entries}")
 
+            # Extract content from entries
             for entry in parsed.entries[:20]:
                 content = (
                     entry.get("summary")
@@ -134,11 +190,16 @@ def fetch_articles():
                     docs.append(content[:1200])
 
         except Exception as e:
-            print(f"🔥 ERROR reading feed: {e}")
+            print(f"🔥 ERROR reading feed:")
+            print(f"    {e}")
+            print("➡️ Skipping this feed.")
+            # We SKIP only — do not raise.
+            # continue to next feed
             continue
 
     print(f"\n📊 Total extracted articles: {len(docs)}")
     return docs
+
 
 
 def get_representative_doc_ids(doc_ids, doc_embeddings, top_k=8):
