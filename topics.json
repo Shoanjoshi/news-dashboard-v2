@@ -4,29 +4,29 @@
     "bertopic_id": 0,
     "title": "TOPIC 0",
     "summary": "Summary unavailable.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.9410256410256411,
-    "theme": "Inflation"
+    "article_count": 40,
+    "topicality": 40.0,
+    "theme_weight": 0.7975,
+    "theme": "Digital assets"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
     "title": "TOPIC 1",
     "summary": "Summary unavailable.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.9589743589743591,
-    "theme": "Inflation"
+    "article_count": 38,
+    "topicality": 38.0,
+    "theme_weight": 1.147368421052632,
+    "theme": "Bank lending and credit risk"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
     "title": "TOPIC 2",
     "summary": "Summary unavailable.",
-    "article_count": 38,
-    "topicality": 38.0,
-    "theme_weight": 1.0131578947368423,
+    "article_count": 36,
+    "topicality": 36.0,
+    "theme_weight": 0.9083333333333332,
     "theme": "Others"
   },
   "T3": {
@@ -34,50 +34,50 @@
     "bertopic_id": 3,
     "title": "TOPIC 3",
     "summary": "Summary unavailable.",
-    "article_count": 35,
-    "topicality": 35.0,
-    "theme_weight": 0.7685714285714285,
-    "theme": "Digital assets"
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 0.9764705882352942,
+    "theme": "Inflation"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
     "title": "TOPIC 4",
     "summary": "Summary unavailable.",
-    "article_count": 35,
-    "topicality": 35.0,
-    "theme_weight": 1.1657142857142861,
-    "theme": "Bank lending and credit risk"
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 1.0,
+    "theme": "AI"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
     "title": "TOPIC 5",
     "summary": "Summary unavailable.",
-    "article_count": 33,
-    "topicality": 33.0,
+    "article_count": 31,
+    "topicality": 31.0,
     "theme_weight": 1.0,
-    "theme": "AI"
+    "theme": "Cyber attacks"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
     "title": "TOPIC 6",
     "summary": "Summary unavailable.",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 1.025,
-    "theme": "Inflation"
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.0275862068965518,
+    "theme": "Recessionary pressures"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
     "title": "TOPIC 7",
     "summary": "Summary unavailable.",
-    "article_count": 30,
-    "topicality": 30.0,
-    "theme_weight": 1.05,
-    "theme": "Inflation"
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 0.9862068965517242,
+    "theme": "Others"
   },
   "T8": {
     "topic_id": "T8",
@@ -86,17 +86,17 @@
     "summary": "Summary unavailable.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "theme_weight": 1.0379310344827586,
+    "theme": "Inflation"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
     "title": "TOPIC 9",
     "summary": "Summary unavailable.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 1.0,
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 0.9827586206896551,
     "theme": "Inflation"
   },
   "T10": {
@@ -104,20 +104,20 @@
     "bertopic_id": 10,
     "title": "TOPIC 10",
     "summary": "Summary unavailable.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0041666666666667,
-    "theme": "Others"
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 1.0192307692307692,
+    "theme": "Inflation"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
     "title": "TOPIC 11",
     "summary": "Summary unavailable.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 0.9739130434782608,
-    "theme": "Cyber attacks"
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.0,
+    "theme": "Others"
   },
   "T12": {
     "topic_id": "T12",
@@ -136,7 +136,7 @@
     "summary": "Summary unavailable.",
     "article_count": 21,
     "topicality": 21.0,
-    "theme_weight": 0.9714285714285713,
+    "theme_weight": 1.0095238095238095,
     "theme": "Others"
   },
   "T14": {
@@ -144,9 +144,9 @@
     "bertopic_id": 14,
     "title": "TOPIC 14",
     "summary": "Summary unavailable.",
-    "article_count": 14,
-    "topicality": 14.0,
-    "theme_weight": 1.0,
-    "theme": "Recessionary pressures"
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.9714285714285713,
+    "theme": "Others"
   }
 }
