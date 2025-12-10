@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Systemic News Dashboard</title>
+
+    <!-- Load Plotly once globally -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f7f9fb;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto auto;
+            gap: 22px;
+            padding: 22px;
+        }
+
+        .panel {
+            background: white;
+            padding: 10px 16px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+            position: relative;
+        }
+
+        h2 {
+            margin: 6px 0 16px 0;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600;
+            color: #2f3b4c;
+        }
+
+        /* Topic summary table */
+        .topic-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            color: #333;
+        }
+        .topic-table th {
+            background: #e9edf2;
+            padding: 8px;
+            text-align: left;
+        }
+        .topic-table td {
+            padding: 8px;
+            vertical-align: top;
+        }
+        .topic-table tr:nth-child(even){
+            background: #f6f8fa;
+        }
+        .summary-cell {
+            max-width: 900px;
+            color: #444;
+        }
+
+        /* Network Legend */
+        .network-legend {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(255,255,255,0.92);
+            padding: 10px 14px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+            font-size: 13px;
+            line-height: 1.4em;
+            z-index: 9999;
+        }
+        .legend-title {
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        .legend-item {
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .legend-theme-dot {
+            background: #F4C29F;
+            border: 2px solid #B85C00;
+        }
+        .legend-topic-dot {
+            background: #6A8EBB;
+        }
+        .legend-article-dot {
+            background: rgba(100,120,140,0.20);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TOP LEFT — BERTopic Map -->
+    <div class="panel">
+        <h2>Intertopic Distance Map (BERTopic)</h2>
+        {{ topic_map_html | safe }}
+    </div>
+
+    <!-- TOP RIGHT — Theme Scatter -->
+    <div class="panel">
+        <h2>Theme Signals — Centrality vs Topicality</h2>
+        {{ theme_scatter_html | safe }}
+    </div>
+
+    <!-- MIDDLE LEFT — Heatmap -->
+    <div class="panel">
+        <h2>Theme × Topic Affinity Heatmap</h2>
+        {{ heatmap_html | safe }}
+    </div>
+
+    <!-- MIDDLE RIGHT — PyVis Network -->
+    <div class="panel">
+        <h2>Institutional Topic–Theme Network</h2>
+
+        <div class="network-legend">
+            <div class="legend-title">Legend</div>
+            <div class="legend-item">
+                <span class="legend-dot legend-theme-dot"></span>
+                <span><b>Themes</b> (light orange)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot legend-topic-dot"></span>
+                <span>Topics (blue)</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot legend-article-dot"></span>
+                <span>Articles (faint dots)</span>
+            </div>
+        </div>
+
+        <iframe 
+            src="{{ network_institutional }}" 
+            style="width:100%; height:780px; border:none; border-radius:8px;">
+        </iframe>
+    </div>
+
+    <!-- BOTTOM — Topic Summary Table -->
+    <div class="panel" style="grid-column: span 2;">
+        <h2>Topic Summaries</h2>
+        {{ topic_table_html | safe }}
+    </div>
+
+</div>
+
+</body>
+</html>
+
