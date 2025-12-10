@@ -95,7 +95,6 @@ RSS_FEEDS = [
     "https://tether.to/en/feed/",
     "https://forum.makerdao.com/latest.rss",
 ]
-]
 
 THEMES = [
     "Recessionary pressures",
