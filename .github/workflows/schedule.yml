@@ -1,88 +1,48 @@
-
 name: build-dashboard
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 11 * * *"   # Run daily at 11:00 UTC
+    - cron: "0 11 * * *"   # Runs daily at 11:00 UTC
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    # -----------------------------
-    # Checkout repository
-    # -----------------------------
-    - name: Checkout repository
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0   # Needed so we can switch to gh-pages later
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
 
-    # -----------------------------
-    # Set up Python
-    # -----------------------------
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: "3.10"
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
 
-    # -----------------------------
-    # Install dependencies
-    # -----------------------------
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name: Run BERTopic Engine (LDA_engine_with_BERTopic_v054.py)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python LDA_engine_with_BERTopic_v054.py
 
-    # -----------------------------
-    # Run BERTopic engine
-    # -----------------------------
-    - name: Run BERTopic Engine
-      run: |
-        python LDA_engine_with_BERTopic_v054.py
+      - name: Generate Dashboard
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/generate_dashboard.py
 
-    # -----------------------------
-    # Generate Dashboard HTML
-    # -----------------------------
-    - name: Generate Dashboard
-      run: |
-        python scripts/generate_dashboard.py
+      - name: Commit & Push updated dashboard
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add dashboard/*.html
+          git add dashboard/*.json
+          git add topics.json
+          git add theme_signals.json
+          git add articles.csv
+          git commit -m "Auto-update dashboard" || echo "No changes to commit"
+          git push
 
-    # -----------------------------
-    # Push to gh-pages
-    # -----------------------------
-    - name: Commit & Push updated dashboard
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
-
-        # Ensure gh-pages branch exists
-        if git show-ref --verify --quiet refs/heads/gh-pages; then
-          git checkout gh-pages
-        else
-          git checkout --orphan gh-pages
-        fi
-
-        # Clear branch contents
-        rm -rf ./*
-
-        # Copy dashboard output into gh-pages branch
-        cp -r dashboard/* ./
-
-        # Copy JSON + CSV (optional but useful for debugging)
-        cp topics.json ./
-        cp theme_signals.json ./
-        cp articles.csv ./
-
-        # Add files
-        git add .
-
-        # Commit if changes exist
-        git diff --cached --quiet || git commit -m "Auto-update dashboard"
-
-        # Push to gh-pages
-        git push --force origin gh-pages
