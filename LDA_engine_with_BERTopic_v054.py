@@ -189,6 +189,9 @@ def gpt_summarize_topic(topic_id, docs_for_topic):
       - OVERVIEW (1–2 sentences)
       - KEY EXAMPLES (2–4 bullets)
     """
+    if not docs_for_topic:
+        return {"title": f"TOPIC {topic_id}", "summary": "Summary unavailable."}
+
     articles_block = "\n\n".join(
         [f"ARTICLE {i+1}:\n{doc}" for i, doc in enumerate(docs_for_topic)]
     )
@@ -218,36 +221,44 @@ Rules:
 
 ARTICLES:
 {articles_block}
-"""
+""".strip()
 
     try:
         resp = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[{"role": "user", "content": prompt}],
         )
-        out = resp.choices[0].message.content or ""
-
-        if "TITLE:" in out:
-            _, after_title = out.split("TITLE:", 1)
-            after_title = after_title.strip()
-            lines = after_title.splitlines()
-
-            if lines:
-                title_line = lines[0].strip()
-                summary_body = "\n".join(lines[1:]).strip()
-            else:
-                title_line = f"TOPIC {topic_id}"
-                summary_body = out.strip()
-
-            return {
-                "title": title_line,
-                "summary": summary_body if summary_body else "Summary unavailable.",
-            }
-
+        out = (resp.choices[0].message.content or "").strip()
     except Exception as e:
         print(f"GPT error for topic {topic_id}: {e}")
+        return {"title": f"TOPIC {topic_id}", "summary": "Summary unavailable."}
 
-    return {"title": f"TOPIC {topic_id}", "summary": "Summary unavailable."}
+    # ---- Robust parsing for TITLE / SUMMARY ----
+    text_upper = out.upper()
+    idx = text_upper.find("TITLE:")
+    if idx != -1:
+        after = out[idx + len("TITLE:"):].strip()
+    else:
+        after = out
+
+    lines = [ln.strip() for ln in after.splitlines() if ln.strip()]
+
+    if not lines:
+        return {"title": f"TOPIC {topic_id}", "summary": "Summary unavailable."}
+
+    title_line = lines[0]
+    for prefix in ("- ", "* ", "• "):
+        if title_line.startswith(prefix):
+            title_line = title_line[len(prefix):].strip()
+
+    summary_body = "\n".join(lines[1:]).strip()
+    if not summary_body:
+        summary_body = "Summary unavailable."
+
+    return {
+        "title": title_line,
+        "summary": summary_body,
+    }
 
 
 def run_bertopic_analysis(docs):
@@ -598,11 +609,9 @@ def generate_topic_results():
 
     # -------- JSON compatibility: remove sets & raw centrality --------
     for t_name, t_metrics in theme_metrics.items():
-        # convert any sets to lists
         for key, val in list(t_metrics.items()):
             if isinstance(val, set):
                 t_metrics[key] = list(val)
-        # drop internal helper field
         t_metrics.pop("centrality_raw", None)
 
     return docs, summaries, topic_model, topic_embeddings, theme_metrics, topics
@@ -638,7 +647,6 @@ def run_and_persist_bertopic():
 
     # --- Build topics.json ---
     topics_out = {}
-    # Label topics as T0, T1, ... based on BERTopic numeric ID
     for topic_id, meta in summaries.items():
         tid = f"T{topic_id}"
         topics_out[tid] = {
@@ -647,7 +655,6 @@ def run_and_persist_bertopic():
             "title": meta.get("title", f"TOPIC {topic_id}"),
             "summary": meta.get("summary", ""),
             "article_count": int(meta.get("article_count", 0)),
-            # base topicality = volume; deltas handled in generate_dashboard
             "topicality": float(meta.get("article_count", 0.0)),
             "theme_weight": float(meta.get("theme_weight", 1.0)),
             "theme": meta.get("dominant_theme", "Others"),
@@ -658,7 +665,7 @@ def run_and_persist_bertopic():
         json.dump(topics_out, f, indent=2)
     print(f"💾 Wrote topics to {topics_path}")
 
-    # --- Build theme_signals.json (from theme_metrics) ---
+    # --- Build theme_signals.json ---
     theme_signals_path = "theme_signals.json"
     with open(theme_signals_path, "w", encoding="utf-8") as f:
         json.dump(theme_metrics, f, indent=2)
@@ -682,13 +689,13 @@ def run_and_persist_bertopic():
     articles_df.to_csv(articles_path, index=False)
     print(f"💾 Wrote articles to {articles_path} ({len(articles_df)} rows)")
 
-    # --- Build and save real BERTopic topic map HTML ---
+    # --- Build and save BERTopic topic map HTML ---
     try:
         topic_map_html = build_topic_map(topic_embeddings, summaries)
         topic_map_path = os.path.join("dashboard", "topic_map.html")
         with open(topic_map_path, "w", encoding="utf-8") as f:
             f.write(topic_map_html)
-        print(f"💾 Saved real BERTopic topic map to {topic_map_path}")
+        print(f"💾 Saved BERTopic topic map to {topic_map_path}")
     except Exception as e:
         print(f"⚠️ Could not build/save BERTopic topic map: {e}")
 
