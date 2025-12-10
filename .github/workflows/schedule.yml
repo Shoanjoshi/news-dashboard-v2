@@ -37,7 +37,7 @@ jobs:
           python scripts/generate_dashboard.py
 
       # -------------------------------
-      # NEW: Create a clean worktree for gh-pages
+      # Create a clean worktree for gh-pages
       # -------------------------------
       - name: Prepare gh-pages worktree
         run: |
@@ -52,6 +52,9 @@ jobs:
           cp topics.json gh-pages-worktree/
           cp theme_signals.json gh-pages-worktree/
           cp articles.csv gh-pages-worktree/
+
+          # ✅ NEW: copy yesterday snapshot if it exists
+          cp yesterday_theme_signals.json gh-pages-worktree/ 2>/dev/null || true
 
           cd gh-pages-worktree
 
