@@ -1,3 +1,4 @@
+
 import os
 import sys
 import json
@@ -48,6 +49,42 @@ def load_inputs():
     articles_df = pd.read_csv("articles.csv")
     print(f"Loaded articles.csv with {len(articles_df)} rows")
     return topics, theme_signals, articles_df
+
+
+# ============================================================
+# Compute Δ volume vs prior run for each theme
+# Writes values into theme_signals[theme]["delta_volume_pct"]
+# ============================================================
+
+def compute_theme_deltas(theme_signals):
+    """
+    Update theme_signals in-place with delta_volume_pct vs yesterday.
+
+    - If yesterday_theme_signals.json exists, use its volumes as baseline.
+    - If not, or yesterday volume is 0, set delta to 0.0.
+    """
+    yesterday_path = "yesterday_theme_signals.json"
+    if os.path.exists(yesterday_path):
+        try:
+            yesterday = load_json(yesterday_path, "yesterday_theme_signals")
+        except Exception as e:
+            print(f"⚠️ Could not load {yesterday_path}: {e}")
+            yesterday = {}
+    else:
+        yesterday = {}
+
+    for theme, vals in theme_signals.items():
+        v_today = safe_float(vals.get("volume", 0.0))
+        v_yest = safe_float(yesterday.get(theme, {}).get("volume", 0.0))
+
+        if v_yest <= 0:
+            delta_pct = 0.0
+        else:
+            delta_pct = (v_today - v_yest) / v_yest * 100.0
+
+        vals["delta_volume_pct"] = delta_pct
+
+    return theme_signals
 
 
 # ============================================================
@@ -144,7 +181,6 @@ def build_heatmap(topics, theme_signals):
     )
 
     topic_titles = [topics[tid].get("title", tid) for tid in topic_ids]
-
     theme_names = list(theme_signals.keys())
 
     z = []
@@ -187,10 +223,6 @@ def build_heatmap(topics, theme_signals):
 
 # ============================================================
 # WEF-style Network (Themes ↔ Topics + sampled Articles)
-# - Themes: orange nodes (size ∝ volume)
-# - Topics: blue nodes (size ∝ topicality / article_count)
-# - Articles: faint grey, up to 5 per topic, unlabeled
-# - Edge thickness & opacity ∝ theme–topic affinity
 # ============================================================
 
 def build_network(topics, theme_signals, articles_df):
@@ -313,6 +345,9 @@ def main():
 
     topics, theme_signals, articles_df = load_inputs()
 
+    # Compute Δ volume vs prior run for themes (for scatter x-axis)
+    theme_signals = compute_theme_deltas(theme_signals)
+
     # 1) Theme scatter
     theme_scatter_html = build_theme_scatter(theme_signals)
 
@@ -349,7 +384,11 @@ def main():
 
     print("Dashboard built successfully.")
 
+    # 7) Snapshot today's theme signals for next run's deltas
+    with open("yesterday_theme_signals.json", "w", encoding="utf-8") as f:
+        json.dump(theme_signals, f, indent=2)
+    print("Stored yesterday_theme_signals.json for next run.")
+
 
 if __name__ == "__main__":
     main()
-
