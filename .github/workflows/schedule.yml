@@ -24,6 +24,20 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # ----------------------------------------------------------
+      # 🔍 NEW STEP: Diagnose whether the OpenAI API secret exists
+      # ----------------------------------------------------------
+      - name: Log secret presence (safe masked)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
+        run: |
+          echo "🔍 Checking if OPENAI_API_KEY is set..."
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "❌ Secret is EMPTY (GitHub Actions did not pass it)"
+          else
+            echo "✅ Secret is present (masked): ${OPENAI_API_KEY:0:4}****"
+          fi
+
       - name: Run Topic Engine (BERTopic)
         env:
           OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
@@ -53,7 +67,7 @@ jobs:
           cp theme_signals.json gh-pages-worktree/
           cp articles.csv gh-pages-worktree/
 
-          # ✅ NEW: copy yesterday snapshot if it exists
+          # Copy yesterday snapshot if exists
           cp yesterday_theme_signals.json gh-pages-worktree/ 2>/dev/null || true
 
           cd gh-pages-worktree
@@ -68,4 +82,3 @@ jobs:
       - name: Cleanup worktree
         run: |
           git worktree remove gh-pages-worktree --force
-
