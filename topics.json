@@ -4,10 +4,9 @@
     "bertopic_id": 0,
     "title": "TOPIC 0",
     "summary": "Summary unavailable.",
-    "article_count": 48,
-    "topicality": 48.0,
-    "delta_topicality_pct": 14.285714285714285,
-    "theme_weight": 1.0374999999999999,
+    "article_count": 39,
+    "topicality": 39.0,
+    "theme_weight": 0.9410256410256411,
     "theme": "Inflation"
   },
   "T1": {
@@ -15,22 +14,20 @@
     "bertopic_id": 1,
     "title": "TOPIC 1",
     "summary": "Summary unavailable.",
-    "article_count": 42,
-    "topicality": 42.0,
-    "delta_topicality_pct": 5.0,
-    "theme_weight": 0.9714285714285718,
-    "theme": "Digital assets"
+    "article_count": 39,
+    "topicality": 39.0,
+    "theme_weight": 0.9589743589743591,
+    "theme": "Inflation"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
     "title": "TOPIC 2",
     "summary": "Summary unavailable.",
-    "article_count": 37,
-    "topicality": 37.0,
-    "delta_topicality_pct": 2.7777777777777777,
-    "theme_weight": 0.8054054054054053,
-    "theme": "Digital assets"
+    "article_count": 38,
+    "topicality": 38.0,
+    "theme_weight": 1.0131578947368423,
+    "theme": "Others"
   },
   "T3": {
     "topic_id": "T3",
@@ -39,19 +36,17 @@
     "summary": "Summary unavailable.",
     "article_count": 35,
     "topicality": 35.0,
-    "delta_topicality_pct": 0.0,
-    "theme_weight": 0.9885714285714284,
-    "theme": "Inflation"
+    "theme_weight": 0.7685714285714285,
+    "theme": "Digital assets"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
     "title": "TOPIC 4",
     "summary": "Summary unavailable.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "delta_topicality_pct": -8.823529411764707,
-    "theme_weight": 1.167741935483871,
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 1.1657142857142861,
     "theme": "Bank lending and credit risk"
   },
   "T5": {
@@ -59,21 +54,19 @@
     "bertopic_id": 5,
     "title": "TOPIC 5",
     "summary": "Summary unavailable.",
-    "article_count": 30,
-    "topicality": 30.0,
-    "delta_topicality_pct": -6.25,
-    "theme_weight": 0.99,
-    "theme": "Cyber attacks"
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 1.0,
+    "theme": "AI"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
     "title": "TOPIC 6",
     "summary": "Summary unavailable.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "delta_topicality_pct": -6.451612903225806,
-    "theme_weight": 1.0379310344827586,
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 1.025,
     "theme": "Inflation"
   },
   "T7": {
@@ -81,43 +74,39 @@
     "bertopic_id": 7,
     "title": "TOPIC 7",
     "summary": "Summary unavailable.",
-    "article_count": 25,
-    "topicality": 25.0,
-    "delta_topicality_pct": -16.666666666666664,
-    "theme_weight": 1.0,
-    "theme": "AI"
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 1.05,
+    "theme": "Inflation"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
     "title": "TOPIC 8",
     "summary": "Summary unavailable.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "delta_topicality_pct": -7.6923076923076925,
-    "theme_weight": 0.9375,
-    "theme": "Inflation"
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.0,
+    "theme": "Cyber attacks"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
     "title": "TOPIC 9",
     "summary": "Summary unavailable.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "delta_topicality_pct": -8.0,
-    "theme_weight": 1.008695652173913,
-    "theme": "Others"
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 1.0,
+    "theme": "Inflation"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
     "title": "TOPIC 10",
     "summary": "Summary unavailable.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "delta_topicality_pct": 0.0,
-    "theme_weight": 1.008695652173913,
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 1.0041666666666667,
     "theme": "Others"
   },
   "T11": {
@@ -127,19 +116,17 @@
     "summary": "Summary unavailable.",
     "article_count": 23,
     "topicality": 23.0,
-    "delta_topicality_pct": 0.0,
-    "theme_weight": 0.9608695652173912,
-    "theme": "Others"
+    "theme_weight": 0.9739130434782608,
+    "theme": "Cyber attacks"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
     "title": "TOPIC 12",
     "summary": "Summary unavailable.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "delta_topicality_pct": 4.545454545454546,
-    "theme_weight": 1.0043478260869565,
+    "article_count": 22,
+    "topicality": 22.0,
+    "theme_weight": 1.009090909090909,
     "theme": "Others"
   },
   "T13": {
@@ -147,21 +134,19 @@
     "bertopic_id": 13,
     "title": "TOPIC 13",
     "summary": "Summary unavailable.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "delta_topicality_pct": 9.523809523809524,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.9714285714285713,
+    "theme": "Others"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
     "title": "TOPIC 14",
     "summary": "Summary unavailable.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "delta_topicality_pct": 23.52941176470588,
+    "article_count": 14,
+    "topicality": 14.0,
     "theme_weight": 1.0,
-    "theme": "Others"
+    "theme": "Recessionary pressures"
   }
 }
