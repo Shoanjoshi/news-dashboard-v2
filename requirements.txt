@@ -1,0 +1,13 @@
+bertopic
+numpy
+pandas
+openai
+feedparser
+lxml_html_clean
+newspaper3k
+plotly
+sentence-transformers
+umap-learn
+hdbscan
+pyvis==0.3.2
+networkx==3.2.1
