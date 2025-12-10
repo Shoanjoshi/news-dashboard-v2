@@ -1,6 +1,7 @@
 import os
 import json
 import feedparser
+import requests
 import numpy as np
 from collections import Counter
 from textwrap import wrap
@@ -100,10 +101,28 @@ def _normalize_rows(mat: np.ndarray) -> np.ndarray:
 
 
 def fetch_articles():
+    """Debug version: fetch RSS feeds with detailed logging."""
     docs = []
+    print("🔍 Starting RSS diagnostic fetch...")
+
     for feed in RSS_FEEDS:
+        print(f"\n--- Checking feed: {feed}")
+
         try:
-            parsed = feedparser.parse(feed)
+            # Get raw HTTP status first
+            r = requests.get(feed, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+            print(f"HTTP status: {r.status_code}")
+
+            if r.status_code != 200:
+                print("❌ Non-200 response, skipping.")
+                continue
+
+            # Parse with feedparser
+            parsed = feedparser.parse(r.text)
+            entries = len(parsed.entries)
+            print(f"Entries parsed: {entries}")
+
+            # If entries exist, extract content
             for entry in parsed.entries[:20]:
                 content = (
                     entry.get("summary")
@@ -111,13 +130,16 @@ def fetch_articles():
                     or entry.get("title")
                     or ""
                 )
-                if isinstance(content, str) and len(content.strip()) > 50:
-                    docs.append(content.strip()[:1200])
-        except Exception as e:
-            print(f"Feed error {feed}: {e}")
-    print("Fetched articles:", len(docs))
-    return docs
+                content = content.strip()
+                if len(content) > 50:
+                    docs.append(content[:1200])
 
+        except Exception as e:
+            print(f"🔥 ERROR while fetching feed:\n{e}")
+            continue
+
+    print(f"\n📊 Total extracted articles: {len(docs)}")
+    return docs
 
 def get_representative_doc_ids(doc_ids, doc_embeddings, top_k=8):
     if not doc_ids:
