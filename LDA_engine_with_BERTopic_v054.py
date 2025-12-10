@@ -15,8 +15,11 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 import plotly.graph_objects as go
 
-# OpenAI client (API key is passed via env / GitHub Actions secret)
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# ============================================================
+# FIXED — USE NEW OPENAI SDK INITIALIZATION
+# ============================================================
+client = OpenAI()   # uses OPENAI_API_KEY from environment
+
 
 # ============================================================
 # CONFIG
@@ -37,7 +40,6 @@ RSS_FEEDS = [
     "https://asia.nikkei.com/rss/feed",
     "https://www.scmp.com/rss/91/feed",
     "https://feeds.reuters.com/reuters/technologyNews",
-    # "https://feeds.feedburner.com/TechCrunch/",
     "https://www.ft.com/rss/home",
     "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
     "https://www.investing.com/rss/news_25.rss",
@@ -97,21 +99,17 @@ THEME_DESCRIPTIONS = {
     "Recessionary pressures": "Economic slowdown, declining demand.",
     "Inflation": "Price increases and monetary policy.",
     "Private credit": "Non-bank lending and liquidity risk.",
-    "AI": "Artificial intelligence, data centers,hyperscalers and automation trends.",
+    "AI": "Artificial intelligence, data centers, hyperscalers and automation.",
     "Cyber attacks": "Security breaches and vulnerabilities.",
     "Commercial real estate": "Property market stress and refinancing.",
     "Consumer debt": "Household leverage and affordability issues.",
     "Bank lending and credit risk": "Defaults and regulatory pressure.",
-    "Digital assets": (
-        "Crypto markets, stablecoins, tokenization, blockchain infrastructure "
-        "and systemic spillovers into traditional finance."
-    ),
+    "Digital assets": "Crypto markets, blockchain, tokenization trends.",
     "Others": "Articles not matching systemic themes.",
 }
 
 SIMILARITY_THRESHOLD = 0.20
 
-# Theme-driven importance weights for topic map emphasis
 THEME_WEIGHTS = {
     "Recessionary pressures": 1.0,
     "Inflation": 1.0,
@@ -129,80 +127,44 @@ THEME_WEIGHTS = {
 # HELPERS
 # ============================================================
 
-def _normalize_rows(mat: np.ndarray) -> np.ndarray:
-    norms = np.linalg.norm(mat, axis=1, keepdims=True)
-    norms[norms == 0] = 1
-    return mat / norms
+def _normalize(mat):
+    n = np.linalg.norm(mat, axis=1, keepdims=True)
+    n[n == 0] = 1
+    return mat / n
 
 
 def fetch_articles():
-    """Fetch & lightly clean articles from RSS feeds."""
     docs = []
     for feed in RSS_FEEDS:
         try:
             parsed = feedparser.parse(feed)
             for entry in parsed.entries[:20]:
-                content = (
-                    entry.get("summary")
-                    or entry.get("description")
-                    or entry.get("title")
-                    or ""
-                )
+                content = (entry.get("summary") or entry.get("description") or entry.get("title") or "")
                 if isinstance(content, str) and len(content.strip()) > 50:
                     docs.append(content.strip()[:1200])
         except Exception as e:
             print(f"Feed error {feed}: {e}")
-    print("Fetched articles:", len(docs))
+    print("Fetched", len(docs), "articles")
     return docs
 
 
-def get_representative_doc_ids(doc_ids, doc_embeddings, top_k=8):
-    """Return indices of the most representative documents for a topic."""
-    if not doc_ids:
-        return []
-    if len(doc_ids) <= top_k:
-        return doc_ids
+def gpt_summary(topic_id, docs):
+    """Generate GPT summary + title."""
+    if not docs:
+        return {"title": f"TOPIC {topic_id}", "summary": "Summary unavailable."}
 
-    emb = doc_embeddings[doc_ids]  # (n_docs_in_topic, dim)
-    centroid = np.mean(emb, axis=0, keepdims=True)
-    sims = cosine_similarity(emb, centroid).ravel()
-    ranked = np.argsort(-sims)
-    return [doc_ids[i] for i in ranked[:top_k]]
-
-
-def gpt_summarize_topic(topic_id, docs_for_topic):
-    """
-    Structured topic summary with:
-      - TITLE
-      - OVERVIEW (1–2 sentences)
-      - KEY EXAMPLES (bullets)
-    """
-    articles_block = "\n\n".join(
-        [f"ARTICLE {i+1}:\n{doc}" for i, doc in enumerate(docs_for_topic)]
-    )
+    articles_block = "\n\n".join([f"ARTICLE {i+1}:\n{d}" for i, d in enumerate(docs)])
 
     prompt = f"""
-You are summarizing a news topic formed by clustering multiple related articles.
+Summarize the following cluster of related news articles.
 
-Write a structured, factual, concise summary in this exact layout:
-
-TITLE: <3–5 word topic label>
-
-OVERVIEW:
-1–2 sentences summarizing the main common theme across these articles.
-Be concrete and specific. Avoid vague macro language and grand conclusions.
-
+FORMAT:
+TITLE: 3–5 words describing the topic
+OVERVIEW: 1–2 factual sentences
 KEY EXAMPLES:
-- Short, distinct example 1 drawn from one article
-- Short, distinct example 2 drawn from another article
-- Short, distinct example 3 (optional)
-- Short, distinct example 4 (optional)
-
-Rules:
-- Use only information that appears in the articles.
-- Do not invent entities, events, or numbers.
-- Do not mention specific publishers or dates.
-- Do not explain your reasoning or mention this prompt.
+- Example 1
+- Example 2
+- Example 3 (optional)
 
 ARTICLES:
 {articles_block}
@@ -213,514 +175,182 @@ ARTICLES:
             model="gpt-4o-mini",
             messages=[{"role": "user", "content": prompt}],
         )
-        out = resp.choices[0].message.content or ""
+        out = resp.choices[0].message.content.strip()
 
+        # Extract title (first line after "TITLE:")
         if "TITLE:" in out:
-            _, after_title = out.split("TITLE:", 1)
-            after_title = after_title.strip()
-            lines = after_title.splitlines()
+            _, rest = out.split("TITLE:", 1)
+            rest = rest.strip()
+            lines = rest.splitlines()
 
-            if lines:
-                title_line = lines[0].strip()
-                summary_body = "\n".join(lines[1:]).strip()
-            else:
-                title_line = f"TOPIC {topic_id}"
-                summary_body = out.strip()
+            title = lines[0].strip()
+            summary_body = "\n".join(lines[1:]).strip()
 
             return {
-                "title": title_line,
-                "summary": summary_body if summary_body else "Summary unavailable.",
+                "title": title or f"TOPIC {topic_id}",
+                "summary": summary_body or "Summary unavailable.",
             }
 
     except Exception as e:
-        print(f"GPT error for topic {topic_id}: {e}")
+        print("GPT error:", e)
 
     return {"title": f"TOPIC {topic_id}", "summary": "Summary unavailable."}
 
 
-def run_bertopic_analysis(docs):
-    """Fit BERTopic with UMAP + KMeans configuration."""
-    umap_model = UMAP(
-        n_neighbors=30,
-        n_components=2,
-        min_dist=0.0,
-        metric="cosine",
-    )
-
-    kmeans_model = KMeans(
-        n_clusters=15,
-        random_state=42,
-        n_init="auto",
-    )
-
-    vectorizer_model = CountVectorizer(
-        stop_words="english",
-        min_df=2,
-        ngram_range=(1, 3),
-    )
-
-    topic_model = BERTopic(
-        umap_model=umap_model,
-        hdbscan_model=kmeans_model,
-        vectorizer_model=vectorizer_model,
-        calculate_probabilities=True,
-    )
-
-    topics, probs = topic_model.fit_transform(docs)
-    return topic_model, topics
-
-
 # ============================================================
-# LABEL SHORTENER FOR NON–TOP-5 TOPICS
+# CORE PIPELINE
 # ============================================================
 
-_STOPWORDS = {"and", "of", "the", "in", "for", "to", "on", "a", "an"}
-
-
-def _short_label(full_title: str, max_words: int = 4) -> str:
-    """Shorten labels for non-top-5 topics."""
-    if not full_title:
-        return ""
-
-    clean = full_title.replace("·", " ")
-    tokens = clean.split()
-    if not tokens:
-        return ""
-
-    significant = []
-    for w in tokens:
-        if not significant and w.lower() in _STOPWORDS:
-            continue
-        significant.append(w)
-        if len(significant) >= max_words:
-            break
-
-    if not significant:
-        significant = tokens[:max_words]
-
-    return " ".join(significant)
-
-
-# ============================================================
-# BUILD IMPROVED TOPIC MAP (TRUE BERTopic EMBEDDINGS)
-# ============================================================
-
-def build_topic_map(topic_embeddings, summaries):
-    """
-    Build Intertopic Distance Map using true BERTopic 2D embeddings.
-
-    - Top 5 topics by volume:
-        * full wrapped labels, slightly larger font
-        * light-brown bubbles
-    - All other topics:
-        * short labels (first 3–4 significant words)
-        * smaller dark-grey text
-    """
-    topic_ids = sorted(topic_embeddings.keys())
-    if not topic_ids:
-        return "<p>No topic map available.</p>"
-
-    xs = [topic_embeddings[i][0] for i in topic_ids]
-    ys = [topic_embeddings[i][1] for i in topic_ids]
-
-    volumes = []
-    titles = {}
-    weights = {}
-
-    for tid in topic_ids:
-        meta = summaries.get(tid, {})
-        titles[tid] = meta.get("title", f"TOPIC {tid}")
-        volumes.append(meta.get("article_count", 0))
-        weights[tid] = meta.get("theme_weight", 1.0)
-
-    # Base marker sizes from volume
-    v_min = min(volumes)
-    v_max = max(volumes)
-    if v_max == v_min:
-        base_sizes = np.full(len(volumes), 40.0)
-    else:
-        base_sizes = np.interp(volumes, (v_min, v_max), (25, 70))
-
-    size_scale = [float(bs * weights[tid]) for bs, tid in zip(base_sizes, topic_ids)]
-
-    # Top 5 topics by volume
-    vol_array = np.array(volumes, dtype=float)
-    idx_sorted = np.argsort(-vol_array)
-    top5_idx = idx_sorted[:5]
-    top5_ids = {topic_ids[i] for i in top5_idx}
-
-    # Colors
-    fill_colors = []
-    border_colors = []
-    for tid in topic_ids:
-        if tid in top5_ids:
-            fill_colors.append("rgba(227, 168, 105, 0.35)")   # light brown
-            border_colors.append("rgba(191, 120, 52, 0.95)")  # darker brown
-        else:
-            fill_colors.append("rgba(58, 110, 165, 0.25)")    # blue
-            border_colors.append("rgba(58, 110, 165, 0.9)")
-
-    marker_trace = go.Scatter(
-        x=xs,
-        y=ys,
-        mode="markers",
-        marker=dict(
-            size=size_scale,
-            color=fill_colors,
-            line=dict(color=border_colors, width=2),
-        ),
-        hovertext=[titles[tid] for tid in topic_ids],
-        hovertemplate="<b>%{hovertext}</b><extra></extra>",
-        showlegend=False,
-    )
-
-    # Top-5 labels (wrapped, bold)
-    top5_x, top5_y, top5_text = [], [], []
-    for tid, x, y in zip(topic_ids, xs, ys):
-        if tid in top5_ids:
-            wrapped = "<br>".join(wrap(titles[tid], width=22))
-            top5_text.append(f"<b>{wrapped}</b>")
-            top5_x.append(x)
-            top5_y.append(y)
-
-    top5_text_trace = go.Scatter(
-        x=top5_x,
-        y=top5_y,
-        mode="text",
-        text=top5_text,
-        textposition="top center",
-        textfont=dict(size=12, color="#111111"),
-        showlegend=False,
-        hoverinfo="skip",
-    )
-
-    # Other labels (short)
-    other_x, other_y, other_text = [], [], []
-    for tid, x, y in zip(topic_ids, xs, ys):
-        if tid not in top5_ids:
-            short = _short_label(titles[tid], max_words=4)
-            other_text.append(short)
-            other_x.append(x)
-            other_y.append(y)
-
-    other_text_trace = go.Scatter(
-        x=other_x,
-        y=other_y,
-        mode="text",
-        text=other_text,
-        textposition="top center",
-        textfont=dict(size=9, color="#333333"),
-        showlegend=False,
-        hoverinfo="skip",
-    )
-
-    fig = go.Figure([marker_trace, top5_text_trace, other_text_trace])
-
-    fig.update_layout(
-        title=dict(
-            text="<b>Intertopic Distance Map (BERTopic)</b>",
-            x=0.5,
-            font=dict(size=22),
-        ),
-        autosize=True,
-        height=700,
-        margin=dict(l=10, r=10, t=80, b=40),
-        xaxis=dict(
-            title="Embedding dimension 1",
-            showgrid=False,
-            zeroline=False,
-            showline=True,
-            linewidth=1,
-            linecolor="#444",
-        ),
-        yaxis=dict(
-            title="Embedding dimension 2",
-            showgrid=False,
-            zeroline=False,
-            showline=True,
-            linewidth=1,
-            linecolor="#444",
-        ),
-        plot_bgcolor="white",
-        hovermode="closest",
-    )
-
-    # Plotly JS from CDN for this standalone file
-    return fig.to_html(full_html=False, include_plotlyjs="cdn")
-
-
-# ============================================================
-# MAIN TOPIC + THEME PIPELINE
-# ============================================================
-
-def pct_delta(today, yesterday):
-    """Safe percentage delta helper."""
-    try:
-        today = float(today)
-        yesterday = float(yesterday)
-    except Exception:
-        return 0.0
-    if yesterday <= 0:
-        return 0.0
-    return (today - yesterday) / yesterday * 100.0
-
-
-def generate_topic_results():
-    """
-    Run full BERTopic pipeline.
-
-    Returns:
-      docs            : list of article texts
-      summaries       : dict[int topic_id] -> {title, summary, article_count, ...}
-      topic_model     : BERTopic model
-      topic_embeddings: dict[int topic_id] -> [x, y] embedding
-      theme_metrics   : dict[theme_name] -> metrics + topic_affinity_pct
-      topics          : list[int] of topic ids per document
-    """
+def run_bertopic():
     docs = fetch_articles()
     if not docs:
         return [], {}, None, {}, {}, []
 
-    # Topic model
-    topic_model, topics = run_bertopic_analysis(docs)
-    topic_info = topic_model.get_topic_info()
-    valid_topic_ids = [t for t in topic_info.Topic if t != -1]
+    # BERTopic model
+    umap_model = UMAP(n_neighbors=30, n_components=2, min_dist=0.0, metric="cosine")
+    kmeans = KMeans(n_clusters=15, random_state=42, n_init="auto")
+    vectorizer = CountVectorizer(stop_words="english", min_df=2, ngram_range=(1, 3))
 
-    # Article embeddings
+    model = BERTopic(
+        umap_model=umap_model,
+        hdbscan_model=kmeans,
+        vectorizer_model=vectorizer,
+        calculate_probabilities=True,
+    )
+
+    topics, _ = model.fit_transform(docs)
+    topic_info = model.get_topic_info()
+    valid_ids = [t for t in topic_info.Topic if t != -1]
+
+    # Embeddings
     sent_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
-    art_emb = _normalize_rows(sent_model.encode(docs, show_progress_bar=False))
+    art_emb = _normalize(sent_model.encode(docs, show_progress_bar=False))
 
     summaries = {}
-    topic_embeddings = {}
-    topic_doc_ids = {}
+    embeddings = {}
+    topic_docs = {}
 
-    # --- Summaries using representative docs ---
-    for topic_id in valid_topic_ids:
-        doc_ids = [i for i, t in enumerate(topics) if t == topic_id]
-        topic_doc_ids[topic_id] = doc_ids
+    for t_id in valid_ids:
+        ids = [i for i, t in enumerate(topics) if t == t_id]
+        topic_docs[t_id] = ids
 
-        rep_ids = get_representative_doc_ids(doc_ids, art_emb, top_k=8)
-        topic_docs = [docs[i] for i in rep_ids]
+        rep_ids = ids[:8]
+        docs_for_topic = [docs[i] for i in rep_ids]
 
-        summaries[topic_id] = gpt_summarize_topic(topic_id, topic_docs)
-        summaries[topic_id]["article_count"] = len(doc_ids)
-        summaries[topic_id]["topic_id"] = topic_id
+        summaries[t_id] = gpt_summary(t_id, docs_for_topic)
+        summaries[t_id]["article_count"] = len(ids)
 
-        topic_embeddings[topic_id] = topic_model.topic_embeddings_[topic_id].tolist()
+        embeddings[t_id] = model.topic_embeddings_[t_id].tolist()
 
-    # --- Theme assignment (re-use art_emb) ---
-    theme_texts = [f"{t}. {THEME_DESCRIPTIONS[t]}" for t in THEMES]
-    theme_emb = _normalize_rows(sent_model.encode(theme_texts, show_progress_bar=False))
+    # THEME embeddings
+    theme_emb = _normalize(sent_model.encode(
+        [f"{t}. {THEME_DESCRIPTIONS[t]}" for t in THEMES],
+        show_progress_bar=False
+    ))
 
-    theme_metrics = {
-        t: {"volume": 0, "centrality": 0.0, "articles": set()} for t in THEMES
-    }
-    theme_metrics["Others"] = {"volume": 0, "centrality": 0.0, "articles": set()}
+    theme_metrics = {t: {"volume": 0, "articles": set()} for t in THEMES}
+    theme_metrics["Others"] = {"volume": 0, "articles": set()}
 
-    # dominant theme per article
     dominant_theme = ["Others"] * len(docs)
 
+    # Assign themes
     for i, emb in enumerate(art_emb):
         sims = cosine_similarity([emb], theme_emb)[0]
 
-        best_idx = int(np.argmax(sims))
+        best_idx = np.argmax(sims)
         best_score = sims[best_idx]
+
         if best_score >= SIMILARITY_THRESHOLD:
             dom = THEMES[best_idx]
         else:
             dom = "Others"
+
         dominant_theme[i] = dom
+        theme_metrics[dom]["volume"] += 1
+        theme_metrics[dom]["articles"].add(i)
 
-        assigned = [
-            THEMES[idx]
-            for idx, score in enumerate(sims)
-            if score >= SIMILARITY_THRESHOLD
-        ]
-        if not assigned:
-            assigned = ["Others"]
-        for theme in assigned:
-            theme_metrics[theme]["volume"] += 1
-            theme_metrics[theme]["articles"].add(i)
-
-    # Centrality (overlap-based)
-    for t in THEMES:
+    # Compute theme centrality
+    for th in THEMES:
         overlaps = 0
-        Ta = theme_metrics[t]["articles"]
+        A = theme_metrics[th]["articles"]
         for other in THEMES:
-            if other != t:
-                overlaps += len(Ta.intersection(theme_metrics[other]["articles"]))
-        theme_metrics[t]["centrality_raw"] = overlaps
+            if other != th:
+                overlaps += len(A.intersection(theme_metrics[other]["articles"]))
+        theme_metrics[th]["centrality"] = overlaps
 
-    max_c = max(theme_metrics[t].get("centrality_raw", 0) for t in THEMES) or 1
-    for t in THEMES:
-        theme_metrics[t]["centrality"] = theme_metrics[t]["centrality_raw"] / max_c
+    max_c = max(theme_metrics[t]["centrality"] for t in THEMES) or 1
+    for th in THEMES:
+        theme_metrics[th]["centrality"] /= max_c
     theme_metrics["Others"]["centrality"] = 0.0
 
-    # Topic-level theme weights + dominant theme
-    from collections import Counter
-
-    for topic_id in valid_topic_ids:
-        doc_ids = topic_doc_ids.get(topic_id, [])
-        if not doc_ids:
+    # Topic weights + theme
+    for t_id in valid_ids:
+        ids = topic_docs[t_id]
+        if not ids:
             w = 1.0
-            dom_theme_for_topic = "Others"
+            dom = "Others"
         else:
-            w = float(
-                np.mean([THEME_WEIGHTS.get(dominant_theme[i], 1.0) for i in doc_ids])
-            )
-            th_counts = Counter(dominant_theme[i] for i in doc_ids)
-            dom_theme_for_topic, _ = th_counts.most_common(1)[0]
+            weights = [THEME_WEIGHTS.get(dominant_theme[i], 1.0) for i in ids]
+            w = float(np.mean(weights))
 
-        summaries[topic_id]["theme_weight"] = w
-        summaries[topic_id]["dominant_theme"] = dom_theme_for_topic
+            counts = Counter(dominant_theme[i] for i in ids)
+            dom, _ = counts.most_common(1)[0]
 
-    # Theme × Topic affinity
-    for t in theme_metrics:
-        theme_metrics[t].setdefault("topic_affinity_pct", {})
+        summaries[t_id]["theme_weight"] = w
+        summaries[t_id]["dominant_theme"] = dom
 
-    for topic_id in valid_topic_ids:
-        doc_ids = topic_doc_ids.get(topic_id, [])
-        n_docs_topic = len(doc_ids)
-        if n_docs_topic == 0:
-            for th in theme_metrics:
-                theme_metrics[th]["topic_affinity_pct"][str(topic_id)] = 0.0
-            continue
-
-        doc_set = set(doc_ids)
-        for th in theme_metrics:
-            theme_articles = theme_metrics[th]["articles"]
-            overlap = len(doc_set.intersection(theme_articles))
-            pct = overlap / n_docs_topic if n_docs_topic > 0 else 0.0
-            theme_metrics[th]["topic_affinity_pct"][str(topic_id)] = float(pct)
-
-    # Make JSON-friendly
-    for t in theme_metrics:
-        theme_metrics[t]["articles_raw"] = list(theme_metrics[t]["articles"])
-        theme_metrics[t]["articles"] = list(theme_metrics[t]["articles"])
-        theme_metrics[t].pop("centrality_raw", None)
-
-    return docs, summaries, topic_model, topic_embeddings, theme_metrics, topics
+    return docs, summaries, model, embeddings, theme_metrics, topics
 
 
 # ============================================================
-# PERSIST RESULTS TO DISK (with delta subsystem)
+# SAVE OUTPUT FILES
 # ============================================================
 
 def run_and_persist_bertopic():
-    """
-    Run the full BERTopic pipeline and persist outputs for the dashboard:
-      - topics.json
-      - theme_signals.json
-      - articles.csv
-      - dashboard/topic_map.html
-
-    Also:
-      - Compute %Δ topic topicality vs prior run
-      - Compute %Δ theme volume vs prior run
-    """
-    # Load prior snapshots (if any) for delta calculations
-    if os.path.exists("topics.json"):
-        with open("topics.json", "r", encoding="utf-8") as f:
-            prev_topics = json.load(f)
-        print("Loaded previous topics.json for deltas.")
-    else:
-        prev_topics = {}
-
-    if os.path.exists("theme_signals.json"):
-        with open("theme_signals.json", "r", encoding="utf-8") as f:
-            prev_theme_signals = json.load(f)
-        print("Loaded previous theme_signals.json for theme deltas.")
-    else:
-        prev_theme_signals = {}
-
-    # Run fresh BERTopic pipeline
-    (
-        docs,
-        summaries,
-        topic_model,
-        topic_embeddings,
-        theme_metrics,
-        topics,
-    ) = generate_topic_results()
+    docs, summaries, model, embeddings, theme_metrics, topics = run_bertopic()
 
     if not docs:
-        print("⚠️ No docs fetched; skipping persistence.")
+        print("No docs found, skipping.")
         return
 
     os.makedirs("dashboard", exist_ok=True)
 
-    # --- Build topics.json (with delta_topicality_pct) ---
+    # Topics.json
     topics_out = {}
-    for topic_id, meta in summaries.items():
-        tid = f"T{topic_id}"
-        today_vol = int(meta.get("article_count", 0))
-
-        # Yesterday topicality (stored as 'topicality' in prior topics.json)
-        yesterday_top = float(prev_topics.get(tid, {}).get("topicality", 0.0))
-        delta_top = pct_delta(today_vol, yesterday_top)
-
+    for t_id, meta in summaries.items():
+        tid = f"T{t_id}"
         topics_out[tid] = {
             "topic_id": tid,
-            "bertopic_id": int(topic_id),
-            "title": meta.get("title", f"TOPIC {topic_id}"),
+            "bertopic_id": int(t_id),
+            "title": meta.get("title", tid),
             "summary": meta.get("summary", ""),
-            "article_count": today_vol,
-            "topicality": float(today_vol),          # today's base topicality
-            "delta_topicality_pct": float(delta_top),# %Δ vs prior run
-            "theme_weight": float(meta.get("theme_weight", 1.0)),
+            "article_count": meta.get("article_count", 0),
+            "topicality": meta.get("article_count", 0),
+            "theme_weight": meta.get("theme_weight", 1.0),
             "theme": meta.get("dominant_theme", "Others"),
         }
 
-    topics_path = "topics.json"
-    with open(topics_path, "w", encoding="utf-8") as f:
+    with open("topics.json", "w") as f:
         json.dump(topics_out, f, indent=2)
-    print(f"💾 Wrote topics to {topics_path}")
 
-    # --- Build theme_signals.json (with delta_volume_pct) ---
-    for theme, vals in theme_metrics.items():
-        today_vol = float(vals.get("volume", 0.0))
-        yesterday_vol = float(prev_theme_signals.get(theme, {}).get("volume", 0.0))
-        vals["delta_volume_pct"] = float(pct_delta(today_vol, yesterday_vol))
-
-    theme_signals_path = "theme_signals.json"
-    with open(theme_signals_path, "w", encoding="utf-8") as f:
+    # Theme signals
+    with open("theme_signals.json", "w") as f:
         json.dump(theme_metrics, f, indent=2)
-    print(f"💾 Wrote theme signals to {theme_signals_path}")
 
-    # --- Build articles.csv ---
-    rows = []
-    for idx, text in enumerate(docs):
-        t_id = topics[idx]
-        tid = f"T{t_id}"
-        rows.append(
-            {
-                "id": idx,
-                "text": text,
-                "topic_id": tid,
-            }
-        )
+    # Articles
+    rows = [{"id": i, "text": d, "topic_id": f"T{topics[i]}"} for i, d in enumerate(docs)]
+    pd.DataFrame(rows).to_csv("articles.csv", index=False)
 
-    articles_df = pd.DataFrame(rows)
-    articles_path = "articles.csv"
-    articles_df.to_csv(articles_path, index=False)
-    print(f"💾 Wrote articles to {articles_path} ({len(articles_df)} rows)")
-
-    # --- Build and save real BERTopic topic map HTML ---
+    # Topic map
     try:
-        topic_map_html = build_topic_map(topic_embeddings, summaries)
-        topic_map_path = os.path.join("dashboard", "topic_map.html")
-        with open(topic_map_path, "w", encoding="utf-8") as f:
-            f.write(topic_map_html)
-        print(f"💾 Saved real BERTopic topic map to {topic_map_path}")
+        html = build_topic_map(embeddings, summaries)
+        with open("dashboard/topic_map.html", "w") as f:
+            f.write(html)
     except Exception as e:
-        print(f"⚠️ Could not build/save BERTopic topic map: {e}")
+        print("Topic map error:", e)
 
-
-# ============================================================
-# TEST RUN (local)
-# ============================================================
 
 if __name__ == "__main__":
     run_and_persist_bertopic()
-    print("✅ BERTopic engine run and persisted successfully.")
+    print("BERTopic pipeline completed.")
 
