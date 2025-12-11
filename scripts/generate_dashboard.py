@@ -107,7 +107,7 @@ def build_network(topics, theme_signals, articles_df):
         aff = vals.get("topic_affinity_pct", {})
 
         for tid in topics:
-            pct = safe_float(aff.get(str(topics[t]["bertopic_id"]), 0))
+            pct = safe_float(aff.get(str(topics[th]["bertopic_id"]), 0))
             if pct <= 0:
                 continue
 
