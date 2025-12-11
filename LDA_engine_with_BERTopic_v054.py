@@ -269,7 +269,7 @@ def run_bertopic_analysis(docs):
 
 
 # ------------------------------------------------------------
-# Intertopic distance map (same as your previous version)
+# Intertopic distance map
 # ------------------------------------------------------------
 
 def build_topic_map(topic_embeddings, summaries):
@@ -297,15 +297,42 @@ def build_topic_map(topic_embeddings, summaries):
         mode="markers+text",
         text=titles,
         textposition="top center",
-        marker=dict(size=marker_sizes, color="rgba(58,110,165,0.4)",
-                    line=dict(color="rgba(58,110,165,1.0)", width=2)),
-        hovertemplate="<b>%{text}</b><extra></extra>"
+        marker=dict(
+            size=marker_sizes,
+            color="rgba(58,110,165,0.4)",
+            line=dict(color="rgba(58,110,165,1.0)", width=2),
+        ),
+        hovertemplate="<b>%{text}</b><extra></extra>",
     ))
 
+    # *** CHANGED: explicit axes + layout so axes show up clearly
     fig.update_layout(
-        title="Intertopic Distance Map (BERTopic)",
+        title=dict(
+            text="<b>Intertopic Distance Map (BERTopic)</b>",
+            x=0.5,
+            font=dict(size=22),
+        ),
+        xaxis=dict(
+            title="Embedding dimension 1",
+            showgrid=False,
+            zeroline=False,
+            showline=True,
+            linewidth=1,
+            linecolor="#444",
+        ),
+        yaxis=dict(
+            title="Embedding dimension 2",
+            showgrid=False,
+            zeroline=False,
+            showline=True,
+            linewidth=1,
+            linecolor="#444",
+        ),
+        hovermode="closest",
         height=700,
-        plot_bgcolor="white"
+        margin=dict(l=10, r=10, t=80, b=40),
+        plot_bgcolor="white",
+        template=None,  # avoid any template overriding axis styling
     )
 
     return fig.to_html(full_html=False, include_plotlyjs="cdn")
@@ -456,7 +483,7 @@ def run_and_persist_bertopic():
     rows = [{"id": i, "text": docs[i], "topic_id": f"T{topics[i]}"} for i in range(len(docs))]
     pd.DataFrame(rows).to_csv("articles.csv", index=False)
 
-    # topic map — FIXED (no broken import)
+    # topic map
     try:
         html = build_topic_map(topic_embeddings, summaries)
         with open("dashboard/topic_map.html", "w", encoding="utf-8") as f:
