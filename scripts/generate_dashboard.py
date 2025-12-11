@@ -80,7 +80,7 @@ def build_network(topics, theme_signals, articles_df):
     # -----------------------
     sorted_topics = sorted(
         topics.keys(),
-        key=lambda t: topics[t].get("topicality", topics[t]["article_count"]),
+        key=lambda t: topics[t].get("topicality", topics[tid]["article_count"]),
         reverse=True
     )
     top10 = set(sorted_topics[:10])
