@@ -10,23 +10,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout main
+      - name: Checkout main branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: main
 
-      - name: Install system deps
+      - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y python3-dev build-essential
 
-      - name: Install Python deps
+      - name: Install Python dependencies
         run: |
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Log secret presence
+      - name: Log secret presence (safe masked)
         env:
           OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
         run: |
@@ -49,26 +49,24 @@ jobs:
           export PYTHONPATH="${GITHUB_WORKSPACE}"
           python scripts/generate_dashboard.py
 
-      # ----------------------------------------------------
-      # Ensure yesterday snapshot file exists before commit
-      # ----------------------------------------------------
-      - name: Ensure snapshot exists
-        run: |
-          if [ ! -f yesterday_theme_signals.json ]; then
-            echo "{}" > yesterday_theme_signals.json
-          fi
-
+      # ---------------------------------------------------------
+      # FORCE-COMMIT YESTERDAY FILE SO TIMESTAMP ALWAYS UPDATES
+      # ---------------------------------------------------------
       - name: Commit updated data files to main
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+
+          # Ensure timestamp always changes
+          touch yesterday_theme_signals.json
 
           git add topics.json theme_signals.json articles.csv yesterday_theme_signals.json
           git commit -m "Update data files" || echo "No changes to commit"
           git push origin main
 
       - name: Prepare gh-pages worktree
-        run: git worktree add gh-pages-worktree gh-pages
+        run: |
+          git worktree add gh-pages-worktree gh-pages
 
       - name: Deploy to gh-pages
         run: |
@@ -79,8 +77,10 @@ jobs:
           cp yesterday_theme_signals.json gh-pages-worktree/
 
           cd gh-pages-worktree
+
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
+
           git add .
           git commit -m "Auto-update dashboard" || echo "No changes to commit"
           git push origin gh-pages
