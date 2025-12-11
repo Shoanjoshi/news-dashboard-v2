@@ -225,13 +225,57 @@ def build_network(topics, theme_signals, articles_df):
     nt = Network(height="780px", width="100%", bgcolor="#fff", font_color="#333")
     nt.barnes_hut()
 
+    # *** CHANGED: WEF-style tighter, denser layout & curved edges
+    nt.set_options(json.dumps({
+        "nodes": {
+            "shape": "dot",
+            "font": {"size": 16},
+            "scaling": {
+                "min": 20,
+                "max": 80
+            }
+        },
+        "edges": {
+            "smooth": {
+                "enabled": True,
+                "type": "dynamic"
+            },
+            "color": {
+                "inherit": True
+            }
+        },
+        "physics": {
+            "enabled": True,
+            "barnesHut": {
+                "gravitationalConstant": -30000,
+                "centralGravity": 0.35,
+                "springLength": 140,      # shorter springs → tighter / zoomed feel
+                "springConstant": 0.02,
+                "damping": 0.10,
+                "avoidOverlap": 0.4       # keep clusters compact but readable
+            },
+            "stabilization": {
+                "enabled": True,
+                "iterations": 800,
+                "fit": True
+            }
+        },
+        "interaction": {
+            "dragNodes": True,
+            "dragView": True,
+            "zoomView": True
+        }
+    }))
+
     # themes
     for th, vals in theme_signals.items():
         vol = safe_float(vals.get("volume", 0))
         nt.add_node(
-            th, label=th, shape="dot",
+            th,
+            label=th,
+            shape="dot",
             size=20 + vol * 0.2,
-            color="rgba(244,194,159,0.95)"
+            color="rgba(244,194,159,0.95)",
         )
 
     # topics
@@ -254,7 +298,7 @@ def build_network(topics, theme_signals, articles_df):
             color="rgba(106,142,187,0.95)",
         )
 
-    # edges
+    # theme–topic edges (thickness = strength)
     for th, vals in theme_signals.items():
         aff = vals.get("topic_affinity_pct", {})
         for tid in topics:
@@ -264,12 +308,13 @@ def build_network(topics, theme_signals, articles_df):
             width = 1 + pct * 6
             alpha = 0.25 + pct * 0.55
             nt.add_edge(
-                th, tid,
+                th,
+                tid,
                 width=width,
-                color=f"rgba(90,120,170,{alpha})"
+                color=f"rgba(90,120,170,{alpha})",
             )
 
-    # sample articles
+    # article sample nodes
     if "topic_id" in articles_df.columns:
         for tid, grp in articles_df.groupby("topic_id"):
             for _, row in grp.head(5).iterrows():
