@@ -10,43 +10,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # -----------------------------
-      # Checkout MAIN (source of truth)
-      # -----------------------------
       - name: Checkout main branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: main
 
-      # -----------------------------
-      # Install dependencies
-      # -----------------------------
       - name: Install system dependencies
-        run: sudo apt-get update && sudo apt-get install -y python3-dev build-essential
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-dev build-essential
 
       - name: Install Python dependencies
         run: |
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # -----------------------------
-      # Diagnostics: verify key
-      # -----------------------------
-      - name: Verify secret presence
+      - name: Log secret presence (safe masked)
         env:
           OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
         run: |
-          echo "🔍 Checking secret availability:"
+          echo "🔍 Checking OPENAI_API_KEY..."
           if [ -z "$OPENAI_API_KEY" ]; then
-            echo "❌ OPENAI key missing"
+            echo "❌ Secret is EMPTY"
           else
-            echo "✅ Key present (masked): ${OPENAI_API_KEY:0:4}****"
+            echo "✅ Secret detected (masked): ${OPENAI_API_KEY:0:4}****"
           fi
 
-      # -----------------------------
-      # Run Topic Engine
-      # -----------------------------
       - name: Run Topic Engine (BERTopic)
         env:
           OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
@@ -54,58 +44,34 @@ jobs:
           export PYTHONPATH="${GITHUB_WORKSPACE}"
           python LDA_engine_with_BERTopic_v054.py
 
-      # -----------------------------
-      # Run Dashboard Generator
-      # -----------------------------
       - name: Generate Dashboard
         run: |
           export PYTHONPATH="${GITHUB_WORKSPACE}"
           python scripts/generate_dashboard.py
 
-      # -----------------------------
-      # Diagnostics: show output timestamps
-      # -----------------------------
-      - name: Diagnostic: list generated files and timestamps
-        run: |
-          echo "📁 Listing generated files:"
-          ls -l *.json
-          ls -l dashboard/
-
-      # -----------------------------
-      # Commit JSON/CSV back to MAIN
-      # -----------------------------
       - name: Commit updated data files to main
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add topics.json theme_signals.json articles.csv yesterday_theme_signals.json || true
+          git add topics.json theme_signals.json articles.csv yesterday_theme_signals.json 2>/dev/null || true
           git commit -m "Update data files" || echo "No changes to commit"
           git push origin main
 
-      # -----------------------------
-      # Prepare GH-PAGES worktree
-      # -----------------------------
       - name: Prepare gh-pages worktree
         run: |
           git worktree add gh-pages-worktree gh-pages
 
-      # -----------------------------
-      # Deploy to GH-PAGES (FIXED)
-      # -----------------------------
       - name: Deploy to gh-pages
         run: |
-          echo "📤 Copying dashboard files to gh-pages"
-
           cp -r dashboard/* gh-pages-worktree/
           cp topics.json gh-pages-worktree/
           cp theme_signals.json gh-pages-worktree/
           cp articles.csv gh-pages-worktree/
-
-          # ✅ FIXED: copy yesterday file explicitly from workspace root
-          cp "${GITHUB_WORKSPACE}/yesterday_theme_signals.json" gh-pages-worktree/yesterday_theme_signals.json
+          cp yesterday_theme_signals.json gh-pages-worktree/ 2>/dev/null || true
 
           cd gh-pages-worktree
+
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
@@ -113,8 +79,5 @@ jobs:
           git commit -m "Auto-update dashboard" || echo "No changes to commit"
           git push origin gh-pages
 
-      # -----------------------------
-      # Cleanup
-      # -----------------------------
       - name: Cleanup worktree
         run: git worktree remove gh-pages-worktree --force
