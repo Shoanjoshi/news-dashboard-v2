@@ -43,109 +43,107 @@ def load_inputs():
 # ------------------------------------------------------------
 
 def build_network(topics, theme_signals, articles_df):
-    """
-    Option D:
-    - larger canvas (1200px height)
-    - scaled node sizes
-    - larger labels (themes > topics)
-    - strengthened physics for more spread
-    - scaled coordinates for a zoomed-in default look
-    """
+    # Much larger canvas
     nt = Network(
-        height="1200px",
-        width="100%",
+        height="1100px",           # increased from 780
+        width="100%", 
         bgcolor="#ffffff",
-        font_color="#333333"
+        font_color="#222222"
     )
 
-    # Stronger physics to spread things out (WEF-like)
-    nt.barnes_hut(
-        central_gravity=0.08,
-        spring_length=320,
-        spring_strength=0.018,
-        damping=0.12
+    # Use force simulation (non-radial)
+    nt.force_atlas_2based(
+        gravity=-40,               # spreads nodes apart
+        central_gravity=0.005,
+        spring_length=180,         # pushes nodes further apart
+        spring_strength=0.06,
+        damping=0.6,
+        overlap=0.2
     )
 
-    # -----------------------------------------------------
-    # THEMES (highest hierarchy)
-    # -----------------------------------------------------
+    # -----------------------
+    # 1. THEME NODES (large)
+    # -----------------------
     for th, vals in theme_signals.items():
         vol = safe_float(vals.get("volume", 0))
         nt.add_node(
             th,
             label=th,
+            size=55 + vol * 0.3,              # bigger
             shape="dot",
-            size=45 + vol * 0.35,        # larger base size
-            color="rgba(244,194,159,0.95)",
-            font={"size": 32, "face": "arial", "bold": True},   # BIG labels
+            color="rgba(244,165,130,0.95)",   # soft orange
+            font={"size": 32, "face": "Arial"}  # BIG labels
         )
 
-    # -----------------------------------------------------
-    # TOPICS (middle hierarchy)
-    # -----------------------------------------------------
+    # -----------------------
+    # 2. TOPIC NODES (medium)
+    # -----------------------
     sorted_topics = sorted(
         topics.keys(),
         key=lambda t: topics[t].get("topicality", topics[t]["article_count"]),
         reverse=True
     )
-    top5 = set(sorted_topics[:5])
+    top10 = set(sorted_topics[:10])
 
     for tid in topics:
         topval = safe_float(topics[tid]["topicality"])
-        size = 22 + (topval ** 0.5) * 4
+        size = 25 + (topval ** 0.5) * 2       # bump size
 
-        label = topics[tid]["title"] if tid in top5 else ""
+        label = topics[tid]["title"] if tid in top10 else ""
 
         nt.add_node(
             tid,
             label=label,
-            shape="dot",
             size=size,
-            color="rgba(106,142,187,0.95)",
-            font={"size": 22, "face": "arial", "bold": False},  # topic labels smaller
+            shape="dot",
+            color="rgba(80,120,190,0.95)",
+            font={"size": 22, "face": "Arial"}  # readable
         )
 
-    # -----------------------------------------------------
-    # EDGES (strength = affinity)
-    # -----------------------------------------------------
+    # -----------------------
+    # 3. EDGES (thicker, smoother)
+    # -----------------------
     for th, vals in theme_signals.items():
         aff = vals.get("topic_affinity_pct", {})
+
         for tid in topics:
-            pct = safe_float(aff.get(str(topics[tid]["bertopic_id"]), 0))
+            pct = safe_float(aff.get(str(topics[t]["bertopic_id"]), 0))
             if pct <= 0:
                 continue
 
-            width = 1.5 + pct * 7
-            alpha = 0.18 + pct * 0.65
+            width = 1 + pct * 8               # stronger
+            alpha = 0.25 + pct * 0.55
 
             nt.add_edge(
                 th,
                 tid,
                 width=width,
-                smooth={"type": "dynamic"},   # CURVED edges
-                color=f"rgba(90,120,170,{alpha})"
+                color=f"rgba(70,100,160,{alpha})",
+                smooth={"type": "dynamic"}     # curved edges
             )
 
-    # -----------------------------------------------------
-    # ARTICLE NODES (tiny, faint)
-    # -----------------------------------------------------
+    # -----------------------
+    # 4. OPTIONAL — Hide article dots (cleaner network)
+    # -----------------------
+    # Comment back in if you want them again
+    """
     if "topic_id" in articles_df.columns:
         for tid, grp in articles_df.groupby("topic_id"):
-            for _, row in grp.head(4).iterrows():
+            for _, row in grp.head(3).iterrows():
                 aid = f"art_{row['id']}"
-                nt.add_node(
-                    aid,
-                    size=3,
-                    color="rgba(120,140,160,0.18)",
-                    label="",
-                )
-                nt.add_edge(
-                    tid,
-                    aid,
-                    width=1,
-                    color="rgba(120,140,160,0.12)",
-                    smooth={"type": "dynamic"}
-                )
+                nt.add_node(aid, size=2, color="rgba(120,120,140,0.1)")
+                nt.add_edge(tid, aid, width=1, color="rgba(120,120,140,0.15)")
+    """
+
+    # -----------------------
+    # Save network
+    # -----------------------
+    os.makedirs("dashboard", exist_ok=True)
+    nt.show_buttons(filter_=["physics"])  # ability to adjust if needed
+    nt.save_graph("dashboard/network_institutional.html")
+
+    return "network_institutional.html"
+
 
     # -----------------------------------------------------
     # SAVE OUTPUT
