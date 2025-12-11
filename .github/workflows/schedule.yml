@@ -6,30 +6,49 @@ on:
     - cron: "0 11 * * *"
 
 permissions:
-  contents: write      # <-- REQUIRED so workflow can commit & push
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      # -------------------------------------------------------
+      # CHECKOUT MAIN
+      # -------------------------------------------------------
       - name: Checkout main branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: main
-          token: ${{ secrets.GITHUB_TOKEN }}   # <-- ensures push allowed
 
+      # -------------------------------------------------------
+      # DIAGNOSTIC — List directory before running anything
+      # -------------------------------------------------------
+      - name: DIAG - List repo before run
+        run: |
+          echo "=== BEFORE RUN: MAIN BRANCH CONTENTS ==="
+          ls -R .
+
+      # -------------------------------------------------------
+      # Install system deps
+      # -------------------------------------------------------
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y python3-dev build-essential
 
+      # -------------------------------------------------------
+      # Install Python deps
+      # -------------------------------------------------------
       - name: Install Python dependencies
         run: |
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # -------------------------------------------------------
+      # Check API key presence
+      # -------------------------------------------------------
       - name: Log secret presence (safe masked)
         env:
           OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
@@ -41,6 +60,9 @@ jobs:
             echo "✅ Secret detected (masked): ${OPENAI_API_KEY:0:4}****"
           fi
 
+      # -------------------------------------------------------
+      # RUN TOPIC ENGINE
+      # -------------------------------------------------------
       - name: Run Topic Engine (BERTopic)
         env:
           OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
@@ -48,32 +70,44 @@ jobs:
           export PYTHONPATH="${GITHUB_WORKSPACE}"
           python LDA_engine_with_BERTopic_v054.py
 
+      # -------------------------------------------------------
+      # GENERATE DASHBOARD
+      # -------------------------------------------------------
       - name: Generate Dashboard
         run: |
           export PYTHONPATH="${GITHUB_WORKSPACE}"
           python scripts/generate_dashboard.py
 
-      # ----------------------------------------
-      # Commit data files back to MAIN branch
-      # ----------------------------------------
+      # -------------------------------------------------------
+      # DIAGNOSTIC — Show dashboard folder after generation
+      # -------------------------------------------------------
+      - name: DIAG - Dashboard folder after build
+        run: |
+          echo "=== AFTER GENERATION: dashboard/ ==="
+          ls -l dashboard/
+
+      # -------------------------------------------------------
+      # COMMIT UPDATED FILES BACK TO MAIN
+      # -------------------------------------------------------
       - name: Commit updated data files to main
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          echo "Files updated:"
-          ls -l *.json *.csv || true
+          echo "=== STAGING FILES FOR MAIN ==="
+          git add topics.json theme_signals.json yesterday_theme_signals.json articles.csv
+          git add dashboard/network_institutional.html 2>/dev/null || true
+          git add dashboard/index.html dashboard/topic_map.html 2>/dev/null || true
 
-          git add topics.json theme_signals.json articles.csv yesterday_theme_signals.json 2>/dev/null || true
+          echo "=== GIT STATUS ==="
+          git status
 
-          # Always commit yesterday_theme_signals.json because it must change every run
-          git commit -m "Update data files" || echo "No changes to commit"
-
+          git commit -m "Update data files and dashboard HTML" || echo "No changes to commit"
           git push origin main
 
-      # ----------------------------------------
-      # Deploy to GH-PAGES
-      # ----------------------------------------
+      # -------------------------------------------------------
+      # DEPLOY TO GH-PAGES
+      # -------------------------------------------------------
       - name: Prepare gh-pages worktree
         run: |
           git worktree add gh-pages-worktree gh-pages
@@ -84,7 +118,7 @@ jobs:
           cp topics.json gh-pages-worktree/
           cp theme_signals.json gh-pages-worktree/
           cp articles.csv gh-pages-worktree/
-          cp yesterday_theme_signals.json gh-pages-worktree/ 2>/dev/null || true
+          cp yesterday_theme_signals.json gh-pages-worktree/ || true
 
           cd gh-pages-worktree
 
@@ -95,5 +129,8 @@ jobs:
           git commit -m "Auto-update dashboard" || echo "No changes to commit"
           git push origin gh-pages
 
+      # -------------------------------------------------------
+      # CLEANUP
+      # -------------------------------------------------------
       - name: Cleanup worktree
         run: git worktree remove gh-pages-worktree --force
