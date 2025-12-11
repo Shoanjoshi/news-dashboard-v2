@@ -81,7 +81,7 @@ def build_network(topics, theme_signals, articles_df):
             borderWidth=4,                         # white border
             borderWidthSelected=6,
             color_border="#FFFFFF",
-            font={"size": 38, "face": "Arial", "bold": True}
+            font={"size": 90, "face": "Arial", "bold": True}
         )
 
     # ============================================================
@@ -108,7 +108,7 @@ def build_network(topics, theme_signals, articles_df):
             borderWidth=3,
             borderWidthSelected=5,
             color_border="#FFFFFF",               # white outline
-            font={"size": 30, "face": "Arial"}     # larger and readable
+            font={"size": 60, "face": "Arial"}     # larger and readable
         )
 
     # ============================================================
