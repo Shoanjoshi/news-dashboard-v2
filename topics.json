@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "**Quarterly Earnings Fluctuations**",
-    "summary": "OVERVIEW:\nRecent earnings reports show a mixed performance among companies, with some falling short of expectations while others exceed guidance, reflecting varying impacts of market conditions and strategic decisions.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% after its profits fell below estimates.\n- Novartis raised its sales and profit forecast for the year.\n- A US database company's earnings missed forecasts due to concerns over the AI boom.\n- Plus500 confirmed it would meet expectations after an 11% revenue increase.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.9974358974358976,
-    "theme": "Inflation"
+    "title": "Institutional Adoption of Crypto",
+    "summary": "OVERVIEW:\nRecent developments indicate a significant shift towards institutional adoption of cryptocurrency and digital assets, with major financial institutions and initiatives focusing on integrated digital solutions and cash tokenization.\n\nKEY EXAMPLES:\n- Trust Wallet collaborates with Revolut for zero-fee crypto purchases, highlighting accessibility in Europe.\n- PNC Bank introduces direct Bitcoin trading, marking a pivotal moment for large U.S. banks embracing digital asset integration.\n- The UK FCA prioritizes British pound-pegged stablecoins for payment systems, indicating a push for digital currency infrastructure.",
+    "article_count": 46,
+    "topicality": 46.0,
+    "theme_weight": 0.8000000000000003,
+    "theme": "Digital assets"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Federal Reserve Board Actions",
-    "summary": "OVERVIEW:  \nThe Federal Reserve Board has been actively enhancing bank supervision and management, alongside issuing enforcement actions and soliciting public input on banking practices and services.\n\nKEY EXAMPLES:  \n- The Fed released results from a survey of senior financial officers at banks about strategies for managing reserve balances.  \n- Enforcement actions were taken against Belt Valley Bank, The Halstead Bank, and former employees associated with other banks.  \n- The Fed is seeking public input on potential changes to check services offered by the Federal Reserve, focusing on check usage and preferences.  \n- A study highlighted the impact of the Fed's Bank Term Funding Program on reducing investor risk perceptions during the 2023 bank run.",
-    "article_count": 36,
-    "topicality": 36.0,
-    "theme_weight": 1.1111111111111116,
-    "theme": "Bank lending and credit risk"
+    "title": "AI Innovation and Investment",
+    "summary": "OVERVIEW:\nThe articles highlight the rising enthusiasm and investment surrounding artificial intelligence technology, as startups and established companies strive to capitalize on new opportunities in various sectors.\n\nKEY EXAMPLES:\n- Young entrepreneurs are disrupting industries with AI innovations, attracting significant investment.\n- Ford is revamping its vehicle lineup by adopting Silicon Valley strategies to compete with Chinese automakers.\n- Venture-capital firms are exploring AI applications in traditionally overlooked fields like accounting and property management.",
+    "article_count": 39,
+    "topicality": 39.0,
+    "theme_weight": 1.0,
+    "theme": "AI"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Cybersecurity Threats in 2025",
-    "summary": "OVERVIEW:\nRecent reports indicate a surge in cyberattacks exploiting newly discovered vulnerabilities, particularly targeting operational technology systems and manufacturers, while the integration of AI raises additional security concerns.\n\nKEY EXAMPLES:\n- Attacks exploiting CVE-2025-55182 targeting VNC connections in OT systems have increased since its public disclosure.\n- Microsoft has responded to emerging threats by addressing numerous vulnerabilities in its software, including zero-day exploits.\n- Manufacturers are particularly vulnerable to cyberattacks due to security gaps and a lack of expertise in cybersecurity.",
-    "article_count": 35,
-    "topicality": 35.0,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "title": "Federal Reserve Rate Cut Impacts",
+    "summary": "OVERVIEW:\nThe recent quarter-point rate cut by the Federal Reserve has triggered notable market responses, particularly affecting cryptocurrencies like Bitcoin and Ethereum, as well as influencing broader economic indicators.\n\nKEY EXAMPLES:\n- Ethereum has benefited from the rate cut, outperforming Bitcoin and registering a seven-year low in transaction fees.\n- Bitcoin, however, has struggled, slipping below $90,000 in the aftermath of the Fed's decision.\n- Economic uncertainty has been heightened due to potential trade policy shifts, affecting other markets like U.S. Treasuries.",
+    "article_count": 37,
+    "topicality": 37.0,
+    "theme_weight": 0.9702702702702705,
+    "theme": "Inflation"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "U.S. Trade Policy Developments",
-    "summary": "OVERVIEW: Recent changes in U.S. trade policy reflect significant disparities in tariff rates among different trading partners, alongside rising import and export activity post-tariff implementation. The evolving relationship with China and the responses from neighboring countries further highlight the complexities of current trade dynamics.\n\nKEY EXAMPLES:\n- Tariff rates for Canada and Mexico are below 5%, whereas rates for China can reach up to 40%, driven by trade agreements and sales shares.\n- Imports and exports have increased compared to the previous month after the introduction of global tariffs, contributing to a declining trade deficit.\n- Mexico plans to implement its own tariffs on Chinese goods, aligning with U.S. pressures and indicating potential retaliatory actions from China.",
-    "article_count": 34,
-    "topicality": 34.0,
-    "theme_weight": 0.9911764705882353,
-    "theme": "Inflation"
+    "title": "Cybersecurity Vulnerabilities and Exploits",
+    "summary": "OVERVIEW:\nRecent articles highlight escalating cyber threats and vulnerabilities, particularly in operational technology environments and consumer products. As new vulnerabilities are disclosed, threat actors rapidly increase their exploitation efforts, leading to mounting concerns about security gaps.\n\nKEY EXAMPLES:\n- Attacks exploiting CVE-2025-55182 have surged following its public disclosure, indicating rapid adaptation by threat actors.\n- Manufacturers have become prime targets for cyberattacks, attributed to ongoing cybersecurity gaps and insufficient expertise.\n- Microsoft issued updates to address multiple security flaws, including a zero-day vulnerability that is actively being exploited.",
+    "article_count": 36,
+    "topicality": 36.0,
+    "theme_weight": 1.0,
+    "theme": "Cyber attacks"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "AI Investments and Market Trends",
-    "summary": "OVERVIEW:\nThe recent surge in artificial intelligence (AI) innovation and investment has generated both excitement and caution among investors, as industry leaders grapple with the potential risks and rewards. While younger startups thrive and attract venture capital, established companies face scrutiny about the profitability of their AI initiatives.\n\nKEY EXAMPLES:\n- A technology company's stock is falling due to investor concerns about the viability of its AI investments, particularly in relation to OpenAI.\n- Teen and young adult-founded AI startups are disrupting traditional industries and gaining significant attention from investors.\n- The UK government plans to support AI hardware startups with guaranteed payments to foster growth in the sector.",
-    "article_count": 33,
-    "topicality": 33.0,
-    "theme_weight": 1.0,
-    "theme": "AI"
+    "title": "Stock Market Performance Insights",
+    "summary": "OVERVIEW:\nRecent news highlights a mixed performance in the stock market, with some companies experiencing significant declines due to disappointing earnings and growing investor concerns, particularly in the technology and AI sectors. Conversely, a few companies have raised profit forecasts, indicating resilience amid market fluctuations.\n\nKEY EXAMPLES:\n- Wingstop\u2019s stock dropped 12% after its profits fell short of expectations.\n- A U.S. database company's earnings missed forecasts amid worries related to the AI market.\n- Nvidia\u2019s shares fell 16% as tech stocks focused on AI infrastructure faced steep declines. \n- Plus500 reported an 11% increase in quarterly revenue, affirming it would meet expectations.",
+    "article_count": 36,
+    "topicality": 36.0,
+    "theme_weight": 0.9666666666666668,
+    "theme": "Inflation"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Market Reactions to Economic Shifts",
-    "summary": "OVERVIEW:\nRecent developments in U.S. economic policy, including interest rate cuts and trade tensions, have resulted in increased market volatility and uncertainty, particularly affecting the Treasury securities market and cryptocurrency prices.\n\nKEY EXAMPLES:\n- The Federal Reserve's interest rate cuts and Trump's tariff announcements briefly worsened Treasury market liquidity.\n- Bitcoin's price dropped to $94k amidst shifting risk appetites due to the tariff threat. \n- Deutsche Bank described the macro outlook for the U.S. economy in 2025 as \"murky at best,\" reflecting overall economic uncertainty.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 1.0064516129032257,
-    "theme": "Inflation"
+    "title": "Federal Reserve Updates",
+    "summary": "OVERVIEW: \nThe Federal Reserve Board is actively implementing changes and enhancements to its supervision and enforcement practices while also making significant adjustments to policies that affect interest rates and payment services.\n\nKEY EXAMPLES:\n- The Federal Reserve issued enforcement actions concerning Belt Valley Bank and The Halstead Bank, highlighting their oversight efforts.\n- A recent interest rate cut was announced, detailing the impacts on various loans and consumer credit.\n- The Fed sought public feedback on strategic changes to check services, indicating a move towards improving customer experience. \n- A survey was released regarding bank strategies for managing reserve balances, reflecting ongoing assessments of financial practices.",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 1.0875,
+    "theme": "Bank lending and credit risk"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Federal Reserve Interest Rate Cuts",
-    "summary": "OVERVIEW:\nThe Federal Reserve has implemented cuts to interest rates for the third time this year in an effort to stabilize a weakening labor market, though future cuts remain uncertain amid mixed economic signals.\n\nKEY EXAMPLES:\n- The Fed cut interest rates by a quarter of a percentage point to support a softening labor market.\n- President Trump advocates for significantly lower borrowing costs, but Fed officials are cautious about further reductions without solid economic justification.\n- Commentary on the implications of rate cuts for mortgage, car loans, and credit card debt is prevalent.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 1.032258064516129,
-    "theme": "Recessionary pressures"
+    "title": "U.S. Economic Trends",
+    "summary": "OVERVIEW:\nRecent news highlights a mixed landscape in the U.S. economy, with productivity slowing while imports and exports see a slight uptick, indicating fluctuating economic conditions and varying responses from businesses to tariffs and inflation.\n\nKEY EXAMPLES:\n- U.S. productivity decreased in the fourth quarter, signaling potential concerns for economic growth.\n- Both U.S. imports and exports rose from previous lows, correlating with the implementation of global tariffs, yet the trade deficit continued to decline.\n- Businesses are increasingly navigating complex pricing decisions influenced by recent tariff increases and inflationary pressures.\n- An analysis of manufacturing employment and productivity trends over several decades sheds light on long-term economic shifts in the sector.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 1.0,
+    "theme": "Inflation"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Pricing Trends and Consumer Behavior",
-    "summary": "OVERVIEW:\nThe articles collectively discuss the dynamics of pricing, focusing on how different factors influence price changes over time, including inflation, supply chain disruptions, and consumer behavior.\n\nKEY EXAMPLES:\n- Recent data shows that household electricity prices in the U.S. surged by 7% from January to August 2025, highlighting significant short-term price increases.\n- Research from the Atlanta and Cleveland Federal Reserve Banks reveals that businesses assess various factors, such as demand conditions and competitor behavior, when adjusting their prices during economic fluctuations.\n- Despite inflation concerns, consumer spending has remained robust in the lead-up to the holidays, indicating resilience in purchasing behavior.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 1.0214285714285716,
-    "theme": "Inflation"
+    "title": "Media and Controversies",
+    "summary": "OVERVIEW:\nThis cluster of articles highlights significant developments in media regarding leadership changes and the influence of external forces, including political interference and past financial practices, shaping contemporary journalism.\n\nKEY EXAMPLES:\n- Bari Weiss's tenure as head of CBS marks significant leadership changes in the media landscape.\n- Experts warn that current financial practices may lead to crises reminiscent of previous economic downturns.\n- Legacy journalists express concerns over political interference affecting media credibility.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.0275862068965518,
+    "theme": "Others"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Tech Enthusiasm and Financial Risks",
-    "summary": "OVERVIEW:\nThe articles collectively highlight concerns about the resurgence of technological enthusiasm and its potential connection to financial instability. Experts warn that unchecked excitement for new technology may replicate historical financial crises.\n\nKEY EXAMPLES:\n- Article 1 discusses how enthusiasm for technology can replace necessary scrutiny and due diligence.\n- Article 2 points to a dangerous mix of factors that could echo the circumstances leading to past financial downturns.\n- Article 3 notes the differences between current technology excitement and the late-1990s tech bubble.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 1.0357142857142858,
-    "theme": "Others"
+    "title": "Trump\u2019s Trade Decisions and Security",
+    "summary": "OVERVIEW:\nRecent articles highlight President Trump's controversial trade decisions involving China, NAFTA, and tariffs, raising concerns about their impact on U.S. security and economic stability.\n\nKEY EXAMPLES:\n- Trump's approval for Nvidia to sell chips to China has sparked debates over prioritizing immediate economic benefits over long-term security.\n- Panelists suggest Trump's approach to foreign relations and trade, particularly with China, may have significant drawbacks, with Ukraine and Venezuela also noted as missteps.\n- A surge in companies requesting exemptions from tariffs indicates growing dissatisfaction with the administration's trade policies and their effect on business costs.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 1.0250000000000001,
+    "theme": "Inflation"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Crypto Adoption in Finance",
-    "summary": "OVERVIEW:\nRecent developments indicate a significant shift in the integration of cryptocurrency within traditional financial systems, highlighted by major banks and regulatory changes across various countries. This trend underscores an increasing acceptance and facilitation of digital asset transactions.\n\nKEY EXAMPLES:\n- Trust Wallet offers zero-fee crypto purchases via Revolut, expanding access in Europe.\n- PNC Bank enables spot Bitcoin trading on its private banking platform, showcasing institutional interest.\n- Australia\u2019s regulatory body eases compliance for stablecoin intermediaries, promoting innovation in the sector.\n- Norway's central bank finds no immediate need for a digital currency, citing an already robust payment system.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.7428571428571428,
-    "theme": "Digital assets"
+    "title": "Banking System Resilience**",
+    "summary": "OVERVIEW:  \nRecent discussions surrounding the U.S. banking system have focused on the effects of liquidity measures, new solvency metrics, evolving operations, and the impact of nonbank financial institutions (NBFIs). These analyses are critical as they underscore the importance of timely identification of bank vulnerabilities and the adaptive strategies banks employ.\n\nKEY EXAMPLES:  \n- The Federal Reserve\u2019s Bank Term Funding Program significantly lowered investor risk perceptions during the 2023 bank run, unlike traditional discount window borrowings.  \n- The introduction of the Economic Capital solvency metric enables earlier and more accurate identification of at-risk banks compared to conventional methods.  \n- Banks have increasingly diversified their operations to include nonbank activities, driven by the need to manage liquidity efficiently and respond to evolving market conditions.  \n- A new measure of bank balance sheet risk revealed that investors were mainly influenced by media exposure rather than solid fundamentals when assessing bank viability during the recent crisis.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 1.1416666666666666,
+    "theme": "Bank lending and credit risk"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Cryptocurrency Market Dynamics",
-    "summary": "OVERVIEW:\nRecent developments in the cryptocurrency market highlight significant shifts, including regulatory advancements, investment trends, and changing market behaviors, particularly with Ethereum and stablecoins.\n\nKEY EXAMPLES:\n- The Federal Reserve's recent quarter-point rate cut has positively impacted Ethereum, leading to a performance boost while Bitcoin's price remains stable.\n- The UK's financial watchdog is prioritizing the introduction of British pound-pegged stablecoin payments for 2026 as part of its digital finance strategy.\n- XRP exchange-traded funds (ETFs) have seen significant inflows, accumulating nearly $1 billion over 18 days, indicating strong investor demand despite market volatility.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 0.8481481481481481,
+    "title": "Crypto Developments Overview",
+    "summary": "OVERVIEW:\nRecent news highlights significant advancements in crypto-related technologies, partnerships, security issues, and market activities, reflecting the evolving landscape of digital assets.\n\nKEY EXAMPLES:\n- Chainalysis announced expanded pricing support through CoinGecko to improve digital asset data services.\n- A South Korean crypto exchange reported a $35 million withdrawal due to abnormal hacking activities, emphasizing the need for enhanced security measures.\n- Chainalysis solutions were made available on AWS Marketplace, indicating broader accessibility for their products.\n- Companies are liquidating crypto stockpiles to fund share buybacks and stabilize stock prices.",
+    "article_count": 22,
+    "topicality": 22.0,
+    "theme_weight": 0.7909090909090907,
     "theme": "Digital assets"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Chainalysis Announcements and Developments",
-    "summary": "OVERVIEW: \nThis summary highlights recent updates and initiatives from Chainalysis, focusing on partnerships, product availability, and security concerns in the cryptocurrency landscape.\n\nKEY EXAMPLES:\n- Chainalysis partnered with CoinGecko to provide enhanced pricing support for digital assets.\n- The company has made its solutions accessible via the AWS Marketplace, expanding their reach in the cloud services space.\n- FATF has issued new guidance on asset recovery that affects the digital asset industry, underscoring global compliance efforts.\n- Chainalysis addressed inquiries regarding its metrics in a recent Binance communications post, emphasizing transparency and clarification in the crypto sector.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.8269230769230768,
-    "theme": "Digital assets"
+    "title": "Oversight Committee Actions",
+    "summary": "OVERVIEW:\nThe House Committee on Oversight and Government Reform has reported multiple measures on December 2, 2025, indicating a coordinated effort in legislative actions.\n\nKEY EXAMPLES:\n- All articles reference the same date and committee action, suggesting a significant legislative agenda on that day.\n- The uniformity of the reporting across articles illustrates a focused initiative by the committee.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 1.019047619047619,
+    "theme": "Cyber attacks"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Cybersecurity Threats and Responses",
-    "summary": "OVERVIEW:\nRecent news highlights the ongoing challenges posed by cybercrime, particularly ransomware and phishing operations, affecting various sectors and prompting international cooperative measures to combat these threats.\n\nKEY EXAMPLES:\n- Ransomware attacks have targeted manufacturers, retailers, and government entities, often leading to prolonged recovery periods for affected organizations.\n- The U.S., U.K., and Australia collaborated to designate Russian hosting providers linked to cybercrime, aiming to disrupt global ransomware operations.\n- Google is taking legal action against individuals involved in a Chinese mobile phishing service that exploits trusted brands to steal payment information.",
+    "title": "Economic Outlook and Consumer Spending",
+    "summary": "OVERVIEW:\nRecent articles highlight a mix of consumer optimism and business challenges amidst economic pressures like inflation. While consumers are actively spending in anticipation of holidays, businesses are grappling with rising costs and shifting market dynamics.\n\nKEY EXAMPLES:\n- Consumer spending during the holiday season remains strong despite inflation concerns.\n- Hong Kong businesses exhibit improved optimism for the year ahead, contrasting with previous pessimism.\n- Midpriced steakhouses are struggling to maintain customer base while managing rising operational costs. \n- The introduction of cheaper generics aims to alleviate consumer costs in the pharmaceutical market.",
     "article_count": 20,
     "topicality": 20.0,
     "theme_weight": 0.9949999999999999,
-    "theme": "Cyber attacks"
+    "theme": "Others"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "** Sky Token Management Updates",
-    "summary": "**OVERVIEW:**  \nRecent proposals from the Sky ecosystem aim to simplify the management and distribution of SKY tokens, streamline staking rewards, and define new financial strategies. These changes are designed to enhance the efficiency of capital deployment and improve stakeholder incentives.\n\n**KEY EXAMPLES:**\n- A new Atlas Edit Proposal will temporarily reward SKY token holders in a Subproxy with USDS based on the average staking rate, paving the way for a more permanent staking solution.\n- Current proposals include updates to the Ranked Delegates System and clarifications for the Monthly Settlement Cycle, enhancing governance and financial transparency within the Sky community.\n- An initiative is underway to simplify staking rewards, where all future rewards will be consolidated into a single model, focusing on benefiting USDS holders and optimizing net revenue for the Sky Protocol.",
+    "title": "Cybercrime Trends and Responses",
+    "summary": "OVERVIEW:\nRecent articles highlight the ongoing struggle against cybercrime, particularly focusing on ransomware attacks and phishing scams that target individuals and organizations. These coordinated efforts by governments and companies underscore the evolving landscape of online threats.\n\nKEY EXAMPLES:\n- OFAC, along with U.K. and Australia, has targeted Russian hosting provider Media Land for supporting global cybercrime operations.\n- Ransomware actors have adversely affected various sectors, including manufacturers and retailers, leading to prolonged recovery times.\n- Google is suing individuals linked to a China-based mobile phishing service that targets trusted brands and consumers.",
     "article_count": 19,
     "topicality": 19.0,
-    "theme_weight": 0.9631578947368421,
-    "theme": "Digital assets"
+    "theme_weight": 0.9842105263157894,
+    "theme": "Cyber attacks"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "House Committee Reports",
-    "summary": "OVERVIEW:\nMultiple articles report on a series of actions taken by the House Committee on Oversight and Government Reform regarding various matters, all ordered on December 2, 2025.\n\nKEY EXAMPLES:\n- The committee's findings focus on government accountability measures.\n- Investigations into specific agencies were highlighted in the reporting.\n- Recommendations for policy changes were a recurring theme across the articles.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 1.011111111111111,
-    "theme": "Cyber attacks"
+    "title": "Sky Protocol Developments",
+    "summary": "OVERVIEW:  \nRecent proposals and changes in the Sky Protocol ecosystem aim to streamline governance, enhance staking mechanisms, and improve financial transparency.\n\nKEY EXAMPLES:  \n- A new temporary mechanism will reward Sky Agents with USDS for accumulated SKY tokens while a permanent solution for staking is developed.  \n- Proposed updates aim to clarify roles and consolidate funds within the protocol's governance framework, particularly in preparation for upcoming Monthly Settlement Cycles.  \n- Upcoming changes will modify how Star Token Rewards work, simplifying reward structures by benefiting only USDS holders.",
+    "article_count": 19,
+    "topicality": 19.0,
+    "theme_weight": 0.9631578947368421,
+    "theme": "Digital assets"
   }
 }
