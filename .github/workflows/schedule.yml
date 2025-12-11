@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 11 * * *"
 
+permissions:
+  contents: write      # <-- REQUIRED so workflow can commit & push
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,6 +18,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}   # <-- ensures push allowed
 
       - name: Install system dependencies
         run: |
@@ -49,21 +53,27 @@ jobs:
           export PYTHONPATH="${GITHUB_WORKSPACE}"
           python scripts/generate_dashboard.py
 
-      # ---------------------------------------------------------
-      # FORCE-COMMIT YESTERDAY FILE SO TIMESTAMP ALWAYS UPDATES
-      # ---------------------------------------------------------
+      # ----------------------------------------
+      # Commit data files back to MAIN branch
+      # ----------------------------------------
       - name: Commit updated data files to main
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          # Ensure timestamp always changes
-          touch yesterday_theme_signals.json
+          echo "Files updated:"
+          ls -l *.json *.csv || true
 
-          git add topics.json theme_signals.json articles.csv yesterday_theme_signals.json
+          git add topics.json theme_signals.json articles.csv yesterday_theme_signals.json 2>/dev/null || true
+
+          # Always commit yesterday_theme_signals.json because it must change every run
           git commit -m "Update data files" || echo "No changes to commit"
+
           git push origin main
 
+      # ----------------------------------------
+      # Deploy to GH-PAGES
+      # ----------------------------------------
       - name: Prepare gh-pages worktree
         run: |
           git worktree add gh-pages-worktree gh-pages
@@ -74,7 +84,7 @@ jobs:
           cp topics.json gh-pages-worktree/
           cp theme_signals.json gh-pages-worktree/
           cp articles.csv gh-pages-worktree/
-          cp yesterday_theme_signals.json gh-pages-worktree/
+          cp yesterday_theme_signals.json gh-pages-worktree/ 2>/dev/null || true
 
           cd gh-pages-worktree
 
