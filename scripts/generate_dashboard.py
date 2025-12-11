@@ -12,23 +12,117 @@ sys.path.insert(0, ROOT)
 
 from dashboard_template import write_dashboard_html, build_topic_table_html
 
+
+# ------------------------------------------------------------
+# Helpers
+# ------------------------------------------------------------
+
 def load_json(path, label=None):
     if not os.path.exists(path):
         raise FileNotFoundError(f"{label or 'file'} not found: {path}")
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+
 def safe_float(x, default=0.0):
     try:
         return float(x)
-    except:
+    except Exception:
         return default
+
 
 def load_inputs():
     topics = load_json("topics.json", "topics")
     theme_signals = load_json("theme_signals.json", "theme_signals")
     articles_df = pd.read_csv("articles.csv")
     return topics, theme_signals, articles_df
+
+
+# ------------------------------------------------------------
+# Diagnostics + delta-volume computation
+# ------------------------------------------------------------
+
+def load_yesterday_snapshot():
+    """
+    Diagnostic helper: try to load yesterday_theme_signals.json
+    from the current working directory. Logs what it finds.
+    """
+    snapshot_path = "yesterday_theme_signals.json"
+
+    print("\n[diag] Current working directory:", os.getcwd())
+    try:
+        files_here = os.listdir(".")
+        print(f"[diag] Files in CWD ({len(files_here)}):", files_here)
+    except Exception as e:
+        print(f"[diag] Could not list CWD files: {e}")
+
+    if not os.path.exists(snapshot_path):
+        print("[diag] No yesterday_theme_signals.json found in CWD.")
+        return None
+
+    try:
+        with open(snapshot_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        print(f"[diag] Loaded yesterday_theme_signals.json with {len(data)} themes.")
+        return data
+    except Exception as e:
+        print(f"[diag] Failed to load yesterday_theme_signals.json: {e}")
+        return None
+
+
+def apply_delta_volume(theme_signals, yesterday_signals):
+    """
+    Compute delta_volume_pct for each theme based on yesterday_signals.
+
+    - If no snapshot or no prior volume: delta = 0.0
+    - Logs per-theme volumes and deltas for inspection.
+    """
+    if not yesterday_signals:
+        print("[diag] No yesterday snapshot; setting all delta_volume_pct = 0.0")
+        for t in theme_signals:
+            theme_signals[t]["delta_volume_pct"] = 0.0
+        return theme_signals
+
+    print("\n[diag] Computing delta_volume_pct vs yesterday:")
+
+    for theme_name, today_vals in theme_signals.items():
+        today_vol = safe_float(today_vals.get("volume", 0.0))
+        y_vals = yesterday_signals.get(theme_name, {})
+        yesterday_vol_raw = y_vals.get("volume", None)
+
+        if yesterday_vol_raw is None:
+            delta_pct = 0.0
+        else:
+            yesterday_vol = safe_float(yesterday_vol_raw, 0.0)
+            if yesterday_vol == 0:
+                delta_pct = 0.0
+            else:
+                delta_pct = (today_vol - yesterday_vol) / yesterday_vol * 100.0
+
+        today_vals["delta_volume_pct"] = float(delta_pct)
+
+        print(
+            f"  [diag] {theme_name}: "
+            f"today={today_vol}, yesterday={yesterday_vol_raw}, "
+            f"delta={delta_pct:.1f}%"
+        )
+
+    return theme_signals
+
+
+def write_yesterday_snapshot(theme_signals):
+    """
+    Persist today's theme_signals as yesterday_theme_signals.json
+    for the next run. (Only volume/other fields matter; we ignore
+    delta when reading.)
+    """
+    path = "yesterday_theme_signals.json"
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(theme_signals, f, indent=2)
+        print(f"\n[diag] Wrote snapshot for next run to {path}")
+    except Exception as e:
+        print(f"[diag] Failed to write yesterday snapshot: {e}")
 
 
 # ------------------------------------------------------------
@@ -64,6 +158,11 @@ def build_theme_scatter(theme_signals):
                 size=sizes,
                 color="rgba(227,168,105,0.35)",
                 line=dict(color="rgba(191,120,52,0.95)", width=2),
+            ),
+            hovertemplate=(
+                "<b>%{text}</b><br>"
+                "Δ Volume vs prior run: %{x:.1f}%<br>"
+                "Centrality: %{y:.2f}<extra></extra>"
             ),
         )
     )
@@ -105,6 +204,7 @@ def build_heatmap(topics, theme_signals):
             y=theme_names,
             colorscale="Blues",
             zmin=0, zmax=1,
+            colorbar=dict(title="% overlap"),
         )
     )
     fig.update_layout(
@@ -187,8 +287,16 @@ def build_network(topics, theme_signals, articles_df):
 # ------------------------------------------------------------
 
 def main():
+    print("\n=== Generate Dashboard: starting ===")
     topics, theme_signals, articles_df = load_inputs()
+    print(f"[diag] Loaded {len(topics)} topics, {len(theme_signals)} themes, "
+          f"{len(articles_df)} articles.")
 
+    # Load yesterday snapshot + compute deltas
+    yesterday_signals = load_yesterday_snapshot()
+    theme_signals = apply_delta_volume(theme_signals, yesterday_signals)
+
+    # Build visual pieces
     scatter_html = build_theme_scatter(theme_signals)
     heatmap_html = build_heatmap(topics, theme_signals)
     network_file = build_network(topics, theme_signals, articles_df)
@@ -196,10 +304,12 @@ def main():
 
     topic_map_path = "dashboard/topic_map.html"
     if os.path.exists(topic_map_path):
-        topic_map_html = open(topic_map_path, "r").read()
+        with open(topic_map_path, "r", encoding="utf-8") as f:
+            topic_map_html = f.read()
     else:
         topic_map_html = "<p>No topic map generated.</p>"
 
+    # Render dashboard HTML
     write_dashboard_html(
         topics_today=topics,
         themes_today=theme_signals,
@@ -211,9 +321,11 @@ def main():
         topic_table_html=table_html,
     )
 
+    # Snapshot for next run
+    write_yesterday_snapshot(theme_signals)
+
     print("Dashboard build complete.")
 
 
 if __name__ == "__main__":
     main()
-
