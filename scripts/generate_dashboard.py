@@ -4,26 +4,34 @@ import json
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
+from pyvis.network import Network
 
-# =====================================================
-# DEBUG HEADER — CONFIRMS THE FILE IS ACTUALLY EXECUTING
-# =====================================================
-print("\n🟦 [DEBUG] Running generate_dashboard.py (ACTIVE VERSION)")
-print("🟦 [DEBUG] File location:", os.path.abspath(__file__), "\n")
+# ================================================================
+# DEBUG MODE
+# ================================================================
+DEBUG = True
 
+def debug(msg):
+    if DEBUG:
+        print(f"[DEBUG] {msg}")
+
+
+# ================================================================
 # Make repo root importable
+# ================================================================
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
 from dashboard_template import write_dashboard_html, build_topic_table_html
 
 
-# ------------------------------------------------------------
+# ================================================================
 # Helpers
-# ------------------------------------------------------------
+# ================================================================
 def load_json(path, label=None):
     if not os.path.exists(path):
         raise FileNotFoundError(f"{label or 'file'} not found: {path}")
+    debug(f"Loaded {label or path}: {os.path.getsize(path)} bytes")
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -36,101 +44,109 @@ def safe_float(x, default=0.0):
 
 
 def load_inputs():
-    print("🟦 [DEBUG] Loading input JSON + CSV files...")
+    debug("Loading topics.json, theme_signals.json and articles.csv ...")
     topics = load_json("topics.json", "topics")
     theme_signals = load_json("theme_signals.json", "theme_signals")
     articles_df = pd.read_csv("articles.csv")
-
-    print(f"🟩 Loaded {len(topics)} topics")
-    print(f"🟩 Loaded {len(theme_signals)} themes")
-    print(f"🟩 Loaded {len(articles_df)} articles\n")
-
+    debug(f"Topics loaded: {len(topics)}")
+    debug(f"Themes loaded : {len(theme_signals)}")
+    debug(f"Articles loaded: {len(articles_df)}")
     return topics, theme_signals, articles_df
 
 
-# ------------------------------------------------------------
-# Network graph — WEF-like force layout
-# ------------------------------------------------------------
+# ================================================================
+# NETWORK — WEF-style natural layout, readable labels, white outlines
+# ================================================================
 def build_network(topics, theme_signals, articles_df):
-    from pyvis.network import Network
 
-    print("\n🟦 [DEBUG] Building WEF-style network graph...\n")
+    debug("Building PyVis network...")
 
     nt = Network(
-        height="1500px",
+        height="1250px",
         width="100%",
         bgcolor="#ffffff",
-        font_color="#000000",
-        directed=False,
-        select_menu=True
+        font_color="#111111"
     )
 
-    # Strong force layout — non-radial
+    # --------------------------
+    # Jump-start layout
+    # --------------------------
     nt.force_atlas_2based(
-        gravity=-65,
+        gravity=-60,
         central_gravity=0.002,
-        spring_length=220,
+        spring_length=180,
         spring_strength=0.06,
-        damping=0.55,
-        overlap=0.25
+        damping=0.4,
+        overlap=0.2
     )
 
     # ============================================================
-    # THEME NODES — large, orange, white outlines
+    # THEME NODES — very large readable labels + white outline
     # ============================================================
-    for th, vals in theme_signals.items():
+    debug("Adding theme nodes...")
+    for theme, vals in theme_signals.items():
+
         vol = safe_float(vals.get("volume", 0))
+        size = 85 + vol * 0.28
 
         nt.add_node(
-            th,
-            label=th,
+            theme,
+            label=theme,
             shape="dot",
-            size=85 + vol * 0.35,
-            color={
-                "background": "rgba(244,165,130,0.95)",
-                "border": "#FFFFFF",
-                "highlight": {"background": "rgba(244,165,130,1.0)", "border": "#FFFFFF"},
-            },
-            borderWidth=5,
-            font={"size": 80, "face": "Arial", "bold": True}
+            size=size,
+            color="rgba(240,150,90,0.92)",
+            borderWidth=6,
+            borderWidthSelected=8,
+            color_border="#FFFFFF",
+            font={"size": 85, "face": "Arial", "bold": True}
         )
 
     # ============================================================
-    # TOPIC NODES — blue, medium size, bold labels for top 10
+    # TOPIC NODES — medium labels for top topics
     # ============================================================
+    debug("Adding topic nodes...")
+
     sorted_topics = sorted(
         topics.keys(),
         key=lambda t: topics[t].get("topicality", topics[t]["article_count"]),
         reverse=True
     )
-    top10 = set(sorted_topics[:10])
+    visible_labels = set(sorted_topics[:10])
 
-    for tid in topics:
-        topval = safe_float(topics[tid]["topicality"])
-        label = topics[tid]["title"] if tid in top10 else ""
+    for tid, data in topics.items():
+
+        topicality = safe_float(data.get("topicality", 1))
+        size = 32 + (topicality ** 0.55) * 3
+        label = data["title"] if tid in visible_labels else ""
 
         nt.add_node(
             tid,
             label=label,
             shape="dot",
-            size=38 + (topval ** 0.5) * 3.0,
-            color={
-                "background": "rgba(80,120,190,0.95)",
-                "border": "#FFFFFF",
-                "highlight": {"background": "rgba(80,120,190,1.0)", "border": "#FFFFFF"},
-            },
+            size=size,
+            color="rgba(90,140,210,0.92)",
             borderWidth=4,
-            font={"size": 52, "face": "Arial"}
+            borderWidthSelected=6,
+            color_border="#FFFFFF",
+            font={"size": 58, "face": "Arial"}
         )
 
     # ============================================================
-    # EDGES — smooth, strength scaled by affinity %
+    # EDGES — natural weights + correct lookup using theme → tid
     # ============================================================
-    for th, vals in theme_signals.items():
+    debug("Creating edges...")
+
+    for theme, vals in theme_signals.items():
+
         aff = vals.get("topic_affinity_pct", {})
 
-        for tid in topics:
-            pct = safe_float(aff.get(str(topics[tid]["bertopic_id"]), 0))
+        for tid, tdata in topics.items():
+
+            bertopic_id = str(tdata["bertopic_id"])
+
+            raw = aff.get(bertopic_id, 0)
+            pct = safe_float(raw)
+
             if pct <= 0:
                 continue
 
@@ -138,28 +154,41 @@ def build_network(topics, theme_signals, articles_df):
             alpha = 0.25 + pct * 0.6
 
             nt.add_edge(
-                th,
+                theme,
                 tid,
                 width=width,
                 color=f"rgba(70,100,160,{alpha})",
-                smooth=True
+                smooth={"type": "dynamic"},
             )
+
+    # --------------------------
+    # Second pass layout (settling)
+    # --------------------------
+    nt.force_atlas_2based(
+        gravity=-30,
+        central_gravity=0.0015,
+        spring_length=160,
+        spring_strength=0.05,
+        damping=0.55,
+        overlap=0.15
+    )
 
     # ============================================================
     # SAVE
     # ============================================================
     os.makedirs("dashboard", exist_ok=True)
-    outfile = "dashboard/network_institutional.html"
-    nt.save_graph(outfile)
+    output_file = "dashboard/network_institutional.html"
+    nt.save_graph(output_file)
 
-    print("🟩 [DEBUG] Network graph saved to:", outfile, "\n")
+    debug(f"Network saved → {output_file} ({os.path.getsize(output_file)} bytes)")
 
     return "network_institutional.html"
 
 
-# ------------------------------------------------------------
-# Theme scatter plot (already working)
-# ------------------------------------------------------------
+
+# ================================================================
+# THEME SCATTER — unchanged (already working well)
+# ================================================================
 def build_theme_scatter(theme_signals):
     themes = list(theme_signals.keys())
 
@@ -172,7 +201,7 @@ def build_theme_scatter(theme_signals):
         if vmin == vmax:
             sizes = [40] * len(volumes)
         else:
-            sizes = list(np.interp(volumes, (vmin, vmax), (28, 88)))
+            sizes = list(np.interp(volumes, (vmin, vmax), (28, 85)))
     else:
         sizes = [40] * len(volumes)
 
@@ -186,8 +215,8 @@ def build_theme_scatter(theme_signals):
             textposition="top center",
             marker=dict(
                 size=sizes,
-                color="rgba(227,168,105,0.40)",
-                line=dict(color="#FFFFFF", width=3),
+                color="rgba(227,168,105,0.35)",
+                line=dict(color="white", width=3),   # <- white outline (works)
             ),
         )
     )
@@ -196,7 +225,7 @@ def build_theme_scatter(theme_signals):
         title="<b>Theme Signals — Centrality vs Δ Volume</b>",
         xaxis=dict(title="Δ Volume (%)", showline=True, linecolor="#444"),
         yaxis=dict(title="Centrality", showline=True, linecolor="#444"),
-        height=460,
+        height=420,
         margin=dict(l=40, r=20, t=60, b=40),
         plot_bgcolor="white",
     )
@@ -204,9 +233,9 @@ def build_theme_scatter(theme_signals):
     return fig.to_html(full_html=False, include_plotlyjs=False)
 
 
-# ------------------------------------------------------------
-# Heatmap
-# ------------------------------------------------------------
+# ================================================================
+# HEATMAP — unchanged
+# ================================================================
 def build_heatmap(topics, theme_signals):
     topic_ids = sorted(topics.keys(), key=lambda t: int(topics[t]["bertopic_id"]))
     topic_titles = [topics[t]["title"] for t in topic_ids]
@@ -215,11 +244,19 @@ def build_heatmap(topics, theme_signals):
     z = []
     for th in theme_names:
         aff = theme_signals[th].get("topic_affinity_pct", {})
-        row = [safe_float(aff.get(str(topics[t]["bertopic_id"]), 0)) for t in topic_ids]
+        row = []
+        for tid in topic_ids:
+            bid = str(topics[tid]["bertopic_id"])
+            row.append(safe_float(aff.get(bid, 0)))
         z.append(row)
 
-    fig = go.Figure(data=go.Heatmap(z=z, x=topic_titles, y=theme_names,
-                                   colorscale="Blues", zmin=0, zmax=1))
+    fig = go.Figure(
+        data=go.Heatmap(
+            z=z, x=topic_titles, y=theme_names,
+            colorscale="Blues",
+            zmin=0, zmax=1
+        )
+    )
     fig.update_layout(
         title="<b>Theme × Topic Affinity Heatmap</b>",
         height=420,
@@ -230,24 +267,28 @@ def build_heatmap(topics, theme_signals):
     return fig.to_html(full_html=False, include_plotlyjs=False)
 
 
-# ------------------------------------------------------------
-# MAIN PIPELINE
-# ------------------------------------------------------------
+# ================================================================
+# MAIN
+# ================================================================
 def main():
-    print("\n==============================")
-    print("🚀 GENERATE DASHBOARD STARTING")
-    print("==============================\n")
+    debug("=== BEGIN DASHBOARD BUILD ===")
 
     topics, theme_signals, articles_df = load_inputs()
 
+    # Build components
     scatter_html = build_theme_scatter(theme_signals)
     heatmap_html = build_heatmap(topics, theme_signals)
     network_file = build_network(topics, theme_signals, articles_df)
     table_html = build_topic_table_html(topics)
 
+    # Topic map
     topic_map_path = "dashboard/topic_map.html"
-    topic_map_html = open(topic_map_path).read() if os.path.exists(topic_map_path) else "<p>No topic map generated.</p>"
+    if os.path.exists(topic_map_path):
+        topic_map_html = open(topic_map_path, "r").read()
+    else:
+        topic_map_html = "<p>No topic map generated.</p>"
 
+    # Dashboard output
     write_dashboard_html(
         topics_today=topics,
         themes_today=theme_signals,
@@ -259,9 +300,7 @@ def main():
         topic_table_html=table_html,
     )
 
-    print("\n==============================")
-    print("🎉 DASHBOARD BUILD COMPLETE")
-    print("==============================\n")
+    debug("Dashboard build complete.")
 
 
 if __name__ == "__main__":
