@@ -23,7 +23,7 @@ jobs:
           ref: main
 
       # -------------------------------------------------------
-      # DIAGNOSTIC — List directory before running anything
+      # DIAGNOSTIC — Before run
       # -------------------------------------------------------
       - name: DIAG - List repo before run
         run: |
@@ -31,7 +31,7 @@ jobs:
           ls -R .
 
       # -------------------------------------------------------
-      # Install system deps
+      # Install system dependencies
       # -------------------------------------------------------
       - name: Install system dependencies
         run: |
@@ -39,7 +39,7 @@ jobs:
           sudo apt-get install -y python3-dev build-essential
 
       # -------------------------------------------------------
-      # Install Python deps
+      # Install Python dependencies
       # -------------------------------------------------------
       - name: Install Python dependencies
         run: |
@@ -47,7 +47,7 @@ jobs:
           pip install -r requirements.txt
 
       # -------------------------------------------------------
-      # Check API key presence
+      # Check for OpenAI key
       # -------------------------------------------------------
       - name: Log secret presence (safe masked)
         env:
@@ -61,7 +61,7 @@ jobs:
           fi
 
       # -------------------------------------------------------
-      # RUN TOPIC ENGINE
+      # Run Topic Engine
       # -------------------------------------------------------
       - name: Run Topic Engine (BERTopic)
         env:
@@ -71,7 +71,7 @@ jobs:
           python LDA_engine_with_BERTopic_v054.py
 
       # -------------------------------------------------------
-      # GENERATE DASHBOARD
+      # Generate Dashboard
       # -------------------------------------------------------
       - name: Generate Dashboard
         run: |
@@ -79,15 +79,29 @@ jobs:
           python scripts/generate_dashboard.py
 
       # -------------------------------------------------------
-      # DIAGNOSTIC — Show dashboard folder after generation
+      # DIAGNOSTIC — Inspect output files
       # -------------------------------------------------------
       - name: DIAG - Dashboard folder after build
         run: |
           echo "=== AFTER GENERATION: dashboard/ ==="
           ls -l dashboard/
+          echo "=== ROOT FILES ==="
+          ls -l .
 
       # -------------------------------------------------------
-      # COMMIT UPDATED FILES BACK TO MAIN
+      # COPY YESTERDAY FILE INTO PLACE (FIX FOR ISSUE A)
+      # -------------------------------------------------------
+      - name: Ensure yesterday_theme_signals.json is present
+        run: |
+          echo "Copying yesterday_theme_signals.json into repo root to ensure commit..."
+          if [ -f "yesterday_theme_signals.json" ]; then
+            cp yesterday_theme_signals.json yesterday_theme_signals.json
+          else
+            echo "WARNING: yesterday_theme_signals.json NOT FOUND"
+          fi
+
+      # -------------------------------------------------------
+      # Commit updated data files to main
       # -------------------------------------------------------
       - name: Commit updated data files to main
         run: |
@@ -96,8 +110,7 @@ jobs:
 
           echo "=== STAGING FILES FOR MAIN ==="
           git add topics.json theme_signals.json yesterday_theme_signals.json articles.csv
-          git add dashboard/network_institutional.html 2>/dev/null || true
-          git add dashboard/index.html dashboard/topic_map.html 2>/dev/null || true
+          git add dashboard/index.html dashboard/network_institutional.html dashboard/topic_map.html || true
 
           echo "=== GIT STATUS ==="
           git status
@@ -106,7 +119,7 @@ jobs:
           git push origin main
 
       # -------------------------------------------------------
-      # DEPLOY TO GH-PAGES
+      # Deploy to GH-PAGES
       # -------------------------------------------------------
       - name: Prepare gh-pages worktree
         run: |
@@ -121,7 +134,6 @@ jobs:
           cp yesterday_theme_signals.json gh-pages-worktree/ || true
 
           cd gh-pages-worktree
-
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
@@ -130,7 +142,7 @@ jobs:
           git push origin gh-pages
 
       # -------------------------------------------------------
-      # CLEANUP
+      # Cleanup
       # -------------------------------------------------------
       - name: Cleanup worktree
         run: git worktree remove gh-pages-worktree --force
