@@ -71,24 +71,6 @@ def build_network(topics, theme_signals, articles_df):
 
     nt.toggle_physics(True)
 
-    # Initial layout kick
-    nt.set_options("""
-    var options = {
-      physics: {
-        solver: "forceAtlas2Based",
-        forceAtlas2Based: {
-          gravitationalConstant: -60,
-          centralGravity: 0.002,
-          springLength: 180,
-          springConstant: 0.06,
-          damping: 0.4,
-          avoidOverlap: 0.2
-        },
-        minVelocity: 0.75
-      }
-    }
-    """)
-
     # ============================================================
     # THEME NODES
     # ============================================================
