@@ -121,29 +121,36 @@ def write_yesterday_snapshot(theme_signals):
 
 
 # ------------------------------------------------------------
-# Network graph — WEF-style zoomed-in layout
+# Network graph — WEF-style high-clarity visual
 # ------------------------------------------------------------
 
 def build_network(topics, theme_signals, articles_df):
-    # BIG canvas
+    from pyvis.network import Network
+    import os
+
+    # ============================================================
+    # LARGE CANVAS & CLEAN BACKGROUND
+    # ============================================================
     nt = Network(
-        height="1200px",
+        height="1400px",          # larger vertical space
         width="100%",
         bgcolor="#ffffff",
-        font_color="#111111",
+        font_color="#111111"
     )
 
-    # Force-based (non-radial) layout
+    # Strong force-directed layout
     nt.force_atlas_2based(
-        gravity=-45,
-        central_gravity=0.004,
-        spring_length=190,
-        spring_strength=0.07,
-        damping=0.55,
-        overlap=0.25,
+        gravity=-55,
+        central_gravity=0.003,
+        spring_length=210,        # spreads out clusters more
+        spring_strength=0.08,
+        damping=0.50,
+        overlap=0.25
     )
 
-    # 1. THEME NODES — very large labels, white outline
+    # ============================================================
+    # 1. THEME NODES — very large labels, white borders
+    # ============================================================
     for th, vals in theme_signals.items():
         vol = safe_float(vals.get("volume", 0))
 
@@ -151,60 +158,66 @@ def build_network(topics, theme_signals, articles_df):
             th,
             label=th,
             shape="dot",
-            size=70 + vol * 0.35,
-            color="rgba(244,165,130,0.95)",   # orange fill
-            borderWidth=4,
-            borderWidthSelected=6,
-            color_border="#FFFFFF",          # white outline
-            font={"size": 90, "face": "Arial", "bold": True},
+            size=85 + vol * 0.35,                   # noticeably big
+            color="rgba(244,165,130,0.95)",         # orange fill
+            borderWidth=6,                          # strong white outline
+            borderWidthSelected=8,
+            color_border="#FFFFFF",
+            font={"size": 110, "face": "Arial", "bold": True}
         )
 
-    # 2. TOPIC NODES — medium labels, white outline
+    # ============================================================
+    # 2. TOPIC NODES — medium labels, white borders
+    # ============================================================
     sorted_topics = sorted(
         topics.keys(),
         key=lambda t: topics[t].get("topicality", topics[t]["article_count"]),
-        reverse=True,
+        reverse=True
     )
-    top10 = set(sorted_topics[:10])  # show labels only for most important topics
+    top12 = set(sorted_topics[:12])  # only label important topics
 
     for tid in topics:
         topval = safe_float(topics[tid]["topicality"])
-        size = 30 + (topval ** 0.5) * 2.5
-        label = topics[tid]["title"] if tid in top10 else ""
+        size = 40 + (topval ** 0.5) * 3
+        label = topics[tid]["title"] if tid in top12 else ""
 
         nt.add_node(
             tid,
             label=label,
             shape="dot",
             size=size,
-            color="rgba(80,120,190,0.95)",   # blue fill
-            borderWidth=3,
-            borderWidthSelected=5,
-            color_border="#FFFFFF",
-            font={"size": 60, "face": "Arial"},
+            color="rgba(80,120,190,0.95)",          # blue fill
+            borderWidth=4,
+            borderWidthSelected=6,
+            color_border="#FFFFFF",                 # white outline
+            font={"size": 65, "face": "Arial"}       # readable but smaller than themes
         )
 
-    # 3. EDGES — thickness from affinity, smooth & curved
+    # ============================================================
+    # 3. EDGES — stronger, smoother, WEF-style
+    # ============================================================
     for th, vals in theme_signals.items():
         aff = vals.get("topic_affinity_pct", {})
 
-        for tid in topics:
-            pct = safe_float(aff.get(str(topics[tid]["bertopic_id"]), 0))
+        for tkey in topics:
+            pct = safe_float(aff.get(str(topics[tkey]["bertopic_id"]), 0))
             if pct <= 0:
                 continue
 
-            width = 1 + pct * 9
-            alpha = 0.28 + pct * 0.55
+            width = 1.5 + pct * 11
+            alpha = 0.35 + pct * 0.50
 
             nt.add_edge(
                 th,
-                tid,
+                tkey,
                 width=width,
                 color=f"rgba(70,100,160,{alpha})",
-                smooth={"type": "dynamic"},
+                smooth={"type": "dynamic"}
             )
 
-    # Save HTML
+    # ============================================================
+    # SAVE OUTPUT
+    # ============================================================
     os.makedirs("dashboard", exist_ok=True)
     nt.save_graph("dashboard/network_institutional.html")
 
