@@ -95,7 +95,7 @@ RSS_FEEDS = [
     "https://cointelegraph.com/rss",
     "https://www.circle.com/blog/rss.xml",
     "https://tether.to/en/feed/",
-    #"https://forum.makerdao.com/latest.rss",
+    # "https://forum.makerdao.com/latest.rss",
 ]
 
 THEMES = [
@@ -255,7 +255,7 @@ ARTICLES:
 def run_bertopic_analysis(docs):
     umap_model = UMAP(n_neighbors=30, n_components=2, min_dist=0, metric="cosine")
     kmeans_model = KMeans(n_clusters=15, random_state=42, n_init="auto")
-    vectorizer_model = CountVectorizer(stop_words="english", min_df=2, ngram_range=(1,3))
+    vectorizer_model = CountVectorizer(stop_words="english", min_df=2, ngram_range=(1, 3))
 
     model = BERTopic(
         umap_model=umap_model,
@@ -305,7 +305,6 @@ def build_topic_map(topic_embeddings, summaries):
         hovertemplate="<b>%{text}</b><extra></extra>",
     ))
 
-    # *** CHANGED: explicit axes + layout so axes show up clearly
     fig.update_layout(
         title=dict(
             text="<b>Intertopic Distance Map (BERTopic)</b>",
@@ -332,7 +331,7 @@ def build_topic_map(topic_embeddings, summaries):
         height=700,
         margin=dict(l=10, r=10, t=80, b=40),
         plot_bgcolor="white",
-        template=None,  # avoid any template overriding axis styling
+        template=None,
     )
 
     return fig.to_html(full_html=False, include_plotlyjs="cdn")
@@ -450,12 +449,43 @@ def generate_topic_results():
 # ------------------------------------------------------------
 
 def run_and_persist_bertopic():
+    # --- Load previous theme_signals (for "yesterday") if it exists
+    prev_theme_signals = None
+    if os.path.exists("theme_signals.json"):
+        try:
+            with open("theme_signals.json", "r", encoding="utf-8") as f:
+                prev_theme_signals = json.load(f)
+            print("📁 Loaded previous theme_signals.json for yesterday snapshot.")
+        except Exception as e:
+            print(f"⚠️ Could not load previous theme_signals.json: {e}")
+
     docs, summaries, model, topic_embeddings, theme_metrics, topics = generate_topic_results()
     if not docs:
         print("⚠️ No docs fetched; skipping.")
         return
 
     os.makedirs("dashboard", exist_ok=True)
+
+    # --- Write yesterday_theme_signals.json
+    if prev_theme_signals is not None:
+        yesterday_payload = prev_theme_signals
+        print("🕒 Using previous theme_signals.json as yesterday_theme_signals.json")
+    else:
+        yesterday_payload = theme_metrics
+        print("🕒 No previous theme_signals.json found; using today's metrics for yesterday as bootstrap")
+
+    with open("yesterday_theme_signals.json", "w", encoding="utf-8") as f:
+        json.dump(yesterday_payload, f, indent=2)
+
+    # --- Debug print: compare yesterday vs today volumes
+    try:
+        for theme, cur in theme_metrics.items():
+            cur_vol = cur.get("volume", 0)
+            prev_vol = yesterday_payload.get(theme, {}).get("volume", 0) if isinstance(yesterday_payload, dict) else 0
+            delta = cur_vol - prev_vol
+            print(f"[DELTA DEBUG] {theme}: yesterday={prev_vol}, today={cur_vol}, Δ={delta}")
+    except Exception as e:
+        print(f"⚠️ Delta debug failed: {e}")
 
     # topics.json
     topics_out = {}
@@ -475,7 +505,7 @@ def run_and_persist_bertopic():
     with open("topics.json", "w", encoding="utf-8") as f:
         json.dump(topics_out, f, indent=2)
 
-    # theme_signals.json
+    # theme_signals.json (TODAY)
     with open("theme_signals.json", "w", encoding="utf-8") as f:
         json.dump(theme_metrics, f, indent=2)
 
