@@ -2,6 +2,11 @@ name: build-dashboard
 
 on:
   workflow_dispatch:
+    inputs:
+      diagnostics:
+        description: "Enable verbose diagnostics?"
+        required: false
+        default: "false"
   schedule:
     - cron: "0 11 * * *"
 
@@ -10,12 +15,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout main branch
+      # ----------------------------------------------------------
+      # CHECKOUT MAIN (always fetch data source of truth)
+      # ----------------------------------------------------------
+      - name: Checkout main
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           ref: main
 
+      # ----------------------------------------------------------
+      # OPTIONAL DIAGNOSTIC MODE
+      # ----------------------------------------------------------
+      - name: Diagnostics — Show repo state
+        if: ${{ github.event.inputs.diagnostics == 'true' }}
+        run: |
+          echo "🔍 Diagnostics enabled"
+          echo "Current directory:"
+          pwd
+          echo "--- Files in main branch:"
+          ls -al .
+          echo "--- Yesterday file state:"
+          [ -f yesterday_theme_signals.json ] && cat yesterday_theme_signals.json || echo "No yesterday file"
+
+      # ----------------------------------------------------------
+      # Install system & Python deps
+      # ----------------------------------------------------------
       - name: Install system dependencies
         run: sudo apt-get update && sudo apt-get install -y python3-dev build-essential
 
@@ -24,23 +49,23 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # ---------------------------------------
-      # DIAGNOSTIC: Check key availability
-      # ---------------------------------------
-      - name: Log secret presence (safe masked)
+      # ----------------------------------------------------------
+      # Secret check
+      # ----------------------------------------------------------
+      - name: Check OpenAI key
         env:
           OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
         run: |
-          echo "🔍 Checking OPENAI_API_KEY..."
+          echo "Checking OpenAI key…"
           if [ -z "$OPENAI_API_KEY" ]; then
-            echo "❌ Secret is EMPTY"
+            echo "❌ MISSING OpenAI key!"
           else
-            echo "✅ Secret detected (masked): ${OPENAI_API_KEY:0:4}****"
+            echo "✅ Key present (masked): ${OPENAI_API_KEY:0:4}****"
           fi
 
-      # ---------------------------------------
-      # Run pipeline
-      # ---------------------------------------
+      # ----------------------------------------------------------
+      # RUN BERTopic engine
+      # ----------------------------------------------------------
       - name: Run Topic Engine (BERTopic)
         env:
           OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
@@ -48,37 +73,40 @@ jobs:
           export PYTHONPATH="${GITHUB_WORKSPACE}"
           python LDA_engine_with_BERTopic_v054.py
 
+      # ----------------------------------------------------------
+      # Generate Dashboard (theme deltas computed here)
+      # ----------------------------------------------------------
       - name: Generate Dashboard
         run: |
           export PYTHONPATH="${GITHUB_WORKSPACE}"
           python scripts/generate_dashboard.py
 
-      # ----------------------------------------------------------------
-      # ✅ NEW: Commit updated JSON/CSV back to *main*
-      # ----------------------------------------------------------------
+      # ----------------------------------------------------------
+      # COMMIT UPDATED DATA BACK TO MAIN
+      # Ensures next run uses the fresh yesterday file
+      # ----------------------------------------------------------
       - name: Commit updated data files to main
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
           git add topics.json theme_signals.json articles.csv yesterday_theme_signals.json 2>/dev/null || true
-          git commit -m "Update data files" || echo "No changes to commit"
+          git commit -m "Update data files" || echo "No changes"
           git push origin main
 
-      # ----------------------------------------------------------------
-      # Deploy to gh-pages
-      # ----------------------------------------------------------------
+      # ----------------------------------------------------------
+      # DEPLOY TO GH-PAGES
+      # ----------------------------------------------------------
       - name: Prepare gh-pages worktree
-        run: |
-          git worktree add gh-pages-worktree gh-pages
+        run: git worktree add gh-pages-worktree gh-pages
 
-      - name: Deploy to gh-pages
+      - name: Deploy Dashboard
         run: |
           cp -r dashboard/* gh-pages-worktree/
           cp topics.json gh-pages-worktree/
           cp theme_signals.json gh-pages-worktree/
           cp articles.csv gh-pages-worktree/
-          cp yesterday_theme_signals.json gh-pages-worktree/ 2>/dev/null || true
+          cp yesterday_theme_signals.json gh-pages-worktree/ || true
 
           cd gh-pages-worktree
 
@@ -86,8 +114,12 @@ jobs:
           git config user.email "github-actions@github.com"
 
           git add .
-          git commit -m "Auto-update dashboard" || echo "No changes to commit"
+          git commit -m "Auto-update dashboard" || echo "No changes"
           git push origin gh-pages
 
-      - name: Cleanup worktree
+      # ----------------------------------------------------------
+      # Cleanup worktree
+      # ----------------------------------------------------------
+      - name: Cleanup
         run: git worktree remove gh-pages-worktree --force
+
