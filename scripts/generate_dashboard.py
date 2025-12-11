@@ -63,53 +63,54 @@ def build_network(topics, theme_signals, articles_df):
     debug("Building PyVis network...")
 
     nt = Network(
-        height="1250px",
+        height="1400px",
         width="100%",
         bgcolor="#ffffff",
         font_color="#111111",
         directed=False,
     )
 
-    # Turn on physics so the layout can move
     nt.toggle_physics(True)
 
     # ============================================================
-    # THEME NODES
+    # MASSIVELY ENLARGED THEME NODES + WHITE OUTLINE
     # ============================================================
     debug("Adding theme nodes...")
     for theme, vals in theme_signals.items():
 
         vol = safe_float(vals.get("volume", 0))
-        size = 85 + vol * 0.28
+
+        # 8× bigger than before
+        size = 300 + vol * 2.2
 
         nt.add_node(
             theme,
             label=theme,
             shape="dot",
             size=size,
-            color="rgba(240,150,90,0.92)",
-            borderWidth=6,
-            borderWidthSelected=8,
+            color="rgba(240,150,90,0.90)",   # orange bubble
+            borderWidth=14,                  # ← thick white border
+            borderWidthSelected=18,
             color_border="#FFFFFF",
-            font={"size": 85, "face": "Arial", "bold": True},
+            font={"size": 140, "face": "Arial", "bold": True}
         )
 
     # ============================================================
-    # TOPIC NODES — show labels only for top-N
+    # TOPIC NODES — bigger bubbles + visible text
     # ============================================================
     debug("Adding topic nodes...")
 
     sorted_topics = sorted(
         topics.keys(),
         key=lambda t: topics[t].get("topicality", topics[t]["article_count"]),
-        reverse=True,
+        reverse=True
     )
     visible_labels = set(sorted_topics[:10])
 
     for tid, data in topics.items():
-
         topicality = safe_float(data.get("topicality", 1))
-        size = 32 + (topicality ** 0.55) * 3
+
+        size = 90 + (topicality ** 0.6) * 12
         label = data["title"] if tid in visible_labels else ""
 
         nt.add_node(
@@ -117,64 +118,64 @@ def build_network(topics, theme_signals, articles_df):
             label=label,
             shape="dot",
             size=size,
-            color="rgba(90,140,210,0.92)",
-            borderWidth=4,
-            borderWidthSelected=6,
+            color="rgba(90,140,210,0.92)",   # blue
+            borderWidth=10,
+            borderWidthSelected=14,
             color_border="#FFFFFF",
-            font={"size": 58, "face": "Arial"},
+            font={"size": 70, "face": "Arial", "bold": False}
         )
 
     # ============================================================
-    # EDGES — corrected affinity lookup + readable weight
+    # EDGES
     # ============================================================
     debug("Creating edges...")
 
     for theme, vals in theme_signals.items():
-
         aff = vals.get("topic_affinity_pct", {})
 
         for tid, tdata in topics.items():
-
-            bertopic_id = str(tdata["bertopic_id"])
-            pct = safe_float(aff.get(bertopic_id, 0))
-
+            bid = str(tdata["bertopic_id"])
+            pct = safe_float(aff.get(bid, 0))
             if pct <= 0:
                 continue
 
             width = 1 + pct * 10
-            alpha = 0.25 + pct * 0.6
+            alpha = 0.18 + pct * 0.55
 
             nt.add_edge(
                 theme,
                 tid,
                 width=width,
                 color=f"rgba(70,100,160,{alpha})",
-                smooth={"type": "dynamic"},
+                smooth={"type": "dynamic"}
             )
 
     # ============================================================
-    # SECOND LAYOUT PASS — mild settling (MUST be valid JSON)
+    # NATURAL LAYOUT — stronger ForceAtlas2 (no radial)
     # ============================================================
-    nt.set_options(
-        """
-{
-  "physics": {
-    "solver": "forceAtlas2Based",
-    "forceAtlas2Based": {
-      "gravitationalConstant": -30,
-      "centralGravity": 0.0015,
-      "springLength": 160,
-      "springConstant": 0.05,
-      "damping": 0.55,
-      "avoidOverlap": 0.15
+    nt.set_options("""
+    var options = {
+      nodes: {
+        shape: "dot"
+      },
+      physics: {
+        enabled: true,
+        stabilization: { iterations: 1200 },
+        solver: "forceAtlas2Based",
+        forceAtlas2Based: {
+          gravitationalConstant: -75,
+          centralGravity: 0.01,
+          springLength: 180,
+          springConstant: 0.08,
+          damping: 0.55,
+          avoidOverlap: 1.0
+        }
+      }
     }
-  }
-}
-        """.strip()
-    )
+    """)
 
     # ============================================================
-    # SAVE OUTPUT
+    # SAVE
     # ============================================================
     os.makedirs("dashboard", exist_ok=True)
     output_file = "dashboard/network_institutional.html"
