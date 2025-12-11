@@ -11,6 +11,7 @@ from pyvis.network import Network
 # ================================================================
 DEBUG = True
 
+
 def debug(msg):
     if DEBUG:
         print(f"[DEBUG] {msg}")
@@ -69,6 +70,7 @@ def build_network(topics, theme_signals, articles_df):
         directed=False,
     )
 
+    # Turn on physics so the layout can move
     nt.toggle_physics(True)
 
     # ============================================================
@@ -89,7 +91,7 @@ def build_network(topics, theme_signals, articles_df):
             borderWidth=6,
             borderWidthSelected=8,
             color_border="#FFFFFF",
-            font={"size": 85, "face": "Arial", "bold": True}
+            font={"size": 85, "face": "Arial", "bold": True},
         )
 
     # ============================================================
@@ -100,7 +102,7 @@ def build_network(topics, theme_signals, articles_df):
     sorted_topics = sorted(
         topics.keys(),
         key=lambda t: topics[t].get("topicality", topics[t]["article_count"]),
-        reverse=True
+        reverse=True,
     )
     visible_labels = set(sorted_topics[:10])
 
@@ -119,7 +121,7 @@ def build_network(topics, theme_signals, articles_df):
             borderWidth=4,
             borderWidthSelected=6,
             color_border="#FFFFFF",
-            font={"size": 58, "face": "Arial"}
+            font={"size": 58, "face": "Arial"},
         )
 
     # ============================================================
@@ -147,27 +149,29 @@ def build_network(topics, theme_signals, articles_df):
                 tid,
                 width=width,
                 color=f"rgba(70,100,160,{alpha})",
-                smooth={"type": "dynamic"}
+                smooth={"type": "dynamic"},
             )
 
     # ============================================================
-    # SECOND LAYOUT PASS — mild settling
+    # SECOND LAYOUT PASS — mild settling (MUST be valid JSON)
     # ============================================================
-    nt.set_options("""
-    var options = {
-      physics: {
-        solver: "forceAtlas2Based",
-        forceAtlas2Based: {
-          gravitationalConstant: -30,
-          centralGravity: 0.0015,
-          springLength: 160,
-          springConstant: 0.05,
-          damping: 0.55,
-          avoidOverlap: 0.15
-        }
-      }
+    nt.set_options(
+        """
+{
+  "physics": {
+    "solver": "forceAtlas2Based",
+    "forceAtlas2Based": {
+      "gravitationalConstant": -30,
+      "centralGravity": 0.0015,
+      "springLength": 160,
+      "springConstant": 0.05,
+      "damping": 0.55,
+      "avoidOverlap": 0.15
     }
-    """)
+  }
+}
+        """.strip()
+    )
 
     # ============================================================
     # SAVE OUTPUT
@@ -247,8 +251,12 @@ def build_heatmap(topics, theme_signals):
 
     fig = go.Figure(
         data=go.Heatmap(
-            z=z, x=topic_titles, y=theme_names,
-            colorscale="Blues", zmin=0, zmax=1
+            z=z,
+            x=topic_titles,
+            y=theme_names,
+            colorscale="Blues",
+            zmin=0,
+            zmax=1,
         )
     )
     fig.update_layout(
