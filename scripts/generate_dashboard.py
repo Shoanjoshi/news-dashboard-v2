@@ -63,40 +63,39 @@ def build_network(topics, theme_signals, articles_df):
     debug("Building PyVis network...")
 
     nt = Network(
-        height="1400px",
+        height="1250px",
         width="100%",
         bgcolor="#ffffff",
         font_color="#111111",
         directed=False,
     )
 
+    # Enable physics so ForceAtlas2 can run
     nt.toggle_physics(True)
 
     # ============================================================
-    # MASSIVELY ENLARGED THEME NODES + WHITE OUTLINE
+    # THEME NODES (large bubbles + white outline)
     # ============================================================
     debug("Adding theme nodes...")
+
     for theme, vals in theme_signals.items():
-
         vol = safe_float(vals.get("volume", 0))
-
-        # 8× bigger than before
-        size = 300 + vol * 2.2
+        size = 120 + vol * 0.35        # MUCH larger labels + bubble
 
         nt.add_node(
             theme,
             label=theme,
             shape="dot",
             size=size,
-            color="rgba(240,150,90,0.90)",   # orange bubble
-            borderWidth=14,                  # ← thick white border
-            borderWidthSelected=18,
-            color_border="#FFFFFF",
-            font={"size": 140, "face": "Arial", "bold": True}
+            color="rgba(240,150,90,0.92)",
+            borderWidth=8,
+            borderWidthSelected=10,
+            color_border="#FFFFFF",      # white outline
+            font={"size": 90, "face": "Arial", "bold": True, "color": "#111"}
         )
 
     # ============================================================
-    # TOPIC NODES — bigger bubbles + visible text
+    # TOPIC NODES (medium bubbles, limited labels)
     # ============================================================
     debug("Adding topic nodes...")
 
@@ -109,8 +108,7 @@ def build_network(topics, theme_signals, articles_df):
 
     for tid, data in topics.items():
         topicality = safe_float(data.get("topicality", 1))
-
-        size = 90 + (topicality ** 0.6) * 12
+        size = 45 + (topicality ** 0.55) * 4
         label = data["title"] if tid in visible_labels else ""
 
         nt.add_node(
@@ -118,15 +116,15 @@ def build_network(topics, theme_signals, articles_df):
             label=label,
             shape="dot",
             size=size,
-            color="rgba(90,140,210,0.92)",   # blue
-            borderWidth=10,
-            borderWidthSelected=14,
+            color="rgba(90,140,210,0.92)",
+            borderWidth=4,
+            borderWidthSelected=6,
             color_border="#FFFFFF",
-            font={"size": 70, "face": "Arial", "bold": False}
+            font={"size": 45, "face": "Arial"}
         )
 
     # ============================================================
-    # EDGES
+    # EDGES — affinity corrected
     # ============================================================
     debug("Creating edges...")
 
@@ -136,11 +134,12 @@ def build_network(topics, theme_signals, articles_df):
         for tid, tdata in topics.items():
             bid = str(tdata["bertopic_id"])
             pct = safe_float(aff.get(bid, 0))
+
             if pct <= 0:
                 continue
 
             width = 1 + pct * 10
-            alpha = 0.18 + pct * 0.55
+            alpha = 0.25 + pct * 0.6
 
             nt.add_edge(
                 theme,
@@ -151,28 +150,16 @@ def build_network(topics, theme_signals, articles_df):
             )
 
     # ============================================================
-    # NATURAL LAYOUT — stronger ForceAtlas2 (no radial)
+    # Use PyVis built-in ForceAtlas2 (no JSON config needed)
     # ============================================================
-    nt.set_options("""
-    var options = {
-      nodes: {
-        shape: "dot"
-      },
-      physics: {
-        enabled: true,
-        stabilization: { iterations: 1200 },
-        solver: "forceAtlas2Based",
-        forceAtlas2Based: {
-          gravitationalConstant: -75,
-          centralGravity: 0.01,
-          springLength: 180,
-          springConstant: 0.08,
-          damping: 0.55,
-          avoidOverlap: 1.0
-        }
-      }
-    }
-    """)
+    nt.force_atlas_2based(
+        gravity=-40,
+        central_gravity=0.002,
+        spring_length=150,
+        spring_strength=0.05,
+        damping=0.65,
+        overlap=0.1
+    )
 
     # ============================================================
     # SAVE
@@ -182,7 +169,6 @@ def build_network(topics, theme_signals, articles_df):
     nt.save_graph(output_file)
 
     debug(f"Network saved → {output_file} ({os.path.getsize(output_file)} bytes)")
-
     return "network_institutional.html"
 
 
