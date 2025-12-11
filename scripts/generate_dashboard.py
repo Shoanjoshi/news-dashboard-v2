@@ -55,7 +55,7 @@ def load_inputs():
 
 
 # ================================================================
-# NETWORK — WEF-style natural layout, readable labels, white outlines
+# NETWORK — WEF-style natural layout + readable labels + white outline
 # ================================================================
 def build_network(topics, theme_signals, articles_df):
 
@@ -65,23 +65,32 @@ def build_network(topics, theme_signals, articles_df):
         height="1250px",
         width="100%",
         bgcolor="#ffffff",
-        font_color="#111111"
+        font_color="#111111",
+        directed=False,
     )
 
-    # --------------------------
-    # Jump-start layout
-    # --------------------------
-    nt.force_atlas_2based(
-        gravity=-60,
-        central_gravity=0.002,
-        spring_length=180,
-        spring_strength=0.06,
-        damping=0.4,
-        overlap=0.2
-    )
+    nt.toggle_physics(True)
+
+    # Initial layout kick
+    nt.set_options("""
+    var options = {
+      physics: {
+        solver: "forceAtlas2Based",
+        forceAtlas2Based: {
+          gravitationalConstant: -60,
+          centralGravity: 0.002,
+          springLength: 180,
+          springConstant: 0.06,
+          damping: 0.4,
+          avoidOverlap: 0.2
+        },
+        minVelocity: 0.75
+      }
+    }
+    """)
 
     # ============================================================
-    # THEME NODES — very large readable labels + white outline
+    # THEME NODES
     # ============================================================
     debug("Adding theme nodes...")
     for theme, vals in theme_signals.items():
@@ -102,7 +111,7 @@ def build_network(topics, theme_signals, articles_df):
         )
 
     # ============================================================
-    # TOPIC NODES — medium labels for top topics
+    # TOPIC NODES — show labels only for top-N
     # ============================================================
     debug("Adding topic nodes...")
 
@@ -132,7 +141,7 @@ def build_network(topics, theme_signals, articles_df):
         )
 
     # ============================================================
-    # EDGES — natural weights + correct lookup using theme → tid
+    # EDGES — corrected affinity lookup + readable weight
     # ============================================================
     debug("Creating edges...")
 
@@ -143,9 +152,7 @@ def build_network(topics, theme_signals, articles_df):
         for tid, tdata in topics.items():
 
             bertopic_id = str(tdata["bertopic_id"])
-
-            raw = aff.get(bertopic_id, 0)
-            pct = safe_float(raw)
+            pct = safe_float(aff.get(bertopic_id, 0))
 
             if pct <= 0:
                 continue
@@ -158,23 +165,30 @@ def build_network(topics, theme_signals, articles_df):
                 tid,
                 width=width,
                 color=f"rgba(70,100,160,{alpha})",
-                smooth={"type": "dynamic"},
+                smooth={"type": "dynamic"}
             )
 
-    # --------------------------
-    # Second pass layout (settling)
-    # --------------------------
-    nt.force_atlas_2based(
-        gravity=-30,
-        central_gravity=0.0015,
-        spring_length=160,
-        spring_strength=0.05,
-        damping=0.55,
-        overlap=0.15
-    )
+    # ============================================================
+    # SECOND LAYOUT PASS — mild settling
+    # ============================================================
+    nt.set_options("""
+    var options = {
+      physics: {
+        solver: "forceAtlas2Based",
+        forceAtlas2Based: {
+          gravitationalConstant: -30,
+          centralGravity: 0.0015,
+          springLength: 160,
+          springConstant: 0.05,
+          damping: 0.55,
+          avoidOverlap: 0.15
+        }
+      }
+    }
+    """)
 
     # ============================================================
-    # SAVE
+    # SAVE OUTPUT
     # ============================================================
     os.makedirs("dashboard", exist_ok=True)
     output_file = "dashboard/network_institutional.html"
@@ -185,9 +199,8 @@ def build_network(topics, theme_signals, articles_df):
     return "network_institutional.html"
 
 
-
 # ================================================================
-# THEME SCATTER — unchanged (already working well)
+# THEME SCATTER — unchanged
 # ================================================================
 def build_theme_scatter(theme_signals):
     themes = list(theme_signals.keys())
@@ -216,7 +229,7 @@ def build_theme_scatter(theme_signals):
             marker=dict(
                 size=sizes,
                 color="rgba(227,168,105,0.35)",
-                line=dict(color="white", width=3),   # <- white outline (works)
+                line=dict(color="white", width=3),
             ),
         )
     )
@@ -253,8 +266,7 @@ def build_heatmap(topics, theme_signals):
     fig = go.Figure(
         data=go.Heatmap(
             z=z, x=topic_titles, y=theme_names,
-            colorscale="Blues",
-            zmin=0, zmax=1
+            colorscale="Blues", zmin=0, zmax=1
         )
     )
     fig.update_layout(
@@ -275,20 +287,17 @@ def main():
 
     topics, theme_signals, articles_df = load_inputs()
 
-    # Build components
     scatter_html = build_theme_scatter(theme_signals)
     heatmap_html = build_heatmap(topics, theme_signals)
     network_file = build_network(topics, theme_signals, articles_df)
     table_html = build_topic_table_html(topics)
 
-    # Topic map
     topic_map_path = "dashboard/topic_map.html"
     if os.path.exists(topic_map_path):
         topic_map_html = open(topic_map_path, "r").read()
     else:
         topic_map_html = "<p>No topic map generated.</p>"
 
-    # Dashboard output
     write_dashboard_html(
         topics_today=topics,
         themes_today=theme_signals,
