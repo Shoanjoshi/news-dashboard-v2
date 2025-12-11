@@ -43,36 +43,46 @@ def load_inputs():
 # ------------------------------------------------------------
 
 def build_network(topics, theme_signals, articles_df):
-
-    # Much zoomed-in canvas
+    """
+    Option D:
+    - larger canvas (1200px height)
+    - scaled node sizes
+    - larger labels (themes > topics)
+    - strengthened physics for more spread
+    - scaled coordinates for a zoomed-in default look
+    """
     nt = Network(
-        height="1100px",
+        height="1200px",
         width="100%",
         bgcolor="#ffffff",
-        font_color="#222222"
+        font_color="#333333"
     )
 
-    # WEF-style physics tuning
+    # Stronger physics to spread things out (WEF-like)
     nt.barnes_hut(
-        gravitational_constant=-18000,   # stronger grouping
-        central_gravity=0.25,            # pull nodes more toward center
-        spring_length=70,                # nodes pack closer
-        spring_strength=0.008,
-        damping=0.25
+        central_gravity=0.08,
+        spring_length=320,
+        spring_strength=0.018,
+        damping=0.12
     )
 
-    # --- Add Themes (orange nodes)
+    # -----------------------------------------------------
+    # THEMES (highest hierarchy)
+    # -----------------------------------------------------
     for th, vals in theme_signals.items():
         vol = safe_float(vals.get("volume", 0))
         nt.add_node(
             th,
             label=th,
             shape="dot",
-            size=28 + vol * 0.25,  # slightly larger themes
-            color="rgba(244,194,159,0.95)"
+            size=45 + vol * 0.35,        # larger base size
+            color="rgba(244,194,159,0.95)",
+            font={"size": 32, "face": "arial", "bold": True},   # BIG labels
         )
 
-    # --- Add Topics (blue nodes)
+    # -----------------------------------------------------
+    # TOPICS (middle hierarchy)
+    # -----------------------------------------------------
     sorted_topics = sorted(
         topics.keys(),
         key=lambda t: topics[t].get("topicality", topics[t]["article_count"]),
@@ -82,7 +92,7 @@ def build_network(topics, theme_signals, articles_df):
 
     for tid in topics:
         topval = safe_float(topics[tid]["topicality"])
-        size = 12 + (topval ** 0.5) * 3.5
+        size = 22 + (topval ** 0.5) * 4
 
         label = topics[tid]["title"] if tid in top5 else ""
 
@@ -91,40 +101,60 @@ def build_network(topics, theme_signals, articles_df):
             label=label,
             shape="dot",
             size=size,
-            color="rgba(106,142,187,0.95)"
+            color="rgba(106,142,187,0.95)",
+            font={"size": 22, "face": "arial", "bold": False},  # topic labels smaller
         )
 
-    # --- Add Edges (curved & weighted)
+    # -----------------------------------------------------
+    # EDGES (strength = affinity)
+    # -----------------------------------------------------
     for th, vals in theme_signals.items():
         aff = vals.get("topic_affinity_pct", {})
         for tid in topics:
-            pct = safe_float(aff.get(str(topics[tid]["bertopic_id"]), 0.0))
+            pct = safe_float(aff.get(str(topics[tid]["bertopic_id"]), 0))
             if pct <= 0:
                 continue
 
-            width = 1 + pct * 10         # stronger thickness scaling
-            alpha = 0.20 + pct * 0.60    # visibility scaling
+            width = 1.5 + pct * 7
+            alpha = 0.18 + pct * 0.65
 
             nt.add_edge(
                 th,
                 tid,
                 width=width,
-                color=f"rgba(80,120,180,{alpha})",
-                smooth=True  # WEF-style curved edges
+                smooth={"type": "dynamic"},   # CURVED edges
+                color=f"rgba(90,120,170,{alpha})"
             )
 
-    # --- Add Sample Articles (as faint tiny dots)
+    # -----------------------------------------------------
+    # ARTICLE NODES (tiny, faint)
+    # -----------------------------------------------------
     if "topic_id" in articles_df.columns:
         for tid, grp in articles_df.groupby("topic_id"):
             for _, row in grp.head(4).iterrows():
                 aid = f"art_{row['id']}"
-                nt.add_node(aid, size=3, color="rgba(140,150,160,0.15)")
-                nt.add_edge(tid, aid, width=1, color="rgba(120,130,150,0.15)", smooth=True)
+                nt.add_node(
+                    aid,
+                    size=3,
+                    color="rgba(120,140,160,0.18)",
+                    label="",
+                )
+                nt.add_edge(
+                    tid,
+                    aid,
+                    width=1,
+                    color="rgba(120,140,160,0.12)",
+                    smooth={"type": "dynamic"}
+                )
 
-    # --- Save
+    # -----------------------------------------------------
+    # SAVE OUTPUT
+    # -----------------------------------------------------
     os.makedirs("dashboard", exist_ok=True)
     nt.save_graph("dashboard/network_institutional.html")
+
     return "network_institutional.html"
+
 
 
 # ------------------------------------------------------------
