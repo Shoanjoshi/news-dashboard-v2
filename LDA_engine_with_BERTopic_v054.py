@@ -126,7 +126,7 @@ THEME_DESCRIPTIONS = {
     "Others": "Articles not matching systemic themes.",
 }
 
-SIMILARITY_THRESHOLD = 0.40
+SIMILARITY_THRESHOLD = 0.20
 
 THEME_WEIGHTS = {
     "Recessionary pressures": 1.0,
