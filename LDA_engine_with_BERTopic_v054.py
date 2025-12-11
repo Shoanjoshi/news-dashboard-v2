@@ -95,7 +95,7 @@ RSS_FEEDS = [
     "https://cointelegraph.com/rss",
     "https://www.circle.com/blog/rss.xml",
     "https://tether.to/en/feed/",
-    "https://forum.makerdao.com/latest.rss",
+    #"https://forum.makerdao.com/latest.rss",
 ]
 
 THEMES = [
