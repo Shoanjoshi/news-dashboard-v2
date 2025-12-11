@@ -24,20 +24,23 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # ----------------------------------------------------------
-      # 🔍 NEW STEP: Diagnose whether the OpenAI API secret exists
-      # ----------------------------------------------------------
+      # ---------------------------------------
+      # DIAGNOSTIC: Check key availability
+      # ---------------------------------------
       - name: Log secret presence (safe masked)
         env:
           OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
         run: |
-          echo "🔍 Checking if OPENAI_API_KEY is set..."
+          echo "🔍 Checking OPENAI_API_KEY..."
           if [ -z "$OPENAI_API_KEY" ]; then
-            echo "❌ Secret is EMPTY (GitHub Actions did not pass it)"
+            echo "❌ Secret is EMPTY"
           else
-            echo "✅ Secret is present (masked): ${OPENAI_API_KEY:0:4}****"
+            echo "✅ Secret detected (masked): ${OPENAI_API_KEY:0:4}****"
           fi
 
+      # ---------------------------------------
+      # Run pipeline
+      # ---------------------------------------
       - name: Run Topic Engine (BERTopic)
         env:
           OPENAI_API_KEY: ${{ secrets.OPEN_API_KEY_V2 }}
@@ -50,24 +53,31 @@ jobs:
           export PYTHONPATH="${GITHUB_WORKSPACE}"
           python scripts/generate_dashboard.py
 
-      # -------------------------------
-      # Create a clean worktree for gh-pages
-      # -------------------------------
+      # ----------------------------------------------------------------
+      # ✅ NEW: Commit updated JSON/CSV back to *main*
+      # ----------------------------------------------------------------
+      - name: Commit updated data files to main
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add topics.json theme_signals.json articles.csv yesterday_theme_signals.json 2>/dev/null || true
+          git commit -m "Update data files" || echo "No changes to commit"
+          git push origin main
+
+      # ----------------------------------------------------------------
+      # Deploy to gh-pages
+      # ----------------------------------------------------------------
       - name: Prepare gh-pages worktree
         run: |
           git worktree add gh-pages-worktree gh-pages
 
       - name: Deploy to gh-pages
         run: |
-          # Copy dashboard output into worktree root
           cp -r dashboard/* gh-pages-worktree/
-
-          # Copy JSON + CSV
           cp topics.json gh-pages-worktree/
           cp theme_signals.json gh-pages-worktree/
           cp articles.csv gh-pages-worktree/
-
-          # Copy yesterday snapshot if exists
           cp yesterday_theme_signals.json gh-pages-worktree/ 2>/dev/null || true
 
           cd gh-pages-worktree
@@ -80,5 +90,4 @@ jobs:
           git push origin gh-pages
 
       - name: Cleanup worktree
-        run: |
-          git worktree remove gh-pages-worktree --force
+        run: git worktree remove gh-pages-worktree --force
