@@ -43,51 +43,63 @@ def load_inputs():
 # ------------------------------------------------------------
 
 def build_network(topics, theme_signals, articles_df):
-    # Much larger canvas
+    """
+    Improved WEF-style network:
+    - Large canvas
+    - Larger labels for themes > topics
+    - Natural non-radial ForceAtlas2 layout
+    - Curved edges, thickness scaled by affinity strength
+    - Clean + stable variable usage
+    """
+
+    # -----------------------
+    # 0. Initialize network (BIG canvas)
+    # -----------------------
     nt = Network(
-        height="1100px",           # increased from 780
-        width="100%", 
+        height="1200px",        # very large
+        width="100%",
         bgcolor="#ffffff",
-        font_color="#222222"
+        font_color="#222"
     )
 
-    # Use force simulation (non-radial)
+    # Natural-looking force layout
     nt.force_atlas_2based(
-        gravity=-40,               # spreads nodes apart
-        central_gravity=0.005,
-        spring_length=180,         # pushes nodes further apart
-        spring_strength=0.06,
-        damping=0.6,
-        overlap=0.2
+        gravity=-50,              # spreads clusters further
+        central_gravity=0.002,
+        spring_length=220,        # increases spacing
+        spring_strength=0.08,
+        damping=0.55,
+        overlap=0.1
     )
 
     # -----------------------
-    # 1. THEME NODES (large)
+    # 1. THEME NODES (big labels)
     # -----------------------
     for th, vals in theme_signals.items():
         vol = safe_float(vals.get("volume", 0))
         nt.add_node(
             th,
             label=th,
-            size=55 + vol * 0.3,              # bigger
+            size=60 + vol * 0.35,               # large themes
             shape="dot",
-            color="rgba(244,165,130,0.95)",   # soft orange
-            font={"size": 32, "face": "Arial"}  # BIG labels
+            color="rgba(244,165,130,0.95)",      # orange
+            font={"size": 34, "face": "Arial", "bold": True}
         )
 
     # -----------------------
-    # 2. TOPIC NODES (medium)
+    # 2. TOPIC NODES (medium labels)
     # -----------------------
     sorted_topics = sorted(
         topics.keys(),
-        key=lambda t: topics[t].get("topicality", topics[tid]["article_count"]),
+        key=lambda tid: topics[tid].get("topicality", topics[tid]["article_count"]),
         reverse=True
     )
-    top10 = set(sorted_topics[:10])
+
+    top10 = set(sorted_topics[:10])   # show labels for top 10 topics
 
     for tid in topics:
         topval = safe_float(topics[tid]["topicality"])
-        size = 25 + (topval ** 0.5) * 2       # bump size
+        size = 28 + (topval ** 0.5) * 2.5
 
         label = topics[tid]["title"] if tid in top10 else ""
 
@@ -97,21 +109,23 @@ def build_network(topics, theme_signals, articles_df):
             size=size,
             shape="dot",
             color="rgba(80,120,190,0.95)",
-            font={"size": 22, "face": "Arial"}  # readable
+            font={"size": 22, "face": "Arial"}
         )
 
     # -----------------------
-    # 3. EDGES (thicker, smoother)
+    # 3. EDGES (affinity strength)
     # -----------------------
     for th, vals in theme_signals.items():
         aff = vals.get("topic_affinity_pct", {})
 
         for tid in topics:
-            pct = safe_float(aff.get(str(topics[th]["bertopic_id"]), 0))
+            bertopic_id = str(topics[tid]["bertopic_id"])    # FIXED VARIABLE
+            pct = safe_float(aff.get(bertopic_id, 0))
+
             if pct <= 0:
                 continue
 
-            width = 1 + pct * 8               # stronger
+            width = 1 + pct * 8
             alpha = 0.25 + pct * 0.55
 
             nt.add_edge(
@@ -119,30 +133,17 @@ def build_network(topics, theme_signals, articles_df):
                 tid,
                 width=width,
                 color=f"rgba(70,100,160,{alpha})",
-                smooth={"type": "dynamic"}     # curved edges
+                smooth={"type": "dynamic"}       # curved edges
             )
 
     # -----------------------
-    # 4. OPTIONAL — Hide article dots (cleaner network)
-    # -----------------------
-    # Comment back in if you want them again
-    """
-    if "topic_id" in articles_df.columns:
-        for tid, grp in articles_df.groupby("topic_id"):
-            for _, row in grp.head(3).iterrows():
-                aid = f"art_{row['id']}"
-                nt.add_node(aid, size=2, color="rgba(120,120,140,0.1)")
-                nt.add_edge(tid, aid, width=1, color="rgba(120,120,140,0.15)")
-    """
-
-    # -----------------------
-    # Save network
+    # 4. Save HTML
     # -----------------------
     os.makedirs("dashboard", exist_ok=True)
-    nt.show_buttons(filter_=["physics"])  # ability to adjust if needed
     nt.save_graph("dashboard/network_institutional.html")
 
     return "network_institutional.html"
+
 
 
     # -----------------------------------------------------
