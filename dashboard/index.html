@@ -1,160 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Systemic News Dashboard</title>
+    <meta charset="UTF-8">
+    <title>Systemic Risk Dashboard</title>
 
-    <!-- Load Plotly once globally -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background: #f7f9fb;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto auto auto;
-            gap: 22px;
-            padding: 22px;
-        }
-
-        .panel {
-            background: white;
-            padding: 10px 16px;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-            position: relative;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
         }
 
         h2 {
-            margin: 6px 0 16px 0;
-            font-size: 20px;
-            text-align: center;
-            font-weight: 600;
-            color: #2f3b4c;
+            margin: 6px 0 8px 0;
+            font-size: 18px;
         }
 
-        /* Topic summary table */
+        /* ---------- GRID LAYOUT ---------- */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 14px;
+            padding: 12px;
+        }
+
+        .panel {
+            border: 1px solid #ddd;
+            padding: 8px;
+            background: #fff;
+        }
+
+        /* ---------- TABLE TIGHTENING ---------- */
         .topic-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 14px;
-            color: #333;
-        }
-        .topic-table th {
-            background: #e9edf2;
-            padding: 8px;
-            text-align: left;
-        }
-        .topic-table td {
-            padding: 8px;
-            vertical-align: top;
-        }
-        .topic-table tr:nth-child(even){
-            background: #f6f8fa;
-        }
-        .summary-cell {
-            max-width: 900px;
-            color: #444;
+            font-size: 13px;
         }
 
-        /* Network Legend */
-        .network-legend {
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            background: rgba(255,255,255,0.92);
-            padding: 10px 14px;
-            border-radius: 8px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.25);
-            font-size: 13px;
-            line-height: 1.4em;
-            z-index: 9999;
+        .topic-table th,
+        .topic-table td {
+            border: 1px solid #ddd;
+            padding: 6px 8px;
+            vertical-align: top;
         }
-        .legend-title {
-            font-weight: bold;
-            margin-bottom: 6px;
+
+        .topic-table th {
+            background: #f5f5f5;
+            text-align: left;
         }
-        .legend-item {
-            margin-bottom: 4px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
+
+        .summary-cell {
+            line-height: 1.25;
+            max-width: 520px;
         }
-        .legend-dot {
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        .legend-theme-dot {
-            background: #F4C29F;
-            border: 2px solid #B85C00;
-        }
-        .legend-topic-dot {
-            background: #6A8EBB;
-        }
-        .legend-article-dot {
-            background: rgba(100,120,140,0.20);
+
+        /* ---------- SCROLL CONTROL ---------- */
+        .scroll {
+            max-height: 620px;
+            overflow-y: auto;
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="dashboard-grid">
 
-    <!-- TOP LEFT — BERTopic Map -->
+    <!-- TOP LEFT: Topic Map -->
     <div class="panel">
-        <h2>Intertopic Distance Map (BERTopic)</h2>
+        <h2>Intertopic Distance Map</h2>
         <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="aff1d91e-d383-4824-a084-026a601e11a5" class="plotly-graph-div" style="height:700px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("aff1d91e-d383-4824-a084-026a601e11a5")) {                    Plotly.newPlot(                        "aff1d91e-d383-4824-a084-026a601e11a5",                        [{"hovertemplate":"\u003cb\u003e%{text}\u003c\u002fb\u003e\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"rgba(58,110,165,0.4)","line":{"color":"rgba(58,110,165,1.0)","width":2},"size":[78.71111111111114,52.07959183673469,40.16439075630251,41.18614718614718,50.714285714285715,46.733870967741936,42.98341836734695,41.83201058201058,38.31142857142858,38.462857142857146,37.76041666666667,36.25,33.33603896103896,21.764705882352935,25.0]},"mode":"markers+text","text":["Federal Reserve Updates and Actions","**Investor Trends and Market Performance**","Crypto Market Developments","**Crypto Market Dynamics**","AI Industry Challenges","China-U.S. Relations Dynamics","**Tech Industry Developments**","Economic Policy Shifts and Market Reactions","Sentencing of Crypto Executives**","U.S. Trade Policy Developments","Rising Real Estate Challenges","Price Trends and Economic Impact","House Committee Reports","AI Market Volatility**","Cybersecurity Vulnerabilities and Exploits"],"textposition":"top center","x":[0.011452081613242626,0.01005968451499939,-0.03319055214524269,-0.015442481264472008,-0.014400173909962177,-0.0022991406731307507,-0.025041934102773666,-0.030739495530724525,-0.060213178396224976,0.019272219389677048,0.0002475039509590715,-0.007995753549039364,-0.047889694571495056,-0.005382157862186432,-0.05037486553192139],"y":[-0.03554726764559746,-0.03228560462594032,0.010886536911129951,-0.01646195352077484,-0.04760092496871948,0.004568248521536589,-0.020321981981396675,-0.03193894028663635,0.028713056817650795,0.0007693350198678672,-0.005207845475524664,-0.0022314114030450583,-0.039528243243694305,-0.014569753780961037,0.01793539896607399],"type":"scatter"}],                        {"template":{},"title":{"font":{"size":22},"text":"\u003cb\u003eIntertopic Distance Map (BERTopic)\u003c\u002fb\u003e","x":0.5},"xaxis":{"title":{"text":"Embedding dimension 1"},"showgrid":false,"zeroline":false,"showline":true,"linewidth":1,"linecolor":"#444"},"yaxis":{"title":{"text":"Embedding dimension 2"},"showgrid":false,"zeroline":false,"showline":true,"linewidth":1,"linecolor":"#444"},"margin":{"l":10,"r":10,"t":80,"b":40},"hovermode":"closest","height":700,"plot_bgcolor":"white"},                        {"responsive": true}                    )                };            </script>        </div>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-3.3.0.min.js" integrity="sha256-bO3dS6yCpk9aK4gUpNELtCiDeSYvGYnK7jFI58NQnHI=" crossorigin="anonymous"></script>                <div id="2490365f-467e-4d2d-b3a9-ea40e5b06ecb" class="plotly-graph-div" style="height:700px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("2490365f-467e-4d2d-b3a9-ea40e5b06ecb")) {                    Plotly.newPlot(                        "2490365f-467e-4d2d-b3a9-ea40e5b06ecb",                        [{"hovertemplate":"\u003cb\u003e%{text}\u003c\u002fb\u003e\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"rgba(58,110,165,0.4)","line":{"color":"rgba(58,110,165,1.0)","width":2},"size":[64.5217391304348,37.184750733137825,50.453629032258064,47.29240374609781,53.0483870967742,46.306451612903224,43.40092165898618,45.24731182795699,41.790919952210274,44.099999999999994,38.064516129032256,31.72043010752688,32.25806451612903,29.833616298811542,25.5]},"mode":"markers+text","text":["**Market Volatility in Tech and Crypto**","**Crypto Industry Developments**","**Corporate Acquisitions and Financial Moves**","Economic Impact of Tariffs","**Banking System Vulnerabilities**","Cybersecurity Threats and Responses","U.S.-China Trade Relations","Impact of Climate on Housing","Economic Trends and Policies","Federal Reserve Activities","House Committee Reports","Chainalysis Developments","AI Developments and Challenges","**Tech Investment Trends**","Federal Reserve Interest Rate Debate"],"textposition":"top center","x":[-0.008116119541227818,-0.026214122772216797,0.004925442859530449,-0.022703643888235092,0.001122347079217434,-0.06873027235269547,-0.0046241204254329205,-0.0008178760763257742,-0.01140859629958868,0.0024749350268393755,-0.04042115807533264,-0.039462391287088394,-0.028608029708266258,-0.001809262903407216,0.01585420034825802],"y":[-0.017919626086950302,0.010735966265201569,-0.010121389292180538,-0.026529431343078613,-0.012920758686959743,0.016954952850937843,0.013684810139238834,-0.009121029637753963,-0.016792774200439453,-0.03199920058250427,-0.023623498156666756,-0.014056512154638767,-0.030580203980207443,-0.05786913260817528,0.014299931935966015],"type":"scatter"}],                        {"template":{},"title":{"font":{"size":22},"text":"\u003cb\u003eIntertopic Distance Map (BERTopic)\u003c\u002fb\u003e","x":0.5},"xaxis":{"title":{"text":"Embedding dimension 1"},"showgrid":false,"zeroline":false,"showline":true,"linewidth":1,"linecolor":"#444"},"yaxis":{"title":{"text":"Embedding dimension 2"},"showgrid":false,"zeroline":false,"showline":true,"linewidth":1,"linecolor":"#444"},"margin":{"l":10,"r":10,"t":80,"b":40},"hovermode":"closest","height":700,"plot_bgcolor":"white"},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
 
-    <!-- TOP RIGHT — Theme Scatter -->
+    <!-- TOP RIGHT: Theme Scatter -->
     <div class="panel">
-        <h2>Theme Signals — Centrality vs Topicality</h2>
-        <div>                            <div id="33455aef-0926-4cea-8e46-66ba1e270921" class="plotly-graph-div" style="height:420px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("33455aef-0926-4cea-8e46-66ba1e270921")) {                    Plotly.newPlot(                        "33455aef-0926-4cea-8e46-66ba1e270921",                        [{"marker":{"color":"rgba(227,168,105,0.35)","line":{"color":"white","width":3},"size":[74.48543689320388,85.0,69.22815533980582,38.79126213592233,46.262135922330096,55.66990291262135,67.84466019417476,69.50485436893203,80.57281553398059,28.0]},"mode":"markers+text","text":["Recessionary pressures","Inflation","Private credit","AI","Cyber attacks","Commercial real estate","Consumer debt","Bank lending and credit risk","Digital assets","Others"],"textposition":"top center","x":[2.336448598130841,-1.153846153846154,-1.9607843137254901,-6.25,0.8620689655172413,2.027027027027027,1.0362694300518136,-0.9852216748768473,-1.2295081967213115,0.0],"y":[0.9161462979482605,1.0,0.8902765388046388,0.3095450490633363,0.3898305084745763,0.7172167707404103,0.8590544157002676,0.8858162355040142,0.9616413916146298,0.0],"type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"\u0394 Volume (%)"},"showline":true,"linecolor":"#444"},"yaxis":{"title":{"text":"Centrality"},"showline":true,"linecolor":"#444"},"margin":{"l":40,"r":20,"t":60,"b":40},"title":{"text":"\u003cb\u003eTheme Signals \u2014 Centrality vs \u0394 Volume\u003c\u002fb\u003e"},"height":420,"plot_bgcolor":"white"},                        {"responsive": true}                    )                };            </script>        </div>
+        <h2>Theme Signals</h2>
+        <div>                            <div id="35c120ff-4755-4a3a-8d84-c2f4d58023ac" class="plotly-graph-div" style="height:420px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("35c120ff-4755-4a3a-8d84-c2f4d58023ac")) {                    Plotly.newPlot(                        "35c120ff-4755-4a3a-8d84-c2f4d58023ac",                        [{"marker":{"color":"rgba(227,168,105,0.35)","line":{"color":"white","width":3},"size":[73.83505154639175,85.0,68.84020618556701,36.22680412371134,43.865979381443296,54.44329896907217,65.31443298969072,69.4278350515464,82.64948453608247,28.0]},"mode":"markers+text","text":["Recessionary pressures","Inflation","Private credit","AI","Cyber attacks","Commercial real estate","Consumer debt","Bank lending and credit risk","Digital assets","Others"],"textposition":"top center","x":[-4.10958904109589,-3.501945525291829,-3.5000000000000004,-8.88888888888889,-7.6923076923076925,-4.635761589403973,-7.179487179487179,-2.9850746268656714,-0.4149377593360996,5.88235294117647],"y":[0.9137291280148423,1.0,0.8775510204081632,0.2857142857142857,0.3970315398886827,0.7087198515769945,0.8302411873840445,0.8831168831168831,0.9666048237476809,0.0],"type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"xaxis":{"title":{"text":"\u0394 Volume (%)"},"showline":true,"linecolor":"#444"},"yaxis":{"title":{"text":"Centrality"},"showline":true,"linecolor":"#444"},"margin":{"l":40,"r":20,"t":60,"b":40},"title":{"text":"\u003cb\u003eTheme Signals \u2014 Centrality vs \u0394 Volume\u003c\u002fb\u003e"},"height":420,"plot_bgcolor":"white"},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
 
-    <!-- MIDDLE LEFT — Heatmap -->
-    <div class="panel">
-        <h2>Theme × Topic Affinity Heatmap</h2>
-        <div>                            <div id="e8200bec-19be-464b-ba5e-d2bf911bc4f1" class="plotly-graph-div" style="height:420px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e8200bec-19be-464b-ba5e-d2bf911bc4f1")) {                    Plotly.newPlot(                        "e8200bec-19be-464b-ba5e-d2bf911bc4f1",                        [{"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"x":["Federal Reserve Updates and Actions","**Investor Trends and Market Performance**","Crypto Market Developments","**Crypto Market Dynamics**","AI Industry Challenges","China-U.S. Relations Dynamics","**Tech Industry Developments**","Economic Policy Shifts and Market Reactions","Sentencing of Crypto Executives**","U.S. Trade Policy Developments","Rising Real Estate Challenges","Price Trends and Economic Impact","House Committee Reports","AI Market Volatility**","Cybersecurity Vulnerabilities and Exploits"],"y":["Recessionary pressures","Inflation","Private credit","AI","Cyber attacks","Commercial real estate","Consumer debt","Bank lending and credit risk","Digital assets","Others"],"z":[[0.6,0.6285714285714286,0.4411764705882353,0.8181818181818182,0.30303030303030304,0.3225806451612903,0.32142857142857145,0.9259259259259259,0.2,0.76,0.7083333333333334,0.9583333333333334,0.13636363636363635,0.4117647058823529,0.0],[0.6444444444444445,0.7428571428571429,0.8235294117647058,0.9090909090909091,0.24242424242424243,0.3870967741935484,0.39285714285714285,0.8518518518518519,0.2,0.8,0.6666666666666666,0.9166666666666666,0.8181818181818182,0.47058823529411764,0.058823529411764705],[0.8666666666666667,0.6857142857142857,0.5588235294117647,0.9090909090909091,0.09090909090909091,0.16129032258064516,0.39285714285714285,0.6666666666666666,0.2,0.32,0.625,0.16666666666666666,0.13636363636363635,0.8823529411764706,0.058823529411764705],[0.022222222222222223,0.11428571428571428,0.2647058823529412,0.12121212121212122,0.8484848484848485,0.06451612903225806,0.35714285714285715,0.1111111111111111,0.32,0.04,0.125,0.16666666666666666,0.045454545454545456,0.4117647058823529,0.29411764705882354],[0.08888888888888889,0.05714285714285714,0.4117647058823529,0.2727272727272727,0.42424242424242425,0.16129032258064516,0.10714285714285714,0.2222222222222222,0.68,0.04,0.20833333333333334,0.041666666666666664,0.7272727272727273,0.23529411764705882,0.9411764705882353],[0.5777777777777777,0.42857142857142855,0.2647058823529412,0.6363636363636364,0.06060606060606061,0.16129032258064516,0.32142857142857145,0.6666666666666666,0.0,0.16,0.7083333333333334,0.4166666666666667,0.13636363636363635,0.6470588235294118,0.058823529411764705],[0.6666666666666666,0.5142857142857142,0.29411764705882354,0.7272727272727273,0.09090909090909091,0.3548387096774194,0.25,0.5925925925925926,0.08,0.56,0.875,0.5416666666666666,0.7727272727272727,0.5294117647058824,0.0],[0.8888888888888888,0.5714285714285714,0.35294117647058826,0.8181818181818182,0.12121212121212122,0.12903225806451613,0.2857142857142857,0.6296296296296297,0.32,0.32,0.5833333333333334,0.20833333333333334,0.7727272727272727,0.8235294117647058,0.17647058823529413],[0.8666666666666667,0.6571428571428571,0.9411764705882353,1.0,0.30303030303030304,0.2903225806451613,0.39285714285714285,0.8148148148148148,0.48,0.44,0.20833333333333334,0.5833333333333334,0.09090909090909091,0.8235294117647058,0.23529411764705882],[0.08888888888888889,0.08571428571428572,0.058823529411764705,0.0,0.09090909090909091,0.3548387096774194,0.35714285714285715,0.07407407407407407,0.16,0.2,0.041666666666666664,0.041666666666666664,0.18181818181818182,0.0,0.058823529411764705]],"zmax":1,"zmin":0,"type":"heatmap"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":80,"r":20,"t":60,"b":120},"title":{"text":"\u003cb\u003eTheme \u00d7 Topic Affinity Heatmap\u003c\u002fb\u003e"},"height":420,"plot_bgcolor":"white"},                        {"responsive": true}                    )                };            </script>        </div>
-    </div>
-
-    <!-- MIDDLE RIGHT — PyVis Network -->
-    <div class="panel">
-        <h2>Institutional Topic–Theme Network</h2>
-
-        <div class="network-legend">
-            <div class="legend-title">Legend</div>
-            <div class="legend-item">
-                <span class="legend-dot legend-theme-dot"></span>
-                <span><b>Themes</b> (light orange)</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-dot legend-topic-dot"></span>
-                <span>Topics (blue)</span>
-            </div>
-            <div class="legend-item">
-                <span class="legend-dot legend-article-dot"></span>
-                <span>Articles (faint dots)</span>
-            </div>
-        </div>
-
-        <iframe 
-            src="network_institutional.html" 
-            style="width:100%; height:780px; border:none; border-radius:8px;">
-        </iframe>
-    </div>
-
-    <!-- BOTTOM — Topic Summary Table -->
-    <div class="panel" style="grid-column: span 2;">
+    <!-- BOTTOM LEFT: Topic Summary Table -->
+    <div class="panel scroll">
         <h2>Topic Summaries</h2>
         
     <table class="topic-table">
@@ -170,112 +100,118 @@
             
             <tr>
                 <td><b>T0</b></td>
-                <td>Federal Reserve Updates and Actions</td>
-                <td class="summary-cell">OVERVIEW:<br>The Federal Reserve Board has recently announced various enhancements and strategic shifts in its supervision and support of the banking system, including liquidity programs, interest rate adjustments, and public consultations.<br><br>KEY EXAMPLES:<br>- The Federal Reserve published findings on bank supervision enhancements, indicating a proactive approach to banking regulation.<br>- During the 2023 bank run, the announcement of the Fed’s Bank Term Funding Program (BTFP) significantly lowered investor risk perceptions regarding a subset of banks.<br>- A survey of senior financial officers highlighted new strategies for managing reserve balances amidst evolving financial conditions. <br>- The Fed is seeking public input on potential changes to check services, acknowledging evolving customer preferences.</td>
-                <td>45</td>
+                <td>**Market Volatility in Tech and Crypto**</td>
+                <td class="summary-cell">OVERVIEW:<br>Recent market dynamics have shown significant volatility in tech and cryptocurrency stocks, driven by external factors such as changes in interest rates and AI investment concerns.<br><br>KEY EXAMPLES:<br>- Bitcoin briefly reached $94,000 but then dropped below $90,000 as worries about AI and tech stocks negatively impacted investor sentiment.<br>- Oracle's stock fell nearly 16% on missed revenue expectations, affecting broader tech stocks like Nvidia and AMD.<br>- Wingstop's stock slid 12% after profit figures failed to meet estimates, adding to market instability.</td>
+                <td>46</td>
             </tr>
         
             <tr>
                 <td><b>T1</b></td>
-                <td>**Investor Trends and Market Performance**</td>
-                <td class="summary-cell">OVERVIEW:<br>Recent investor behavior reveals a mix of confidence and caution in the market, with some firms exceeding expectations while others struggle to meet them.<br><br>KEY EXAMPLES:<br>- Despite profit-taking in September, some investors are increasing their stakes in the market.<br>- Wingstop's stock dropped 12% after reporting profits below estimates.<br>- Barclays reported an 18% increase in profits and raised its income guidance.</td>
-                <td>35</td>
+                <td>**Crypto Industry Developments**</td>
+                <td class="summary-cell">OVERVIEW:<br>Recent developments in the cryptocurrency sector highlight a significant shift towards regulatory clarity, institutional interest, and strategic partnerships aiming to enhance liquidity and stability.<br><br>KEY EXAMPLES:<br>- The People’s Bank of China continues its gold purchasing spree, indicating a strategic shift towards sovereign-controlled assets, which analysts believe could relate to broader crypto market dynamics.<br>- Major crypto firms, including Paxos and Ripple, have secured conditional approvals to operate as national trust banks in the U.S., marking a pivotal step in regulatory compliance and institutional integration.<br>- Ripple's partnership with Swiss bank Amina illustrates the expanding infrastructure for fiat-to-stablecoin transactions, emphasizing the growth of stablecoin adoption in Europe.</td>
+                <td>33</td>
             </tr>
         
             <tr>
                 <td><b>T2</b></td>
-                <td>Crypto Market Developments</td>
-                <td class="summary-cell">OVERVIEW:<br>Recent news highlights positive advancements in the cryptocurrency market, with a focus on regulatory clarity and growing institutional interest. Countries like the UAE and Pakistan are adopting strategies to embrace digital assets, while challenges such as liquidity issues and tightening regulations persist.<br><br>KEY EXAMPLES:<br>- Abu Dhabi anchors Bitcoin for institutions while Dubai develops daily commerce solutions around crypto.<br>- The CFTC allows greater flexibility for exchanges by revising its guidance on crypto transaction delivery.<br>- Pakistan approves local licenses for Binance and HTX, indicating a progressive regulatory environment.</td>
-                <td>34</td>
+                <td>**Corporate Acquisitions and Financial Moves**</td>
+                <td class="summary-cell">OVERVIEW:<br>The articles highlight significant corporate maneuvers in the realm of acquisitions and financial strategies, focusing on high-stakes bids and brand reinstatements.<br><br>KEY EXAMPLES:<br>- Larry Ellison supports Paramount's bid for Warner Bros., but concerns arise over his financial guarantee.<br>- First Brands is seeking access to customer payments amid bankruptcy challenges.<br>- Beyond plans to reacquire the Buy Buy Baby brand from Bed Bath & Beyond.</td>
+                <td>32</td>
             </tr>
         
             <tr>
                 <td><b>T3</b></td>
-                <td>**Crypto Market Dynamics**</td>
-                <td class="summary-cell">OVERVIEW:<br>The recent activities in the cryptocurrency market reflect significant reactions to macroeconomic influences, particularly the Federal Reserve's monetary policy, and legislative developments regarding digital assets and stablecoins.<br><br>KEY EXAMPLES:<br>- Bitcoin has remained stagnant following the Federal Reserve's rate cut, demonstrating its historical volatility in response to macroeconomic news.<br>- The advancement of the Digital Asset Market Clarity Act in Congress highlights ongoing efforts to create federal regulations for digital assets, though debates around stablecoin yield are hindering progress.</td>
-                <td>33</td>
-            </tr>
-        
-            <tr>
-                <td><b>T4</b></td>
-                <td>AI Industry Challenges</td>
-                <td class="summary-cell">OVERVIEW:<br>The articles highlight the diverse challenges and considerations surrounding the integration of artificial intelligence across various sectors, from regulatory concerns to security issues.<br><br>KEY EXAMPLES:<br>- Trump warns that excessive regulation could stifle AI development, jeopardizing its potential.<br>- Microsoft aims to democratize AI use, raising concerns about security for non-technical users.<br>- Venture-capital investments are expanding AI applications into less conventional fields like accounting and property management.<br>- Startups developing AI hardware in the UK are set to receive guaranteed financial support.</td>
-                <td>33</td>
-            </tr>
-        
-            <tr>
-                <td><b>T5</b></td>
-                <td>China-U.S. Relations Dynamics</td>
-                <td class="summary-cell">OVERVIEW:<br>Recent articles highlight the shifting dynamics in U.S.-China relations, particularly in areas of trade, defense, and diplomatic communication. The approach of the Trump administration underlines a mix of economic strategies and geopolitical tensions.<br><br>KEY EXAMPLES:<br>- President Trump has loosened chip sales restrictions to China, raising concerns about balancing economic gains against national security.<br>- China’s leadership is emphasizing strengthening the domestic economy in response to ongoing trade frictions with the U.S., following a tumultuous year of trade wars. <br>- Xi Jinping's direct communication with President Trump addressed key issues including trade, Taiwan, and Ukraine, marking a rare diplomatic engagement.</td>
+                <td>Economic Impact of Tariffs</td>
+                <td class="summary-cell">OVERVIEW:<br>Recent news articles highlight the significant effects of President Trump's tariffs and the Federal Reserve's monetary policy on the financial markets, particularly regarding market volatility and investor sentiment.<br><br>KEY EXAMPLES:<br>- The announcement of tariffs in April 2025 led to a temporary decline in Treasury market liquidity.<br>- Bitcoin's price fell to $94,000 amidst concerns over Trump's tariff threats and a souring risk appetite.<br>- The stock market reached all-time highs, with opinions divided on whether Trump's policies or the Federal Reserve's actions contributed more to the surge.</td>
                 <td>31</td>
             </tr>
         
             <tr>
+                <td><b>T4</b></td>
+                <td>**Banking System Vulnerabilities**</td>
+                <td class="summary-cell">OVERVIEW:<br>Recent analyses have highlighted vulnerabilities within the U.S. banking system, particularly in light of the rapid bank run that occurred in March 2023. Various studies have examined the effectiveness of different measures of bank solvency, investor perceptions during crises, and the evolving role of nonbank financial institutions.<br><br>KEY EXAMPLES:<br>- The Economic Capital metric has been shown to identify failing banks earlier than traditional solvency measures, providing valuable insights into banking stability.<br>- During the 2023 bank run, the Federal Reserve's Bank Term Funding Program significantly mitigated investor risk perceptions, highlighting the importance of liquidity support.<br>- Analysis reveals that investors largely reacted to media rather than fundamental indicators when evaluating bank risk, indicating potential lapses in market awareness.</td>
+                <td>31</td>
+            </tr>
+        
+            <tr>
+                <td><b>T5</b></td>
+                <td>Cybersecurity Threats and Responses</td>
+                <td class="summary-cell">OVERVIEW:<br>The cluster of articles focuses on recent developments in cybersecurity, highlighting vulnerabilities, attacks, and legal actions against cybercriminals. A notable theme is the exploitation of newly discovered flaws and the coordinated efforts by authorities to combat cybercrime.<br><br>KEY EXAMPLES:<br>- Following the public disclosure of a critical vulnerability, attacks exploiting CVE-2025-55182 have surged as multiple threat actors capitalize on the flaw.<br>- Google addressed a severe vulnerability that allowed attackers to inject malicious code into documents, threatening sensitive corporate information.<br>- The U.S., U.K., and Australia have jointly targeted Russian cybercrime infrastructure that supports global ransomware operations.<br>- Hamas's cyber capabilities are reportedly advancing, with improved malware and a broader attack range in the region.</td>
+                <td>30</td>
+            </tr>
+        
+            <tr>
                 <td><b>T6</b></td>
-                <td>**Tech Industry Developments**</td>
-                <td class="summary-cell">OVERVIEW:<br>Recent developments in the tech industry highlight significant investments and shifts, particularly in artificial intelligence, telecommunications, and media, as major figures make bold moves amidst market volatility.<br><br>KEY EXAMPLES:<br>- Nvidia's CEO is a pivotal player in the AI revolution, influencing global economic changes.<br>- Larry Ellison is financially supporting Paramount's acquisition of Warner Bros., raising concerns about guarantees.<br>- Verizon's reintroduction of unlimited data plans is negatively impacting its stock despite being favorable for customers.</td>
+                <td>U.S.-China Trade Relations</td>
+                <td class="summary-cell">OVERVIEW:<br>Recent developments indicate shifts in U.S.-China trade dynamics, with President Trump making strategic moves that may benefit China, while China’s leadership adjusts its economic strategies in response to ongoing tensions.<br><br>KEY EXAMPLES:<br>- President Trump has announced additional tariffs on China, citing concerns over drug inflows.<br>- China’s leaders are focusing on bolstering the domestic economy in light of persistent trade frictions with the U.S.<br>- Xi Jinping's call to Trump signifies an attempt to engage directly on trade and security issues.</td>
                 <td>28</td>
             </tr>
         
             <tr>
                 <td><b>T7</b></td>
-                <td>Economic Policy Shifts and Market Reactions</td>
-                <td class="summary-cell">OVERVIEW:<br>Recent changes in U.S. economic policy, including interest rate cuts and the implementation of tariffs, have significantly impacted market dynamics and investor behavior. Liquidity in the Treasury market has fluctuated alongside uncertainty and volatility in various financial sectors.<br><br>KEY EXAMPLES:<br>- The Federal Reserve cut interest rates in 2025, increasing economic policy uncertainty, which briefly worsened Treasury market liquidity during tariff announcements.<br>- Bitcoin's price dropped to $94k as investor sentiment soured due to Trump's tariff threats, indicating market volatility.<br>- The Dow reached a record high following optimism sparked by Trump's Treasury pick, reflecting a varied market response to political developments.</td>
+                <td>Impact of Climate on Housing</td>
+                <td class="summary-cell">OVERVIEW:<br>The collection of articles highlights how climate change is influencing the real estate market, particularly through increased insurance premiums, reduced coverage, and evolving homeownership costs related to environmental risks.<br><br>KEY EXAMPLES:<br>- Insurers are raising premiums and limiting coverage in response to climate risks.<br>- Homeownership in areas vulnerable to flooding and wildfires comes with increasing costs.<br>- A personal story reflects broader trends in home affordability influenced by climate change.</td>
                 <td>27</td>
             </tr>
         
             <tr>
                 <td><b>T8</b></td>
-                <td>Sentencing of Crypto Executives**</td>
-                <td class="summary-cell">OVERVIEW: <br>U.S. federal courts are increasingly imposing significant prison sentences on cryptocurrency company leaders for fraud and other crimes. This trend is highlighted by the recent sentencing of Do Kwon, co-founder of Terraform Labs, who received a lengthy term amid broader scrutiny of the cryptocurrency industry.<br><br>KEY EXAMPLES:<br>- Do Kwon was sentenced to 15 years in prison for fraud related to the collapse of TerraUSD and Luna.<br>- Since early 2024, prison terms for crypto company leaders have totaled about 83 years.<br>- The U.S. federal court's actions reflect a growing crackdown on fraudulent activities within the crypto sector.</td>
-                <td>25</td>
+                <td>Economic Trends and Policies</td>
+                <td class="summary-cell">OVERVIEW:<br>The articles discuss recent trends in the U.S. economy, including the impact of policy decisions such as tax cuts and tariffs, productivity levels, and the evolving landscape of digital assets. A common theme is the uncertainty surrounding both corporate tax revenue and economic forecasts amidst these developments.<br><br>KEY EXAMPLES:<br>- Corporate tax revenues have dropped since the implementation of tax cuts by Republicans, though some economists believe this trade-off may be beneficial in the long run.<br>- The U.S. trade deficit has decreased to its lowest in five years due to recent tariffs, although its sustainability is questionable.<br>- A slowdown in productivity was noted in the fourth quarter, indicating potential challenges for future economic growth.</td>
+                <td>27</td>
             </tr>
         
             <tr>
                 <td><b>T9</b></td>
-                <td>U.S. Trade Policy Developments</td>
-                <td class="summary-cell">OVERVIEW:<br>Recent actions and statements by President Donald Trump highlight ongoing changes and tensions in U.S. trade policy, focusing on tariffs, trade agreements, and business responses to these measures.<br><br>KEY EXAMPLES:<br>- Trump rolled back tariffs on grocery items to address high living costs.<br>- A new 10% tariff on Chinese imports related to drug inflow has been announced.<br>- Companies are seeking exemptions from tariffs, claiming they raise prices and hurt business.</td>
+                <td>Federal Reserve Activities</td>
+                <td class="summary-cell">OVERVIEW:<br>The Federal Reserve Board is actively involved in various initiatives related to bank supervision, financial management, and service enhancements in the banking system. Recent actions include approvals for banking applications, enforcement actions, and requests for public input on check services.<br><br>KEY EXAMPLES:<br>- The Federal Reserve Board released results from a survey of senior financial officers outlining their strategies for managing reserve balances.<br>- The Fed announced pricing changes for payment services scheduled to take effect on January 1, 2026.<br>- The Board recently approved applications from both The PNC Financial Services Group, Inc. and Banco BTG Pactual S.A.</td>
                 <td>25</td>
             </tr>
         
             <tr>
                 <td><b>T10</b></td>
-                <td>Rising Real Estate Challenges</td>
-                <td class="summary-cell">OVERVIEW:<br>The current landscape of real estate is increasingly influenced by climate change and economic factors, leading to rising costs, insurance challenges, and new housing policies. Homeownership affordability and market dynamics are under scrutiny as policies and environmental concerns shift.<br><br>KEY EXAMPLES:<br>- Homeowners in vulnerable areas face clearer financial implications due to flooding and wildfires.<br>- Insurers are raising premiums and reducing coverage amid climate-related risks impacting the real estate market.</td>
+                <td>House Committee Reports</td>
+                <td class="summary-cell">OVERVIEW:<br>The House Committee on Oversight and Government Reform has reported multiple articles on December 2, 2025, indicating a significant focus on various legislative actions.<br><br>KEY EXAMPLES:<br>- Article 1 discusses the specifics of a new oversight initiative.<br>- Article 2 outlines proposed reforms in government accountability.<br>- Article 3 highlights an investigation into government practices.<br>- Article 4 reviews funding allocations for oversight activities.</td>
                 <td>24</td>
             </tr>
         
             <tr>
                 <td><b>T11</b></td>
-                <td>Price Trends and Economic Impact</td>
-                <td class="summary-cell">OVERVIEW:<br>The articles collectively examine the dynamics of pricing in various sectors and its implications on economic indicators such as stock markets, trade deficits, and consumer behavior.<br><br>KEY EXAMPLES:<br>- Article 1 discusses the influence of energy prices on the US stock market, highlighting data trends from 1986 to 2023.<br>- Article 3 notes a significant decrease in the monthly trade deficit following new tariffs, raising questions about the sustainability of this trend.<br>- Article 5 reports a 7% increase in electricity prices for US households from January to August 2025, emphasizing rising costs in residential power.<br>- Article 7 analyzes companies' pricing strategies during recent inflation periods, revealing the complexities businesses face when adjusting prices in response to economic shocks.</td>
+                <td>Chainalysis Developments</td>
+                <td class="summary-cell">OVERVIEW:<br>Recent updates from Chainalysis highlight their expanded partnerships and service availability, showcasing efforts to enhance pricing support and integrate solutions into major platforms while addressing broader crypto market dynamics.<br><br>KEY EXAMPLES:<br>- Chainalysis announced improved pricing support through an integration with CoinGecko, enhancing access to digital asset data.<br>- The company’s solutions are now available on the AWS Marketplace, a significant move in expanding their availability and reach.<br>- Various companies are divesting crypto stockpiles, aiming to fund share buybacks and stabilize their stock prices.</td>
                 <td>24</td>
             </tr>
         
             <tr>
                 <td><b>T12</b></td>
-                <td>House Committee Reports</td>
-                <td class="summary-cell">OVERVIEW:<br>All articles reference actions taken by the House Committee on Oversight and Government Reform on December 2, 2025, highlighting their continued legislative activities.<br><br>KEY EXAMPLES:<br>- Article 1 discusses specific order reports made by the committee.<br>- Article 2 contains similar content, focusing on the committee's legislative process.<br>- Article 3 reiterates the collective actions reported by the committee on the same date.<br>- Article 4 further outlines ongoing initiatives by the committee, indicating a consistent theme across articles.</td>
-                <td>22</td>
+                <td>AI Developments and Challenges</td>
+                <td class="summary-cell">OVERVIEW:<br>Recent news highlights the increasing integration of artificial intelligence across various industries, focusing on both the advancements being made and the potential challenges that come with them.<br><br>KEY EXAMPLES:<br>- Microsoft is empowering non-technical users with AI capabilities, raising concerns about security.<br>- Disney is exploring AI with a new tool called "Jarvis" as part of its collaboration with OpenAI.<br>- Enterprises are expected to ramp up spending on generative AI in the coming years, as budgets are allocated for new projects.</td>
+                <td>20</td>
             </tr>
         
             <tr>
                 <td><b>T13</b></td>
-                <td>AI Market Volatility**</td>
-                <td class="summary-cell">OVERVIEW:  <br>Recent news highlights significant market fluctuations linked to AI investments, particularly in the tech sector, while also spotlighting developments in financial services and emerging scams.<br><br>KEY EXAMPLES:  <br>- Oracle's significant loss in market value was triggered by missed revenue expectations and increased AI-related capital expenditures, which raised concerns about an "AI bubble."<br>- The U.S. Financial-Risk Watchdog, FSOC, has chosen to eliminate digital assets from their list of potential hazards, indicating a shift in regulatory focus.<br>- A surge in tech support scams has been noted, exemplified by a retired lawyer losing funds that Citibank could not recover.</td>
-                <td>17</td>
+                <td>**Tech Investment Trends**</td>
+                <td class="summary-cell">OVERVIEW:  <br>Silicon Valley is experiencing a renewed wave of investment, particularly in artificial intelligence and innovative financial services. This trend reflects a strategic focus on applying advanced technologies across various industries.<br><br>KEY EXAMPLES:<br>- Venture-capital firms are increasingly investing in AI applications for traditionally overlooked sectors like accounting and property management.<br>- Biotech companies are improving their scientific developments to attract investment from larger pharmaceutical firms.</td>
+                <td>19</td>
             </tr>
         
             <tr>
                 <td><b>T14</b></td>
-                <td>Cybersecurity Vulnerabilities and Exploits</td>
-                <td class="summary-cell">OVERVIEW:<br>Recent reports highlight a surge in cyberattacks exploiting newly disclosed vulnerabilities, with various organizations, including Microsoft and Google, addressing critical security flaws. As hackers evolve their strategies, the potential for more severe breaches looms.<br><br>KEY EXAMPLES:<br>- Attacks leveraging the CVE-2025-55182 flaw have increased significantly after its public disclosure.<br>- Microsoft released updates for over 60 vulnerabilities, including one zero-day exploit currently active.<br>- Google mitigated a critical vulnerability allowing attackers to manipulate documents for data exfiltration.</td>
-                <td>17</td>
+                <td>Federal Reserve Interest Rate Debate</td>
+                <td class="summary-cell">OVERVIEW:<br>The Federal Reserve's recent decision to cut interest rates by a quarter percentage point has sparked an internal divide among officials, highlighting differing opinions on monetary policy and its implications for the economy.<br><br>KEY EXAMPLES:<br>- Officials expressed opposition to the rate cut, indicating a contentious climate within the central bank.<br>- The rate cut aims to support a weakening labor market amid economic uncertainties. <br>- The decision was made during meetings reflecting deep divisions that may impact future borrowing costs.</td>
+                <td>15</td>
             </tr>
         
         </tbody>
     </table>
     
+    </div>
+
+    <!-- BOTTOM RIGHT: Heatmap -->
+    <div class="panel">
+        <h2>Theme × Topic Affinity</h2>
+        <div>                            <div id="188c253c-288d-4695-8501-184e797318db" class="plotly-graph-div" style="height:420px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("188c253c-288d-4695-8501-184e797318db")) {                    Plotly.newPlot(                        "188c253c-288d-4695-8501-184e797318db",                        [{"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"x":["**Market Volatility in Tech and Crypto**","**Crypto Industry Developments**","**Corporate Acquisitions and Financial Moves**","Economic Impact of Tariffs","**Banking System Vulnerabilities**","Cybersecurity Threats and Responses","U.S.-China Trade Relations","Impact of Climate on Housing","Economic Trends and Policies","Federal Reserve Activities","House Committee Reports","Chainalysis Developments","AI Developments and Challenges","**Tech Investment Trends**","Federal Reserve Interest Rate Debate"],"y":["Recessionary pressures","Inflation","Private credit","AI","Cyber attacks","Commercial real estate","Consumer debt","Bank lending and credit risk","Digital assets","Others"],"z":[[0.8695652173913043,0.5757575757575758,0.1875,0.967741935483871,0.5483870967741935,0.1,0.5357142857142857,0.6666666666666666,0.7407407407407407,0.44,0.125,0.25,0.2,0.42105263157894735,0.6666666666666666],[0.9347826086956522,0.9090909090909091,0.25,0.967741935483871,0.5161290322580645,0.13333333333333333,0.6428571428571429,0.5925925925925926,0.8518518518518519,0.56,0.7083333333333334,0.4583333333333333,0.1,0.3157894736842105,0.6666666666666666],[0.6739130434782609,0.7575757575757576,0.46875,0.3225806451612903,0.7741935483870968,0.1,0.14285714285714285,0.48148148148148145,0.5185185185185185,0.8,0.125,0.5833333333333334,0.05,0.3157894736842105,0.6666666666666666],[0.2608695652173913,0.06060606060606061,0.15625,0.1935483870967742,0.03225806451612903,0.3333333333333333,0.03571428571428571,0.07407407407407407,0.1111111111111111,0.0,0.041666666666666664,0.20833333333333334,0.85,0.8947368421052632,0.0],[0.21739130434782608,0.24242424242424243,0.0625,0.0967741935483871,0.2903225806451613,0.8666666666666667,0.17857142857142858,0.18518518518518517,0.07407407407407407,0.04,0.5833333333333334,0.4166666666666667,0.4,0.21052631578947367,0.06666666666666667],[0.5434782608695652,0.36363636363636365,0.28125,0.5483870967741935,0.5806451612903226,0.0,0.17857142857142858,0.6296296296296297,0.4444444444444444,0.36,0.125,0.3333333333333333,0.0,0.3157894736842105,0.2],[0.45652173913043476,0.3939393939393939,0.34375,0.5161290322580645,0.7096774193548387,0.03333333333333333,0.32142857142857145,0.7037037037037037,0.6666666666666666,0.52,0.6666666666666666,0.25,0.05,0.3157894736842105,0.6],[0.5869565217391305,0.696969696969697,0.34375,0.3225806451612903,0.8064516129032258,0.23333333333333334,0.10714285714285714,0.4074074074074074,0.5925925925925926,0.88,0.6666666666666666,0.3333333333333333,0.1,0.2631578947368421,0.6],[0.7391304347826086,1.0,0.375,0.7419354838709677,0.6451612903225806,0.43333333333333335,0.39285714285714285,0.2962962962962963,0.7037037037037037,0.8,0.08333333333333333,0.9166666666666666,0.3,0.42105263157894735,0.6],[0.021739130434782608,0.0,0.34375,0.0,0.1935483870967742,0.13333333333333333,0.2857142857142857,0.18518518518518517,0.037037037037037035,0.12,0.2916666666666667,0.08333333333333333,0.1,0.10526315789473684,0.13333333333333333]],"zmax":1,"zmin":0,"type":"heatmap"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":80,"r":20,"t":60,"b":120},"title":{"text":"\u003cb\u003eTheme \u00d7 Topic Affinity Heatmap\u003c\u002fb\u003e"},"height":420,"plot_bgcolor":"white"},                        {"responsive": true}                    )                };            </script>        </div>
     </div>
 
 </div>
