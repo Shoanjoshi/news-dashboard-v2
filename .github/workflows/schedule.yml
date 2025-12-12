@@ -31,6 +31,22 @@ jobs:
           ls -R .
 
       # -------------------------------------------------------
+      # Ensure yesterday_theme_signals.json is updated BEFORE engine runs
+      # (this is the "yesterday" baseline used to compute deltas)
+      # -------------------------------------------------------
+      - name: Prepare yesterday_theme_signals.json baseline
+        run: |
+          echo "=== PREPARE YESTERDAY BASELINE ==="
+          if [ -f theme_signals.json ]; then
+            cp -f theme_signals.json yesterday_theme_signals.json
+            echo "Copied theme_signals.json -> yesterday_theme_signals.json"
+          else
+            echo "{}" > yesterday_theme_signals.json
+            echo "No existing theme_signals.json; created empty yesterday_theme_signals.json"
+          fi
+          ls -l yesterday_theme_signals.json || true
+
+      # -------------------------------------------------------
       # Install system deps
       # -------------------------------------------------------
       - name: Install system dependencies
@@ -71,6 +87,26 @@ jobs:
           python LDA_engine_with_BERTopic_v054.py
 
       # -------------------------------------------------------
+      # DIAGNOSTIC — Print deltas that were written into theme_signals.json
+      # -------------------------------------------------------
+      - name: DIAG - Print delta volumes from theme_signals.json
+        run: |
+          python - <<'PY'
+          import json, os
+          path = "theme_signals.json"
+          if not os.path.exists(path):
+            print("theme_signals.json not found")
+            raise SystemExit(0)
+          data = json.load(open(path, "r", encoding="utf-8"))
+          print("=== DELTA CHECK (from theme_signals.json) ===")
+          for k,v in data.items():
+            dv = v.get("delta_volume", None)
+            dp = v.get("delta_volume_pct", None)
+            vol = v.get("volume", None)
+            print(f"{k}: volume={vol}, delta_volume={dv}, delta_volume_pct={dp}")
+          PY
+
+      # -------------------------------------------------------
       # GENERATE DASHBOARD
       # -------------------------------------------------------
       - name: Generate Dashboard
@@ -84,7 +120,7 @@ jobs:
       - name: DIAG - Dashboard folder after build
         run: |
           echo "=== AFTER GENERATION: dashboard/ ==="
-          ls -l dashboard/
+          ls -l dashboard/ || true
 
       # -------------------------------------------------------
       # COMMIT UPDATED FILES BACK TO MAIN
@@ -114,10 +150,10 @@ jobs:
 
       - name: Deploy to gh-pages
         run: |
-          cp -r dashboard/* gh-pages-worktree/
-          cp topics.json gh-pages-worktree/
-          cp theme_signals.json gh-pages-worktree/
-          cp articles.csv gh-pages-worktree/
+          cp -r dashboard/* gh-pages-worktree/ || true
+          cp topics.json gh-pages-worktree/ || true
+          cp theme_signals.json gh-pages-worktree/ || true
+          cp articles.csv gh-pages-worktree/ || true
           cp yesterday_theme_signals.json gh-pages-worktree/ || true
 
           cd gh-pages-worktree
