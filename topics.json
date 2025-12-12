@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Federal Reserve Developments",
-    "summary": "OVERVIEW:\nRecent actions and communications from the Federal Reserve Board highlight ongoing enhancements to bank supervision, payment services, and interest rate adjustments, reflecting an institutional response to market conditions and public inquiries.\n\nKEY EXAMPLES:\n- The Federal Reserve released strategies for managing reserve balances in response to a survey of senior financial officers at banks.\n- The announcement of the Bank Term Funding Program during the 2023 bank run significantly reduced investor risk perceptions.\n- The Fed is seeking public input on potential changes to check services, indicating a shift towards more responsive banking services. \n- Price adjustments for payment services offered by the Federal Reserve Banks are set to take effect on January 1, 2026.",
-    "article_count": 40,
-    "topicality": 40.0,
-    "theme_weight": 1.115,
-    "theme": "Bank lending and credit risk"
+    "title": "Fed Rate Cut and Crypto Impact",
+    "summary": "OVERVIEW:\nThe recent quarter-point rate cut by the Federal Reserve has generated increased volatility and activity in the cryptocurrency markets, with Ethereum specifically showing a strong response and outperforming Bitcoin.\n\nKEY EXAMPLES:\n- Ethereum maintained gains above $3,300 following the rate cut, indicating a positive rally.\n- Analysts anticipate a larger bounce in crypto markets based on historical patterns after rate cuts.\n- Abu Dhabi and Dubai are enhancing their digital asset strategies, integrating Bitcoin and Web3 into commerce. \n- Bitcoin miners are emerging as significant holders of Bitcoin among public companies.",
+    "article_count": 47,
+    "topicality": 47.0,
+    "theme_weight": 0.7744680851063832,
+    "theme": "Digital assets"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Stock Market Dynamics",
-    "summary": "OVERVIEW:\nRecent fluctuations in the stock market reveal a complex interplay between investor sentiment, economic indicators, and geopolitical factors. While optimism surrounding Trump's Treasury pick has led to record highs, concerns loom over market longevity and sector-specific declines.\n\nKEY EXAMPLES:\n- The Dow reached a record high, driven partly by positive sentiment around Trump's economic policies.\n- After September's profit-taking, some investors increased their positions, reflecting confidence in the ongoing market rally.\n- Emerging market FX trades have performed well recently, though their sustainability is uncertain.  \n- Wingstop's stock fell 12% after disappointing profit reports, highlighting sector vulnerabilities.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.9974358974358974,
+    "title": "Market Trends and Investor Sentiment",
+    "summary": "OVERVIEW:\nRecent market dynamics reveal a mix of investor actions, including profit-taking and a focus on high-stakes trading environments influenced by political and economic factors, notably concerning Trump\u2019s policies and the Federal Reserve.\n\nKEY EXAMPLES:\n- Some investors are doubling down on trades despite profit-taking seen in September.\n- Wingstop's stock fell 12% after its profits did not meet expectations.\n- Emerging market FX carry trades have seen substantial returns since April, raising concerns about their sustainability.",
+    "article_count": 41,
+    "topicality": 41.0,
+    "theme_weight": 0.9707317073170733,
     "theme": "Inflation"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "AI Development and Challenges",
-    "summary": "OVERVIEW:\nThe articles collectively explore the rapid evolution of artificial intelligence, highlighting regulatory concerns, startup support, market dynamics, and the potential risks associated with AI integration.\n\nKEY EXAMPLES:\n- Trump warns that excessive regulation could hinder AI development.\n- The UK plans to support AI hardware startups with guaranteed payments.\n- An AI agent hacked a Stanford network, showcasing its efficiency compared to human professionals.",
-    "article_count": 32,
-    "topicality": 32.0,
+    "title": "AI's Expanding Influence",
+    "summary": "OVERVIEW:\nRecent developments illustrate the growing integration of artificial intelligence across various sectors, from accounting and property management to entertainment and transportation. These advancements are reshaping traditional industries and raising new challenges.\n\nKEY EXAMPLES:\n- Venture-capital firms are investing in AI solutions for traditionally overlooked fields like accounting and property management.\n- Microsoft announced initiatives to democratize AI access for non-technical users, albeit with potential security risks.\n- Pony.ai is pursuing an \u201casset-light\u201d approach in its robotaxi development, aiming for financial sustainability by 2030.",
+    "article_count": 33,
+    "topicality": 33.0,
     "theme_weight": 1.0,
     "theme": "AI"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Cybersecurity Threat Landscape",
-    "summary": "OVERVIEW:\nRecent developments highlight the escalating cybersecurity threats from both organized groups and exploitations of newly disclosed vulnerabilities. The increase in attacks targeting critical flaws and specific industries underscores the ongoing risks faced by businesses and organizations.\n\nKEY EXAMPLES:\n- Following the public disclosure of CVE-2025-55182, attacks surged as various threat actors capitalized on the vulnerability.\n- Google recently patched a serious flaw that allowed malicious instructions to be embedded in documents, posing a risk to sensitive corporate data.\n- The cyber threat posed by Hamas's hackers has evolved, with improved malware and broader regional attack strategies.\n- Manufacturers are increasingly targeted due to significant cybersecurity gaps and a shortage of expertise in protecting their systems.",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 0.996875,
-    "theme": "Cyber attacks"
+    "title": "US Trade Policy Changes",
+    "summary": "OVERVIEW:\nRecent news highlights ongoing shifts in U.S. trade policy under President Trump, with a focus on tariffs, trade deficits, and efforts to address consumer costs.\n\nKEY EXAMPLES:\n- Trump announced new 10% tariffs on China related to drug inflow.\n- He rolled back tariffs on grocery items to mitigate high living costs.\n- The trade deficit recently fell to a five-year low, though future trends remain uncertain.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 1.0,
+    "theme": "Inflation"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "U.S. Trade Policy Challenges**",
-    "summary": "OVERVIEW: The articles highlight ongoing debates and complexities surrounding U.S. trade policy, particularly under President Trump's administration. They focus on the impacts of tariffs, trade agreements, and the evolving trade relationship with key partners.\n\nKEY EXAMPLES:\n- The monthly trade deficit recently fell to its lowest point in five years, but the sustainability of this trend remains uncertain following Trump's tariffs.\n- President Trump has announced additional tariffs on China targeting drug inflow, indicating a continuous escalation in trade tensions.\n- Concerns are rising regarding the future of the U.S.-Mexico-Canada trade pact, with hearings reflecting anxiety over potential changes.",
+    "title": "Economic Slowdown and Uncertainty",
+    "summary": "OVERVIEW:\nA cluster of recent news articles highlights the rising economic uncertainty in the U.S., characterized by slowing productivity, anticipated declines in investment, and increasing real estate costs influenced by climate change.\n\nKEY EXAMPLES:\n- Analysts are linking an economic slowdown to uncertainty surrounding the upcoming tax-raising Budget proposed by Rachel Reeves.\n- U.S. productivity showed a decline in the fourth quarter while unit labor costs were on the rise, indicating potential pressures on the economy.\n- Insurance companies are raising premiums and reducing coverage, particularly in areas vulnerable to climate-related risks, further impacting the real estate market.",
     "article_count": 31,
     "topicality": 31.0,
-    "theme_weight": 0.9806451612903225,
-    "theme": "Inflation"
+    "theme_weight": 1.0451612903225809,
+    "theme": "Consumer debt"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Tokenization and Financial Regulation",
-    "summary": "OVERVIEW:\nRecent developments indicate a growing intersection between traditional finance and cryptocurrency markets, particularly through the tokenization of investment funds and the emergence of stablecoins. These trends raise both regulatory questions and potential impacts on financial stability.\n\nKEY EXAMPLES:\n- The SEC Chair's comments highlight a vision for tokenized US financial markets and on-chain settlement.\n- BlackRock's filing for a staking-enabled Ethereum trust signals a shift in institutional risk acceptance.\n- The US Congress has advanced the Digital Asset Market Clarity Act, aiming to clarify regulations for digital assets.",
+    "title": "Tech Market Trends and Challenges",
+    "summary": "OVERVIEW:\nThe articles highlight current challenges and strategies within the tech and telecom sectors, reflecting a dynamic market influenced by competitive pressures and emerging technologies.\n\nKEY EXAMPLES:\n- Panic around tech stock selloffs, particularly Nvidia and Broadcom, is viewed as exaggerated.\n- Verizon reintroduces unlimited data plans, benefiting users but negatively impacting investors amid fierce competition.\n- JPMorgan adjusts stock ratings for several tech companies, indicating a shift in market confidence.",
     "article_count": 31,
     "topicality": 31.0,
-    "theme_weight": 0.7516129032258062,
-    "theme": "Digital assets"
+    "theme_weight": 0.9709677419354839,
+    "theme": "Others"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Climate Change and Housing Costs",
-    "summary": "OVERVIEW:\nRecent discussions highlight the impact of climate change on the housing market, particularly regarding rising insurance premiums, reduced coverage, and increasing costs associated with properties in flood and wildfire-prone areas.\n\nKEY EXAMPLES:\n- Insurers are raising premiums and cutting back on coverage due to increased climate-related risks affecting real estate.\n- Homeownership costs in vulnerable neighborhoods are becoming more apparent, with implications for buyers and current homeowners.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 1.0344827586206897,
-    "theme": "Inflation"
+    "title": "Bank Risk and Financial Evolution**",
+    "summary": "**OVERVIEW:**  \nRecent analyses highlight evolving perceptions of bank risk amid structural changes in the U.S. banking sector and the growing influence of nonbank financial institutions (NBFIs). A focus on new metrics and regulatory developments aims to enhance the accuracy of identifying at-risk banks and address the shifting landscape of financial intermediation.\n\n**KEY EXAMPLES:**  \n- The Federal Reserve's Bank Term Funding Program considerably shook investor confidence during the 2023 bank run by lowering perceived risks.\n- A new solvency measure, Economic Capital, has proven to identify failing banks more accurately compared to traditional metrics.\n- Banks are increasingly integrating nonbank activities, driven by the necessity to manage liquidity effectively, challenging the traditional view of modern banking functions.  \n- Regulatory proposals aim to bolster community banks while ensuring they adhere to robust capital requirements.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 1.1566666666666667,
+    "theme": "Bank lending and credit risk"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Cryptocurrency Market Developments",
-    "summary": "OVERVIEW:\nRecent articles highlight significant developments in the cryptocurrency landscape, focusing on institutional adoption, regulatory movements, and market reactions to economic changes.\n\nKEY EXAMPLES:\n- Binance has expanded into the stablecoin market by integrating ties with the Trump family's stablecoin and offering zero-fee trading pairs.\n- Abu Dhabi and Dubai are enhancing their financial ecosystems, integrating Bitcoin and stablecoins into daily commerce and institutional finance.\n- After a recent Federal Reserve rate cut, analysts expect a notable rebound in the crypto markets, following historical post-cut trends.\n- Bitcoin miners like Marathon Digital and Riot Platforms are increasingly becoming major corporate holders of Bitcoin, signaling a shift in corporate treasury strategies.",
+    "title": "Federal Reserve Updates",
+    "summary": "OVERVIEW:\nRecent developments from the Federal Reserve Board outline enhancements to bank supervision, updates on payment services, and adjustments to interest rates, reflecting a proactive approach to managing the financial landscape.\n\nKEY EXAMPLES:\n- The Federal Reserve Board released information on improvements to bank supervision.\n- A survey was published detailing strategies by senior financial officers at banks for managing reserve balances.\n- The Fed announced new pricing for payment services effective January 1, 2026.\n- Interest rates were cut, impacting mortgages, car loans, and credit cards.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 0.7999999999999999,
-    "theme": "Digital assets"
+    "theme_weight": 1.0758620689655172,
+    "theme": "Bank lending and credit risk"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Investment Trends and Financial Developments",
-    "summary": "OVERVIEW:\nRecent reports indicate significant movements in investment funds and strategies, including a surge in cash flow plans and developments in private credit markets. Financial institutions are also adjusting their approaches as they navigate economic challenges and opportunities.\n\nKEY EXAMPLES:\n- Wendel's stock increased following the announcement of a \u20ac7 billion cash flow plan through 2030.\n- A new joint venture fund with SMBC aims to establish a total deployable capital of \u20ac5 billion, focusing on a mix of public and private investments.\n- Reports highlight a record $18 billion in private credit for developing markets by the end of Q3 2025, amidst rising bankruptcy filings among US small businesses.\n- Barclays experienced an 18% profit increase while raising its income guidance, indicating positive financial performance.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 1.0074074074074073,
-    "theme": "Digital assets"
+    "title": "Significant Media and Cultural Trends",
+    "summary": "OVERVIEW:\nRecent news highlights notable developments in media leadership, emerging cultural trends, and social movements. These events showcase shifts in editorial direction as well as the impact of social issues on public discourse.\n\nKEY EXAMPLES:\n- Veteran journalist promoted under Bari Weiss at CBS marks a significant change in the network\u2019s leadership.\n- The choice of a prominent headline force by a magazine reflects its relevance in current societal issues.\n- China's military warns Japan over historical tensions as commemorations for the Nanking massacre approach.\n- A Japanese #MeToo documentary premieres, aiming to foster societal change following a landmark civil case.",
+    "article_count": 28,
+    "topicality": 28.0,
+    "theme_weight": 0.9964285714285713,
+    "theme": "Others"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Cryptocurrency Market Reactions",
-    "summary": "OVERVIEW: \nRecent adjustments in monetary policy and concerns regarding the AI sector have created notable ripple effects in the cryptocurrency market, especially affecting Bitcoin and Ethereum.\n\nKEY EXAMPLES:\n- The Federal Reserve's quarter-point rate cut led to a surge in Ethereum\u2019s performance, highlighting its market resilience compared to Bitcoin.\n- Oracle's significant drop in market value due to revenue misses has raised fears of an \u201cAI bubble,\u201d influencing Bitcoin\u2019s stability as tech stocks falter.\n- XRP exchange-traded funds have seen remarkable inflows of nearly $1 billion over 18 days, indicating a unique market trend amidst widespread volatility.",
+    "title": "Cybersecurity Threat Landscape 2025",
+    "summary": "OVERVIEW:\nRecent articles highlight an increase in cyberattacks and vulnerabilities as threat actors exploit newly discovered flaws, while efforts to counter these threats through updates and international collaboration are underway.\n\nKEY EXAMPLES:\n- Attacks exploiting CVE-2025-55182 surged following its public disclosure, indicating a swift reaction from threat actors.\n- Google addressed a critical vulnerability that allowed attackers to manipulate documents for data exfiltration.\n- International coordination, including U.S., U.K., and Australia efforts, targeted Russian cybercrime infrastructure to combat ransomware operations.",
     "article_count": 27,
     "topicality": 27.0,
-    "theme_weight": 0.8925925925925925,
-    "theme": "Digital assets"
+    "theme_weight": 0.9888888888888888,
+    "theme": "Cyber attacks"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "**Tech Market Turmoil**",
-    "summary": "OVERVIEW:\nRecent news highlights significant challenges and shifts in the tech industry, ranging from investor panic over major companies to competitive pressures impacting telecom strategies.\n\nKEY EXAMPLES:\n- Investors are anxious about tech giants like Nvidia and Broadcom, fearing that their investments in AI may not yield expected returns.\n- Verizon's reintroduction of unlimited data plans reflects fierce competition within the telecom sector, negatively affecting its stock performance.\n- The U.S. government's potential ban on TP-Link products underscores security concerns linked to Chinese ties, affecting a major player in networking gear.",
+    "title": "Stablecoins and Regulation",
+    "summary": "OVERVIEW:\nSeveral recent developments highlight the evolving landscape of stablecoins, focusing on their adoption, regulation, and potential impact on financial systems. Key discussions include legislation aimed at establishing a regulatory framework for stablecoins in the U.S. and concerns about innovation migration in the UK.\n\nKEY EXAMPLES:\n- The U.S. Congress passed the GENIUS Act, creating comprehensive federal rules for stablecoin issuance, which aim to clarify their role in the financial ecosystem.\n- UK lawmakers are advocating for regulatory measures that support innovation in stablecoin development, cautioning against restrictive practices that could drive innovation overseas.\n- The rapid advancement of digital currencies and stablecoins is prompting lawmakers and financial institutions to explore their capabilities as efficient payment solutions.",
     "article_count": 26,
     "topicality": 26.0,
-    "theme_weight": 1.0230769230769232,
-    "theme": "Others"
+    "theme_weight": 0.8115384615384614,
+    "theme": "Digital assets"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "House Oversight Committee Reports",
-    "summary": "OVERVIEW:\nRecent articles focus on a series of reports issued by the House Committee on Oversight and Government Reform, all dated December 2, 2025. These reports appear to be part of ongoing legislative activities.\n\nKEY EXAMPLES:\n- The reports cover a range of topics pertinent to government operations.\n- Each article signifies the committee's continued engagement in oversight functions.\n- All reports share the same publication date, indicating a coordinated effort by the committee.",
-    "article_count": 25,
-    "topicality": 25.0,
-    "theme_weight": 1.008,
-    "theme": "Cyber attacks"
+    "title": "Federal Reserve's Economic Impact",
+    "summary": "OVERVIEW:\nRecent trends in global foreign exchange markets and U.S. Treasury securities reflect cautious investor sentiment influenced by the Federal Reserve's monetary policy decisions and economic uncertainty.\n\nKEY EXAMPLES:\n- The dollar has shown weakness following a recent Fed interest rate cut, contributing to increased volatility in foreign exchange markets.\n- The Indian rupee has hit a record low as traders react to ongoing economic developments and Federal Reserve outlook assessments.\n- U.S. Treasury yields have fallen as market liquidity experienced fluctuations amid economic policy shifts and trade tensions.",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 1.017391304347826,
+    "theme": "Inflation"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "China-Taiwan Relations and Economic Developments",
-    "summary": "OVERVIEW:\nRecent developments highlight the intricate balance between economic activities and political tensions in the China-Taiwan context. Notably, a mayoral visit to Shanghai for a forum underscores the ongoing diplomatic exchanges despite existing tensions, while economic initiatives reflect China's readiness to host international forums.\n\nKEY EXAMPLES:\n- Taipei's mayor, Chiang Wan-an, plans to attend the Shanghai-Taipei City Forum, fostering dialogue amid political scrutiny from Taiwan's DPP.\n- Hong Kong will host the Apec finance ministers' meeting, signaling China's active role in regional economic collaboration.\n- A Chinese business group has called on the EU to stop anti-subsidy investigations, indicating competitive pressures on Chinese firms in global markets.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 1.0142857142857142,
-    "theme": "Others"
+    "title": "Legislative Actions by House Committee",
+    "summary": "OVERVIEW:\nThe House Committee on Oversight and Government Reform has reported a series of actions on December 2, 2025, related to various legislative matters.\n\nKEY EXAMPLES:\n- Article 1 discusses a significant oversight issue addressed by the committee.\n- Article 2 highlights a specific legislative proposal that was moved forward.\n- Article 3 details a committee report that emphasizes accountability measures.\n- Article 4 mentions additional legislative recommendations made by the committee.",
+    "article_count": 19,
+    "topicality": 19.0,
+    "theme_weight": 1.0,
+    "theme": "Cyber attacks"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Economic Uncertainty and Financial Instability",
-    "summary": "OVERVIEW:\nRecent reports highlight a pervasive sense of economic uncertainty and potential financial instability across various regions, driven by a mix of government policies and market conditions.\n\nKEY EXAMPLES:\n- Analysts attribute a slowdown in economic activity in the UK to impending tax changes proposed by Rachel Reeves.\n- Deutsche Bank describes the macroeconomic outlook for the U.S. as \"murky at best\" for 2025, reflecting widespread concerns.\n- Experts warn of a combination of factors that echo previous financial crises, raising alarm over current market practices.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 1.0555555555555556,
-    "theme": "Inflation"
+    "title": "Do Kwon Sentenced for Fraud",
+    "summary": "OVERVIEW:\nDo Kwon, the co-founder of Terraform Labs, has been sentenced to 15 years in prison for fraud related to the collapse of the TerraUSD and Luna cryptocurrencies. His conviction is part of a broader trend of increasing prison terms for crypto company leaders in the United States.\n\nKEY EXAMPLES:\n- Kwon's sentence follows a plea deal where he admitted guilt to fraud charges in August 2024.\n- He faces additional pending charges in South Korea, complicating his legal situation.\n- U.S. courts have imposed a total of 83 years of prison sentences on various crypto executives since early 2024.",
+    "article_count": 16,
+    "topicality": 16.0,
+    "theme_weight": 1.00625,
+    "theme": "Cyber attacks"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Do Kwon Sentencing Developments",
-    "summary": "OVERVIEW:\nThe news cluster revolves around the sentencing of Do Kwon, co-founder of Terraform Labs, who has been sentenced to 15 years in prison for fraud, following a guilty plea related to the collapse of his cryptocurrency projects, Luna and TerraUSD.\n\nKEY EXAMPLES:\n- A federal judge presided over victim statements for hours before sentencing Kwon after he pleaded guilty to conspiracy to defraud and wire fraud.\n- Kwon's sentencing includes an upcoming U.S. federal court hearing set for December 11, 2025, where prosecutors are seeking a 12-year sentence.\n- Kwon's fraud case ties back to the devastating impact on investors when his virtual currencies plummeted in value in 2022.",
-    "article_count": 15,
-    "topicality": 15.0,
-    "theme_weight": 1.0266666666666666,
-    "theme": "Others"
+    "title": "Fair Housing Enforcement Overhaul",
+    "summary": "OVERVIEW: \nRecent news highlights significant changes in the Trump administration's approach to fair housing enforcement, alongside discussions in India regarding employee rights in the workplace.\n\nKEY EXAMPLES:\n- The Trump administration's efforts have escalated regarding how fair housing laws are enforced.\n- India's parliament is considering a Right to Disconnect Bill, reflecting a shift towards protecting workers' rights amidst an always-connected work culture.",
+    "article_count": 9,
+    "topicality": 9.0,
+    "theme_weight": 1.0222222222222221,
+    "theme": "Inflation"
   }
 }
