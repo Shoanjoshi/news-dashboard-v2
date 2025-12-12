@@ -95,7 +95,6 @@ RSS_FEEDS = [
     "https://cointelegraph.com/rss",
     "https://www.circle.com/blog/rss.xml",
     "https://tether.to/en/feed/",
-    # "https://forum.makerdao.com/latest.rss",
 ]
 
 THEMES = [
@@ -149,6 +148,16 @@ def _normalize_rows(mat: np.ndarray) -> np.ndarray:
     norms = np.linalg.norm(mat, axis=1, keepdims=True)
     norms[norms == 0] = 1
     return mat / norms
+
+
+def _load_json_if_exists(path: str):
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
 
 
 def fetch_articles():
@@ -255,7 +264,7 @@ ARTICLES:
 def run_bertopic_analysis(docs):
     umap_model = UMAP(n_neighbors=30, n_components=2, min_dist=0, metric="cosine")
     kmeans_model = KMeans(n_clusters=15, random_state=42, n_init="auto")
-    vectorizer_model = CountVectorizer(stop_words="english", min_df=2, ngram_range=(1, 3))
+    vectorizer_model = CountVectorizer(stop_words="english", min_df=2, ngram_range=(1,3))
 
     model = BERTopic(
         umap_model=umap_model,
@@ -449,15 +458,12 @@ def generate_topic_results():
 # ------------------------------------------------------------
 
 def run_and_persist_bertopic():
-    # --- Load previous theme_signals (for "yesterday") if it exists
-    prev_theme_signals = None
-    if os.path.exists("theme_signals.json"):
-        try:
-            with open("theme_signals.json", "r", encoding="utf-8") as f:
-                prev_theme_signals = json.load(f)
-            print("📁 Loaded previous theme_signals.json for yesterday snapshot.")
-        except Exception as e:
-            print(f"⚠️ Could not load previous theme_signals.json: {e}")
+    # Load "yesterday" baseline (workflow prepares this before running)
+    yesterday = _load_json_if_exists("yesterday_theme_signals.json") or {}
+    if yesterday:
+        print("🕒 Loaded yesterday_theme_signals.json for delta computation.")
+    else:
+        print("🕒 No yesterday_theme_signals.json baseline found (or empty). Deltas may be 0/100 on first run.")
 
     docs, summaries, model, topic_embeddings, theme_metrics, topics = generate_topic_results()
     if not docs:
@@ -465,27 +471,6 @@ def run_and_persist_bertopic():
         return
 
     os.makedirs("dashboard", exist_ok=True)
-
-    # --- Write yesterday_theme_signals.json
-    if prev_theme_signals is not None:
-        yesterday_payload = prev_theme_signals
-        print("🕒 Using previous theme_signals.json as yesterday_theme_signals.json")
-    else:
-        yesterday_payload = theme_metrics
-        print("🕒 No previous theme_signals.json found; using today's metrics for yesterday as bootstrap")
-
-    with open("yesterday_theme_signals.json", "w", encoding="utf-8") as f:
-        json.dump(yesterday_payload, f, indent=2)
-
-    # --- Debug print: compare yesterday vs today volumes
-    try:
-        for theme, cur in theme_metrics.items():
-            cur_vol = cur.get("volume", 0)
-            prev_vol = yesterday_payload.get(theme, {}).get("volume", 0) if isinstance(yesterday_payload, dict) else 0
-            delta = cur_vol - prev_vol
-            print(f"[DELTA DEBUG] {theme}: yesterday={prev_vol}, today={cur_vol}, Δ={delta}")
-    except Exception as e:
-        print(f"⚠️ Delta debug failed: {e}")
 
     # topics.json
     topics_out = {}
@@ -505,7 +490,31 @@ def run_and_persist_bertopic():
     with open("topics.json", "w", encoding="utf-8") as f:
         json.dump(topics_out, f, indent=2)
 
-    # theme_signals.json (TODAY)
+    # ------------------------------------------------------------
+    # ADD DELTAS INTO theme_metrics (this is what the dashboard reads)
+    # ------------------------------------------------------------
+    print("📈 Computing delta_volume and delta_volume_pct (today vs yesterday)...")
+    for th, vals in theme_metrics.items():
+        today_vol = int(vals.get("volume", 0) or 0)
+
+        y = yesterday.get(th, {}) if isinstance(yesterday, dict) else {}
+        y_vol = int((y.get("volume", 0) or 0))
+
+        delta = today_vol - y_vol
+        if y_vol > 0:
+            delta_pct = (delta / y_vol) * 100.0
+        else:
+            # If yesterday was 0, define pct as:
+            # - 0 if still 0 today
+            # - 100 if it "appears" today (avoid divide-by-zero)
+            delta_pct = 0.0 if today_vol == 0 else 100.0
+
+        vals["delta_volume"] = int(delta)
+        vals["delta_volume_pct"] = float(delta_pct)
+
+        print(f"[DELTA DEBUG] {th}: yesterday={y_vol}, today={today_vol}, Δ={delta}, Δ%={delta_pct:.2f}")
+
+    # theme_signals.json (NOW contains delta_volume_pct)
     with open("theme_signals.json", "w", encoding="utf-8") as f:
         json.dump(theme_metrics, f, indent=2)
 
