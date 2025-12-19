@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Federal Reserve Policy Updates",
-    "summary": "OVERVIEW:\nRecent announcements from the Federal Reserve Board highlight evolving regulatory approaches and actions in response to changes in the banking sector, particularly regarding the integration of nonbank financial institutions and innovations in banking services.\n\nKEY EXAMPLES:\n- The Federal Reserve Board withdrew a 2023 policy statement and introduced a new one to facilitate innovation among Board-supervised banks.\n- The termination of enforcement actions against Goldman Sachs and Metropolitan Commercial Bank indicates a shift towards more lenient oversight.\n- The Board's request for public input on check services suggests a willingness to adapt to changing consumer preferences in banking.",
-    "article_count": 43,
-    "topicality": 43.0,
-    "theme_weight": 1.104651162790698,
-    "theme": "Bank lending and credit risk"
+    "title": "** Crypto Market Struggles",
+    "summary": "OVERVIEW:\nThe cryptocurrency market has faced significant downturns recently, characterized by declining values and concerns over structural issues despite regulatory advancements and institutional support.\n\nKEY EXAMPLES:\n- The total crypto market cap fell to $2.93 trillion, marking an eight-month low and erasing earlier yearly gains.\n- Bitcoin saw volatility, dropping from a high of $94,000 to around $86,000, demonstrating a rapid loss of market confidence.\n- Analysts are predicting further declines in the crypto market amidst a backdrop of regulatory changes and economic uncertainty.",
+    "article_count": 45,
+    "topicality": 45.0,
+    "theme_weight": 0.8822222222222225,
+    "theme": "Digital assets"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Wall Street's Crypto Evolution",
-    "summary": "OVERVIEW:\nRecent developments indicate a significant shift in how traditional financial institutions engage with cryptocurrencies, including a move by JP Morgan Chase into on-chain cash, the Federal Reserve's revision of its crypto guidance, and increasing acceptance of Bitcoin by major banks.\n\nKEY EXAMPLES:\n- JP Morgan Chase launched the My OnChain Net, aiming to capture institutional capital currently held in stablecoins.\n- Vanguard reversed its crypto ban, allowing clients access to spot ETFs, signaling a growing acceptance of cryptocurrency in mainstream investing. \n- The Federal Reserve has removed outdated guidance blocking banks from engaging with cryptocurrencies, acknowledging an evolved understanding of the sector.\n- Nearly 60% of the largest US banks are reportedly adopting crypto strategies they had previously denied.",
-    "article_count": 40,
-    "topicality": 40.0,
-    "theme_weight": 0.765,
-    "theme": "Digital assets"
+    "title": "Inflation and Economic Data",
+    "summary": "OVERVIEW: \nRecent economic reports indicate a rise in prices at an annual rate of 2.7%, alongside muddled data due to a government shutdown, complicating analysis for economists.\n\nKEY EXAMPLES:\n- Prices rose at a 2.7% annual pace last month, as reported by the Labor Department.\n- New economic data has been impacted by the ongoing government shutdown, leading to uncertainty among economists.\n- The U.S. faced a slowdown in productivity while unit labor costs increased in the fourth quarter.",
+    "article_count": 43,
+    "topicality": 43.0,
+    "theme_weight": 1.0046511627906978,
+    "theme": "Inflation"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Corporate Takeover Dynamics",
-    "summary": "OVERVIEW:\nRecent developments highlight an intense bidding war between Warner Bros. Discovery and Paramount, along with significant corporate maneuvers in various sectors, reflecting heightened competition and strategic repositioning.\n\nKEY EXAMPLES:\n- Warner Bros. Discovery rejected a hostile takeover bid from Paramount, citing political advantages as questionable.\n- Paramount's attempts to entice WBD CEO David Zaslav included a job offer and salary as part of the bidding struggle.\n- Amazon's potential deal exceeding $20 billion over 20 years indicates a fierce commitment to securing strategic partnerships in new markets.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 1.0333333333333334,
-    "theme": "Others"
+    "title": "Currency and Monetary Policy Trends**",
+    "summary": "OVERVIEW:\nRecent developments in Asia's foreign exchange markets and central bank policies are characterized by cautious movements in response to US inflation data and significant interest rate adjustments by the Bank of Japan (BOJ). The BOJ's recent rate hike marks a pivotal shift in Japan's monetary policy after decades of near-zero rates.\n\nKEY EXAMPLES:\n- The BOJ raised interest rates to levels not seen in 30 years, indicating confidence in achieving its inflation target.\n- Following the BOJ's hike, Bitcoin experienced a notable increase, reflecting investor sentiment towards riskier assets despite currency fluctuations.\n- The US dollar showed resilience by edging up against other currencies, particularly in the context of softer inflation data impacting Federal Reserve rate forecasts.",
+    "article_count": 37,
+    "topicality": 37.0,
+    "theme_weight": 0.9864864864864865,
+    "theme": "Inflation"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Bitcoin Market Trends",
-    "summary": "OVERVIEW:\nRecent news highlights a downward trend in Bitcoin prices, with analysts expressing concerns about potential significant drops and the impact of external factors like tariffs and market sentiment.\n\nKEY EXAMPLES:\n- Bitcoin has returned to lows below $86,000, raising concerns among traders about potential market bottoms.\n- An analyst warns that Bitcoin could drop to $10,000, which could adversely affect other cryptocurrencies such as Ethereum and XRP.\n- Bitcoin's price has slipped to $94,000 in response to waning risk appetite due to geopolitical issues, particularly a tariff threat from Trump.\n- The overall crypto market is experiencing a selloff, with notable declines in other cryptocurrencies like BNB and Polkadot.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 0.932258064516129,
-    "theme": "Digital assets"
+    "title": "Immigrants and Housing Costs",
+    "summary": "OVERVIEW:\nSeveral articles report on former President Trump's assertion that immigrants are responsible for rising housing costs in the U.S. However, experts challenge this claim, suggesting that the reality of the housing crisis is far more nuanced and involves multiple contributing factors.\n\nKEY EXAMPLES:\n- Trump officials have linked immigrants to the increase in housing prices, but analysts argue that other economic factors play a significant role.\n- Despite Trump's assertions, research indicates that blaming immigrants oversimplifies the complexities of the housing market.\n- Trump also promotes his healthcare initiatives aimed at reducing costs through his \u201cMost Favored Nation\u201d pricing deals.\n- In addition, Trump noted that all new jobs created under his proposed second administration would be allocated to U.S.-born workers.",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 1.0294117647058822,
+    "theme": "Inflation"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Trump on Affordability and Investments",
-    "summary": "OVERVIEW:\nThis cluster of articles focuses on President Trump's claims regarding affordability issues and economic investments in the United States, alongside his discussions about lowering health care costs.\n\nKEY EXAMPLES:\n- Trump stated he \u201cinherited a mess\u201d and is focused on making life more affordable for Americans.\n- He claimed to have secured $18 trillion in investments to boost the U.S. economy.\n- Trump emphasized his \u201cMost Favored Nation\u201d pricing deals aimed at reducing health costs. \n- He acknowledged voter discontent related to the rising cost of living.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 0.9967741935483871,
-    "theme": "Consumer debt"
+    "title": "AI Investment Trends",
+    "summary": "OVERVIEW:\nRecent developments highlight a surge in investment activities within the artificial intelligence sector, particularly in Hong Kong and traditional industries. Companies are increasingly seeking funding to capitalize on AI advancements and bolster their growth.\n\nKEY EXAMPLES:\n- Chinese AI and chipmaker firms, like GigaDevice Semiconductor, are utilizing Hong Kong for initial public offerings, reflecting strong investor interest.\n- Venture-capital firms are innovating by introducing AI solutions to traditionally mundane sectors like accounting and property management.",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 1.028125,
+    "theme": "AI"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Inflation Trends and Impacts",
-    "summary": "OVERVIEW:\nRecent articles highlight various aspects of inflation in the U.S., including rising consumer prices and their effects on spending behavior, productivity, and labor costs.\n\nKEY EXAMPLES:\n- Inflation is expected to have increased to an annual rate of 3.1% in November.\n- U.S. productivity showed a slowdown in the fourth quarter as unit labor costs rose.\n- More holiday shoppers are opting for practical gifts due to rising inflation pressures.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 1.0,
-    "theme": "Inflation"
+    "title": "Cryptocurrency Market Trends",
+    "summary": "OVERVIEW:\nRecent developments in the cryptocurrency market showcase significant challenges such as rising theft, market manipulation, and shifts toward AI and regulatory compliance. These trends highlight both vulnerabilities and evolving strategies within the decentralized finance landscape.\n\nKEY EXAMPLES:\n- North Korean hackers have escalated their activities, stealing $2.02 billion in cryptocurrency in 2025, marking a 51% year-over-year increase.\n- A false narrative of mid-sized whales purchasing $5 billion of Bitcoin created a misleading market optimism, proving to be an institutional accounting trap.\n- Google has provided at least $5 billion in credit support to Bitcoin miners for AI projects, indicating a strategic pivot in the mining sector.\n- The SEC's approval of new crypto ETP listing standards is expected to lead to over 100 crypto-linked ETFs launching in 2026, significantly altering market dynamics.",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 0.90625,
+    "theme": "Digital assets"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Cybersecurity Vulnerabilities",
-    "summary": "OVERVIEW:\nRecent reports highlight a variety of cybersecurity threats, including targeted attacks on administrative accounts, outdated authentication methods, and exploitation of system vulnerabilities. The rise of cybercriminal activity and inadequate defenses underscore the urgency for improved security measures.\n\nKEY EXAMPLES:\n- Attackers accessed and exported sensitive information from compromised administrative accounts.\n- The outdated RC4 authentication method has been a persistent target for hackers for years.\n- Rising exploitation of vulnerabilities, like CVE-2025-55182, reveals inadequacies in current security protocols.\n- The use of managed services, like cybersecurity policies crafted by managing general agents, could enhance risk understanding for insurers.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "title": "Stock Market Movements",
+    "summary": "OVERVIEW:\nRecent financial news highlights significant fluctuations in stock prices influenced by corporate earnings reports and strategic developments across various companies.\n\nKEY EXAMPLES:\n- Wingstop's stock declined by 12% after its profit fell short of expectations.\n- Barclays reported an 18% profit rise and raised its income guidance, positively impacting its stock.\n- Novartis increased its sales and profit guidance, indicating strong performance.\n- Oracle's stock surged 5% due to progress with a TikTok deal and fundraising discussions with OpenAI.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 0.9933333333333334,
+    "theme": "Inflation"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Trade Policy Developments",
-    "summary": "OVERVIEW:\nRecent reports highlight the complexities and controversies surrounding U.S. trade policy, including the impact of tariffs on businesses and international partners. Companies and regions are increasingly seeking exemptions from tariffs, while tensions with Europe and China continue to shape the trade landscape.\n\nKEY EXAMPLES:\n- Companies are petitioning for exemptions from high tariffs imposed by the Trump administration, citing negative impacts on business and rising prices.\n- The U.S. trade policy has resulted in varying tariff rates across countries, with partners like Canada and Mexico facing much lower rates compared to nations like China. \n- European analysts express concerns over the increasing trade deficit with China, noting Europe's limited options to address the situation despite its strong sectors.\n- The Trump administration has targeted European tech firms with warnings of economic consequences if the EU does not adjust its regulations.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 0.9413793103448275,
-    "theme": "Inflation"
+    "title": "Trump\u2019s Prime-Time Speech Analysis",
+    "summary": "OVERVIEW:\nRecent speeches by Trump exhibit a consistent pattern, mirroring themes from his campaign rallies while presenting a vision for the nation\u2019s economy. These addresses, although shorter than his typical events, are marked by a series of misleading statements.\n\nKEY EXAMPLES:\n- Trump's speech included a claim that he \"inherited a mess\" while addressing issues of affordability.\n- Despite the brief format, his script retained the core messaging akin to his standard rally speeches.\n- Inaccurate statements were prevalent throughout the speech, highlighting a focus on optimistic economic projections for 2026.",
+    "article_count": 28,
+    "topicality": 28.0,
+    "theme_weight": 0.9785714285714285,
+    "theme": "Recessionary pressures"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Currency Market Reactions",
-    "summary": "OVERVIEW:\nRecent news highlights the cautious sentiment in the currency markets ahead of critical U.S. inflation data, with various currencies exhibiting muted responses and fluctuations amid economic forecasts and central bank considerations.\n\nKEY EXAMPLES:\n- The dollar is showing slight gains ahead of the CPI release, while European central banks are under scrutiny for their monetary policies.\n- The Indian rupee has experienced significant volatility, having moments of recovery from record lows amidst a backdrop of mixed currency performance in Asia.\n- The Korean won is predicted to weaken significantly, reaching its lowest level since 2012 according to Bank of America forecasts.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 1.0071428571428573,
-    "theme": "Inflation"
+    "title": "Cybersecurity Threats and Responses",
+    "summary": "OVERVIEW:\nRecent articles highlight the escalating challenges posed by cybercriminal activities and the vulnerabilities in digital systems, alongside efforts by companies like Microsoft to address these threats through software updates.\n\nKEY EXAMPLES:\n- Law enforcement struggles to cope with the rise of sophisticated cybercriminal syndicates amid rapid digitization and uneven cybersecurity expertise.\n- Attackers are exploiting administrative credentials to access sensitive information, emphasizing the critical weaknesses in current authentication methods.\n- Microsoft has rolled out updates to address over 60 vulnerabilities, including critical zero-day bugs affecting all versions of Windows.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 0.9962962962962962,
+    "theme": "Cyber attacks"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "**AI Adoption Trends**",
-    "summary": "OVERVIEW:  \nThe news articles highlight the increasing integration of artificial intelligence across various industries, reflecting both growth and challenges in its adoption, particularly in enterprise settings.\n\nKEY EXAMPLES:\n- ByteDance reported a tenfold rise in usage of its large language models as businesses in China rapidly incorporate AI.\n- Despite the surge in AI roles, job listings mentioning AI technology have decreased, indicating an expectation among employers for employees to be familiar with AI.\n- A report suggests that Microsoft\u2019s push for AI agents has not translated into widespread enterprise uptake.",
+    "title": "AI's Transformative Impact",
+    "summary": "OVERVIEW:\nThe articles highlight the growing influence of AI across various sectors, including productivity tools, workforce training, compliance, and content quality, reflecting both opportunities and challenges presented by this technology.\n\nKEY EXAMPLES:\n- Google Labs introduced CC, an AI tool that generates morning briefings and helps manage email spam.\n- Microsoft announced a shift towards AI agents, but uptake among enterprise customers remains sluggish.\n- Compliance leaders in APAC are gearing up for AI-enhanced oversight in upcoming regulatory environments.",
     "article_count": 27,
     "topicality": 27.0,
-    "theme_weight": 1.0074074074074073,
+    "theme_weight": 0.9888888888888888,
     "theme": "AI"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Cryptocurrency Market Dynamics",
-    "summary": "OVERVIEW:\nThe cryptocurrency market is experiencing a mix of increasing investor activity and rising security concerns, as various companies venture into stock offerings while grappling with significant theft incidents and market volatility.\n\nKEY EXAMPLES:\n- ARK Invest has purchased $25.4 million in crypto stocks despite the ongoing market decline.\n- Over $2.17 billion has been stolen from cryptocurrency services in just the first half of 2025, highlighting the urgent need for improved security measures.\n- Several firms are liquidating crypto assets to finance share buybacks and stabilize their stock prices.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.8923076923076922,
-    "theme": "Digital assets"
+    "title": "Banking System Adaptations",
+    "summary": "OVERVIEW:\nU.S. banks are evolving from traditional deposit-taking and loan-making institutions to incorporate nonbank financial services, driven by the need to manage liquidity and capitalize on new financial technologies such as stablecoins.\n\nKEY EXAMPLES:\n- Many banks have expanded their operations to include nonbank financial institution subsidiaries, reflecting a shift in their traditional roles (Article 1).\n- The drive for banks to efficiently manage their liquidity needs has been a significant factor in their transformation into diversified financial conglomerates (Article 2).\n- The recent legislation in the U.S. concerning payment stablecoins indicates a potential for significant market expansion and adaptation in banking services (Article 4).\n- New solvency metrics like Economic Capital provide better early identification of failing banks, highlighting ongoing vulnerabilities in the banking sector (Article 3).",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.0199999999999998,
+    "theme": "Bank lending and credit risk"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Investment Landscape Updates",
-    "summary": "OVERVIEW:\nSeveral firms are adjusting their financial strategies amid shifting market conditions, showcasing both positive earnings and caution regarding future investments.\n\nKEY EXAMPLES:\n- Barclays reported an 18% profit rise and increased its income guidance.\n- Plus500 met its expectations with an 11% quarterly revenue climb.\n- Capza raised \u20ac1bn for a senior loans strategy amidst easing US bankruptcies.",
+    "title": "Energy Sector Developments",
+    "summary": "OVERVIEW:\nRecent news highlights significant developments in the energy sector, including a multi-billion dollar fusion energy initiative and ongoing cyber threats targeting energy infrastructure.\n\nKEY EXAMPLES:\n- Amazon exposed a Russian cyber campaign targeting the energy sector, specifically critical infrastructure organizations.\n- Trump Media and Technology Group's $6 billion deal to develop fusion energy raises potential conflict of interest concerns.\n- The deal follows legislative actions aimed at forcing ByteDance to divest its US operations to avoid a ban.",
     "article_count": 24,
     "topicality": 24.0,
-    "theme_weight": 1.0083333333333333,
-    "theme": "Inflation"
+    "theme_weight": 0.9583333333333334,
+    "theme": "Cyber attacks"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Investment Trends and Strategies",
-    "summary": "OVERVIEW:\nRecent news highlights diverse investment strategies and shifts in capital allocation, ranging from venture capital's focus on AI to large-scale investments in established companies and regions.\n\nKEY EXAMPLES:\n- Starfighters Space's IPO reflects a strategic growth plan emphasizing innovation in the investment landscape.\n- Elliott Management's significant stake in Lululemon aims to revitalize the company's performance through potential new leadership.\n- New York City's investment initiative focuses on supporting impact-aligned funds with a $25 million backing. \n- The rise of \"hectocorns\" signifies a shift in startup valuations, indicating changing dynamics in the venture capital landscape.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 0.9727272727272727,
-    "theme": "AI"
+    "title": "Federal Reserve Actions Overview",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board has been actively updating its policies and enforcement actions regarding supervised banks, highlighting actions taken against former employees and approving applications from various financial institutions.\n\nKEY EXAMPLES:\n- The Federal Reserve terminated enforcement actions with Goldman Sachs and Metropolitan Commercial Bank.\n- New enforcement actions were issued against former employees of First Financial Bank and Synovus Bank.\n- Approval was granted for applications from Banco BTG Pactual S.A. and The PNC Financial Services Group, Inc.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 1.1041666666666667,
+    "theme": "Bank lending and credit risk"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Trump\u2019s Rally Speech Themes",
-    "summary": "OVERVIEW: Trump's recent prime-time speech mirrors his campaign rally themes, featuring promises of improved economic conditions despite the current perception of economic weaknesses in polls.\n\nKEY EXAMPLES:\n- The speech was shorter than typical rally events and filled with inaccuracies, yet Trump projected optimism for the economy by 2026.\n- His script closely resembled the rhetoric used during his campaign rally, despite an accelerated delivery.\n- Polls indicate a significant shift in public perception, where the economy, once a Trump stronghold, is now viewed as a weakness.",
-    "article_count": 20,
-    "topicality": 20.0,
-    "theme_weight": 1.0,
-    "theme": "Recessionary pressures"
+    "title": "House Oversight Reports",
+    "summary": "OVERVIEW:\nMultiple articles report on proceedings ordered by the House Committee on Oversight and Government Reform, dated December 2, 2025.\n\nKEY EXAMPLES:\n- All articles mention actions reported by the House Committee on the same date.\n- The consistent involvement of the House Committee highlights ongoing legislative discussions.",
+    "article_count": 19,
+    "topicality": 19.0,
+    "theme_weight": 0.994736842105263,
+    "theme": "Cyber attacks"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Legislative Actions Overview",
-    "summary": "OVERVIEW:\nRecent articles report a series of actions taken by the House Committee on Oversight and Government Reform, all occurring on December 2, 2025. Each article underscores the committee's commitment to addressing various oversight issues through its legislative processes.\n\nKEY EXAMPLES:\n- Multiple reports indicate that the committee has been actively involved in reviewing legislation aimed at enhancing government oversight.\n- Each article reflects a unified effort by the House Committee to address important governance concerns on the same date.",
-    "article_count": 19,
-    "topicality": 19.0,
-    "theme_weight": 1.0105263157894737,
-    "theme": "Cyber attacks"
+    "title": "Trade Dynamics and Challenges",
+    "summary": "OVERVIEW:\nRecent news highlights the evolving landscape of international trade, driven by technology, geopolitical tensions, and regulatory challenges. This shift is impacting jobs, politics, and economic stability across various nations.\n\nKEY EXAMPLES:\n- The US is reviewing the sale of Nvidia\u2019s H200 chips to China, which has sparked controversy and political debate within the US.\n- The US government has paused a tech-related trade agreement with Britain due to conflicts over digital regulations.\n- Japan\u2019s JERA has secured a government subsidy for importing ammonia from the US, reflecting ongoing trade collaborations despite broader challenges.",
+    "article_count": 17,
+    "topicality": 17.0,
+    "theme_weight": 0.9588235294117647,
+    "theme": "Inflation"
   }
 }
