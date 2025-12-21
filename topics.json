@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Federal Reserve Policy Developments",
-    "summary": "OVERVIEW:\nRecent actions by the Federal Reserve Board reflect a strategic shift in its approach to payment systems and banking regulations, highlighting its responsiveness to the evolving financial landscape and the rise of nonbank financial institutions (NBFIs).\n\nKEY EXAMPLES:\n- The Federal Reserve Board has requested public input on a new \"payment account\" for eligible financial institutions aimed at enhancing the efficiency of payment clearing and settlement.\n- A new policy statement was issued by the Federal Reserve Board to facilitate responsible innovation among certain Board-supervised banks, following the withdrawal of a prior policy.\n- The growth and integration of NBFIs into the banking ecosystem have prompted discussions around the traditional roles of banks, indicating a shift towards more diversified banking operations.",
-    "article_count": 44,
-    "topicality": 44.0,
-    "theme_weight": 1.0795454545454548,
-    "theme": "Bank lending and credit risk"
+    "title": "Cryptocurrency Market Trends",
+    "summary": "OVERVIEW:\nThe cryptocurrency market is currently experiencing significant challenges, characterized by sharp declines in Bitcoin prices, ongoing lawsuits impacting stablecoins, and heightened scrutiny over market conditions and regulations.\n\nKEY EXAMPLES:\n- The cryptocurrency market has faced a nearly 30% correction since early October, resulting in a loss of approximately $1.2 trillion in market capitalization (Article 1).\n- Bitcoin struggled to maintain its value, remaining near $90,000 as investors shifted focus to safer assets amidst weak US economic performance (Article 2).\n- A $4 billion lawsuit related to Terraform Labs raises critical questions about the stability and promises of stablecoins (Article 5).",
+    "article_count": 46,
+    "topicality": 46.0,
+    "theme_weight": 0.7891304347826086,
+    "theme": "Digital assets"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "AI Technology Trends",
-    "summary": "OVERVIEW:\nThe articles highlight the burgeoning interest in artificial intelligence technologies across various sectors, as both companies and venture capitalists shift focus to harness AI's potential, despite some skepticism from enterprise customers.\n\nKEY EXAMPLES:\n- Microsoft pronounced a new era of AI agents, but finds enterprise clients hesitant to adopt.\n- Venture-capital firms are now infusing AI into traditionally mundane industries like accounting and property management.\n- A new deal enables users to create AI videos featuring iconic characters like Mickey Mouse and Darth Vader.",
-    "article_count": 36,
-    "topicality": 36.0,
-    "theme_weight": 0.9944444444444444,
-    "theme": "AI"
+    "title": "**Stock Market Update**",
+    "summary": "OVERVIEW:\nRecent news highlights a mix of corporate earnings performances and stock market predictions. Companies like Wingstop and Novartis are experiencing contrasting outcomes in stock performance based on their earnings reports, while analysts discuss future market trends.\n\nKEY EXAMPLES:\n- Wingstop\u2019s stock fell 12% after profits were lower than expected.\n- Novartis increased its sales and profit guidance for the year.\n- Plus500 reported an 11% revenue increase, indicating it will meet expectations.\n- Profit-taking activities have led to a decline in this year's stock rally.",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 0.9794117647058824,
+    "theme": "Inflation"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Economic Data Challenges",
-    "summary": "OVERVIEW:\nRecent economic data releases have been complicated by a government shutdown, generating uncertainty among economists about the current financial landscape, while inflation metrics show rising trends.\n\nKEY EXAMPLES:\n- Economists are left with more questions than answers due to muddled economic data from the recent government shutdown.\n- Prices have risen at a 2.7 percent annual pace last month according to new Labor Department data, indicating inflationary pressures.\n- The FRED Blog highlights ongoing discussions about inflation metrics like the consumer price index amid these data discrepancies.\n- Better-than-expected jobs data has led to fluctuations in the dollar's value against other currencies.",
+    "title": "**Hong Kong Community Developments**",
+    "summary": "OVERVIEW:\nRecent news highlights ongoing responses to community crises in Hong Kong, alongside significant infrastructure projects and the integration of traditional and modern medical practices.\n\nKEY EXAMPLES:\n- The body of a Filipino domestic worker who died in a recent fire was repatriated, with local authorities pledging long-term support for affected residents.\n- Hong Kong's finance chief announced plans for major road and rail expansions to enhance the city's competitiveness and connectivity with the Greater Bay Area. \n- Traditional Chinese medicine practitioners will collaborate more with Western medicine professionals for better pain management and recovery strategies.",
     "article_count": 33,
     "topicality": 33.0,
-    "theme_weight": 1.0,
-    "theme": "Inflation"
+    "theme_weight": 1.018181818181818,
+    "theme": "Others"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "**Trade Policies and Their Impact**",
-    "summary": "OVERVIEW:\nRecent discussions highlight the strain of current trade policies, particularly tariffs, on businesses and consumers, as well as the broader implications of these changes on jobs and the economy.\n\nKEY EXAMPLES:\n- Numerous companies are seeking exemptions from tariffs imposed by the Trump administration, arguing these levies hurt profitability and drive up prices (Article 1).\n- President Trump\u2019s approach to trade faces scrutiny, as his decision to permit Nvidia to sell technology to China raises concerns about American security versus economic benefits (Article 8).\n- The evolving rules of trade influenced by technology, climate, and demographics are significantly reshaping work and political landscapes across the U.S. (Articles 2 and 3).",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 0.9843750000000001,
+    "title": "Trade Policy and Inflation**",
+    "summary": "OVERVIEW:  \nU.S. trade policy under the Trump administration has significantly impacted businesses and consumers, leading to a mix of tariff implications, inflation concerns, and consumer purchasing power challenges.\n\nKEY EXAMPLES:  \n- Many companies are seeking exemptions from high tariffs on foreign goods, claiming these tariffs are detrimental to their business operations.  \n- The White House is hinting at tariff rebates and substantial tax refunds to address rising consumer prices amid unpopular tariffs.  \n- U.S. trade policy has resulted in significant discrepancies in tariff rates among trading partners, influencing pricing strategies for businesses.  \n- Mattel's CEO predicts that consumers will prioritize essential purchases despite the financial squeeze from tariffs and inflation.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 1.0,
     "theme": "Inflation"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Financial Market Trends",
-    "summary": "OVERVIEW:\nRecent reports highlight various developments in the financial markets, including fundraising successes, corporate earnings growth, and strategic shifts in investment focus.\n\nKEY EXAMPLES:\n- A New York-based manager raised more than the targeted $2bn for Fund VII due to anticipated leverage.\n- Barclays posted an 18% profit rise and raised its income guidance.\n- Plus500 expects to meet revenue expectations with an 11% quarterly increase.  \n- Novartis raised its sales and profit guidance for the year.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 0.9838709677419355,
-    "theme": "Inflation"
+    "title": "Generational Financial Concerns",
+    "summary": "OVERVIEW:\nBaby boomers and Gen Xers are proactive in ensuring that their children are not burdened with the financial and emotional challenges of caretaking. This focus reflects broader concerns about generational responsibilities and economic security.\n\nKEY EXAMPLES:\n- Many parents from these generations are seeking to mitigate the impact of caretaking costs on their children.\n- A reported generational divide exists on perspectives regarding the future of Social Security.\n- Craft and manufacturing may face challenges influenced by differing generational views.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 1.0133333333333332,
+    "theme": "Consumer debt"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Market Predictions and Bitcoin Analysis",
-    "summary": "OVERVIEW: A cluster of recent articles focuses on financial market predictions, particularly concerning Bitcoin, with insights from Wall Street analysts and investment firms on potential price movements and challenges.\n\nKEY EXAMPLES:\n- Fidelity's Jurrien Timmer predicts Bitcoin could settle between $65,000 and $75,000, suggesting a potential downturn in 2026.\n- The market reacts to Trump's tariff threats, causing Bitcoin's price to dip to $94,000 amid declining risk appetite.\n- Analysts indicate record high positioning in the S&P 500 but caution against potential pullbacks.",
+    "title": "Tech Investments and Market Trends",
+    "summary": "OVERVIEW:\nRecent developments highlight the increasing investment trends in emerging technologies, particularly in the AI sector, as well as shifts in corporate strategies within various industries.\n\nKEY EXAMPLES:\n- The merger of Truth Social's parent company with a fusion start-up has significantly enhanced the president's financial standing amidst strong competition from Chinese investments.\n- Venture-capital firms are diversifying their portfolios by applying AI technologies in traditionally overlooked sectors like accounting and property management.\n- Datasection's contracts with a Chinese tech giant have elevated it to a major player in the Asian neocloud market.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 0.9206896551724137,
-    "theme": "Digital assets"
+    "theme_weight": 0.996551724137931,
+    "theme": "AI"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Trump Media's Energy Sector Move",
-    "summary": "OVERVIEW:\nRecent developments highlight Trump Media's plans to enter the energy sector through a merger with TAE Technologies, which raises concerns regarding potential conflicts of interest and policy implications, particularly as it coincides with shifts in the Trump administration's technology policies.\n\nKEY EXAMPLES:\n- Trump Media's $6 billion deal with TAE Technologies aims to advance nuclear fusion technology.\n- The merger complicates Trump's financial interests with his administration\u2019s regulatory oversight over other energy companies.\n- There are growing concerns about how rapid policy changes could impact technology governance issues including cybersecurity and disinformation.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 0.9758620689655173,
-    "theme": "Others"
+    "title": "**Currency Trends and Inflation Impact**",
+    "summary": "OVERVIEW:\nRecent news articles highlight the fluctuations in currency values, particularly the U.S. dollar, in anticipation of inflation data and central bank decisions, reflecting broader economic sentiments.\n\nKEY EXAMPLES:\n- The U.S. dollar showed signs of recovery but is expected to face volatility ahead of the CPI release, which will likely influence Federal Reserve policy.\n- After soft U.S. inflation data, Asian currencies remained steady while expectations for a Bank of Japan rate hike continued. \n- Mixed responses from the dollar and European currencies illustrate the interconnected nature of global financial markets and economic indicators.",
+    "article_count": 28,
+    "topicality": 28.0,
+    "theme_weight": 1.0,
+    "theme": "Inflation"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Cryptocurrency Market Volatility**",
-    "summary": "OVERVIEW:  \nThe cryptocurrency market is currently facing significant volatility, marked by sharp price corrections and increased investor caution. This instability raises questions about future fundraising abilities for crypto companies and the potential for long-term changes in market dynamics.\n\nKEY EXAMPLES:  \n- Bitcoin dipped below $85,000 due to market volatility impacting corporate crypto treasury companies and their net asset values.  \n- A report indicated a nearly 30% correction in the crypto market since October, leading to discussions on whether this is a correction or an indicator of a new market paradigm.  \n- Fundstrat forecasted potential drawdowns for major cryptocurrencies like Bitcoin, Ether, and Solana in early 2026.  \n- US spot crypto ETFs have seen over $70 billion in net inflows, showing a shift towards traditional financial mechanisms for crypto investment amid current market conditions.",
+    "title": "Economic Data Challenges",
+    "summary": "OVERVIEW:\nRecent economic data releases have been complicated by the effects of the government shutdown, leading to uncertainty among economists. This inconsistency persists despite some positive indicators in the job market.\n\nKEY EXAMPLES:\n- Economists are left with more questions than answers due to muddled economic data from the government shutdown.\n- The easing of the dollar follows better-than-expected U.S. jobs data, highlighting mixed signals in the economy.\n- U.S. productivity has exhibited a slowdown in the fourth quarter, contrasting with rising unit labor costs.",
     "article_count": 27,
     "topicality": 27.0,
-    "theme_weight": 0.7925925925925925,
-    "theme": "Digital assets"
+    "theme_weight": 0.9962962962962962,
+    "theme": "Recessionary pressures"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Year-End Financial Insights",
-    "summary": "OVERVIEW:\nThis cluster of articles discusses year-end financial strategies, interest rates, and economic outlooks as the new year approaches.\n\nKEY EXAMPLES:\n- Articles 1 and 2 emphasize practical financial hacks to consider before New Year's Eve.\n- Article 3 notes a rise in interest as the year concludes.\n- Article 8 highlights the Bank of England's decision to lower borrowing costs due to slowing inflation.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 1.0153846153846153,
-    "theme": "Inflation"
+    "title": "House Committee Reports",
+    "summary": "OVERVIEW: Multiple articles detail the reporting of various orders by the House Committee on Oversight and Government Reform and the House Committee on Foreign Affairs, illustrating ongoing legislative actions in December 2025.\n\nKEY EXAMPLES:\n- The House Committee on Oversight and Government Reform reported orders on December 2, 2025.\n- The House Committee on Foreign Affairs reported orders on December 3, 2025.\n- Both committees are actively addressing issues pertinent to their jurisdictions within a short timeframe.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 0.9888888888888888,
+    "theme": "Cyber attacks"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Bank of Japan Rate Hike",
-    "summary": "OVERVIEW:\nRecent articles highlight the Bank of Japan's (BOJ) decision to raise its benchmark interest rate to 0.75%, marking a notable shift from its long-standing accommodative monetary policy. This move has implications for both regional foreign exchange markets and cryptocurrency performance.\n\nKEY EXAMPLES:\n- The BOJ's rate hike is its first increase since 1995, aimed at curbing excessive risk-taking in global markets.\n- Following the announcement, Bitcoin remained stable around $87,800, indicating market uncertainty around the effects of the policy change.\n- The Japanese yen experienced a significant drop against the dollar, influencing movements in the crypto market.\n- Regional foreign exchange markets, particularly in Asia, showed mixed reactions reflecting the uncertainty surrounding U.S. inflation data and the broader economic landscape.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.9730769230769231,
-    "theme": "Inflation"
+    "title": "Federal Reserve Board Updates",
+    "summary": "OVERVIEW:\nRecent activities by the Federal Reserve Board demonstrate a focus on policy updates, public engagement, and regulatory actions affecting financial institutions and payment services.\n\nKEY EXAMPLES:\n- The Federal Reserve Board has withdrawn its 2023 policy statement to facilitate responsible innovation among certain supervised banks.\n- Public input is being sought regarding a new \"payment account\" intended for use by eligible financial institutions for payment clearing and settling.\n- The Board announced the termination of enforcement actions with The Goldman Sachs Group and Metropolitan Commercial Bank, indicating regulatory progress.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.1079999999999999,
+    "theme": "Bank lending and credit risk"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "**Cybersecurity Threat Landscape**",
-    "summary": "OVERVIEW:  \nRecent reports highlight the increasing sophistication of cyberattacks targeting administrative access and the challenges faced by organizations in combating these threats amidst rapid digitization and evolving tactics by cybercriminals.\n\nKEY EXAMPLES:  \n- Attackers are exploiting weak RC4 encryption for administrative authentication to access device configurations and sensitive data.  \n- Recent vulnerabilities in SMA1000 devices demonstrate how attackers are chaining exploits to intensify their attacks on critical systems.  \n- The rapid increase in cybercriminal activities is straining law enforcement efforts due to uneven cybersecurity knowledge across sectors.  \n- Organizations are encouraged to adopt a unified edge-to-cloud security strategy to address vulnerabilities in IoT, cloud services, and remote work environments.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 0.9869565217391304,
-    "theme": "Cyber attacks"
+    "title": "AI in the Workforce and Compliance",
+    "summary": "OVERVIEW: \nRecent articles highlight the transformative impact of AI on various sectors, particularly compliance and finance, stressing the need for worker retraining and adaptation. The discourse also touches on the challenges and cultural shifts accompanying AI integration in the workplace.\n\nKEY EXAMPLES:\n- Compliance leaders in the Asia-Pacific region are enhancing their strategies to prepare for AI-driven oversight in their industries.\n- A finance professional emphasizes the importance of training AI to adapt to inevitable changes in the workforce.\n- Andrew Bailey notes that while AI will change job roles, it may not necessarily result in widespread unemployment, highlighting the need for skill development.\n- Collibra's CEO points out that leveraging AI effectively can be a crucial factor in hiring, indicating a shift in employee expectations.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 1.0,
+    "theme": "AI"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Elon Musk's Tesla Pay Package",
-    "summary": "OVERVIEW:\nDelaware's Supreme Court has upheld Elon Musk's $55.8 billion pay package from 2018, overturning a previous ruling that invalidated it. This decision highlights the complexities surrounding executive compensation and shareholder communications.\n\nKEY EXAMPLES:\n- A state judge had previously deemed the pay package invalid due to inadequate shareholder information.\n- The recent ruling now recognizes Musk's entitlement to the compensation after years of legal disputes.",
+    "title": "Cryptocurrency Theft and Fraud**",
+    "summary": "OVERVIEW:\nA significant rise in cryptocurrency theft and fraud has been reported, driven largely by organized hacking efforts and holiday season scams, resulting in billions lost in digital assets.\n\nKEY EXAMPLES:\n- North Korean hackers stole $2.02 billion in cryptocurrency in 2025, marking a 51% increase from the previous year.\n- Over $2.17 billion was taken from cryptocurrency services in the first half of 2025, showcasing vulnerabilities in decentralized finance protocols.\n- During the holiday season, cybercriminals heightened their fraudulent activities, capitalizing on consumer spending. \n- A user experienced a $50 million loss due to an 'address poisoning' scam.",
     "article_count": 22,
     "topicality": 22.0,
-    "theme_weight": 1.0454545454545454,
-    "theme": "Others"
+    "theme_weight": 0.9409090909090909,
+    "theme": "Digital assets"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "**Tai Po Fire Aftermath**",
-    "summary": "OVERVIEW:  \nFollowing the deadly Tai Po fire in Hong Kong, which resulted in significant loss of life and property, various government officials have addressed issues regarding public safety, landlord ethics, and community support efforts.\n\nKEY EXAMPLES:  \n- A Hong Kong district officer apologized for her attire at the firefighter's funeral, which faced online backlash.  \n- The home affairs minister cautioned landlords against exploiting government subsidies intended for victims of the fire.  \n- The development chief announced plans to tighten building safety laws to prevent future tragedies.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 1.0285714285714285,
-    "theme": "Others"
+    "title": "Cybersecurity Vulnerabilities and Trends",
+    "summary": "OVERVIEW:\nRecent reports highlight increasing threats to cybersecurity, particularly focusing on administrative accounts and challenges posed by rapid digitization and evolving cybercriminal tactics.\n\nKEY EXAMPLES:\n- Attackers are exploiting weak authentication methods to gain access to admin accounts and exfiltrate sensitive data.\n- The emergence of new vulnerabilities in critical devices like the SMA1000 is being leveraged in targeted attacks.\n- Stolen AWS IAM credentials are being used to exploit cloud infrastructures across various customer environments.",
+    "article_count": 22,
+    "topicality": 22.0,
+    "theme_weight": 0.9863636363636363,
+    "theme": "Cyber attacks"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Congressional Reporting Updates",
-    "summary": "OVERVIEW:\nRecent reports from the House Committees on Oversight and Government Reform and Foreign Affairs detail ongoing legislative activities as of early December 2025.\n\nKEY EXAMPLES:\n- The House Committee on Oversight and Government Reform ordered multiple reports on December 2, 2025.\n- The House Committee on Foreign Affairs also reported several updates on December 3, 2025.  \n- Both committees are active in reviewing and recommending various legislative matters.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 0.9904761904761903,
-    "theme": "Cyber attacks"
+    "title": "Banking System Evolution and Regulation",
+    "summary": "OVERVIEW:\nRecent analyses highlight the transformation of U.S. banks into diversified financial institutions that incorporate nonbank activities, driven by the need to manage liquidity and mitigate risks. Furthermore, studies suggest that regulatory measures must evolve to address the complexities and vulnerabilities within the banking system.\n\nKEY EXAMPLES:\n- Banks have increasingly integrated nonbank financial activities into their operations, expanding beyond traditional deposit-taking and loan-making roles (Article 1).\n- The introduction of new solvency metrics, such as Economic Capital, could improve the early identification of at-risk banks compared to conventional measures (Article 4).\n- Legislation promoting payment stablecoins may lead to significant growth in market capitalization due to their innovative transfer mechanisms via permissionless blockchains (Article 6).",
+    "article_count": 20,
+    "topicality": 20.0,
+    "theme_weight": 1.0799999999999996,
+    "theme": "Bank lending and credit risk"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Cryptocurrency Security and Trends",
-    "summary": "OVERVIEW:\nRecent articles highlight significant security vulnerabilities and financial losses in the cryptocurrency sector, notably due to hacking and fraud, while also emphasizing the vital technological advancements and partnerships aimed at bolstering security and promoting innovation.\n\nKEY EXAMPLES:\n- North Korean hackers have increased their cryptocurrency theft activities, stealing $2.02 billion in 2025, raising their total to $6.75 billion.\n- Chainalysis has introduced Hexagate Security to protect decentralized finance and web3 protocols after over $2.17 billion was stolen from cryptocurrency services in just the first half of 2025.\n- Google has provided $5 billion in credit support to Bitcoin miners pivoting to artificial intelligence, showcasing corporate strategies to adapt to emerging technologies.",
-    "article_count": 14,
-    "topicality": 14.0,
-    "theme_weight": 0.8714285714285712,
-    "theme": "Digital assets"
+    "title": "U.S. Treasury Market Dynamics",
+    "summary": "OVERVIEW:\nRecent developments in the U.S. Treasury market reveal heightened trading activity tied to month-end rebalancing and the impact of changing economic policies. Concerns around liquidity and partisan comments from the Treasury Secretary also contribute to market anxieties.\n\nKEY EXAMPLES:\n- Trading in Treasury securities experiences a spike on the last trading day of the month, indicating a significant concentration due to passive fund rebalancing.\n- Recent economic shifts, including Federal Reserve interest rate cuts and tariffs, have affected Treasury market liquidity, with noticeable volatility.\n- Partisan rhetoric from Treasury Secretary Scott Bessent raises investor concerns, breaking traditional norms of neutrality.",
+    "article_count": 20,
+    "topicality": 20.0,
+    "theme_weight": 0.96,
+    "theme": "Inflation"
   }
 }
