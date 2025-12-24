@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "AI Developments and Challenges",
-    "summary": "OVERVIEW:\nRecent news highlights the rapid advancements in AI technologies, alongside skepticism from enterprise customers and concerns over ethical implications. Various sectors, from dating apps to entertainment, are integrating AI, while researchers uncover ongoing complexities in existing networks.\n\nKEY EXAMPLES:\n- Microsoft\u2019s declaration of \"the era of AI agents\" is met with hesitance from enterprise clients.\n- Dating apps like Tinder and Hinge are adopting AI for improved matchmaking to combat user fatigue.\n- An AI video creation deal allows users to produce content featuring iconic characters like Mickey Mouse and Darth Vader.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.9692307692307696,
-    "theme": "AI"
+    "title": "Economic Forecasts and Challenges",
+    "summary": "OVERVIEW:\nIn 2025, economic forecasts and significant challenges such as tariffs, inflation, and productivity trends have emerged as focal points for economists and policymakers. Reports indicate a volatile economic environment influenced by trade tensions and rising costs for consumers.\n\nKEY EXAMPLES:\n- The Federal Reserve's updated forecast anticipates stronger growth but higher inflation in 2025 due to cost-push shocks from tariffs.\n- The monthly trade deficit decreased to a five-year low following the imposition of new tariffs, although sustainability of this trend remains uncertain.\n- A surge in electricity prices was reported, with residential electric power costs rising by 7% from January to August 2025, reflecting broader inflationary pressures.",
+    "article_count": 37,
+    "topicality": 37.0,
+    "theme_weight": 1.0108108108108107,
+    "theme": "Inflation"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Cybersecurity Threat Landscape",
-    "summary": "OVERVIEW:\nRecent articles highlight a troubling surge in cybersecurity threats, including sophisticated attacks on administrative accounts and growing vulnerabilities due to rapid digitalization. Law enforcement faces challenges in tackling these threats amid evolving criminal tactics.\n\nKEY EXAMPLES:\n- Attackers are exploiting weak authentication methods and exporting sensitive device configurations, compromising administrative accounts.\n- The rise of cybercriminal syndicates has outpaced the cybersecurity capabilities of law enforcement in certain regions, complicating prosecutions.\n- A recent attack chained a new zero-day vulnerability with an existing critical flaw in specific devices, illustrating the continuous evolution of threats.\n- The use of stolen AWS credentials demonstrates how criminals are leveraging major cloud infrastructure to launch attacks across multiple environments.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.9692307692307693,
-    "theme": "Cyber attacks"
+    "title": "Trade and Technology Policies",
+    "summary": "OVERVIEW:\nA series of articles highlight the complexities and implications of the Trump administration's trade and technology policies, emphasizing the administration's focus on national security, economic interests, and foreign relations.\n\nKEY EXAMPLES:\n- The Trump administration imposed travel bans on experts to combat \"foreign censorship\" in tech monitoring (Article 1).\n- Legal cases reveal how middlemen are profiting from emerging trade practices that avoid regulations (Article 2).\n- President Trump\u2019s decision regarding Nvidia\u2019s chip sales to China raises concerns about balancing economic gains with security risks (Article 3).",
+    "article_count": 36,
+    "topicality": 36.0,
+    "theme_weight": 0.9916666666666667,
+    "theme": "Recessionary pressures"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Bitcoin Market Challenges",
-    "summary": "OVERVIEW:\nThe Bitcoin market is experiencing significant volatility and challenges as institutional interest wanes and external economic factors, such as oil prices and political developments, influence investor sentiment.\n\nKEY EXAMPLES:\n- Bitcoin's price has dropped from $126,000 in October to around $89,000, reflecting a \"demand vacuum\" amidst fading bullish sentiment.\n- Despite bullish positioning indicated by rising perpetual open interest, broader economic concerns, including a collapse in oil prices, suggest a precarious future for cryptocurrencies.\n- Predictions for 2026 suggest that demand may be tested by shifting Fed policies and consumer stress, with analysts forecasting limited altseason activity as investors focus on established cryptocurrencies.",
+    "title": "AI Investment and Innovation Trends",
+    "summary": "OVERVIEW:\nRecent news articles highlight significant investments and developments in AI technology across various sectors, addressing both the potential and challenges of this evolving landscape. From Wall Street data center deals to startups founded by former tech employees, the AI sector continues to attract attention and investment despite market uncertainties.\n\nKEY EXAMPLES:\n- Wall Street is engaging in lucrative datacenter deals, signaling a robust trade in AI despite investor nerves.\n- Former Amazon employees have transitioned into the startup world, successfully launching an AI venture and adapting to new challenges.\n- Venture-capital firms are applying AI advancements to traditionally less glamorous fields like accounting and property management.\n- CEOs express skepticism that AI will automate tasks as easily as anticipated, indicating a cautious approach within the industry.",
     "article_count": 35,
     "topicality": 35.0,
-    "theme_weight": 0.8542857142857142,
-    "theme": "Digital assets"
+    "theme_weight": 0.9828571428571428,
+    "theme": "AI"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Federal Reserve Policy Updates",
-    "summary": "OVERVIEW:\nRecent actions by the Federal Reserve Board highlight its focus on adapting to the evolving financial landscape, particularly concerning banks and nonbank financial institutions (NBFIs). This includes new policy statements, requests for public input, and changes to payment services.\n\nKEY EXAMPLES:\n- The Federal Reserve issued a new policy statement to facilitate responsible innovation among Board-supervised banks.\n- It requested public input on payment accounts to aid eligible financial institutions in transaction processes.\n- The Board published a staff manual for supervising complex banks, indicating a shift in regulatory focus.\n- Pricing changes for Federal Reserve payment services will take effect on January 1, 2026.",
-    "article_count": 35,
-    "topicality": 35.0,
-    "theme_weight": 1.12,
-    "theme": "Bank lending and credit risk"
+    "title": "Mixed Corporate Earnings",
+    "summary": "OVERVIEW:\nRecent news highlights a range of corporate earnings updates, showcasing both disappointing and positive financial results across various companies, reflecting contrasting market conditions.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% following a profit that fell short of expectations.\n- Novartis raised its sales and profit guidance for the year, signaling strong performance.\n- Plus500 reported an 11% increase in quarterly revenue, affirming it will meet expectations.\n- Barclays announced an 18% rise in profit while lifting its income guidance.",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 0.9911764705882353,
+    "theme": "Inflation"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Market Trends and Liquidity Events",
-    "summary": "OVERVIEW:\nRecent discussions highlight a significant evolution in market dynamics, reflecting on investor behavior, liquidity challenges, and emerging financial opportunities. The articles examine how both retail investors and institutions are adjusting to changing market conditions while also addressing risks in private credit.\n\nKEY EXAMPLES:\n- LMAX Group reports a turning point in market maturity following a $19bn liquidation event.\n- A fund has ceased growth debt investments in Asia-Pacific, and unitranche spreads in private credit are narrowing, indicating market shifts.\n- Retail investors are expected to exert greater influence on Wall Street after a record year of engagement.\n- ERC and FDIC approvals for Palmer Luckey\u2019s Erebor illustrate regulatory advancements in crypto-focused banking despite market uncertainties.",
-    "article_count": 34,
-    "topicality": 34.0,
-    "theme_weight": 0.9823529411764708,
-    "theme": "Digital assets"
+    "title": "Federal Reserve Board Updates",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board is actively revising its policies and practices in response to evolving financial dynamics, including the growth of nonbank financial institutions and the management of payment services.\n\nKEY EXAMPLES:\n- The Federal Reserve issued a new policy statement to facilitate responsible innovation among Board-supervised banks.\n- It has requested public input on the creation of a \"payment account\" for financial institutions to clear and settle payments.\n- A recent analysis indicated that U.S. banks are increasingly operating as diversified entities, integrating nonbank activities to manage liquidity needs effectively.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 1.1363636363636365,
+    "theme": "Bank lending and credit risk"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Economic Policy Impact",
-    "summary": "OVERVIEW:\nRecent developments highlight the administration's ongoing influence on economic policies, including tariffs and tax strategies, while indicating a complex relationship with the Federal Reserve.\n\nKEY EXAMPLES:\n- The monthly trade deficit decreased to its lowest level in five years, attributed to the president's global tariff implementation.\n- The administration is considering tariff rebates and substantial tax refunds due to the unpopularity of current tariffs and high prices.\n- The president is expected to announce a new Federal Reserve leader at a challenging time for monetary policy.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 0.9225806451612901,
-    "theme": "Inflation"
+    "title": "Bitcoin Market Struggles**",
+    "summary": "OVERVIEW:\nThe Bitcoin market is experiencing significant challenges as it remains below previous highs and faces decreased liquidity and demand. Market conditions have shifted dramatically since the optimistic expectations of 2025, leading to a more subdued trading environment.\n\nKEY EXAMPLES:\n- Bitcoin is currently struggling in the mid $80,000s, reflecting a lack of leverage and thinner liquidity after a market shift in October.\n- On-chain data indicates a \"demand vacuum\" that could further suppress Bitcoin's price, currently around $87,000.\n- Major banks are now heavily involved in controlling Bitcoin's market dynamics, which contrasts sharply with the dynamic market of previous years.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 0.8599999999999999,
+    "theme": "Digital assets"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Legislative Committee Reports",
-    "summary": "OVERVIEW:\nA series of reports were issued by the House Committee on Oversight and Government Reform and the House Committee on Foreign Affairs, detailing various legislative actions undertaken on specific dates in December 2025.\n\nKEY EXAMPLES:\n- The House Committee on Oversight and Government Reform reported multiple legislative actions on December 2, 2025.\n- The House Committee on Foreign Affairs presented its reports on December 3, 2025.",
+    "title": "** Crypto Market Trends",
+    "summary": "**OVERVIEW:**  \nThe cryptocurrency market is witnessing a downturn, characterized by diminished venture capital valuations, a significant quantity of new tokens trading below initial expectations, and shifting interests from retail to institutional investors.\n\n**KEY EXAMPLES:**  \n- Many VC-backed crypto projects now have market capitalizations below their last funding valuations, indicating investor caution.  \n- A staggering 80% of new tokens launched this year are trading underwater, reflecting a lack of appetite among investors.  \n- Despite the downturn, institutional interest remains strong, demonstrated by HashKey Capital raising $250 million for a new crypto fund amid market volatility.  \n- DWF Labs has ventured into commodities, completing its first physical gold trade, highlighting a potential pivot of crypto capital into traditional assets.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 1.013793103448276,
-    "theme": "Others"
+    "theme_weight": 0.8103448275862067,
+    "theme": "Digital assets"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "U.S. Trade Policy Challenges",
-    "summary": "OVERVIEW:\nThe articles highlight ongoing concerns regarding U.S. trade policies and technology regulations, particularly under the Trump administration, and their implications for both national security and international relations.\n\nKEY EXAMPLES:\n- The Trump administration\u2019s tariff war has impacted America\u2019s precision-guided missile supply chain, though it has since been stabilized by experienced industry players.\n- Questions have arisen about President Trump\u2019s approval of Nvidia selling chips to China, as it may prioritize immediate economic benefits over long-term security interests.\n- The U.S. has paused a trade pledge with Britain due to disputes over digital regulations and food safety, affecting cooperative tech initiatives.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 0.9724137931034482,
-    "theme": "Others"
+    "title": "Cybersecurity Threat Landscape",
+    "summary": "OVERVIEW: \nThe articles highlight the increasing sophistication of cyberattacks, focusing on vulnerabilities in authentication methods and the rise of malware targeting various platforms, including healthcare systems and IoT devices.\n\nKEY EXAMPLES:\n- Attackers are exploiting weak authentication methods, such as the RC4 cipher, to gain access to sensitive information.\n- Healthcare organizations are facing a surge in cyberattacks, with calls for stronger security measures that remain unaddressed.\n- Threat actors are utilizing stolen credentials to exploit cloud infrastructures, affecting multiple customer environments.",
+    "article_count": 28,
+    "topicality": 28.0,
+    "theme_weight": 0.9892857142857142,
+    "theme": "Cyber attacks"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Stock Market Trends",
-    "summary": "OVERVIEW:\nRecent developments in the stock market highlight companies selling off assets, including crypto, to maintain cash reserves and fund buybacks, alongside notable fluctuations in stock prices for major tech firms.\n\nKEY EXAMPLES:\n- A company raised its cash reserves to $2.19 billion by selling 4.5 million shares while halting Bitcoin purchases. \n- Several firms are offloading crypto stockpiles to support share buybacks and stabilize their stock prices.\n- U.S. stocks showed declines, particularly in AI infrastructure companies, with Nvidia experiencing a 16% drop.",
+    "title": "**Recent Leadership Changes and Postponed Segments**",
+    "summary": "OVERVIEW:  \nA series of events highlights significant shifts in leadership and the postponement of media coverage, particularly regarding controversial topics.\n\nKEY EXAMPLES:  \n- Heritage Foundation President Kevin Roberts announced the immediate departure of most staff from their legal and economic centers.  \n- CBS News postponed a segment about El Salvador\u2019s CECOT prison after the Trump administration declined to participate.  \n- Najib Razak's family faced disappointment as a court ruled against his request for house arrest, emphasizing familial struggles amidst legal challenges.",
     "article_count": 27,
     "topicality": 27.0,
-    "theme_weight": 0.9481481481481482,
-    "theme": "Inflation"
+    "theme_weight": 1.0148148148148148,
+    "theme": "Others"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Economic Forecast Updates",
-    "summary": "OVERVIEW:\nRecent articles discuss diverse economic forecasts and projections from various entities, highlighting anticipated growth, inflation specifics, and challenges faced by different economies. The outlooks reflect evolving conditions influenced by monetary policies, external shocks, and sector-specific issues.\n\nKEY EXAMPLES:\n- The Federal Reserve Bank of New York predicts stronger growth in 2025, revising inflation projections upward due to cost-push shocks from tariffs.\n- The Federal Open Market Committee released updated economic projections, hinting at shifts in monetary policy.\n- Russia faces economic difficulties as oil prices drop due to sanctions, raising concerns about a banking crisis and consumer hardship.",
+    "title": "Currency and Monetary Policy Shifts**",
+    "summary": "OVERVIEW:  \nRecent developments in global monetary policy have resulted in significant currency fluctuations, particularly for the U.S. dollar and the Japanese yen, following key economic data and central bank actions.\n\nKEY EXAMPLES:  \n- The U.S. dollar fell as weaker-than-expected inflation data boosted speculation about further cuts in the Federal Reserve's interest rates.  \n- The Bank of Japan surprised markets by raising rates for the first time in three decades, which coincided with a surge in the yen amid intervention threats.  \n- Central banks are facing increased economic policy uncertainty that is impacting the performance of fixed income markets.",
     "article_count": 26,
     "topicality": 26.0,
-    "theme_weight": 1.0153846153846153,
+    "theme_weight": 0.9653846153846154,
     "theme": "Inflation"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Paramount's Bid for Warner Bros.",
-    "summary": "OVERVIEW:\nLarry Ellison has stepped in with a $40 billion personal guarantee to support Paramount\u2019s $108 billion offer to acquire Warner Bros. Discovery, addressing board concerns over the financing of the initial bid.\n\nKEY EXAMPLES:\n- The personal guarantee by Ellison aims to alleviate worries from Warner Bros. Discovery's board regarding Paramount's financial capacity.\n- A major investor critiques Paramount\u2019s revised offer for being inadequate despite the new financial backing.\n- Warner Bros. Discovery has previously expressed that Paramount's initial takeover bid lacked sufficient funding.",
+    "title": "House Committee Reports",
+    "summary": "OVERVIEW:\nRecent reports from the House Committees on Oversight and Government Reform and Foreign Affairs detail legislative actions taken on December 2 and 3, 2025.\n\nKEY EXAMPLES:\n- The House Committee on Oversight and Government Reform reported multiple legislative items on December 2, 2025.\n- The House Committee on Foreign Affairs presented its reports on December 3, 2025.",
     "article_count": 25,
     "topicality": 25.0,
-    "theme_weight": 1.056,
-    "theme": "Private credit"
+    "theme_weight": 1.012,
+    "theme": "Cyber attacks"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Labor Market Dynamics",
-    "summary": "OVERVIEW:\nRecent trends in the U.S. labor market reveal a complicated landscape of changing employment opportunities, particularly with respect to college graduates and manufacturing productivity, as the economy faces fluctuating conditions.\n\nKEY EXAMPLES:\n- A rise in unemployment has been noted despite the absence of a feared recession, alongside slowing wage growth and increasing affordability challenges.\n- Current data indicates that recent college graduates are struggling more to find employment, suggesting a potential decline in the traditional advantages of a college degree.\n- Labor productivity in manufacturing is contrasted with a decrease in the share of manufacturing jobs within total nonfarm employment, indicating shifts in the sector.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 1.009090909090909,
-    "theme": "Recessionary pressures"
+    "title": "Warner Bros. Takeover Bid**",
+    "summary": "OVERVIEW:\nThe articles discuss a hostile takeover bid for Warner Bros. Discovery by Paramount Skydance, highlighting the financial challenges and strategic maneuvers involved in the bid.\n\nKEY EXAMPLES:\n- Warner Bros. Discovery stated that the original offer from Paramount Skydance lacked sufficient funding (Article 1).\n- David Ellison's personal guarantee aims to alleviate concerns from Warner Bros. Discovery's board regarding the initial proposal (Article 3).\n- The takeover battle raises questions about the impact on cash-strapped viewers (Article 4).",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 1.0708333333333335,
+    "theme": "Private credit"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Market Reactions to Economic Changes",
-    "summary": "OVERVIEW:\nRecent economic data and monetary policy shifts have led to fluctuations in currency value, especially concerning the US dollar and Japanese yen. The Bank of Japan's rate hike and softer-than-expected US inflation data play crucial roles in this dynamic.\n\nKEY EXAMPLES:\n- The US dollar fell ahead of key inflation data, while the Japanese yen surged following discussions of potential intervention.\n- US inflation came in softer than expected, prompting the Federal Reserve to implement its third consecutive rate cut, while Japan raised rates for the first time in three decades.\n- Asia\u2019s foreign exchange markets remained steady as a result of the soft US CPI, which spurred Fed cut expectations.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 0.9454545454545453,
-    "theme": "Inflation"
+    "title": "Economic Policy Under Scrutiny",
+    "summary": "OVERVIEW:\nSeveral articles discuss the current U.S. economic policies and the administration's reaction to rising stock prices, job losses, and the Federal Reserve's challenges. Concerns are raised about income inequality and inflation as the administration navigates these complex issues.\n\nKEY EXAMPLES:\n- The administration has been criticized for downplaying concerns about job losses and financial bubbles while celebrating stock market gains.\n- The Federal Reserve presidents are wrestling with the new administration's influence on monetary policy.\n- Growing wealth disparities are noted, with the rich getting richer while the poor face increasing hardships.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.9952380952380951,
+    "theme": "Recessionary pressures"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Hong Kong's Recent Tragedies",
-    "summary": "OVERVIEW:\nRecent events in Hong Kong highlight the fragility of life amidst a troubling rise in workplace accidents and reflections on loss during the holiday season. The city's deadliest fire has brought attention to safety issues and the human condition.\n\nKEY EXAMPLES:\n- Cardinal Stephen Chow emphasized the duality of Christmas, encouraging a view towards hope while acknowledging the grief from the Tai Po fire.\n- Workplace fatalities in Hong Kong reached a record high of 118 this year, with the Tai Po fire being a significant contributor, prompting calls for accountability and transparency in safety regulations.",
-    "article_count": 17,
-    "topicality": 17.0,
-    "theme_weight": 1.0235294117647058,
-    "theme": "Others"
+    "title": "Cryptocurrency Security and Regulation",
+    "summary": "OVERVIEW:  \nRecent developments in cryptocurrency reveal a pressing need for enhanced security measures and evolving regulations in response to significant theft and changing market dynamics.\n\nKEY EXAMPLES:  \n- Chainalysis launched Hexagate Security to protect decentralized finance protocols amid over $2.17 billion stolen in the first half of 2025.  \n- North Korean hackers stole $2.02 billion in cryptocurrency in 2025, marking a 51% increase from the previous year, leading to a total of $6.75 billion in recorded thefts.  \n- The recent U.S. legislation suggests a burgeoning adoption of payment stablecoins driven by their transfer capabilities via permissionless blockchains.  \n- Russia's central bank is set to implement new crypto regulations in 2026, reflecting a global trend towards standardizing crypto governance.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.7857142857142856,
+    "theme": "Digital assets"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "**Legal Developments in Hong Kong**",
-    "summary": "OVERVIEW:\nRecent court rulings in Hong Kong highlight various legal controversies, including the quashing of convictions for fraudulent building license conspiracy and a tram driver's sentencing for a fatal accident. \n\nKEY EXAMPLES:\n- An appellate court overturned the convictions of 11 men for obtaining building licenses fraudulently, citing inadequate legal representation.\n- A tram driver received a reduced four-week prison sentence for carelessly causing a fatal accident, with the court acknowledging his remorse.\n- Hong Kong customs arrested five individuals linked to an HK$8.9 billion money laundering syndicate using fake shipping websites.",
-    "article_count": 11,
-    "topicality": 11.0,
-    "theme_weight": 1.0909090909090908,
-    "theme": "Others"
+    "title": "Private Credit Concerns",
+    "summary": "OVERVIEW:\nRecent news highlights increasing concerns about private credit, reflecting worries over rising default rates and the impact of market conditions on this sector.\n\nKEY EXAMPLES:\n- Staff has warned of potential stress in private credit due to climbing default rates.\n- A fund has suspended growth debt investments in Asia-Pacific as unitranche spreads narrow.\n- This year has been described as a pivotal moment for private debt, indicating significant changes ahead.",
+    "article_count": 15,
+    "topicality": 15.0,
+    "theme_weight": 1.1066666666666662,
+    "theme": "Private credit"
   }
 }
