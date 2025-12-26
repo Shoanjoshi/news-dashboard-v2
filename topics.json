@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "**Crypto Market Transformation**",
-    "summary": "OVERVIEW:  \nThe cryptocurrency landscape in 2025 has witnessed significant changes, characterized by a shift towards institutional dominance, poor performance of new tokens, reduced retail interest, and a general decline in market activity.\n\nKEY EXAMPLES:  \n- Over 80% of newly launched tokens in 2025 are trading below their initial valuations, indicating a lack of interest from crypto insiders and creating challenges for retail investors.  \n- Bitcoin and Ethereum, despite some structural strength and institutional absorption, have struggled to maintain vibrancy, with Bitcoin remaining stagnant and Ethereum losing visibility amidst declining retail activity.  \n- A record $8.6 billion in crypto mergers and acquisitions suggests significant consolidation and a strategic shift within the industry, highlighting a changing focus towards larger entities and institutional players.",
-    "article_count": 42,
-    "topicality": 42.0,
-    "theme_weight": 0.7785714285714287,
-    "theme": "Digital assets"
+    "title": "**AI's Impact on Business**",
+    "summary": "OVERVIEW:\nRecent discussions highlight the transformative role of artificial intelligence in various sectors, particularly how it affects small and medium businesses, funding, and investment dynamics in the tech industry.\n\nKEY EXAMPLES:\n- A billionaire emphasizes that new graduates can assist smaller businesses in implementing AI agents, which larger companies may not require.\n- Despite Microsoft's proclamation of a new era for AI agents, enterprise adoption has been slow, indicating a disconnect in market demand.\n- Venture-capital investments are increasingly targeted at unglamorous fields, infusing AI technology into areas like accounting and property management.",
+    "article_count": 38,
+    "topicality": 38.0,
+    "theme_weight": 0.9973684210526316,
+    "theme": "AI"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "U.S. Economic Developments",
-    "summary": "OVERVIEW:\nRecent developments in U.S. economic policy and market behavior reveal a complex interplay of interest rates, trade dynamics, and currency fluctuations, especially as global uncertainties emerge.\n\nKEY EXAMPLES:\n- The U.S. dollar has experienced fluctuations, falling ahead of significant economic data releases while the Japanese yen surged amid intervention threats.\n- In 2025, the Federal Reserve cut interest rates, contributing to changes in the U.S. Treasury securities market's liquidity amidst rising economic policy uncertainty.\n- The monthly trade deficit dropped to a five-year low due to the president's global tariffs, though future trends remain uncertain.",
-    "article_count": 41,
-    "topicality": 41.0,
-    "theme_weight": 0.9829268292682928,
-    "theme": "Inflation"
+    "title": "Federal Reserve Developments",
+    "summary": "OVERVIEW:\nRecent actions and announcements by the Federal Reserve Board highlight the evolving landscape of banking, particularly in relation to the oversight of banks and the interaction with nonbank financial institutions.\n\nKEY EXAMPLES:\n- The Federal Reserve Board issued a new policy statement concerning the treatment of certain supervised banks to promote responsible innovation.\n- Public input is being sought on \u201cpayment accounts\u201d to potentially enhance the clearing and settling of payments by eligible financial institutions.\n- The Federal Reserve approved the application of National Bank Holdings Corporation as part of its ongoing regulatory activities.",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 1.1323529411764706,
+    "theme": "Bank lending and credit risk"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Competition for AI Talent",
-    "summary": "OVERVIEW:\nMajor tech companies, including OpenAI, Nvidia, and Google DeepMind, are aggressively investing in talent acquisition and new technologies to enhance their capabilities in artificial intelligence.\n\nKEY EXAMPLES:\n- OpenAI, Anthropic, Google DeepMind, and Meta are all competing to attract top talent in AI.\n- Nvidia plans to license Groq's technology and hire its executives to strengthen its position in AI chip manufacturing. \n- Former SpaceX employees are launching startups in various sectors, including AI, fueled by substantial venture capital.",
-    "article_count": 38,
-    "topicality": 38.0,
-    "theme_weight": 0.9921052631578948,
-    "theme": "AI"
+    "title": "2025 Economic Trends",
+    "summary": "OVERVIEW:\nThe articles discuss the economic landscape of the U.S. in 2025, highlighting challenges such as inflation, trade tensions, and the role of technology, particularly artificial intelligence, in driving growth. Key observations include strong consumer spending and shifting job market dynamics.\n\nKEY EXAMPLES:\n- The New York Fed's analysis of tariffs and their impact on inflation and trade deficits was among the most-read topics.\n- Economic forecasts indicate stronger growth expectations in 2025 due to lower policy rates and increased productivity.\n- Despite overall growth, the job market remains problematic for many, with discrepancies between reported economic strength and employment opportunities.\n- AI is noted as a significant driver of economic growth, influencing efficiency in various sectors.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 1.0212121212121212,
+    "theme": "Recessionary pressures"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "**Tech Regulation and Geopolitics**",
-    "summary": "OVERVIEW:  \nRecent developments highlight the interplay between technology, national security, and regulatory policies, particularly under the Trump administration, which has tightened its stance on foreign influence and tech oversight.\n\nKEY EXAMPLES:\n- Coupang's lobbying efforts in the U.S. have drawn Republican support amidst criticism of South Korea's investigation into the firm, overshadowed by its significant user data breach.\n- The Trump administration imposed travel bans on experts addressing issues like disinformation and foreign influence in technology, citing concerns over censorship and regulatory scrutiny.\n- North Korea has adapted its cyber strategies to target higher-profile individuals and organizations, emphasizing the evolving threats in the cyber landscape.",
-    "article_count": 37,
-    "topicality": 37.0,
-    "theme_weight": 0.9891891891891892,
-    "theme": "Others"
+    "title": "Inflation Trends and Projections",
+    "summary": "OVERVIEW: \nThis cluster of articles explores various aspects of inflation, including consumer price index changes, seasonal employment trends in retail, and projections from the Federal Open Market Committee (FOMC). The articles highlight ongoing trends in price fluctuations and economic forecasts.\n\nKEY EXAMPLES:\n- The FRED Blog discusses the consumer price index, emphasizing its role in understanding inflation trends over time.\n- The December 2025 FOMC Summary of Economic Projections provides updated economic outlooks amid changing inflation.\n- Custom indexes are introduced to better analyze inflation trends by excluding volatile energy and food prices.",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 0.996875,
+    "theme": "Inflation"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Market Fluctuations and Stock Performance",
-    "summary": "OVERVIEW:\nRecent market reports highlight significant fluctuations in stock performance across various regions and sectors, with notable impacts from both earnings reports and broader market conditions.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% as its profit fell short of estimates.\n- In contrast, Plus500 reported an 11% increase in quarterly revenue, indicating strong performance.  \n- Colombian stocks showed resilience with a 0.29% increase in the COLCAP index.\n- Meanwhile, Canada\u2019s S&P/TSX Composite index fell by 0.18%.",
-    "article_count": 35,
-    "topicality": 35.0,
-    "theme_weight": 0.9714285714285716,
-    "theme": "Inflation"
+    "title": "Bitcoin Market Challenges in 2025",
+    "summary": "OVERVIEW:\nIn 2025, Bitcoin faced significant challenges, including poor market sentiment and structural issues, leading to a stark contrast between optimism and actual price performance. The cryptocurrency market grappled with regulatory shifts while sentiment remained negative, highlighting a turbulent year for Bitcoin.\n\nKEY EXAMPLES:\n- Bitcoin ended 2025 approximately 30% below its October peak, despite initial expectations for a rally driven by halving narratives and ETF momentum.\n- The Crypto Fear & Greed Index indicated that market sentiment was deeply entrenched in fear, spending over 30% of the year in extreme fear zones.\n- The year witnessed one of the most severe boom-and-bust cycles in Bitcoin's history, showcasing drastic price fluctuations.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 0.796774193548387,
+    "theme": "Digital assets"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "** Banking Industry Insights",
-    "summary": "**OVERVIEW:**  \nRecent analyses highlight the evolving landscape of the U.S. banking sector, emphasizing the transition towards more diversified financial activities while assessing vulnerabilities and regulatory challenges.\n\n**KEY EXAMPLES:**\n- A new solvency metric, Economic Capital, reportedly identifies failing banks more effectively than traditional measures.\n- U.S. banks are increasingly integrating nonbank financial institution activities into their operations, reflecting a shift from traditional deposit and loan functions.\n- A study reveals that liquidity and rate risks are managed in various ways across 46 banks, pointing to differing strategies within the industry.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 1.1407407407407406,
-    "theme": "Bank lending and credit risk"
+    "title": "Stock Market Fluctuations",
+    "summary": "OVERVIEW: Recent corporate earnings reports highlight contrasting financial performance, with some companies exceeding expectations while others fall short, affecting their stock valuations.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% after its profits missed estimates.\n- Barclays posted an 18% profit increase and raised its income guidance.\n- Novartis raised its sales and profit guidance for the year.\n- Plus500 announced a quarterly revenue increase of 11% and confirmed it would meet expectations.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.0241379310344827,
+    "theme": "Inflation"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "**U.S. Economic Trends**",
-    "summary": "OVERVIEW:\nRecent reports highlight strong consumer spending and GDP growth, but also underline ongoing challenges such as inflation, productivity concerns, and differing perceptions of wealth among younger generations.\n\nKEY EXAMPLES:\n- U.S. GDP grew at a 4.3 percent annual rate, exceeding expectations due to robust consumer spending.\n- Despite positive GDP growth, U.S. productivity has slowed down while unit labor costs have increased.\n- Economists assert that typical middle-class families are wealthier than those in the 1960s, though many younger Americans disagree.",
+    "title": "**Disinformation and Tech Regulation**",
+    "summary": "OVERVIEW:\nRecent actions by the Trump administration highlight a growing tension between government policies and efforts to regulate technology and combat disinformation. These developments have implications for free speech, cybersecurity, and the political climate surrounding technology oversight.\n\nKEY EXAMPLES:\n- The administration barred five regulators from entering the U.S., citing their roles in addressing disinformation online.\n- A federal court's injunction referenced the First Amendment, favoring tech companies against government restrictions.\n- Officials claimed \"foreign censorship\" as a reason for the imposed travel bans affecting experts in technology oversight.",
     "article_count": 26,
     "topicality": 26.0,
-    "theme_weight": 1.0115384615384615,
-    "theme": "Inflation"
+    "theme_weight": 0.9730769230769231,
+    "theme": "Others"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Cybersecurity Threats and Solutions",
-    "summary": "OVERVIEW:\nRecent cybersecurity articles highlight the increasing sophistication of attacks targeting administrative accounts and the need for improved security measures across various sectors, including healthcare and technology.\n\nKEY EXAMPLES:\n- Attackers are exploiting weak authentication methods, such as RC4, to access admin accounts and extract sensitive data.\n- The healthcare sector is experiencing a rise in cyberattacks, with industry leaders asserting that current security proposals are inadequate.\n- ServiceNow's acquisition aimed at enhancing autonomous cybersecurity reflects the industry's shift towards proactive defense strategies against evolving threats.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 0.9874999999999999,
+    "title": "Cybersecurity Trends and Threats",
+    "summary": "OVERVIEW:\nRecent articles highlight the evolving threats in cybersecurity, emphasizing vulnerabilities in authentication methods, targeting of administrative accounts, and the importance of a comprehensive security strategy alongside advancements like AI.\n\nKEY EXAMPLES:\n- Attackers are exploiting weak authentication mechanisms such as RC4 to gain access to admin accounts and export sensitive data.\n- A recent report indicates a significant rise in healthcare cyberattacks, raising concerns about insufficient proposed security rule changes.\n- The integration of AI into cybersecurity practices is being explored, though it is noted that AI cannot replace traditional security measures entirely.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.004,
     "theme": "Cyber attacks"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Crypto Security and Scams",
-    "summary": "OVERVIEW: \nThe crypto industry faced significant challenges and developments in 2025, with a surge in cybercrime, particularly social engineering attacks, alongside advancements in security measures and regulatory frameworks. The emergence of decentralized identity and privacy solutions marked a shift in the industry's focus towards more secure practices.\n\nKEY EXAMPLES:\n- North Korean hackers stole $2.02 billion in cryptocurrency in 2025, a record high linked to ongoing state-sponsored cybercrime activities.\n- Over $2.17 billion was stolen from cryptocurrency services in the first half of 2025, prompting new security initiatives like Chainalysis's Hexagate.\n- Social engineering scams intensified, leveraging AI advancements to make detection increasingly difficult for victims.\n- Regulatory changes transformed the perception of crypto as a speculative investment to a legitimate capital markets infrastructure.",
+    "title": "Private Credit Market Trends",
+    "summary": "OVERVIEW:\nThe private credit market is experiencing significant fluctuations, characterized by rising concerns about default rates and a narrowing of unitranche spreads. As the sector faces challenges, there is also a sense of potential turning points and adaptation to new regulatory changes.\n\nKEY EXAMPLES:\n- Concerns regarding stress in private credit are rising due to higher default rates and potential increases in payment-in-kind (PIK) instruments.\n- A fund has recently closed for growth debt investments in Asia-Pacific as the market adjusts to changing conditions.\n- The private credit landscape is viewed as being at a critical juncture, suggesting both challenges and opportunities ahead for the industry.",
     "article_count": 24,
     "topicality": 24.0,
-    "theme_weight": 0.8708333333333332,
-    "theme": "Digital assets"
+    "theme_weight": 1.0374999999999999,
+    "theme": "Private credit"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Evolving Global Trade Dynamics",
-    "summary": "OVERVIEW:\nRecent developments show significant shifts in global trade policies, particularly in U.S.-China relations and China's strategic foreign investment initiatives. These changes reflect broader trends in technology, industry sectors, and international policies that are reshaping the global economic landscape.\n\nKEY EXAMPLES:\n- China is revising its foreign investment catalogue to focus on advanced industries, increasing encouraged sectors to 1,679.\n- President Trump plans to impose an additional 10% tariff on imports from China in response to drug inflow issues.\n- The U.S. faces disparities in tariff rates among trade partners, with China subjected to rates as high as 40%, highlighting ongoing trade tensions.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0125,
-    "theme": "Inflation"
+    "title": "Nvidia's Strategic Expansion",
+    "summary": "OVERVIEW:\nNvidia is expanding its influence in the artificial intelligence sector through significant partnerships and acquisitions, most notably by licensing Groq technology and hiring its executives. This move highlights Nvidia's continued commitment to enhancing its AI chip capabilities.\n\nKEY EXAMPLES:\n- Nvidia will license Groq\u2019s technology, adding to its strengths in AI chips.\n- The company is reportedly engaging in a $20 billion deal with Groq to bolster its competitive edge.\n- Nvidia's stock selloff, alongside other tech giants, has been described as overblown amid these strategic moves.",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 1.0260869565217392,
+    "theme": "AI"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "US Retail and Market Movements",
-    "summary": "OVERVIEW:\nRecent trends highlight significant shifts in the US retail landscape, with major closures and new market strategies in response to changing consumer behavior and company aspirations.\n\nKEY EXAMPLES:\n- Macy's, Kroger, and Carter's plan to close stores as part of a long-term strategy influenced by evolving consumer habits.\n- The launch of Shein's first physical store in Paris attracts customers despite protests, showcasing a growing interest in low-cost fast fashion.",
+    "title": "Stock Market Trends and Reactions",
+    "summary": "OVERVIEW:\nThe recent stock market performance, reaching all-time highs, has been closely associated with President Trump's influence and the Federal Reserve's actions, despite underlying concerns about economic stability and job losses.\n\nKEY EXAMPLES:\n- Stocks were rallying even with initial expectations of a Clinton victory, suggesting multiple factors are at play.\n- The administration actively promotes positive stock trends, while downplaying potential risks like job losses and market bubbles.\n- Despite optimism, certain sectors, such as AI infrastructure, recently experienced significant declines, indicating market volatility.",
     "article_count": 22,
     "topicality": 22.0,
-    "theme_weight": 1.0,
-    "theme": "Others"
+    "theme_weight": 0.9772727272727273,
+    "theme": "Recessionary pressures"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Impact of AI on Economy",
-    "summary": "OVERVIEW: \nThe common theme across the articles is the significant influence of artificial intelligence (AI) on various sectors of the economy, including concerns from workers, implications for growth, and investment dynamics.\n\nKEY EXAMPLES:\n- Big Tech\u2019s investment in AI is causing investor anxiety, yet technological advancements continue to promote market confidence.\n- Industry leaders discuss the potential impact of generative AI on jobs for nearly 2 million bank staff in the U.S.\n- Venture-capital firms are integrating AI into traditional sectors like accounting and property management, reflecting its expanding influence.",
-    "article_count": 20,
-    "topicality": 20.0,
-    "theme_weight": 0.9949999999999999,
-    "theme": "AI"
+    "title": "Currency Market Fluctuations",
+    "summary": "OVERVIEW:\nRecent news highlights significant movements in the currency markets, particularly the U.S. dollar and Japanese yen, influenced by economic data and central bank actions.\n\nKEY EXAMPLES:\n- The U.S. dollar has fallen amid speculation regarding U.S. economic indicators and anticipated interest rate cuts by the Federal Reserve.\n- The Japanese yen has surged due to threats of intervention by the Bank of Japan in response to currency fluctuations. \n- Analysts suggest that intervention risks for the yen could increase in the coming months as market conditions evolve.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.9714285714285713,
+    "theme": "Inflation"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Recent Congressional Actions",
-    "summary": "OVERVIEW: A series of articles detail recent actions taken by the House Committees on Oversight and Government Reform and Foreign Affairs, highlighting their reports from early December 2025.\n\nKEY EXAMPLES:\n- The House Committee on Oversight and Government Reform reported multiple initiatives on December 2, 2025.\n- The House Committee on Foreign Affairs followed with its own set of reports on December 3, 2025.",
+    "title": "Bitcoin Price Volatility**",
+    "summary": "OVERVIEW:  \nRecent news highlights the fluctuating price of Bitcoin, influenced by various market pressures including political developments, economic forecasts, and performance relative to other assets like gold and silver.\n\nKEY EXAMPLES:  \n- Bitcoin's price slipped to $94,000 amidst concerns about Trump's potential tariffs, affecting risk appetite in the market.  \n- Analysts suggest that Bitcoin could drop as low as $65,000 due to projected corrections in the AI sector impacting crypto markets.  \n- In a contrasting trend, while Bitcoin faced declines, silver prices surged to $72 an ounce, emphasizing a divergence in asset performance.  \n- Rumors of Trump Media moving $174 million in Bitcoin after fresh purchases highlight ongoing high-stakes transactions within the cryptocurrency market.",
     "article_count": 19,
     "topicality": 19.0,
-    "theme_weight": 1.0210526315789472,
-    "theme": "Cyber attacks"
+    "theme_weight": 0.8263157894736842,
+    "theme": "Digital assets"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Federal Reserve Initiatives",
-    "summary": "OVERVIEW:\nThe Federal Reserve Board is active in approving applications from banks and adapting its policies to support innovation and regulatory compliance in the financial sector.\n\nKEY EXAMPLES:\n- The Fed approved the application by National Bank Holdings Corporation.\n- It issued a new policy statement facilitating responsible innovation for Board-supervised banks.\n- The Fed requested public input on a new payment account for eligible financial institutions. \n- The Fed terminated enforcement actions with The Goldman Sachs Group and announced pricing for payment services effective January 1, 2026.",
-    "article_count": 19,
-    "topicality": 19.0,
-    "theme_weight": 1.1157894736842102,
-    "theme": "Bank lending and credit risk"
+    "title": "North Korean Crypto Crime Surge",
+    "summary": "OVERVIEW:\nRecent reports highlight a significant increase in cryptocurrency theft linked to North Korean hackers, alongside discussions of the broader impact of fraud in the cryptocurrency space.\n\nKEY EXAMPLES:\n- North Korean hackers stole $2.02 billion in cryptocurrency in 2025, marking a 51% increase from the previous year.\n- Over $2.17 billion was stolen from cryptocurrency services in the first half of 2025, prompting new security measures.\n- Cybersecurity concerns escalate during the holiday season as cybercriminals exploit vulnerabilities for fraud.",
+    "article_count": 18,
+    "topicality": 18.0,
+    "theme_weight": 0.8944444444444445,
+    "theme": "Digital assets"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Economic Projections and Outlook",
-    "summary": "OVERVIEW:\nSeveral articles discuss recent economic projections by the Federal Reserve and various financial institutions, highlighting expectations for growth, inflation, and fiscal policies for the upcoming years.\n\nKEY EXAMPLES:\n- The Federal Reserve's Summary of Economic Projections from the December FOMC meeting indicates a stronger growth outlook for 2025 compared to previous projections.\n- Deutsche Bank describes the US macro outlook for 2025 as \"murky at best,\" reflecting uncertainty amid changing economic conditions.\n- The Federal Reserve Bank of New York\u2019s DSGE model projects higher inflation in 2025 due to cost-push shocks from tariffs, alongside a decrease in the predicted short-run natural rate of interest.",
-    "article_count": 15,
-    "topicality": 15.0,
-    "theme_weight": 1.04,
-    "theme": "Inflation"
+    "title": "Legislative Committee Reports",
+    "summary": "OVERVIEW:\nRecently, multiple articles report on the actions taken by the House Committee on Oversight and Government Reform and the House Committee on Foreign Affairs, highlighting their deliberations on various legislative matters.\n\nKEY EXAMPLES:\n- The House Committee on Oversight and Government Reform completed its reporting on December 2, 2025.\n- The House Committee on Foreign Affairs finalized its reporting on December 3, 2025.",
+    "article_count": 17,
+    "topicality": 17.0,
+    "theme_weight": 1.011764705882353,
+    "theme": "Cyber attacks"
   }
 }
