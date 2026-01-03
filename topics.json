@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Financial Market Movements",
-    "summary": "OVERVIEW:\nRecent financial news highlights a mix of stock performance fluctuations and cryptocurrency gains as traders prepare for 2026, with some companies meeting or exceeding expectations while others fall short.\n\nKEY EXAMPLES:\n- Wingstop\u2019s stock fell 12% after its profits did not meet expectations.\n- European shares reached a record high as trading for 2026 commenced.\n- Cardano's ADA saw a 7% increase, alongside consistent gains in bitcoin and ether.",
-    "article_count": 41,
-    "topicality": 41.0,
-    "theme_weight": 0.9195121951219513,
-    "theme": "Inflation"
+    "title": "Bitcoin Market Trends",
+    "summary": "OVERVIEW:\nRecent articles highlight the fluctuating dynamics of Bitcoin trading, focusing on price movements influenced by macroeconomic factors and institutional investments, while also noting shifts in trader behavior amidst market developments.\n\nKEY EXAMPLES:\n- Bitcoin reached $90,000 as traders shifted their pattern observation.\n- Tether's significant purchase of 8,888 Bitcoin has brought its holdings to over 96,000 BTC, linking their strategy to quarterly profits.\n- Bitcoin's price slipped to $94,000 due to waning risk appetite related to potential Trump tariffs.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.8727272727272728,
+    "theme": "Digital assets"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Economic Trends in East Asia",
-    "summary": "OVERVIEW:\nRecent economic reports highlight significant growth in various sectors across East Asia, particularly in Hong Kong and China, showcasing a resurgence in IPO activities, retail sales, and box office revenues.\n\nKEY EXAMPLES:\n- Hong Kong's IPO fundraising surged to US$37.22 billion in 2025, marking a 229% increase from the previous year.\n- China\u2019s box office revenue grew nearly 22% in 2025, reaching 51.8 billion yuan, driven by a successful animated film.\n- Hong Kong's retail sales rose 6.5% year-on-year in November, reflecting improved local consumption and tourism. \n- Increased mainland Chinese tourist arrivals in Hong Kong were noted, attributed to factors like holiday timing and regional geopolitical tensions.",
-    "article_count": 37,
-    "topicality": 37.0,
-    "theme_weight": 1.018918918918919,
-    "theme": "Others"
+    "title": "AI in Cybersecurity 2026",
+    "summary": "OVERVIEW:\nThe articles emphasize the critical role of artificial intelligence in shaping the future of cybersecurity, highlighting the emergence of AI-driven threats, the evolution of security measures, and the adoption of AI technologies to enhance defense mechanisms.\n\nKEY EXAMPLES:\n- Cybersecurity experts predict an intensified arms race driven by AI, with attackers leveraging autonomous malware in 2026.\n- ServiceNow's acquisition aims to strengthen its autonomous cybersecurity capabilities through a proactive AI-based security stack.\n- Credit managers indicate that AI will soon become a key component of the private credit landscape, reflecting broader trends across industries.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.9969696969696972,
+    "theme": "AI"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "AI Integration and Challenges",
-    "summary": "OVERVIEW:\nThe articles highlight the increasing reliance on artificial intelligence across various sectors, including credit management, software development, cybersecurity, and content generation, while also addressing the accompanying challenges and security risks.\n\nKEY EXAMPLES:\n- Credit managers are experimenting with AI, anticipating its crucial role in private credit by 2025.\n- Developers are focusing on AI for code generation, emphasizing the need for security in 2026.\n- A cybersecurity acquisition by ServiceNow aims to enhance autonomous cybersecurity capabilities.\n- Reports suggest enterprise customers are hesitant to embrace Microsoft's vision of \"the era of AI agents\".",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 0.990625,
-    "theme": "AI"
+    "title": "U.S. Trade Policies and Tariffs",
+    "summary": "OVERVIEW:\nRecent shifts in U.S. trade policies, including the imposition of steep tariffs, have significantly affected market dynamics and pricing strategies for businesses. Reports indicate that while these tariffs have raised prices, the overall impact on U.S. businesses and consumers has not been as severe as initially anticipated.\n\nKEY EXAMPLES:\n- A new report highlights factors explaining why steep import taxes have not dramatically increased costs for U.S. businesses.\n- Differences in tariff rates across trading partners show significant variances, with Canada and Mexico facing lower rates compared to higher tariffs imposed on countries like China.\n- Firms are actively adjusting their pricing strategies in response to market conditions and cost increases due to tariffs, reflecting a complex decision-making process.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.990909090909091,
+    "theme": "Inflation"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Tech and Finance Trends",
-    "summary": "OVERVIEW:\nRecent developments in the tech and finance sectors highlight a surge in entrepreneurship and innovative strategies among firms. This includes the rise of billionaires from start-ups, evolving business models, and unique approaches to attracting talent.\n\nKEY EXAMPLES:\n- A new wave of billionaires is emerging from smaller tech start-ups, reminiscent of past tech booms.\n- Middlemen in recent court cases have been found to be enabling a flourishing trade despite regulatory crackdowns.\n- Companies are increasingly choosing to specialize in either large private equity deals or niche markets to differentiate themselves.",
+    "title": "Crypto Market Trends 2026",
+    "summary": "OVERVIEW:\nThe news articles highlight the evolving landscape of the cryptocurrency market as we approach 2026, focusing on regulatory changes, market predictions, and new developments from industry players.\n\nKEY EXAMPLES:\n- Crypto exchanges like OKX are strategizing around licensing and stablecoins, anticipating a more stable Bitcoin market.\n- Numerous jurisdictions worldwide are implementing new frameworks for crypto and stablecoin regulations as we head into 2026.\n- Analysts suggest that Bitcoin's price approaching $92,000 could trigger a surge of market interest and FOMO among investors.",
     "article_count": 31,
     "topicality": 31.0,
-    "theme_weight": 0.9548387096774192,
-    "theme": "Others"
+    "theme_weight": 0.7774193548387096,
+    "theme": "Digital assets"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "2025 Crypto Market Overview**",
-    "summary": "OVERVIEW:  \nThe year 2025 witnessed significant developments in the cryptocurrency market, marked by operational milestones for major blockchains like Ethereum and Bitcoin facing multiple setbacks. Despite these operational advancements, many cryptocurrencies struggled in terms of price performance, with predictions largely unmet.\n\nKEY EXAMPLES:  \n- Ethereum achieved record transaction volumes but lost over $100 million in fees and showed a decrease in the value of its cryptocurrency, ETH.\n- Bitcoin faced several price collapses throughout the year, earning multiple \u201cdeath\u201d headlines while still supporting a growing infrastructure.\n- XRP had significant regulatory victories, yet its price fell by 50%, illustrating contradictory market behaviors.\n- Bitwise filed for 11 new cryptocurrency ETF products, indicating an ongoing interest in crypto despite a lack of market enthusiasm.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 0.8103448275862067,
-    "theme": "Digital assets"
+    "title": "Federal Reserve Policy Updates",
+    "summary": "OVERVIEW:\nRecent actions by the Federal Reserve Board highlight its ongoing efforts to adapt and regulate the evolving banking landscape, including changes to policy statements, input requests on payment services, and the integration of nonbank financial institutions into traditional banking.\n\nKEY EXAMPLES:\n- The Federal Reserve withdrew its 2023 policy statement to enhance innovation for certain supervised banks.\n- It is seeking public input on payment accounts for eligible financial institutions focused on clearing and settling payments.\n- The Board announced new pricing for payment services, effective January 1, 2026, for banks and credit unions.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 1.1166666666666667,
+    "theme": "Bank lending and credit risk"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Banking System Vulnerabilities",
-    "summary": "OVERVIEW:\nRecent analyses highlight ongoing vulnerabilities within the U.S. banking system, focusing on the risks posed by traditional banks, the rise of nonbank financial institutions (NBFIs), and the impact of regulatory measures.\n\nKEY EXAMPLES:\n- A record $74.6 billion was borrowed from the Fed\u2019s Standing Repo Facility, indicating acute funding pressures among banks.\n- A new solvency metric, Economic Capital, is proposed as a more accurate method for identifying at-risk banks sooner than traditional measures.\n- Research indicates the evolution of U.S. banks towards diversified operations, integrating nonbank activities to better manage liquidity needs.\n- Discussions around whether banking regulations need adjustment reflect concerns over the industry's ongoing susceptibility to disruptions despite heavy oversight.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 1.1206896551724137,
-    "theme": "Bank lending and credit risk"
+    "title": "U.S. Job Market Dynamics",
+    "summary": "OVERVIEW:\nThe U.S. job market is currently experiencing stagnation amid economic uncertainty, leading to significant discussions about employment trends, productivity, and future projections. Despite claims of increasing employment for U.S.-born workers, economic experts present contrasting views on actual job growth and productivity performance.\n\nKEY EXAMPLES:\n- Employers added 64,000 jobs in November, yet the unemployment rate rose to a four-year high of 4.6 percent.\n- Economic uncertainty and tariffs have contributed to a frozen hiring state, and changes might not occur until 2026.\n- Claims of surging employment among U.S.-born workers promoted by officials are disputed by economists who cite a more nuanced reality.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 1.01,
+    "theme": "Recessionary pressures"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Employment and Political Tensions",
-    "summary": "OVERVIEW:\nRecent articles highlight contrasting narratives surrounding employment for U.S.-born workers and political tensions stemming from government actions and protests.\n\nKEY EXAMPLES:\n- Economists challenge the claims by Trump officials regarding the surge in employment for U.S.-born workers.\n- President Trump has announced the withdrawal of National Guard troops from several major cities, citing reduced crime rates.\n- Trump threatens intervention in Iran amidst escalating protests and unrest.",
+    "title": "Economic Landscape in 2025",
+    "summary": "OVERVIEW:\nThe articles highlight key economic challenges and forecasts for the year 2025, focusing on tariffs, trade tensions, and the financial pressures faced by younger adults. Insights from Federal Reserve research and implications for inflation and affordability shape the current economic narrative.\n\nKEY EXAMPLES:\n- Economic forecasts indicate stronger growth in 2025 due to lower policy rates and higher productivity, but inflation projections are rising due to cost-push shocks from tariffs.\n- The analysis of student loan data restoration emphasizes its significant impact on borrowers' credit scores.\n- Affordability remains a pressing issue for many Americans, with suggestions for easing their financial burdens discussed in detail.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 1.013793103448276,
-    "theme": "Recessionary pressures"
+    "theme_weight": 1.0275862068965518,
+    "theme": "Inflation"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Cybersecurity Challenges and Trends",
-    "summary": "OVERVIEW:\nThe articles collectively highlight the ongoing challenges in cybersecurity, including the rise of sophisticated attacks, the effectiveness of security measures, and the pressing need for better security regulations, particularly in the healthcare sector.\n\nKEY EXAMPLES:\n- KrebsOnSecurity.com notes a focus on the global impact of cybercrime and the entities that facilitate it.\n- An analysis reveals which technologies are expected to provide the most effective defenses for companies in 2026.\n- A significant zero-day exploitation event affected thousands of organizations, demonstrating vulnerabilities to advanced persistent threats (APTs).\n- Rising healthcare cyberattacks prompt calls for improved security regulations, suggesting existing proposals are inadequate.",
+    "title": "Evolving Cybersecurity Threats**",
+    "summary": "OVERVIEW:\nRecent news highlights the increasing complexity and persistence of cybersecurity threats faced by organizations globally, showcasing rising concern about vulnerabilities, data breaches, and the tactics employed by cybercriminals.\n\nKEY EXAMPLES:\n- A major APT exploited Ivanti's mobile device management platform, affecting countless organizations.\n- The hacker group \"Scattered LAPSUS$ Hunters\" gained notoriety for extorting numerous corporations, showing a shift in their operational visibility.\n- Developers are inadvertently exposing sensitive information, highlighting internal security lapses.\n- An urgent Internet-wide security advisory warns that long-held beliefs about network security are now outdated.",
     "article_count": 27,
     "topicality": 27.0,
-    "theme_weight": 0.9888888888888888,
-    "theme": "Cyber attacks"
+    "theme_weight": 1.0,
+    "theme": "Others"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Economic Trends and Challenges",
-    "summary": "OVERVIEW:\nThe articles highlight the resilience and challenges of the U.S. economy in the context of evolving policies, manufacturing dynamics, and global tensions. They emphasize the disparity in economic health among different income groups and the impact of trade relations on U.S. manufacturing.\n\nKEY EXAMPLES:\n- Despite signs of economic resilience, questions arise about future growth, particularly as high earners benefit more than low earners.\n- The U.S. aims to strengthen its global manufacturing leadership amid domestic deflation and geopolitical tensions.\n- U.S. trade policies show significant tariff differences by partner, affecting economic interactions.\n- Concerns grow over China's deflation as scholars warn against a potential economic stagnation similar to Japan's past.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 0.9666666666666667,
-    "theme": "Recessionary pressures"
+    "title": "Private Credit Market Developments",
+    "summary": "OVERVIEW:\nRecent shifts in the private credit market reveal concerns over rising default rates and an expanding sector poised for significant growth. Despite these worries, fundamental values may not fully align with market sentiments, indicating complex dynamics ahead.\n\nKEY EXAMPLES:\n- A record $74.6 billion was borrowed from the Fed\u2019s Standing Repo Facility as banks reacted to market pressures on New Year's Eve.\n- Economic indicators suggest that the private asset-based finance market has surpassed all other private credit segments and is expected to continue growing rapidly into 2026.\n- Analysts highlight potential stress within private credit due to rising default rates and increased payment-in-kind (PIK) options.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 1.0884615384615386,
+    "theme": "Bank lending and credit risk"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Market Movements and Economic Policies",
-    "summary": "OVERVIEW:\nRecent market trends have been significantly influenced by political and economic developments, including trade policy changes, Federal Reserve actions, and investor sentiment towards cryptocurrencies and traditional equities.\n\nKEY EXAMPLES:\n- The Dow reached a record high amid optimism surrounding Trump\u2019s nomination for Treasury despite conflicting views on the true drivers of the stock rally.\n- Bitcoin's price fluctuated, recently dropping to $94k, as negative sentiment emerged from warnings about potential tariffs from Trump.\n- Markets displayed brief liquidity issues in Treasury securities following the April 2025 tariff announcements, though volatility remained consistent with historical patterns.",
+    "title": "US-China Tensions and Trump Policies",
+    "summary": "OVERVIEW:\nRecent news highlights escalating tensions between the US and China, alongside significant policy moves by the Trump administration that reflect national security concerns and a shift in foreign relations.\n\nKEY EXAMPLES:\n- Trump blocked deals related to semiconductor assets over security concerns tied to China.\n- The US military conducted strikes in Venezuela amidst escalating accusations against Maduro's government, which were met with warnings from China.\n- A statement from Maduro's government condemned US actions targeting civilian and military locations.",
     "article_count": 26,
     "topicality": 26.0,
-    "theme_weight": 1.0038461538461538,
-    "theme": "Inflation"
+    "theme_weight": 0.9769230769230769,
+    "theme": "Others"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Economic Challenges of 2025",
-    "summary": "OVERVIEW:\nThe articles highlight significant economic issues in 2025, focusing on trade tensions, tariffs, and their impact on inflation and consumer behavior. Federal Reserve forecasts and market reactions further illustrate the complex economic landscape.\n\nKEY EXAMPLES:\n- Insights from New York Fed economists revealed that trade tensions and tariffs are influencing inflation and consumer credit ratings.\n- A drop in the monthly trade deficit was attributed to recent tariff implementations, although long-term effects remain uncertain.\n- The housing market is suffering due to fears of inflationary pressures stemming from tariff costs.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 1.0347826086956522,
-    "theme": "Recessionary pressures"
+    "title": "Stock Market Trends",
+    "summary": "OVERVIEW: \nRecent articles discuss the movements and factors influencing the U.S. stock and Treasury markets, with particular focus on the current high stock valuations, the impact of economic policy, and fluctuations in Treasury liquidity.\n\nKEY EXAMPLES:\n- The Dow reached a record high, attributed partly to optimism around Trump's Treasury pick, although some argue that Janet Yellen and the Fed deserve more credit.\n- In 2025, shifts in interest rates and economic policy created fluctuations in the Treasury market, notably worsening liquidity around trade announcements.\n- Research indicates that trading in Treasury securities spikes at month-end, driven by rebalancing from passive investment funds.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 0.968,
+    "theme": "Inflation"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Federal Reserve Board Updates",
-    "summary": "OVERVIEW:\nThe Federal Reserve Board has made several announcements regarding regulatory changes, new policies, and public engagement efforts aimed at enhancing the supervision and services related to banks and financial institutions.\n\nKEY EXAMPLES:\n- The Federal Reserve approved the application by National Bank Holdings Corporation.\n- A new policy statement was issued to facilitate responsible innovation among Board-supervised banks.\n- The Fed is seeking public input on payment accounts for eligible financial institutions to improve payment clearing processes. \n- The Board published its first manual for supervising large and complex banks.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 1.0952380952380951,
-    "theme": "Bank lending and credit risk"
+    "title": "Retail Trends and Challenges",
+    "summary": "OVERVIEW:\nRecent developments highlight significant challenges and opportunities within the retail sector, with companies navigating competitive markets and changing consumer behaviors. Analysts predict potential recovery in the retail landscape, with some companies thriving despite broader economic pressures.\n\nKEY EXAMPLES:\n- Retailers face ongoing difficulties as shoppers are cautious due to rising living costs, but there are optimistic forecasts for a better market in 2026.\n- In China, companies offering attractive payouts have become popular investments, indicating a shift in market dynamics.\n- Verizon's reintroduction of unlimited data plans improves customer offerings but raises concerns among investors about the intense competition in the telecom industry.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 1.0250000000000001,
+    "theme": "Inflation"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Cryptocurrency Security Trends",
-    "summary": "OVERVIEW:\nRecent events in the cryptocurrency space highlight significant shifts in security threats, with a notable drop in the frequency of hacks but a marked increase in the severity of incidents, particularly involving state-sponsored actors.\n\nKEY EXAMPLES:\n- Bybit experienced a $1.46 billion theft attributed to state-sponsored actors, underscoring the growing severity of crypto thefts despite fewer attacks overall.\n- North Korean hackers escalated their activities in 2025, stealing $2.02 billion, a 51% increase from the previous year, raising their total to $6.75 billion.\n- Although overall monetary losses from crypto hacks declined significantly in December, users continued to face common cybersecurity exploits like address poisoning scams.",
-    "article_count": 20,
-    "topicality": 20.0,
-    "theme_weight": 0.8799999999999999,
-    "theme": "Digital assets"
+    "title": "Stock Market Trends",
+    "summary": "OVERVIEW:\nRecent reports highlight mixed performance in the stock market, with optimistic forecasts for the S&P 500 juxtaposed against concerns about valuations and inflation. Companies like Plus500 and Barclays report revenue growth, while others like Wingstop face challenges.\n\nKEY EXAMPLES:\n- Analysts foresee the S&P 500 increasing by about 17% in 2025, following two years of double-digit growth.\n- Plus500 reported an 11% increase in quarterly revenue and is expected to meet financial targets.\n- Wingstop's stock dropped 12% after its profit fell short of projections.\n- Barclays announced an 18% rise in profit while raising its income guidance.",
+    "article_count": 22,
+    "topicality": 22.0,
+    "theme_weight": 0.9863636363636363,
+    "theme": "Inflation"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Congressional Committee Actions",
-    "summary": "OVERVIEW:\nRecent reports indicate multiple actions taken by various House committees, primarily focusing on legislative initiatives and oversight. Key developments include reports from the Committee on Foreign Affairs and the Committee on Oversight and Government Reform.\n\nKEY EXAMPLES:\n- The House Committee on Foreign Affairs reported on December 3, 2025, regarding ongoing legislative initiatives.\n- The House Committee on Oversight and Government Reform submitted multiple reports on December 2, 2025, addressing governance and accountability issues.\n- The House Committee on the Judiciary presented findings on December 12, 2025, contributing to the discussion on legislative matters.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 1.011111111111111,
+    "title": "Cybercrime Surge and Trends",
+    "summary": "OVERVIEW:\nThe cluster of articles highlights the rising tide of cybercrime, particularly focusing on cryptocurrency theft and related fraudulent activities. It showcases significant incidents involving North Korean hackers, law enforcement efforts to combat these crimes, and the implications of high-profile hacking cases.\n\nKEY EXAMPLES:\n- North Korean hackers stole $2.02 billion in cryptocurrency in 2025, marking a 51% increase from the previous year and bringing their total theft to $6.75 billion.\n- The Bitfinex hacker, Ilya Lichtenstein, was released early due to Trump's First Step Act, a case that underscores changes in legal repercussions for cybercriminals.\n- Interpol reported that law enforcement in 19 countries made 574 arrests related to cybercrime, recovering $3 million amidst a backdrop of increasing digital threats.",
+    "article_count": 20,
+    "topicality": 20.0,
+    "theme_weight": 0.9399999999999998,
     "theme": "Cyber attacks"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Market Trends and Risks",
-    "summary": "OVERVIEW:\nRecent developments indicate significant changes in market dynamics, focusing on liquidity, risk management, and the evolving landscape for retail and institutional investors.\n\nKEY EXAMPLES:\n- LMAX Group's Jenna Wright highlights that the ability to absorb a $19 billion liquidation event signifies a turning point in market maturity.\n- The popularity of \"0DTE\" options has surged among retail investors, influencing market behavior and risk exposure.\n- A study reveals a wide divergence in liquidity risk appetites among large lenders, indicating varied approaches to risk management.\n- American Express exhibits a high risk density exceeding 70%, positioning it ahead of competitors like Capital One and Truist.",
-    "article_count": 16,
-    "topicality": 16.0,
-    "theme_weight": 1.0375,
-    "theme": "Bank lending and credit risk"
+    "title": "Congressional Committee Actions",
+    "summary": "OVERVIEW:\nRecent articles highlight various reports and actions taken by multiple House committees, primarily focusing on foreign affairs and government oversight.\n\nKEY EXAMPLES:\n- The House Committee on Foreign Affairs reported multiple measures on December 3, 2025.\n- The House Committee on Oversight and Government Reform issued several reports on December 2, 2025.\n- The House Committee on the Judiciary reported on actions taken on December 12, 2025.",
+    "article_count": 17,
+    "topicality": 17.0,
+    "theme_weight": 1.011764705882353,
+    "theme": "Cyber attacks"
   }
 }
