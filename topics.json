@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "**US Military Action on Venezuela**",
-    "summary": "OVERVIEW:\nThe recent US military operation resulting in the capture of Venezuela's president Nicol\u00e1s Maduro has significantly impacted global commodity markets, with mixed reactions in oil prices and a boost for gold and Bitcoin.\n\nKEY EXAMPLES:\n- Following Maduro's capture, gold prices are projected to reach US$5,000 an ounce, as geopolitical tensions rise.\n- Oil prices unexpectedly slipped despite the geopolitical upheaval, while Bitcoin managed to hold its ground and even rise slightly.\n- US companies, including Chevron, saw stock prices surge in response to the prospect of investment opportunities in Venezuela's oil sector.  \n- Investor sentiment remains cautious as they analyze the long-term implications for global oil markets.",
-    "article_count": 40,
-    "topicality": 40.0,
-    "theme_weight": 0.9100000000000001,
-    "theme": "Inflation"
+    "title": "Bitcoin Surge and Market Trends",
+    "summary": "OVERVIEW:\nRecent developments indicate a significant uptick in Bitcoin's price and overall investor sentiment in the cryptocurrency market. Factors contributing to this rally include strong ETF inflows, bullish derivatives positioning, and macroeconomic conditions favored by investors.\n\nKEY EXAMPLES:\n- Bitcoin recently surged past $94,000, marking its highest level in nearly a month and adding nearly $100 billion to crypto market capitalization.\n- Major US crypto stocks, like Coinbase, saw substantial gains after favorable market assessments from financial institutions like Goldman Sachs.\n- Industry analysts predict continued growth for Bitcoin, noting support from the evolving crypto infrastructure and institutional adoption.",
+    "article_count": 42,
+    "topicality": 42.0,
+    "theme_weight": 0.7976190476190477,
+    "theme": "Digital assets"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Bitcoin Market Dynamics",
-    "summary": "OVERVIEW:\nRecent articles highlight the volatility and shifting trends within the Bitcoin market, focusing on price movements, trader sentiment, and the impact of external factors on Bitcoin's performance.\n\nKEY EXAMPLES:\n- Bitcoin traded in the $80,000s amid cooling U.S. inflation, but macro headlines have had a diminishing effect on price movements.\n- Bitcoin briefly rose to $93,000 as the crypto market experienced a rally and significant liquidations.\n- The crypto sentiment gauge recently shifted to 'neutral', indicating a change in investor sentiment after a prolonged period of fear.",
-    "article_count": 40,
-    "topicality": 40.0,
-    "theme_weight": 0.825,
-    "theme": "Digital assets"
+    "title": "Cybersecurity Challenges 2025",
+    "summary": "OVERVIEW:\nRecent articles highlight the growing challenges in cybersecurity, including notable exploitations, vulnerabilities, and the ongoing threats posed by cybercriminals and inadequate policy responses.\n\nKEY EXAMPLES:\n- KrebsOnSecurity.com celebrated its 16th anniversary, reflecting on a year focused on exposing entities that support global cybercrime services.\n- An advisory reveals that a significant vulnerability has been exploited for months, necessitating enhanced awareness of internal network security.\n- Healthcare sector cyberattacks have surged, with industry leaders expressing concerns that proposed security rule changes are insufficient to address these risks.",
+    "article_count": 41,
+    "topicality": 41.0,
+    "theme_weight": 1.0024390243902437,
+    "theme": "Cyber attacks"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "**Market Movements and Influences**",
-    "summary": "OVERVIEW:\nRecent news highlights significant fluctuations in stock and cryptocurrency markets, driven by factors such as political developments, profit reports, and trading activity patterns.\n\nKEY EXAMPLES:\n- The Dow reached a record high, fueled by optimism regarding Trump's Treasury pick.\n- Wingstop's stock dropped 12% due to profits falling short of estimates.\n- Bitcoin's price decreased to $94,000 amid concerns about Trump's tariff threats.\n- S&P 500 positioning is at record highs, posing potential pullback risks.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.9769230769230771,
-    "theme": "Inflation"
+    "title": "AI's Expanding Influence",
+    "summary": "OVERVIEW:\nRecent articles illustrate the growing integration of artificial intelligence across various industries, highlighting its pivotal role in software, cybersecurity, credit management, and content creation.\n\nKEY EXAMPLES:\n- Credit managers are incorporating AI into private credit processes, anticipating it will transform the landscape by 2025.\n- ServiceNow's latest acquisition aims to enhance its cybersecurity capabilities through AI, focusing on autonomous threat management.\n- Developers are increasingly relying on AI for code generation but are urged to prioritize development pipelines and security by 2026.\n- Cybersecurity experts warn of a forthcoming arms race driven by AI, with both attackers and defenders adopting advanced technologies to address evolving threats.",
+    "article_count": 40,
+    "topicality": 40.0,
+    "theme_weight": 0.9974999999999999,
+    "theme": "AI"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Economic Landscape of 2025",
-    "summary": "OVERVIEW:\nThe articles collectively address the evolving economic environment in the United States as of 2025, highlighting challenges such as trade tensions, shifts in government policies, and changes in market dynamics under the Trump administration.\n\nKEY EXAMPLES:\n- The Federal Reserve's interest rate cuts have contributed to increased economic policy uncertainty, impacting Treasury market liquidity.\n- The White House is considering tariff rebates and tax refunds in response to public dissatisfaction with high prices and tariffs.\n- Corporate tax revenues have declined following recent tax cuts, raising discussions on their long-term value and impact on the economy.  \n- The ongoing redefinition of trade rules and technological advancements are reshaping jobs and the political landscape.",
-    "article_count": 34,
-    "topicality": 34.0,
-    "theme_weight": 0.9764705882352942,
-    "theme": "Recessionary pressures"
+    "title": "Federal Reserve Policy Developments",
+    "summary": "OVERVIEW:\nRecent articles highlight the Federal Reserve Board's ongoing initiatives aimed at adapting to changes in the financial sector, particularly the integration of nonbank financial institutions and the modernization of payment systems.\n\nKEY EXAMPLES:\n- The Federal Reserve Board issued a new policy statement to promote responsible innovation among Board-supervised banks.\n- The Fed requested public input on payment accounts that financial institutions could use for settling payments.\n- The Board announced new pricing for payment services effective January 1, 2026, affecting banks and credit unions.",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 1.0942857142857143,
+    "theme": "Bank lending and credit risk"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Cybersecurity Challenges and Trends",
-    "summary": "OVERVIEW:\nRecent articles highlight ongoing challenges in cybersecurity, emphasizing the rise in hacking incidents, vulnerabilities in security protocols, and the need for effective cyber defenses. The landscape is increasingly complex as global cyber threats target various sectors, notably healthcare.\n\nKEY EXAMPLES:\n- KrebsOnSecurity.com marked its 16th anniversary while reflecting on a year dominated by instances of comeuppance in cybercrime, stressing the importance of reader engagement during dark times.\n- A serious vulnerability in Ivanti's mobile device management platform led to a significant cyberattack by a Chinese APT, demonstrating the critical need for updated security measures.\n- Rising healthcare cyberattacks have prompted industry organizations to call for stronger security regulations amidst inadequate proposed changes.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "title": "U.S. Intervention in Venezuela",
+    "summary": "OVERVIEW:\nThe recent capture of Venezuelan leader Nicol\u00e1s Maduro by U.S. forces has ignited discussions around the implications for Venezuela's vast oil reserves and critical minerals, stirring concerns among other resource-rich nations about potential U.S. interest in their resources.\n\nKEY EXAMPLES:\n- U.S. President Donald Trump described the operation as a strategic move to control Venezuela's oil industry.\n- Investors are bracing for geopolitical fallout, reflecting anxiety in the market following the intervention.\n- Analysts highlight that the U.S. may also be interested in Venezuela\u2019s precious metals and other valuable resources beyond oil.\n- The operation\u2019s impact on oil futures was unexpected, with prices dropping instead of rising, while Bitcoin witnessed a surge, indicating shifting investment sentiments.",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 0.8941176470588236,
+    "theme": "Digital assets"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Federal Reserve Initiatives",
-    "summary": "OVERVIEW:\nThe Federal Reserve Board is actively implementing new policies and seeking public input to enhance the supervision and operational structure of the banking sector, particularly in light of the growth of nonbank financial institutions.\n\nKEY EXAMPLES:\n- The Federal Reserve Board has withdrawn its 2023 policy statement and issued a new version to support responsible innovation among Board-supervised banks.\n- The Board is requesting public feedback regarding the creation of a \u201cpayment account\u201d for eligible financial institutions to facilitate payment clearing and settlement. \n- The Fed announced changes in pricing for its payment services, effective January 1, 2026, aimed at banks and credit unions.\n- The Board has published its first staff manual aimed at overseeing the largest and most complex banking institutions to improve regulatory practices.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 1.1137931034482758,
-    "theme": "Bank lending and credit risk"
+    "title": "**Market Performance Trends**",
+    "summary": "OVERVIEW: \nThe recent surge in corporate earnings and stock positioning sees a mix of optimistic and cautious signals for the market, highlighted by notable profit expectations from various companies contrasted with concerns over potential market pullbacks.\n\nKEY EXAMPLES:\n- Wingstop's stock fell 12% after its profits fell short of estimates, indicating market volatility.\n- Plus500 announced an 11% revenue climb and confirmed it will meet expectations, showcasing positive corporate performance.\n- Barclays reported an 18% profit increase while also raising its income guidance, reflecting strong financial health.\n- Novartis raised its sales and profit guidance for the year, emphasizing improved forecasts within the sector.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 1.035483870967742,
+    "theme": "Inflation"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Market Trends and Strategies",
-    "summary": "OVERVIEW:\nRecent developments in the financial sector highlight a shift towards specialization and risk management amid market maturation, driven by geopolitical concerns and evolving investment strategies.\n\nKEY EXAMPLES:\n- LMAX Group notes the market's maturity marked by the ability to absorb significant liquidation events.\n- Firms are splitting their focus between large private equity deals and niche markets for competitive differentiation.\n- Investors are increasingly allocating resources to \"safe-haven\" assets due to rising geopolitical tensions.\n- A new global fund from a London manager emphasizes synthetic risk transfer as a strategy for capital relief.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.9923076923076923,
-    "theme": "Digital assets"
+    "title": "Financial Market Disruptions",
+    "summary": "OVERVIEW:\nRecent developments in financial markets highlight attempts to disrupt traditional trading platforms and the evolving nature of market participant strategies amidst regulatory changes.\n\nKEY EXAMPLES:\n- A new venture by TP Icap aims to challenge established platforms like Bloomberg and Tradeweb in the trading space.\n- The migration of dealer-to-client Treasury repurchase trades to central clearing has gained momentum due to new rule amendments.\n- Firms are shifting their strategies to either cater to large private equity deals or focus on niche markets to enhance competitiveness.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 0.9925925925925926,
+    "theme": "Others"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "AI's Impact on Cybersecurity and Development",
-    "summary": "OVERVIEW:\nRecent articles highlight the growing reliance on artificial intelligence across various sectors, particularly in cybersecurity and software development. As organizations embrace AI for efficiency and security, they also face escalating threats and challenges.\n\nKEY EXAMPLES:\n- Credit managers anticipate AI's integration into private credit management as early as 2025.\n- The cybersecurity landscape is evolving, with companies like ServiceNow enhancing their capabilities through AI acquisitions to manage rising autonomous threats.\n- Developers are increasingly using AI for code generation, but there are concerns about the need for prioritizing security in the development pipeline. \n- Cybersecurity experts warn of an AI-driven arms race in 2026, emphasizing the urgent need for advanced security measures in the face of autonomous malware and evolving threats.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.9884615384615384,
-    "theme": "AI"
+    "title": "Economic Strain on Americans",
+    "summary": "OVERVIEW:\nRecent reports highlight the rising economic pressures faced by American households, leading to shifts in living arrangements and consumption patterns, as well as health challenges among vulnerable populations.\n\nKEY EXAMPLES:\n- Many Americans are moving back in with family due to the increasing cost of living.\n- Although economists note that typical middle-class families are wealthier than in the 1960s, younger Americans remain skeptical of this assessment.\n- A noticeable rise in malnutrition deaths has been reported among older adults, indicating growing health concerns tied to economic conditions.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.008,
+    "theme": "Recessionary pressures"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "U.S. Trade Policy and Tariffs**",
-    "summary": "OVERVIEW:\nRecent discussions highlight the impact of steep tariffs on U.S. businesses and consumers, revealing varying tariff rates across trading partners and the implications for trade negotiations.\n\nKEY EXAMPLES:\n- A report indicates that while steep import taxes have raised prices, the effect on U.S. businesses is not as severe as anticipated.\n- Differences in tariff rates for trading partners include significantly lower rates for Canada and Mexico compared to much higher rates for China.\n- The U.S. is threatening to raise tariffs on India if it does not reduce its Russian oil purchases, demonstrating ongoing trade tensions.\n- The monthly trade deficit dropped to its lowest level in five years post-tariffs, although its sustainability remains in question.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 0.9625,
-    "theme": "Inflation"
+    "title": "**Crypto Regulation and Security**",
+    "summary": "OVERVIEW:  \nRecent developments in the cryptocurrency world highlight stricter regulations and increasing challenges related to security and governance. Notably, China has classified tokenization of real-world assets as illegal, and lawmakers in the U.S. are working on clarifying how to regulate digital assets.\n\nKEY EXAMPLES:  \n- China\u2019s financial associations listed the tokenization of real-world assets among illegal activities, similar to stablecoins and crypto mining.  \n- The U.S. is preparing the Digital Asset Market Clarity Act of 2025, which aims to establish regulatory authority over cryptocurrency, effectively restricting state-level oversight.  \n- North Korean hacking incidents have surged, with a report indicating that hackers stole a record $2.02 billion in cryptocurrency in 2025, reflecting ongoing security vulnerabilities within the industry.  \n- Ethereum's Vitalik Buterin emphasized the blockchain's critical decision between speculative growth and being a reliable \"world computer,\" signifying the ideological struggles moving forward in the crypto landscape.",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 0.8956521739130432,
+    "theme": "Digital assets"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Cryptocurrency Developments in 2025",
-    "summary": "OVERVIEW:\nRecent articles highlight significant financial crimes linked to cryptocurrency, evolving regulatory landscapes, and the outflow of capital from response to regulations.\n\nKEY EXAMPLES:\n- North Korean hackers reportedly stole $2.02 billion in cryptocurrencies in 2025, raising their total to $6.75 billion.\n- The Digital Asset Market Clarity Act is set to reshape how cryptocurrency is regulated in the U.S., potentially limiting state oversight.\n- Over $110 billion in crypto exited South Korea in 2025 due to strict trading regulations. \n- The IRS disclosed over $10 billion in financial crime linked to cryptocurrencies, emphasizing the need for enhanced oversight.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 0.8875000000000001,
-    "theme": "Digital assets"
+    "title": "House Committee Reports",
+    "summary": "OVERVIEW:\nThe articles summarize the activities and reports issued by the House Committees on Energy and Commerce and Foreign Affairs, focusing on actions taken on specific dates in December and October 2025.\n\nKEY EXAMPLES:\n- The House Committee on Energy and Commerce issued two reports on December 30, 2025.\n- The House Committee on Foreign Affairs produced multiple reports on December 3, 2025.\n- Additional reports were issued by the House Committee on Energy and Commerce on October 3, 2025.",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 1.0130434782608695,
+    "theme": "Inflation"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Market Highlights and Trends",
-    "summary": "OVERVIEW:\nRecent news articles illustrate various significant developments in markets and industries, highlighting record-breaking auctions, corporate strategies, and competitive dynamics affecting companies.\n\nKEY EXAMPLES:\n- A Japanese sushi entrepreneur set a record by purchasing a bluefin tuna for $3.2 million, indicating an improvement in Pacific bluefin tuna stocks.\n- In China, companies with solid payout strategies are becoming increasingly attractive to investors.\n- Australia's BlueScope Steel received an $8.8 billion buyout offer from SGH and Steel Dynamics, reflecting intense corporate interest and consolidation.\n- Verizon reintroduced unlimited data plans, which, despite benefiting customers, signals a fiercely competitive telecom landscape negatively impacting its stock performance.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 0.9999999999999999,
-    "theme": "Others"
+    "title": "Economic Impact of Tariffs",
+    "summary": "OVERVIEW:\nRecent articles highlight the significant effects of tariff policies on trade, inflation, and economic forecasts in the U.S. for 2025. Key economic indicators suggest a mixed outlook influenced by these tariffs, leading to debates on their effectiveness.\n\nKEY EXAMPLES:\n- The monthly trade deficit fell to its lowest level in five years following the implementation of global tariffs, but sustainability of this trend remains uncertain.\n- The Federal Reserve's forecast indicates that inflation is expected to rise in 2025 due to cost-push shocks from tariffs, despite a stronger growth outlook linked to lower interest rates. \n- With public concern over tariffs growing and their impact on prices, the White House has proposed the possibility of tariff rebates for the following year.",
+    "article_count": 22,
+    "topicality": 22.0,
+    "theme_weight": 1.018181818181818,
+    "theme": "Recessionary pressures"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "AI's Impact on Business",
-    "summary": "OVERVIEW:\nRecent news highlights the growing influence of artificial intelligence (AI) across various industries, from investment decisions to business operational changes. This trend emphasizes the increasing role of technology in traditional business practices and entrepreneurship.\n\nKEY EXAMPLES:\n- An AI startup founder successfully secured investment from Mark Cuban through a well-crafted email pitch.\n- Jason Lemkin is replacing human employees with AI in his business community of B2B executives and founders.\n- Venture-capital firms are integrating AI into fields like accounting and property management, transforming these typically low-profile sectors.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 1.0363636363636362,
-    "theme": "Others"
+    "title": "Market Volatility and Currencies",
+    "summary": "OVERVIEW:\nRecent market activity has been influenced by global geopolitical events and economic forecasts, resulting in a mixed response in stock markets and currency valuations.\n\nKEY EXAMPLES:\n- The yen and Swiss franc gained strength as investors sought safe havens amid declines in U.S. tech stocks following the impact of a new AI model.\n- Bank of America predicts forthcoming dollar weakness driven by persistent bearish signals.\n- Asian currencies weakened overall as markets reacted to Venezuela's actions and concerns over U.S. sanctions on Russia. \n- U.S. stocks showed mixed performance, with the Nasdaq experiencing notable declines, particularly among AI infrastructure stocks.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.9904761904761905,
+    "theme": "Inflation"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Economic Projections and Challenges",
-    "summary": "OVERVIEW:\nRecent analyses highlight economic forecasts and challenges facing the U.S. economy, reflecting expectations of growth alongside rising concerns about inflation, productivity, and social issues.\n\nKEY EXAMPLES:\n- The Federal Reserve's December 2025 projections indicate stronger growth and higher inflation due to various economic factors.\n- Savings have reached unprecedented levels, yet rising health care costs and poverty are affecting retirement affordability for many Americans.\n- Reports show a concerning increase in malnutrition deaths among older adults, raising alarms about public health issues.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 1.0272727272727271,
-    "theme": "Consumer debt"
+    "title": "Private Credit Trends",
+    "summary": "OVERVIEW:\nRecent news highlights the evolving landscape of the private credit market, emphasizing concerns over increased defaults and a notable expansion in the asset-based finance segment. This year is seen as a pivotal moment for the future of private debt.\n\nKEY EXAMPLES:\n- Higher default rates in private credit are raising concerns about market stress.\n- The private asset-based finance market is outpacing other private credit sectors and is poised for significant growth by 2026.",
+    "article_count": 20,
+    "topicality": 20.0,
+    "theme_weight": 0.9899999999999999,
+    "theme": "Others"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Private Credit Market Trends",
-    "summary": "OVERVIEW:\nRecent articles highlight the evolving landscape of private credit, with concerns over default rates and expanding markets driven by economic trends and regulatory changes.\n\nKEY EXAMPLES:\n- Staff indicate potential stress in private credit due to higher default rates and risks associated with Payment-In-Kind (PIK) instruments.\n- The private asset-based finance market outpaces other private credit markets and is expected to continue growing rapidly through 2026. \n- Agencies have set new dollar thresholds affecting consumer lending rules, reflecting ongoing regulatory adjustments in the credit landscape.",
-    "article_count": 17,
-    "topicality": 17.0,
-    "theme_weight": 1.0999999999999999,
-    "theme": "Private credit"
+    "title": "Impact of Government Policies",
+    "summary": "OVERVIEW:\nRecent government actions have significantly affected economic operations and institutions, ranging from a prolonged government shutdown impacting data collection to cuts in funding for public media.\n\nKEY EXAMPLES:\n- The 43-day government shutdown from October to November 2025 has been the longest on record, disrupting economic data collection.\n- Federal funds were stripped from public media, leading to the organization's closure after 58 years.  \n- Executives considered keeping their corporation dormant after losing federal funding but ultimately chose to remain active.",
+    "article_count": 19,
+    "topicality": 19.0,
+    "theme_weight": 1.010526315789474,
+    "theme": "Recessionary pressures"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Congressional Committee Reports",
-    "summary": "OVERVIEW:\nSeveral House committees have reported on various legislative matters within the weeks of December 2025, highlighting a range of topics addressed by the Foreign Affairs, Oversight and Government Reform, and Judiciary committees.\n\nKEY EXAMPLES:\n- The House Committee on Foreign Affairs reported on multiple items on December 3, 2025.\n- The House Committee on Oversight and Government Reform also compiled reports on December 2, 2025.\n- The House Committee on the Judiciary presented a report on December 12, 2025.",
+    "title": "**Trade and Regulatory Issues**",
+    "summary": "OVERVIEW:\nRecent developments highlight tensions between the U.S. and the U.K. regarding trade regulations, particularly in the tech and automotive sectors, while broader shifts in trade rules continue to transform various industries.\n\nKEY EXAMPLES:\n- The U.S. has paused its tech-focused trade agreement with Britain due to disagreements over digital regulations and food safety.\n- Proposed revisions to an E.U. law could alleviate some pressures on car manufacturers but jeopardize climate goals.\n- The SMMT has expressed concerns about a disconnect between consumer demand for electric vehicles and the government's EV ambitions.",
     "article_count": 16,
     "topicality": 16.0,
-    "theme_weight": 1.0125,
-    "theme": "Cyber attacks"
+    "theme_weight": 0.99375,
+    "theme": "Recessionary pressures"
   }
 }
