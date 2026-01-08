@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Bitcoin Market Surge",
-    "summary": "OVERVIEW:\nRecent articles highlight Bitcoin's significant price surge, breaking the $94,000 barrier, alongside increased inflows into Bitcoin ETFs and newfound recommendations for crypto investments from major financial institutions.\n\nKEY EXAMPLES:\n- Bitcoin reached $94,000 on January 5, marking a substantial rally and nearly adding $100 billion to the crypto market.\n- Bank of America announced that its advisers can now recommend crypto exchange-traded products, indicating institutional acceptance of Bitcoin.\n- US spot Bitcoin ETFs saw over $1.2 billion in inflows in the first two trading days of January 2026.",
-    "article_count": 47,
-    "topicality": 47.0,
-    "theme_weight": 0.7382978723404255,
-    "theme": "Digital assets"
+    "title": "China's Tech and Investment Landscape",
+    "summary": "OVERVIEW:\nRecent developments highlight China's complex relationship with advanced technology and international investments, particularly regarding chip procurement and market readiness. Key themes include regulatory scrutiny of foreign tech acquisitions and shifting dynamics in the semiconductor market.\n\nKEY EXAMPLES:\n- Beijing requested Chinese tech firms to halt Nvidia H200 chip orders, indicating possible future mandates for domestic chip purchases amid concerns linking Bitcoin to AI market volatility.\n- Chinese semiconductor expert Wei Shaojun warned local companies about the unpredictable US stance on advanced chip availability, raising concerns over strategic intent.\n- Traditional Chinese medicine companies are preparing for IPOs in Hong Kong, targeting international investors for growth funding.\n- China's Ministry of Commerce announced a review of Meta Platforms' acquisition of Manus, emphasizing increased scrutiny on cross-border technology transactions.",
+    "article_count": 41,
+    "topicality": 41.0,
+    "theme_weight": 0.9878048780487805,
+    "theme": "Others"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Market Volatility and Performance",
-    "summary": "OVERVIEW:\nRecent financial news highlights increased market volatility, with some companies struggling to meet profit expectations while others report growth. Concerns around stock positioning and trading activities suggest a cautious outlook among investors.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% after falling short of profit estimates.\n- Plus500 reported an 11% increase in quarterly revenue, indicating strong performance amidst market fluctuations.\n- Citi warns about record-high S&P 500 positioning levels, raising pullback risks.\n- American Express leads the industry in risk density, signaling potential concerns over credit exposure.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.9820512820512826,
-    "theme": "Inflation"
+    "title": "Federal Reserve Innovations",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board is actively updating policies and practices to accommodate evolving financial landscapes, including innovations in payment processes and the integration of nonbank financial institutions into traditional banking frameworks.\n\nKEY EXAMPLES:\n- The Federal Reserve has issued a new policy statement for certain supervised banks to facilitate responsible innovation.\n- A request for public input has been made regarding payment accounts available for eligible financial institutions to help streamline payment clearing and settling.\n- New pricing for payment services provided by the Federal Reserve Banks will commence in 2026.",
+    "article_count": 41,
+    "topicality": 41.0,
+    "theme_weight": 1.1073170731707318,
+    "theme": "Bank lending and credit risk"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "U.S. Engagement with Venezuela's Oil Sector",
-    "summary": "OVERVIEW:\nThe Trump administration is actively encouraging American companies to invest in Venezuela's oil industry amidst geopolitical tensions and challenges. The U.S. aims to facilitate oil shipments from Venezuela while addressing investment concerns related to the country's instability.\n\nKEY EXAMPLES:\n- Trump administration officials are urging rapid investment in Venezuela, but energy firms express significant concerns over the country's conditions.\n- President Trump announced plans for Venezuela to send 30 to 50 million barrels of oil to the U.S., with management of the proceeds under his control.\n- Challenges persist in attracting American investment in Venezuela's battered oil sector as the U.S. navigates its complex political landscape.",
-    "article_count": 36,
-    "topicality": 36.0,
-    "theme_weight": 0.9388888888888888,
-    "theme": "Inflation"
+    "title": "Economic Challenges and Trends",
+    "summary": "OVERVIEW:\nThe articles highlight various economic challenges faced by consumers and businesses, particularly in the context of rising costs, trade tensions, and shifting market dynamics. There is a clear focus on how these factors impact different segments of society, including young adults, parents, and homebuyers.\n\nKEY EXAMPLES:\n- The restoration of student loan data to credit reports has affected borrowers' credit scores amid financial pressures on younger adults.\n- Parents are struggling with rising costs and luxury options, prompting investor interest in new opportunities.\n- Corporate tax revenue has dipped due to recent tax cuts, leading economists to debate the long-term value of these breaks.\n- A growing proportion of new cars is being purchased by affluent Americans as auto loan prices and interest rates rise.",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 1.0571428571428572,
+    "theme": "Consumer debt"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "AI Integration and Impact",
-    "summary": "OVERVIEW: \nThe articles focus on the growing integration of artificial intelligence across various sectors, highlighting its transformative effects on business operations and labor dynamics, while also addressing emerging concerns and political implications.\n\nKEY EXAMPLES:\n- The chip giant is exploring methods to implement AI in physical products, moving beyond just software.\n- Credit managers are anticipating that AI will significantly shape the private credit landscape by 2025.\n- Several companies are reallocating time to workers as AI automates routine tasks, enhancing productivity.\n- The growing AI infrastructure has sparked community concerns and is becoming an essential issue in political discussions.",
+    "title": "AI Integration in Industries",
+    "summary": "OVERVIEW:\nA growing number of companies across various sectors are integrating artificial intelligence into their operations, aiming to enhance productivity, improve decision-making, and redefine competitiveness. This trend highlights a shift towards leveraging advanced technologies for operational efficiency and strategic advantages.\n\nKEY EXAMPLES:\n- GitHub is responding to the rise of AI coding services and agents to stay relevant in the software development landscape.\n- Credit managers are exploring AI\u2019s potential to reshape the private credit market by 2025.\n- Major financial institutions like JPMorgan, Citi, and Goldman Sachs are heavily investing in AI technology to enhance their operational capabilities.\n- Box CEO highlights AI\u2019s role in democratizing expert knowledge, allowing companies to compete more on data and context. \n- A fintech company is implementing automation to enhance controls in response to employee demand for AI benefits.",
     "article_count": 34,
     "topicality": 34.0,
-    "theme_weight": 0.9882352941176471,
+    "theme_weight": 0.9970588235294119,
     "theme": "AI"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Economic Challenges in 2025",
-    "summary": "OVERVIEW:\nThe articles collectively highlight various economic challenges and shifts occurring in 2025, focusing particularly on trade tensions, the impact of tariffs, and financial pressures facing younger generations.\n\nKEY EXAMPLES:\n- High tariffs have raised prices for U.S. businesses but not as significantly as anticipated, according to a new report.\n- The U.S. trade deficit reached its lowest level in five years following the president's imposition of global tariffs, though future trends remain uncertain.\n- Economists indicate that while a typical middle-class family today is wealthier than those in the 1960s, younger Americans do not share this sentiment. \n- With anti-tariff sentiment rising and prices remaining elevated, the White House has proposed tariff rebates and substantial tax refunds for the coming year.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 1.0064516129032257,
-    "theme": "Recessionary pressures"
+    "title": "** U.S. Stock Market Trends",
+    "summary": "OVERVIEW:  \nRecent articles highlight a dynamic U.S. stock market characterized by fluctuating stock futures, record highs amid political developments, and the influence of the Federal Reserve and trade policies on market performance.\n\nKEY EXAMPLES:  \n- The Dow reached record highs partly due to optimism surrounding Trump's Treasury pick.  \n- Stock futures retreated from these highs as investors focused on upcoming jobs data.  \n- Uncertainty about Trump's tariffs and economic policy has affected market stability and investor risk appetite.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.9696969696969697,
+    "theme": "Inflation"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Career Moves and Industry Changes",
-    "summary": "OVERVIEW:\nThis cluster of articles discusses various career developments, regulatory challenges, and entrepreneurial initiatives across different industries, highlighting the adaptive strategies and shifts in leadership that define contemporary business landscapes.\n\nKEY EXAMPLES:\n- Molly Graham emphasizes the benefits of a J-shaped career path in gaining expertise.\n- An arbitrator ruled against Bed Bath & Beyond CEO Marcus Lemonis, imposing a $14 million penalty for breaching a settlement.\n- Y Combinator alums have raised $15 million for an AI-focused financial management venture, showcasing innovative entrepreneurship.  \n- Patricia Voight from Webster Bank highlights the importance of advancing cybersecurity careers and diversity in the financial sector.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 0.993103448275862,
-    "theme": "Others"
+    "title": "US Crypto Regulatory Landscape",
+    "summary": "OVERVIEW:\nThe US crypto industry is pressing for new federal legislation to clarify market structure, amidst ongoing discussions surrounding regulatory frameworks and the economic dynamics of digital assets.\n\nKEY EXAMPLES:\n- The \"Digital Asset Market Clarity Act of 2025\" is being promoted by the US crypto sector as a crucial measure to support the industry's growth.\n- Recent developments indicate a shift in institutional attitudes toward crypto, with predictions for 2026 suggesting that crypto will be integral to core financial operations.\n- Solana experienced a strong financial year in 2025 despite a drop in its token value, highlighting resilience in certain areas of the crypto market.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 0.7699999999999999,
+    "theme": "Digital assets"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Economic Trends and Investor Opportunities",
-    "summary": "OVERVIEW:\nRecent news highlights the challenges faced by consumers amid rising costs while revealing investor perspectives on opportunities in various sectors, including the booming middleman trade and advancements in automated data solutions.\n\nKEY EXAMPLES:\n- Parents are increasingly struggling with rising costs, prompting investors to view this as an opportunity for potential market growth.\n- Recent court cases expose how middlemen are thriving in a market that is evading regulatory crackdowns.\n- Automating data processes has significantly improved corporate financial management, reducing unexplained profit and loss issues by 87%.",
+    "title": "US Involvement in Venezuela",
+    "summary": "OVERVIEW:\nThe articles discuss the Trump administration's ongoing efforts to exert influence and engage with Venezuela, focusing on potential U.S. investments in the country's oil sector and military operations aimed at capturing President Maduro.\n\nKEY EXAMPLES:\n- President Trump mentioned that U.S. oil firms could potentially resume operations in Venezuela within 18 months.\n- The U.S. military strategy included significant air power and hinted at cyber capabilities to disrupt the Venezuelan power grid.\n- The Trump administration claimed to have an agreement with Venezuela's government, while the state-owned oil company indicated that negotiations were still ongoing.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 1.0344827586206897,
-    "theme": "Inflation"
+    "theme_weight": 0.9482758620689655,
+    "theme": "Others"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Cybersecurity Developments and Trends",
-    "summary": "OVERVIEW:\nRecent news highlights significant advancements and ongoing challenges in the cybersecurity landscape, focusing on the rise of AI threats, the effectiveness of cyber defenses, and notable incidents impacting various sectors.\n\nKEY EXAMPLES:\n- KrebsOnSecurity.com celebrated its 16th anniversary with a reflection on the increased scrutiny of cybercrime entities in 2025.\n- An analysis of cyber-insurance claims revealed six effective technologies that will benefit companies in 2026.\n- Current attacks are notably targeting Next.js servers, indicating evolving threats to IoT networks and enterprises.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "title": "Trump Administration's Trade Policies",
+    "summary": "OVERVIEW:\nThe collection of articles highlights the impacts and implications of the Trump administration's trade policies, particularly the imposition of tariffs and their effects on markets, international trade, and domestic production.\n\nKEY EXAMPLES:\n- The U.S. trade deficit fell to its lowest level in five years due to global tariffs, though sustainability of this trend remains uncertain.\n- President Trump has called on defense companies to ramp up production, threatening to impose consequences for not complying.\n- Concerns about potential job losses and financial instability have been downplayed by the administration, despite significant market fluctuations.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 0.985185185185185,
+    "theme": "Inflation"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Legislative Developments in 2025",
-    "summary": "OVERVIEW:\nA series of legislative actions and reports from various House and Senate committees in late 2025 highlight ongoing efforts in energy, commerce, and foreign affairs.\n\nKEY EXAMPLES:\n- The House Committee on Energy and Commerce reported on key initiatives on December 30, 2025.\n- The Senate Committee on Commerce, Science, and Transportation outlined its findings on significant issues on October 21, 2025.\n- The House Committee on Foreign Affairs presented multiple reports on December 3, 2025, addressing critical international concerns.",
+    "title": "Employment Challenges in the U.S.",
+    "summary": "OVERVIEW:\nRecent data indicates that many Americans are increasingly reliant on part-time jobs or multiple job roles to sustain their livelihoods, reflecting broader challenges in the employment landscape.\n\nKEY EXAMPLES:\n- More Americans are found in part-time positions, struggling to make ends meet (Article 1 & 2).\n- U.S. productivity is reportedly slowing, highlighting ongoing economic concerns (Article 7).\n- Significant changes in trade practices and demographic shifts are affecting job markets and employment dynamics (Article 6).",
     "article_count": 26,
     "topicality": 26.0,
-    "theme_weight": 1.0384615384615385,
-    "theme": "Inflation"
+    "theme_weight": 0.9807692307692307,
+    "theme": "Recessionary pressures"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "2025 Economic Forecasts",
-    "summary": "OVERVIEW:\nThe articles discuss the economic forecasts for 2025, highlighting the impacts of Federal Reserve interest rate cuts, changing trade policies, and the influence of tariffs on inflation and market behavior.\n\nKEY EXAMPLES:\n- The Federal Reserve Bank of New York\u2019s DSGE model predicts stronger economic growth in 2025, despite higher inflation due to cost-push shocks from tariffs.\n- A Bank of America report anticipates dollar weakness amidst bearish signals in the market.\n- Deutsche Bank describes the macro outlook for the U.S. economy in 2025 as \"murky at best.\"",
-    "article_count": 25,
-    "topicality": 25.0,
-    "theme_weight": 1.04,
+    "title": "Mixed Earnings Reports",
+    "summary": "OVERVIEW:\nRecent financial reports reveal a varied performance among companies, with some meeting expectations while others fall short. This disparity highlights the challenges and opportunities within different sectors of the market.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% due to profits falling short of estimates.\n- Plus500 announced an 11% increase in quarterly revenue, indicating strong performance.\n- Anheuser-Busch InBev shares declined as sales were below expectations.\n- Barclays achieved an 18% rise in profits and raised its income guidance.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 0.9730769230769231,
     "theme": "Inflation"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Banking System Vulnerabilities",
-    "summary": "OVERVIEW:\nRecent analyses highlight the evolving landscape of the U.S. banking system, examining the risks and vulnerabilities that continue to affect financial institutions. The focus is on understanding bank solvency, regulatory challenges, and the increasing influence of nonbank financial entities.\n\nKEY EXAMPLES:\n- A new solvency metric, Economic Capital, demonstrates its effectiveness in accurately identifying at-risk banks sooner than traditional measures.\n- Research indicates that U.S. banks have diversified their operations significantly, now engaging in various nonbank activities to manage liquidity needs more efficiently.\n- A survey reveals differing opinions among banks regarding the treatment of liabilities and loans, emphasizing ongoing challenges in regulatory compliance.\n- An analysis of over 5000 operational risk incidents in a major New Zealand bank shows that human error contributes significantly to operational failures within banks.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0666666666666667,
-    "theme": "Bank lending and credit risk"
+    "title": "Cybersecurity Threats and Vulnerabilities",
+    "summary": "OVERVIEW: \nThe articles highlight a resurgence of significant cybersecurity threats and vulnerabilities affecting various sectors, emphasizing the ongoing challenges posed by malicious cyber actors and outdated security measures.\n\nKEY EXAMPLES:\n- A remote access Trojan is being deployed in the hospitality sector using social engineering techniques and legitimate tools.\n- Zero-day flaws in D-Link routers are being exploited for unauthorized command execution.\n- Significant attacks targeted Ivanti\u2019s platform, compromising numerous organizations and indicating trends of repeated exploitation by advanced persistent threats.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 1.0,
+    "theme": "Cyber attacks"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Cybersecurity Challenges and Threats",
-    "summary": "OVERVIEW:\nRecent developments highlight significant challenges in cybersecurity, including data breaches impacting consumer information and broader systemic issues influenced by governmental policy changes.\n\nKEY EXAMPLES:\n- Ledger's customer data breach exposed personal information but did not compromise financial details or recovery phrases, raising concerns about user safety.\n- The Trump administration's policy shifts threaten the country's ability to tackle pressing issues like cybersecurity and privacy effectively. \n- IRS-CI reported over $10 billion in identified financial crime within a year, emphasizing the scale of modern criminal activities.",
+    "title": "Legislative Developments Overview",
+    "summary": "OVERVIEW:\nRecent reports from various House Committees highlight significant legislative actions and discussions that took place in late 2025 and early 2026. These developments cover topics in energy, commerce, and foreign affairs.\n\nKEY EXAMPLES:\n- The House Committee on Energy and Commerce reported on key issues affecting the energy sector on December 30, 2025.\n- The House Committee on Foreign Affairs ordered multiple reports on international matters, all dated December 3, 2025.\n- The House Committee on Rules published information on legislative activities on January 5, 2026.",
     "article_count": 24,
     "topicality": 24.0,
-    "theme_weight": 0.9583333333333334,
-    "theme": "Cyber attacks"
+    "theme_weight": 0.9916666666666667,
+    "theme": "Inflation"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Federal Reserve Board Initiatives",
-    "summary": "OVERVIEW:\nThe Federal Reserve Board has been actively updating policies, approving banking applications, and seeking public input on various financial services initiatives aimed at fostering responsible innovation and effective supervision in the banking sector.\n\nKEY EXAMPLES:\n- The Federal Reserve Board withdrew a 2023 policy statement and issued a new one to facilitate responsible innovation for certain Board-supervised banks.\n- It announced the approval of applications from National Bank Holdings Corporation and Banco BTG Pactual S.A.\n- The Board has terminated enforcement actions against The Goldman Sachs Group, Inc. and Metropolitan Commercial Bank.\n- A call for public input was made regarding the concept of a \u201cpayment account\u201d for clearing and settling payments.",
+    "title": "Economic Outlook for 2025-2026",
+    "summary": "OVERVIEW:\nRecent analyses highlight a mixed economic outlook for 2025, with some optimistic projections contrasting with concerns about inflation and growth stability. Expectations for 2026 show potential for recovery and opportunities in various financial markets.\n\nKEY EXAMPLES:\n- Bank of America maintains a bullish outlook for the EUR due to anticipated higher real rates.\n- The Federal Reserve's DSGE model forecasts stronger growth in 2025 but with higher inflation due to cost-push shocks.\n- Deutsche Bank describes the 2025 macro outlook for the US as \"murky at best\" yet predicts the S&P 500 may reach 7000 by the end of that year.\n- The expansion in the private asset-based finance market indicates a robust growth trajectory for 2026.",
     "article_count": 22,
     "topicality": 22.0,
-    "theme_weight": 1.0999999999999999,
-    "theme": "Bank lending and credit risk"
+    "theme_weight": 0.9818181818181817,
+    "theme": "Inflation"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Tech Stocks and Market Moves",
-    "summary": "OVERVIEW:\nRecent developments in the technology sector have led to notable fluctuations in stock prices, driven by both investor sentiment and strategic corporate maneuvers.\n\nKEY EXAMPLES:\n- Samsung's stock surged following news of a potential contract manufacturing deal for Qualcomm's upcoming 2nm chips.\n- Panic selling among investors in Nvidia and Broadcom is reportedly not justified, suggesting underlying confidence in the tech sector's resilience.\n- Nokia's stock rose 4% after being upgraded to \"buy,\" reflecting a positive outlook on its sales recovery.\n- Verizon's return to unlimited data plans highlights the fierce competitiveness in telecom, negatively impacting its stock performance.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 1.0333333333333332,
-    "theme": "AI"
+    "title": "Cryptocurrency Market Trends 2026**",
+    "summary": "OVERVIEW:\nThe cryptocurrency market is experiencing significant shifts in trading dynamics, particularly with Bitcoin ETFs gaining traction and alternative cryptocurrencies like XRP outperforming. Institutional interest is impacting market movements, yet there's a complex interplay of factors beyond simple demand.\n\nKEY EXAMPLES:\n- Bitcoin ETFs attracted $1.2 billion within their first two trading sessions in 2026, correlating with a sharp price increase to $94,000.\n- XRP has surged by 28% since the start of the year, leading the top cryptocurrencies and marking a notable performance compared to Bitcoin and Ethereum.\n- Morgan Stanley has initiated applications for Bitcoin and Solana ETFs, reflecting an increasing financial institution commitment to the crypto space while omitting Ethereum and XRP from their filings.  \n- XRP ETFs experienced their first outflow day since launch, indicating a potential shift in investor sentiment after prior substantial inflows.",
+    "article_count": 22,
+    "topicality": 22.0,
+    "theme_weight": 0.8318181818181816,
+    "theme": "Digital assets"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "**Geopolitical Tensions and Trade Dynamics**",
-    "summary": "OVERVIEW:\nRecent articles highlight ongoing geopolitical tensions, particularly between the U.S., China, and Russia, alongside significant changes in trade policies and technology developments. These dynamics reflect shifting alliances and responses to international sanctions and trade practices.\n\nKEY EXAMPLES:\n- The Trump administration is backing a proposal to distribute the international assets of a sanctioned Russian company, highlighting U.S. efforts to isolate Russia economically.\n- Companies like Kairos Power are innovating new reactor designs with U.S. government support, but their commercial viability remains uncertain amid international pressures.\n- China is addressing trade tensions with Japan by launching an anti-dumping investigation into a crucial chemical for semiconductor manufacturing, signaling escalating trade conflicts.\n- Tokyo expresses concern over potential Chinese restrictions on essential metals for manufacturing, further indicating mounting geopolitical frictions.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 0.9666666666666666,
-    "theme": "Others"
+    "title": "Cybersecurity Threats and Incidents",
+    "summary": "OVERVIEW:\nRecent news highlights a range of cybersecurity threats, including significant cryptocurrency thefts, data breaches, and doxxing incidents, indicating a growing challenge in the digital security landscape.\n\nKEY EXAMPLES:\n- North Korean hackers stole $2.02 billion in cryptocurrency in 2025, raising their total theft to $6.75 billion.\n- A man in Hong Kong was arrested for doxxing a peer by exposing their identity card information in trade chat groups.\n- An emerging cyber threat actor named \"Zestix\" has breached around 50 enterprises using infostealers to obtain credentials.\n- Chinese phishing groups are now selling phishing kits for creating fake e-commerce websites to steal customer payment data.",
+    "article_count": 17,
+    "topicality": 17.0,
+    "theme_weight": 0.9647058823529411,
+    "theme": "Cyber attacks"
   }
 }
