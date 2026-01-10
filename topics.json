@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Bitcoin Market Dynamics",
-    "summary": "OVERVIEW:\nThe Bitcoin market is experiencing volatility, with mixed signals influencing investor sentiment and price expectations for the upcoming year. While some analysts suggest a potential recovery, the market remains weighed down by ongoing selloffs and underwhelming ETF performance.\n\nKEY EXAMPLES:\n- JPMorgan indicates that the crypto selloff may be nearing its bottom as ETF outflows begin to ease, hinting at potential stabilization.\n- Bitcoin bulls are optimistic about a rally, aiming for the $91,000 mark due to increased trading volumes early in the year.\n- Bitcoin's future is projected positively by analysts, suggesting it could handle a significant portion of global trade and central bank reserves by 2050.",
-    "article_count": 51,
-    "topicality": 51.0,
-    "theme_weight": 0.9137254901960786,
-    "theme": "Digital assets"
+    "title": "Emerging Cybersecurity Threats",
+    "summary": "OVERVIEW:\nRecent articles highlight the growing complexity and sophistication of cybersecurity threats, particularly involving AI technologies and social engineering tactics. As cybercrime evolves, organizations face increasing challenges in protecting their digital assets.\n\nKEY EXAMPLES:\n- A botnet called Kimwolf compromised over two million devices by targeting unofficial Android TV streaming boxes.\n- Threat actors exploited a legitimate AI-powered Chrome extension to harvest user data for malicious purposes.\n- New startup innovations are reshaping browser and application security in response to the rising threat landscape.",
+    "article_count": 49,
+    "topicality": 49.0,
+    "theme_weight": 1.0,
+    "theme": "Cyber attacks"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Growing Cyber Threats",
-    "summary": "OVERVIEW:\nRecent articles highlight the alarming rise of cyber threats, ranging from botnets and remote access Trojans to data theft through compromised extensions. These incidents underscore the evolving tactics of cybercriminals and the vulnerabilities exposed in various sectors.\n\nKEY EXAMPLES:\n- Kimwolf botnet infected over two million devices by targeting unofficial Android TV streaming boxes.\n- Attackers employed social engineering with a Microsoft tool to deploy DCRat against the hospitality sector.\n- An actor named Zestix used infostealers to breach file-sharing systems of around 50 enterprises.",
-    "article_count": 37,
-    "topicality": 37.0,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "title": "U.S. Economic Landscape 2025",
+    "summary": "OVERVIEW:\nThe cluster of articles addresses the various economic challenges facing the U.S. in 2025, including labor market conditions, trade tensions, inflation, and productivity trends. The focus is on how these factors interplay and influence economic forecasts and experiences for businesses and consumers.\n\nKEY EXAMPLES:\n- New York Fed economists analyzed how the restoration of student loan data to credit reports affected borrowers\u2019 credit scores and the value of a college degree amid financial pressures on younger adults.\n- A report highlighted the impact of steep import taxes on U.S. businesses, indicating that while prices have risen, the effect was less severe than anticipated. \n- The Federal Reserve's economic forecast indicates stronger growth in 2025 than previously expected, influenced by lower projected policy rates and heightened productivity despite rising inflation predictions due to tariffs.",
+    "article_count": 39,
+    "topicality": 39.0,
+    "theme_weight": 1.0025641025641026,
+    "theme": "Recessionary pressures"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "**Crypto Regulation and Trends**",
-    "summary": "OVERVIEW:  \nThe articles provide insights into the evolving landscape of cryptocurrency, focusing on regulatory developments, the rise of stablecoins, and recent market dynamics as of 2025.\n\nKEY EXAMPLES:\n- A significant increase in stablecoin adoption is projected, with flows potentially reaching $56 trillion by 2030 due to institutional interest and economic instability (Article 2).\n- A notable shift in illicit cryptocurrency activity has occurred, with stablecoins now representing 84% of such transactions, underlining a move away from Bitcoin (Article 3).\n- The crypto industry is advocating for the passage of the \"Digital Asset Market Clarity Act of 2025,\" seen as crucial for establishing a regulated environment for market operation (Article 7).",
-    "article_count": 35,
-    "topicality": 35.0,
-    "theme_weight": 0.8171428571428571,
-    "theme": "Digital assets"
+    "title": "**AI Impact on Finance and Industry**",
+    "summary": "OVERVIEW:\nThe articles reflect a growing interest among financial firms and investors in the implications of artificial intelligence across various sectors, particularly regarding cost reduction, efficiency improvements, and potential market shifts.\n\nKEY EXAMPLES:\n- Finance's largest firms are exploring AI's potential to streamline operations and enhance job roles.\n- Venture-capital investments are increasingly targeting AI applications in traditionally low-profile industries like accounting and property management.\n- Several prominent tech companies are projected to see substantial growth due to their AI infrastructures.",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 1.0,
+    "theme": "AI"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "U.S. Energy Policy in Venezuela",
-    "summary": "OVERVIEW:\nRecent developments highlight U.S. efforts under President Trump to secure Venezuelan oil resources amidst significant challenges in attracting American investment in drilling operations.\n\nKEY EXAMPLES:\n- U.S. officials are actively trying to persuade firms to invest in Venezuela's expansive drilling despite political and financial uncertainties.\n- President Trump\u2019s military strategies are indicative of a broader focus on securing access to energy resources and critical minerals.",
-    "article_count": 34,
-    "topicality": 34.0,
-    "theme_weight": 0.9088235294117647,
+    "title": "**Crypto Regulation and Adoption**",
+    "summary": "OVERVIEW:\nThe current landscape of cryptocurrency is undergoing significant changes due to evolving regulations, increasing institutional adoption, and a shift in illicit activities towards stablecoins. As governments and financial institutions adapt, the narrative surrounding crypto is transforming from chaos to structured integration.\n\nKEY EXAMPLES:\n- Analysts predict the outcome of the crypto market structure bill could impact future regulations, with a potential vote looming.\n- Major banks are now actively engaging with blockchain technology, transitioning from debate to development, focusing on tokenized assets and stablecoins.\n- Data shows a substantial rise in stablecoins used for illicit activities, overshadowing Bitcoin's previous dominance in the dark web economy.\n- Notable investments in crypto by firms like a16z highlight the importance of this technology for America's competitive edge.",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 0.8031249999999999,
     "theme": "Digital assets"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Legislative Updates Overview",
-    "summary": "OVERVIEW:\nRecent reports highlight various activities and findings from key House and Senate committees, focusing on topics ranging from energy and commerce to health, education, and natural resources.\n\nKEY EXAMPLES:\n- The House Committee on Energy and Commerce released findings on December 30, 2025, addressing industry regulations. \n- A report from the Senate Committee on Health, Education, Labor, and Pensions on September 8, 2025, outlined significant health policy updates.\n- The House Committee on Small Business, in a report dated December 12, 2025, discussed initiatives aimed at supporting small enterprises. \n- On January 5, 2026, the House Committee on Rules shared procedural updates affecting upcoming legislative sessions.",
-    "article_count": 34,
-    "topicality": 34.0,
-    "theme_weight": 1.0058823529411764,
-    "theme": "Inflation"
+    "title": "Bitcoin Market Trends",
+    "summary": "OVERVIEW:\nThe Bitcoin market displays mixed signals as institutional interest fluctuates, indicating potential for both short-term recovery and long-term price rallies amidst ongoing volatility.\n\nKEY EXAMPLES:\n- Following a brief sell-off, analysts predict Bitcoin could surge past $125,000 by April, suggesting the recent downturn was merely a temporary correction.\n- Despite an initial positive influx into Bitcoin ETFs at the start of 2026, data now shows significant outflows exceeding $1 billion, indicating a shift in investor sentiment towards risk aversion. \n- Long-term holders have decreased selling pressure, which may lead to a bullish outlook for Bitcoin in 2026.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 0.8129032258064515,
+    "theme": "Digital assets"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Labor Market Insights**",
-    "summary": "**OVERVIEW:**  \nRecent analysis indicates that the labor market's condition in December will be crucial for assessing overall economic health, as indicators suggest a slight improvement but not sufficient recovery from a weak performance over the year.\n\n**KEY EXAMPLES:**  \n- The December labor market data is anticipated to provide vital insights into the economy's state.\n- Predictions point to a modest labor market improvement in December, yet it may not counterbalance a generally weak year.",
-    "article_count": 33,
-    "topicality": 33.0,
-    "theme_weight": 1.0,
-    "theme": "Recessionary pressures"
+    "title": "Legislative Committee Updates",
+    "summary": "OVERVIEW:\nRecent updates from various House and Senate committees highlight ongoing discussions and actions related to energy, healthcare, and resource management.\n\nKEY EXAMPLES:\n- The House Committee on Energy and Commerce issued two reports on December 30, 2025, focusing on energy policies.\n- The Senate Committee on Health, Education, Labor, and Pensions reported on September 8, 2025, addressing healthcare initiatives.\n- The House Committee on Natural Resources ordered reports on July 23, 2025, concerning resource management strategies.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 1.0161290322580645,
+    "theme": "Inflation"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Financial Market Trends",
-    "summary": "OVERVIEW:\nRecent reports highlight notable trends in currency fluctuations, interest rates, and market stability. Analysts from major financial institutions are adjusting forecasts based on various economic indicators and geopolitical factors.\n\nKEY EXAMPLES:\n- Morgan Stanley projects the Chinese yuan to strengthen to 6.85 per US dollar in early 2026 due to robust exports, despite expected slight weakening later in the year.\n- A report from BofA indicates that large USD selloffs tend to occur in consecutive years, suggesting a potential market pattern.\n- In the U.S., the 10-year Treasury yield has fallen as the market reacts to shifting trade policies and economic uncertainty, particularly influenced by recent tariff announcements.",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 0.984375,
-    "theme": "Inflation"
+    "title": "Social Trends and Geopolitics in Asia**",
+    "summary": "**OVERVIEW:**\nRecent articles highlight unique social phenomena in China, ranging from student-led community health initiatives to unconventional services offered by a Chinese actor. Additionally, geopolitical dynamics are shaping discussions around education and defense strategies in East Asia.\n\n**KEY EXAMPLES:**\n- A Chinese student, Zhao Tianyu, gained online fame for providing volunteer traditional medicine consultations to classmates.\n- Actor Shi Yuanting increased his hiking companionship charges significantly and announced plans for a future swimming service.\n- South Korean President Lee Jae Myung and Chinese President Xi Jinping emphasized restoring bilateral relations but made little progress on North Korean issues. \n- Taiwan's officials announced plans to enhance drone defenses and ammunition production in response to pressures from mainland China.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 0.99,
+    "theme": "Others"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "China\u2019s Tech Sector Developments",
-    "summary": "OVERVIEW:\nRecent reports highlight key developments in China's tech industry, focusing on government interventions and initiatives aimed at bolstering domestic firms while challenging US dominance, particularly in the areas of artificial intelligence and market competition.\n\nKEY EXAMPLES:\n- Beijing's request for Chinese tech companies to halt orders of Nvidia's H200 chips may lead to mandated purchases of domestic AI chips.\n- The IPOs of Zhipu AI and MiniMax Group reflect China's ambitions to compete with US firms like OpenAI.\n- A market investigation into food delivery platforms aims to address issues like excessive subsidies and price wars to enhance growth.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 0.9838709677419355,
-    "theme": "Others"
+    "title": "Federal Reserve Policy Updates",
+    "summary": "OVERVIEW: Recent actions by the Federal Reserve Board reflect an ongoing evolution in banking practices, particularly in relation to nonbank financial institutions (NBFIs) and the supervision of banks. The updates reveal a regulatory shift aimed at facilitating innovation while adapting to the changing landscape of financial intermediation.\n\nKEY EXAMPLES:\n- The Federal Reserve withdrew its 2023 policy statement, issuing a new one to better accommodate responsible innovation among Board-supervised banks.\n- The growth of NBFIs is shifting the traditional views of banking, leading banks to incorporate NBFI subsidiaries to enhance their operational scope.\n- The Federal Reserve approved applications from National Bank Holdings Corporation and Banco BTG Pactual S.A., indicating a willingness to support diverse banking structures.\n- A new staff manual has been published for the supervision of complex banks, reflecting a commitment to effective oversight in a rapidly evolving sector.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.1413793103448273,
+    "theme": "Bank lending and credit risk"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Social Issues and Legislation",
-    "summary": "OVERVIEW:  \nThe cluster of articles highlights various social challenges and legislative responses, ranging from child exploitation and public safety to environmental infrastructure concerns.\n\nKEY EXAMPLES:  \n- A teenager in the Philippines was arrested for attempting to sell her baby on social media, sparking warnings about increasing similar cases.  \n- New York lawmakers are reviewing a bill aimed at banning contracts related to sports and political event predictions.  \n- Small towns express concern over their inadequate infrastructure to handle the needs of large groups of detainees.  \n- A Scottish rugby player's alleged assault and subsequent behavior in a police station raises issues of public safety and accountability.",
-    "article_count": 25,
-    "topicality": 25.0,
-    "theme_weight": 1.016,
-    "theme": "Others"
+    "title": "Market Trends and Earnings Reports",
+    "summary": "OVERVIEW:\nSeveral companies and financial institutions have reported varying earnings results and forecasts, reflecting a mixed outlook in the current economic climate. Notably, shifts in currency forecasts and stock performances are influencing market sentiment.\n\nKEY EXAMPLES:\n- BofA highlights historical patterns of large USD selloffs occurring in consecutive years, indicating potential shifts in market dynamics.\n- Plus500 announces an 11% increase in quarterly revenue, affirming it will meet financial expectations.\n- Wingstop\u2019s stock declines 12% as its profit falls short of analysts' estimates.\n- Barclays reports an 18% profit rise, prompting an increase in income guidance.",
+    "article_count": 28,
+    "topicality": 28.0,
+    "theme_weight": 1.0214285714285714,
+    "theme": "Inflation"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "** Economic Policies and Market Responses",
-    "summary": "**OVERVIEW:**  \nRecent articles highlight the interplay between economic policies, including tariffs and carbon pricing, and their effects on market dynamics, business practices, and pricing strategies in various sectors.\n\n**KEY EXAMPLES:**  \n- The EU plans to implement the Carbon Border Adjustment Mechanism (CBAM) in 2026 to address carbon leakage by imposing tariffs on high-emission imports.\n- Firms\u2019 pricing decisions are influenced by multiple factors, including inflation, tariffs, and competition, revealing the complexities of their strategic responses.\n- The U.S. government is exploring tariff rebates and tax refunds to alleviate the burden of high prices in reaction to the unpopular tariffs and public sentiment.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0,
-    "theme": "Inflation"
+    "title": "Housing and Economic Challenges",
+    "summary": "OVERVIEW:\nThe articles collectively explore the evolving landscape of homeownership, economic policy, and asset affordability in the U.S., highlighting the pressures of environmental risks, interest rates, and generational perceptions of wealth.\n\nKEY EXAMPLES:\n- The real costs of owning homes in flood and wildfire-prone areas are becoming more evident, raising concerns about long-term sustainability for homeowners.\n- Analysts report that rising prices and interest rates in the auto market are leading to affluent Americans buying a larger proportion of new cars.\n- A discussion on home affordability illustrates how economic pressures can vary greatly across different social demographics, particularly affecting younger generations.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.048,
+    "theme": "Consumer debt"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Banking System Vulnerability",
-    "summary": "OVERVIEW:\nA series of analyses highlight the evolving landscape of the banking system, discussing risks associated with bank solvency, the increasing role of nonbank financial institutions, and the regulatory challenges faced by the banking industry.\n\nKEY EXAMPLES:\n- Economic Capital metrics may better predict failing banks than traditional measures, underscoring the importance of timely risk identification.\n- Recent trends show U.S. banks transitioning to include nonbank activities, allowing them to diversify their operations and manage liquidity more effectively.\n- A KPMG survey illustrates disagreement among banks regarding the treatment of liabilities and loans, indicating a lack of consensus on financial practices.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 1.127272727272727,
-    "theme": "Bank lending and credit risk"
+    "title": "Trump\u2019s Venezuela Oil Strategy",
+    "summary": "OVERVIEW:\nPresident Trump is actively seeking support from major U.S. oil and gas companies to invest in Venezuela's deteriorating energy industry, despite their skepticism and past experiences of asset seizures.\n\nKEY EXAMPLES:\n- Trump held a meeting with oil CEOs at the White House, aiming to rally support for investments in Venezuela\u2019s oil sector, but many companies expressed hesitation.\n- Executives voiced concerns about the risks involved, citing instances where Venezuela had previously seized their assets.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 0.9291666666666667,
+    "theme": "Recessionary pressures"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "**Technology and Governance Challenges**",
-    "summary": "OVERVIEW:\nRecent developments in U.S. governance highlight a range of challenges related to technology, cybersecurity, and media transparency. Amidst shifting policies, concerns about military recruitment, and global infrastructure security, the efficacy of addressing pressing issues is being questioned.\n\nKEY EXAMPLES:\n- The Trump administration's policy shifts are perceived as weakening the country's response capabilities to technology-related challenges, such as cybersecurity and disinformation.\n- The Philippines has heightened efforts to secure undersea cables amid growing fears of sabotage and espionage targeting vital digital infrastructure.\n- The military faces a recruiting crisis, compelling the Pentagon to rethink its outreach strategies due to a dwindling teen population.",
+    "title": "**Market Diversification Trends**",
+    "summary": "OVERVIEW:  \nInvestors are increasingly diversifying their portfolios away from U.S.-based assets and the dollar in 2025, even as certain sectors, particularly AI-related stocks, show significant gains.\n\nKEY EXAMPLES:  \n- Despite a 16% rise in the S&P 500 driven by AI optimism, investors are seeking opportunities outside the U.S. market.  \n- The Yen and Swiss Franc have strengthened against the dollar as investors look for safe havens amidst fluctuating U.S. tech stocks.  \n- In China, companies offering good payouts are becoming popular among investors.",
     "article_count": 21,
     "topicality": 21.0,
-    "theme_weight": 0.980952380952381,
-    "theme": "Others"
+    "theme_weight": 0.9238095238095237,
+    "theme": "Inflation"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Housing Affordability Challenges",
-    "summary": "OVERVIEW:\nThe articles discuss the growing concerns surrounding housing affordability in the U.S., particularly in relation to big investors purchasing single-family homes and the impact on first-time buyers and renters.\n\nKEY EXAMPLES:\n- The Treasury Secretary indicated that Trump's proposal to limit large investors from acquiring single-family homes would not require them to divest current assets.\n- Industry experts expressed that Trump's ban on large investors does not align with actual purchasing practices in the housing market.\n- Wall Street's acquisition of thousands of homes for rental purposes has raised alarms about the increasing cost of housing for everyday buyers.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 1.0777777777777777,
-    "theme": "Consumer debt"
+    "title": "Defense Spending and Global Cooperation",
+    "summary": "OVERVIEW:\nRecent articles highlight the U.S. government's pressure on defense contractors to boost production amid calls for increased defense spending, reflecting a shift toward prioritizing military capabilities alongside global cooperation.\n\nKEY EXAMPLES:\n- The president urged defense firms to increase production or face financial penalties for inadequate performance.\n- An executive order from President Trump seeks to enforce stricter compliance from defense contractors regarding weapon delivery timelines.\n- The contrast between U.S. approaches to international relations and other countries emphasizes the need for collaborative agreements.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.9666666666666667,
+    "theme": "Inflation"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "AI and Cybersecurity Trends",
-    "summary": "OVERVIEW:\nRecent discussions and predictions focus on the intersection of artificial intelligence and cybersecurity, highlighting emerging threats and the necessity for advanced security measures. Companies are adapting their strategies to enhance security in the context of increasing AI adoption across various sectors.\n\nKEY EXAMPLES:\n- A fintech company is using automation to bolster cybersecurity measures as employees seek benefits from AI.\n- Cybersecurity experts are predicting a rise in AI-driven threats and stressing the shift towards resilience in security strategies.\n- Startups are innovating browser security and application security, particularly for AI-generated code.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 1.0,
-    "theme": "AI"
+    "title": "Regulatory Updates on Consumer Finance",
+    "summary": "OVERVIEW:\nRecent announcements from various agencies detail updates on financial regulations, including thresholds for consumer credit, mortgage loans, and adherence to community reinvestment standards.\n\nKEY EXAMPLES:\n- Agencies have specified new dollar thresholds for the applicability of truth in lending and consumer leasing rules, vital for consumer credit and lease transactions.\n- The Community Reinvestment Act now includes adjusted annual asset-size thresholds that banks must meet.\n- New exemptions have been established regarding smaller loans from appraisal requirements for higher-priced mortgage loans, further impacting lending practices.",
+    "article_count": 19,
+    "topicality": 19.0,
+    "theme_weight": 1.0894736842105264,
+    "theme": "Bank lending and credit risk"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Federal Reserve Actions Overview",
-    "summary": "OVERVIEW:\nRecent announcements from the Federal Reserve Board highlight various approvals and regulatory updates concerning banks and payment systems, emphasizing oversight and innovation in the financial sector.\n\nKEY EXAMPLES:\n- The Federal Reserve Board approved the application by National Bank Holdings Corporation.\n- The termination of enforcement actions was announced for The Goldman Sachs Group, Inc. and Metropolitan Commercial Bank.\n- A new policy statement for Board-supervised banks was issued to promote responsible innovation. \n- Public input is being requested on \u201cpayment accounts\u201d for clearing and settling payments.",
-    "article_count": 16,
-    "topicality": 16.0,
-    "theme_weight": 1.09375,
-    "theme": "Bank lending and credit risk"
+    "title": "Infrastructure and Policy Challenges",
+    "summary": "OVERVIEW:\nThe articles highlight two major issues: small towns lacking the infrastructure to manage an influx of detainees, and recent policy shifts under the Trump administration that undermine technological regulation and freedoms.\n\nKEY EXAMPLES:\n- Small cities express concerns over inadequate sewer systems needed to support thousands of detainees.\n- Pennsylvania revokes a license for a juvenile detention center for migrant children amid concerns over its conditions.",
+    "article_count": 11,
+    "topicality": 11.0,
+    "theme_weight": 1.018181818181818,
+    "theme": "Others"
   }
 }
