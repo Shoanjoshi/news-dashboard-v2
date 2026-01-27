@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Financial Market Updates",
-    "summary": "OVERVIEW:\nRecent news highlights significant developments across various sectors, indicating shifts in investor sentiment and company performance amidst changing market conditions.\n\nKEY EXAMPLES:\n- Plus500 reports an 11% revenue increase, assuring stakeholders it will meet expectations.\n- Solana's Backpack CEO emphasizes a new focus on finance within the organization.\n- Wingstop's stock drops 12% after its profits fail to meet analyst expectations.",
-    "article_count": 50,
-    "topicality": 50.0,
-    "theme_weight": 1.0220000000000002,
-    "theme": "Inflation"
+    "title": "Market Dynamics: Crypto vs. Precious Metals",
+    "summary": "OVERVIEW: \nRecent trends indicate a significant shift in investor interest from cryptocurrencies to precious metals like gold and silver. Major market movements in these commodities have created a challenging environment for crypto assets.\n\nKEY EXAMPLES:\n- Fundstrat's Tom Lee predicts a resurgence in crypto values as the current gold and silver rally stabilizes.\n- Bitcoin's price has plummeted nearly 30% since a major market crash, contrasting with the continuing rise of gold and silver prices.\n- Bitcoin's market momentum has stalled, largely due to external factors such as gold's strong performance and uncertainty in U.S. economic policy.\n- XRP currently shows signals of being undervalued, suggesting potential investment opportunities despite a broader market downturn.",
+    "article_count": 44,
+    "topicality": 44.0,
+    "theme_weight": 0.7840909090909093,
+    "theme": "Digital assets"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Cybersecurity Threat Landscape",
-    "summary": "OVERVIEW:\nRecent articles highlight an escalating wave of cyber threats, including new botnets, spear-phishing campaigns, and the exploitation of vulnerabilities in widely used IT systems. These developments emphasize the need for heightened security awareness and robust defensive measures.\n\nKEY EXAMPLES:\n- The botnet Kimwolf has rapidly spread to over 2 million IoT devices, forcing them into DDoS attacks and targeting corporate and government networks.\n- FortiGate devices with vulnerabilities are under automated attacks, leading to the theft of crucial firewall configuration files.\n- A spear-phishing campaign linked to North Korea utilizes trusted Microsoft infrastructure for evasion from detection.\n- Hackers are exploiting over-permissioned applications to infiltrate the IT systems of major security vendors.",
-    "article_count": 35,
-    "topicality": 35.0,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "title": "Currency Market Dynamics",
+    "summary": "OVERVIEW:\nRecent developments indicate significant volatility in currency markets, particularly involving the U.S. dollar and Japanese yen, amid concerns over potential intervention and shifting market positioning.\n\nKEY EXAMPLES:\n- The U.S. dollar has dropped while the Japanese yen surged due to rising speculation of intervention by Japanese authorities.\n- Bank of America highlighted increased risks surrounding potential USD/JPY intervention.\n- The S&P 500 is experiencing record-high positioning levels, leading to warnings about risks of a market pullback.",
+    "article_count": 41,
+    "topicality": 41.0,
+    "theme_weight": 1.0365853658536586,
+    "theme": "Inflation"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Gold and Bitcoin Divergence",
-    "summary": "OVERVIEW:\nRecent market trends highlight a stark divergence between gold and Bitcoin, with gold reaching record highs while Bitcoin experiences significant price pressure. This contrast illustrates gold's traditional role as a safe haven in times of economic uncertainty, contrasted with Bitcoin\u2019s struggle to maintain its status.\n\nKEY EXAMPLES:\n- Gold surged past $5,000, marking a 64% increase in 2025, as investors flocked to safety amid economic concerns.\n- Bitcoin fell to approximately $86,000, undermined by government shutdown risks and impending interest rate decisions from the Federal Reserve.\n- The divergence is emphasized by gold\u2019s rise of 17% in January, contrasting sharply with Bitcoin\u2019s recent setbacks.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.8392857142857142,
-    "theme": "Digital assets"
+    "title": "**US Tariff Policy Tensions**",
+    "summary": "OVERVIEW:\nThe cluster of articles highlights the ongoing tensions surrounding the Trump administration's tariff policies, particularly regarding South Korea and the broader implications for international trade relations amidst a focus on China.\n\nKEY EXAMPLES:\n- President Trump threatened to raise tariffs on South Korean exports, including cars, due to delays in ratifying a trade deal.\n- As Trump amplifies tariff threats, US allies are pivoting towards diplomatic engagement with Beijing to secure stability.\n- A reversal on tariffs related to Greenland showcased Trump's tendency to disrupt established international agreements.",
+    "article_count": 38,
+    "topicality": 38.0,
+    "theme_weight": 0.9605263157894737,
+    "theme": "Inflation"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Cryptocurrency Market Trends**",
-    "summary": "OVERVIEW:  \nThe cryptocurrency market is experiencing significant volatility, with recent outflows from major assets like Bitcoin and Ether amidst bearish sentiment, while geopolitical turmoil adds further pressure on prices.\n\nKEY EXAMPLES:\n- Crypto ETPs saw $1.7 billion in outflows, primarily driven by selling in Bitcoin and Ether.\n- Bitcoin's value has dropped nearly 30% since a market crash in October, as traditional assets like gold appreciate.\n- The ARK ETF's performance was negatively affected by the pullback in cryptocurrency values, particularly due to Coinbase. \n- Global market instability is causing traders to fear another US government shutdown, contributing to a $100 billion loss in the crypto market.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.7642857142857142,
-    "theme": "Digital assets"
+    "title": "Cybersecurity Threats Overview",
+    "summary": "OVERVIEW:\nRecent articles highlight the alarming rise of sophisticated cyber threats, including the explosive growth of the Kimwolf botnet and various cyber-attack campaigns targeting major organizations and security vendors.\n\nKEY EXAMPLES:\n- Kimwolf, a new IoT botnet, has infected over 2 million devices and is capable of launching large-scale DDoS attacks while compromising critical networks.\n- A spear-phishing campaign linked to North Korea uses trusted Microsoft infrastructure to evade detection and target various organizations.\n- Cybercriminals are exploiting over-permissioned software to gain unauthorized access to security vendors' IT systems.",
+    "article_count": 38,
+    "topicality": 38.0,
+    "theme_weight": 0.9842105263157894,
+    "theme": "Cyber attacks"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Chinese Tech Innovations and Challenges",
-    "summary": "OVERVIEW:  \nRecent developments highlight China's aggressive push in technology and innovation, particularly in artificial intelligence and economic strategies, while facing challenges in international market relations and security issues.  \n\nKEY EXAMPLES:  \n- President Xi Jinping emphasized advancing indigenous AI technologies, advocating for a unified national effort to boost innovation.  \n- Tencent and Baidu are investing significantly in AI-driven Spring Festival campaigns, with Tencent's chatbot planning to distribute substantial monetary rewards.  \n- A sharp decline in Chinese lending to Africa reflects ongoing shifts in financial strategy and engagement on the continent.  \n- Increased phishing activities from China illustrate a growing cybersecurity threat, especially during the peak holiday shopping season.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.9678571428571429,
-    "theme": "Others"
+    "title": "**Challenges and Evolution of AI**",
+    "summary": "OVERVIEW:\nRecent discussions highlight the complexities and societal implications of AI implementation, from workforce dynamics to technological innovations and regulatory hurdles.\n\nKEY EXAMPLES:\n- Anthropic CEO Dario Amodei warns that AI poses significant civilizational challenges that need urgent societal responses.\n- Internal emails reveal Bank of America\u2019s struggles with Nvidia's AI Factory, illustrating integration difficulties in regulated sectors.\n- Workforce.ai data shows a concentration of elite AI talent, emphasizing the educational background of many OpenAI employees.",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 0.990625,
+    "theme": "AI"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Global Economy Shifts",
-    "summary": "OVERVIEW:\nRecent news highlights how President Trump's tariff policies, particularly regarding Greenland, signify a broader \"America First\" strategy that is reshaping the U.S.'s role in the global economy, raising concerns about international financial stability.\n\nKEY EXAMPLES:\n- Trump's quick reversal on Greenland tariffs suggests his unpredictable approach to international trade.\n- The U.S. is increasingly abandoning its traditional leadership in the global market, pursuing policies that prioritize domestic interests.\n- Growing tensions related to Greenland could leverage the U.S. oil and gas industry as a tool for influencing Europe.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.9785714285714285,
-    "theme": "Inflation"
+    "title": "Economic Challenges of 2025",
+    "summary": "OVERVIEW:\nIn 2025, a series of economic concerns emerged, particularly related to tariffs, trade tensions, and the rising costs of living affecting younger generations. Articles reflect on economic forecasts, labor market conditions, and affordability challenges faced by households.\n\nKEY EXAMPLES:\n- Research from the New York Fed highlighted the impact of restored student loan data on credit scores, while also analyzing the costs of higher education.\n- A New York Times/Siena poll revealed widespread anxiety about the affordability of housing, education, healthcare, and retirement among the public.\n- The Fed's DSGE model forecasted stronger growth but anticipated higher inflation due to cost-push shocks from tariffs.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 1.0193548387096774,
+    "theme": "Consumer debt"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Trump vs. JPMorgan Lawsuit",
-    "summary": "OVERVIEW:\nThe cluster of articles revolves around former President Donald Trump's legal disputes with JPMorgan Chase, focusing on his allegations regarding the closure of his bank accounts, as well as broader concerns over conservative viewpoints facing financial repercussions from major banks.\n\nKEY EXAMPLES:\n- Trump's lawsuit against JPMorgan claims political discrimination in the closure of his accounts.\n- JPMorgan Chase insists the lawsuit lacks merit, denying any political or religious motivations behind account closures.\n- Trump has urged banks, including Bank of America and JPMorgan, to cease cutting off conservative clients.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 1.0285714285714287,
-    "theme": "Others"
+    "title": "**Market Volatility and Bitcoin Trends**",
+    "summary": "OVERVIEW:\nRecent news highlights the interplay between U.S. Federal Reserve decisions, Trump-era tariffs, and fluctuating Bitcoin prices, showcasing how these factors contribute to market volatility and investor behavior.\n\nKEY EXAMPLES:\n- Bitcoin's price dipped to $94k amid concerns over potential Trump tariffs impacting market sentiment.\n- Traders are closely monitoring the Federal Reserve's guidance on January 28 for insights that could influence Bitcoin and stock market prices.\n- Coinbase's Bitcoin price fell below competing exchanges, reflecting a widening gap and a potential failure in the institutional market.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 0.9166666666666665,
+    "theme": "Digital assets"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Federal Reserve Actions on Banking",
-    "summary": "OVERVIEW:\nThe Federal Reserve Board is actively managing and adapting policies related to banking institutions, focusing on approvals for bank applications and facilitating innovation while responding to the growing influence of nonbank financial institutions.\n\nKEY EXAMPLES:\n- The Federal Reserve approved applications for Banco Inter, S.A., National Bank Holdings Corporation, and Fifth Third Bancorp, indicating a continued openness to bank development.\n- It issued a new policy statement regarding its treatment of certain Board-supervised banks to encourage responsible innovation.\n- The Fed is seeking public input on a \"payment account\" initiative designed to help eligible financial institutions clear and settle payments efficiently.\n- Staff manuals for supervising large and complex banks were published to enhance regulatory frameworks in response to evolving banking operations.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 1.139285714285714,
+    "title": "Banking System Vulnerability",
+    "summary": "OVERVIEW: \nRecent analyses reveal the complexities and vulnerabilities within the U.S. banking system, highlighting challenges in accurately assessing risk, regulatory effectiveness, and the evolving nature of banks' operations.\n\nKEY EXAMPLES:\n- A new solvency metric, Economic Capital, has been shown to identify failing banks earlier and more accurately than traditional measures.\n- A Risk Benchmarking study indicates disparate policy mandates among banks, with varying responsibilities in asset-liability management.\n- The evolution of U.S. banks into diversified entities is largely driven by the need to manage liquidity efficiently.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.1448275862068966,
     "theme": "Bank lending and credit risk"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Economic Challenges and Trends",
-    "summary": "OVERVIEW:\nRecent analyses reveal a complex landscape of economic challenges, including affordability concerns and labor market dynamics. Key issues include education costs, housing affordability, and the employment landscape for workers with disabilities.\n\nKEY EXAMPLES:\n- A New York Times/Siena poll highlighted widespread economic anxieties related to education, healthcare, and retirement costs.\n- Economists noted the influence of current presidential policies on labor market data while the White House emphasized optimism for the upcoming year.\n- Research from the New York Fed indicated that the labor force participation of workers with disabilities has increased post-pandemic, despite persistent earnings disparities compared to their non-disabled peers.\n- Economic forecasts predict stronger growth in 2025, affected by policy rates and inflation driven by tariffs.",
+    "title": "China's Economic Trends",
+    "summary": "OVERVIEW:\nRecent articles highlight significant movements in China's economy, focusing on growth in exports, advancements in technology, evolving consumer behaviors, and shifts in corporate strategies.\n\nKEY EXAMPLES:\n- Guangdong province's exports of chip-manufacturing equipment and electric vehicles reached a record high of over 1 trillion yuan in 2022.\n- Nvidia's CEO Jensen Huang's relatable market visit garners social media attention, reflecting a desire for down-to-earth leadership amidst high-tech advancements.\n- A growing stigmatization of wealth flaunting in China is challenging luxury brands reliant on the consumer market. \n- Baidu has merged its consumer app businesses to strengthen its position in the competitive AI market.",
     "article_count": 27,
     "topicality": 27.0,
-    "theme_weight": 1.0074074074074073,
-    "theme": "Recessionary pressures"
+    "theme_weight": 1.037037037037037,
+    "theme": "AI"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Currency Fluctuations and Intervention",
-    "summary": "OVERVIEW:\nRecent news shows mixed movements in Asian foreign exchange markets, primarily driven by risks of Japanese currency intervention and a weakening U.S. dollar. The Japanese yen has experienced significant upward momentum due to speculation surrounding possible market interventions.\n\nKEY EXAMPLES:\n- The yen surged as traders reacted to increasing risks of Japanese intervention in response to dollar weakness.\n- A joint U.S.-Japan intervention is speculated, pressuring the greenback further and causing the yen to climb sharply.\n- The dollar's decline is noted amid uncertainty, with the yen's rise attributed to potential market support from Japan.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.9538461538461538,
-    "theme": "Inflation"
+    "title": "Economic Growth and Concerns",
+    "summary": "OVERVIEW:\nRecent discussions highlight the growth of the US economy alongside vulnerabilities tied to its dependence on specific sectors, particularly healthcare and consumer spending, amidst ongoing inflation and shifting pricing strategies of companies.\n\nKEY EXAMPLES:\n- The US economy is growing, but reliance on industries like healthcare raises concerns about its stability.\n- Consumers continue to spend but are actively seeking ways to maximize their budgets amidst rising prices.\n- Pricing decisions from firms show a nuanced approach as they respond to inflation and tariff impacts on costs.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 0.9958333333333332,
+    "theme": "Recessionary pressures"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Pricing Strategies and Consumer Trends",
-    "summary": "OVERVIEW:\nRecent articles discuss the complexities of pricing strategies adopted by firms amidst inflation and changing consumer behaviors. Businesses are reacting to economic pressures while consumers are becoming more strategic in their spending habits.\n\nKEY EXAMPLES:\n- Firms are adjusting prices based on a variety of factors, including market conditions and competitive behavior.\n- Despite rising prices in groceries, consumers continue to spend, seeking ways to maximize their purchasing power.\n- The agricultural sector faces challenges, with prices for major crops often falling below production costs.\n- Young and senior consumers' spending trends are influencing market dynamics in entertainment and wellness.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.9961538461538461,
-    "theme": "Inflation"
+    "title": "Tech Industry Developments",
+    "summary": "OVERVIEW:\nRecent news highlights significant shifts and challenges within the tech and telecom sectors, including competition, corporate acquisitions, and planned expansions.\n\nKEY EXAMPLES:\n- Verizon's return to unlimited data plans, impacting its stock amid fierce competition.\n- Charter Communications' buyout of Liberty Broadband, showcasing ongoing consolidation in the telecom industry.\n- Nvidia's strengthened partnership with CoreWeave to enhance its competitive edge in the cloud market.",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 1.0217391304347827,
+    "theme": "Private credit"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Federal Budget and Economic Projections",
-    "summary": "OVERVIEW:\nRecent reports highlight discrepancies in the Congressional Budget Office's (CBO) fiscal projections, along with changes in income distribution and the implications of government shutdowns on economic data. Additionally, there are updates on federal credit programs and asset-size thresholds under the Community Reinvestment Act.\n\nKEY EXAMPLES:\n- The CBO's June 2024 projections for fiscal year 2025 showed a 6% underestimation of revenues and a 2% underestimation of outlays, leading to a smaller federal deficit than previously thought.\n- A 43-day government shutdown impacted the collection of economic data, marking the longest lapse in congressional appropriations on record.\n- Agencies released updated thresholds for the Community Reinvestment Act, indicating changes in financial regulations.\n- CBO reports analyzed income distribution trends from 1979 to 2022, with a specific focus on variations during recent years.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 1.0653846153846154,
-    "theme": "Private credit"
+    "title": "Legislative Committee Reports",
+    "summary": "OVERVIEW:\nRecent articles document the actions of the House Committee on Oversight and Government Reform, the House Committee on Rules, and the Senate Committee on the Judiciary, highlighting their order reports and postings relevant to legislative processes.\n\nKEY EXAMPLES:\n- The House Committee on Oversight and Government Reform reported orders on two occasions: December 2, 2025, and May 21, 2025.\n- The House Committee on Rules published two updates on their website on January 20, 2026.\n- The Senate Committee on the Judiciary released an order report on January 15, 2026.\n- The House Committee on Foreign Affairs also reported an order on January 21, 2026.",
+    "article_count": 20,
+    "topicality": 20.0,
+    "theme_weight": 1.01,
+    "theme": "Cyber attacks"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "** Crypto Crime and Legislation Updates",
-    "summary": "**OVERVIEW:**  \nRecent developments indicate a surge in cryptocurrency-related crime and legislation in 2025, highlighting growing concerns around scams and regulatory frameworks.\n\n**KEY EXAMPLES:**  \n- Nation-state activity in crypto is rising, with significant sanctions evasion on-chain recorded.\n- Global victims of crypto-enabled fraud faced losses of at least $14 billion, with advanced scams becoming more prevalent.\n- U.S. legislative efforts are underway, such as the \"Digital Commodity Intermediaries Act,\" aiming to regulate the spot crypto market more effectively.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 0.8238095238095237,
-    "theme": "Digital assets"
+    "title": "Federal Reserve Approvals and Policies",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board has recently approved several applications from various banking institutions while also issuing new policy statements that guide the treatment of supervised banks and solicit public input on payment accounts.\n\nKEY EXAMPLES:\n- National Bank Holdings Corporation received approval for its application.\n- Banco Inter, S.A. was granted approval for its application.\n- The Federal Reserve issued a new policy statement facilitating responsible innovation in bank supervision.\n- The Goldman Sachs Group, Inc. had enforcement actions terminated by the Federal Reserve.",
+    "article_count": 17,
+    "topicality": 17.0,
+    "theme_weight": 1.0999999999999999,
+    "theme": "Bank lending and credit risk"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Legislative Updates",
-    "summary": "OVERVIEW:\nRecent articles highlight various legislative actions taken by the House and Senate committees, focusing on rules and commerce-related matters.\n\nKEY EXAMPLES:\n- The House Committee on Rules posted updates on January 20, 2026, reflecting recent activities.\n- On June 25, 2025, the Senate Committee on Commerce, Science, and Transportation reported on significant commerce-related legislation.\n- The House Committee on Energy and Commerce submitted reports on December 3, 2025, concerning energy policies and practices.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 1.0222222222222221,
-    "theme": "Inflation"
+    "title": "**Rise of Crypto Crime**",
+    "summary": "OVERVIEW:\nIn 2025, there was a significant increase in crypto-related crime, driven by scams, nation-state activities, and international tensions. This surge has raised alarms regarding security, regulation, and the broader implications of cryptocurrency use in illicit activities.\n\nKEY EXAMPLES:\n- Nation-state activity in crypto grew, notably in the context of sanctions evasion, marking a troubling trend in on-chain movements.\n- A record $17 billion was estimated to have been stolen in crypto scams, highlighting the rise of sophisticated fraud techniques, including impersonation scams and AI enhancements.\n- Iran's crypto ecosystem expanded to over $7.78 billion, reflecting geopolitical tensions and domestic unrest.",
+    "article_count": 14,
+    "topicality": 14.0,
+    "theme_weight": 0.7642857142857141,
+    "theme": "Digital assets"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "AI Chatbots and Their Challenges",
-    "summary": "OVERVIEW:\nThe articles emphasize the growing influence of AI chatbots in various sectors, highlighting both their potential benefits and the significant risks they pose to users and security.\n\nKEY EXAMPLES:\n- Popular open-source frameworks for AI chatbots have vulnerabilities that could be exploited by attackers.\n- Doctors report that the use of chatbots has led some patients to experience psychosis and unhealthy behaviors. \n- A new policy mandates that AI tools must obtain user consent before accessing platforms, addressing privacy concerns.",
-    "article_count": 17,
-    "topicality": 17.0,
-    "theme_weight": 1.0,
-    "theme": "AI"
+    "title": "CBO Fiscal Analysis Overview",
+    "summary": "OVERVIEW:\nThe Congressional Budget Office (CBO) regularly reports on various aspects of federal finances, including revenue projections, budget deficits, and the impact of legislation on economic data. Recent articles highlight the CBO\u2019s evaluations related to fiscal year 2025 and its analyses of income distribution and credit program costs.\n\nKEY EXAMPLES:\n- CBO's June 2024 projections showed a 6% underestimation of revenues for fiscal year 2025 and a 0.7% overestimation of the federal budget deficit.\n- The CBO also detailed changes in income distribution from 1979 to 2022, with specific focus on the year 2022 compared to previous years.\n- The agency reported on the impact of the government shutdown on economic data collection, noting it as the longest on record.",
+    "article_count": 11,
+    "topicality": 11.0,
+    "theme_weight": 1.0636363636363635,
+    "theme": "Private credit"
   }
 }
