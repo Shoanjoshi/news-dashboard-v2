@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "**Impact of Tariffs on Manufacturing**",
-    "summary": "OVERVIEW:\nThe articles collectively explore the implications of tariffs and trade changes on the U.S. manufacturing landscape, highlighting the differing experiences of large and small manufacturers amidst evolving trade policies.\n\nKEY EXAMPLES:\n- Large American manufacturers are finding success despite rising costs, while smaller manufacturers are facing struggles.\n- President Trump has threatened to impose tariffs, which, while benefiting some companies, have frequently disrupted supply chains for essential parts and materials.\n- The European Union plans to implement a Carbon Border Adjustment Mechanism (CBAM) in 2026, targeting emissions-intensive imports to regulate carbon pricing further.",
-    "article_count": 43,
-    "topicality": 43.0,
-    "theme_weight": 0.9720930232558139,
-    "theme": "Recessionary pressures"
-  },
-  "T1": {
-    "topic_id": "T1",
-    "bertopic_id": 1,
-    "title": "Cybersecurity Threats and Trends",
-    "summary": "OVERVIEW:\nRecent articles highlight the increasing complexity of cybersecurity threats, with a focus on emerging botnets, ransomware, and the importance of proactive security measures. The rise of the Kimwolf botnet exemplifies the urgent need for improved defenses against evolving cyber risks.\n\nKEY EXAMPLES:\n- The Kimwolf botnet has infected over two million devices, exploiting vulnerabilities in Android TV streaming boxes to conduct DDoS attacks and relay malicious traffic.\n- Security teams are urged to prioritize patching vulnerabilities and preparing for emerging threats, including AI-related issues.\n- Ransomware defenses are evolving to emphasize business resilience through prompt system updates and enhanced user training.",
+    "title": "Increasing Cybersecurity Threats",
+    "summary": "OVERVIEW:\nRecent incidents highlight a surge in sophisticated cyber attacks and data leaks, driven by evolving tactics from cybercriminals and state-sponsored hackers.\n\nKEY EXAMPLES:\n- The cybercrime group that previously targeted Salesforce has expanded its operations to employ more aggressive extortion methods.\n- Data leakage cases in Hong Kong rose by 21% last year, predominantly due to hacking, indicating a worrying trend in cybersecurity breaches.\n- Researchers swiftly compromised Moltbook's database, demonstrating vulnerabilities in AI-related services. \n- Reports reveal that suspected China-state hackers have utilized update infrastructure to distribute backdoored software.",
     "article_count": 43,
     "topicality": 43.0,
     "theme_weight": 1.0046511627906978,
     "theme": "Cyber attacks"
   },
+  "T1": {
+    "topic_id": "T1",
+    "bertopic_id": 1,
+    "title": "Federal Reserve Updates Policies",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board has been active in updating its policies and approvals for financial institutions, emphasizing responsible innovation and regulatory clarity in banking operations.\n\nKEY EXAMPLES:\n- The Federal Reserve Board withdrew its 2023 policy statement to introduce new regulations for certain supervised banks aimed at promoting responsible innovation.\n- It approved multiple applications, including those from National Bank Holdings Corporation, Banco Inter, S.A., and Fifth Third Bancorp.\n- The Board requested public input on the concept of a \"payment account\" to enhance the efficiency of payment clearing and settlement.",
+    "article_count": 37,
+    "topicality": 37.0,
+    "theme_weight": 1.1081081081081086,
+    "theme": "Bank lending and credit risk"
+  },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Economic Challenges and Responses",
-    "summary": "OVERVIEW:  \nThe cluster of articles highlights ongoing economic challenges such as trade tensions, high borrowing costs, and housing affordability, while discussing various responses and regulatory considerations impacting both individuals and the broader economy. \n\nKEY EXAMPLES:  \n- Research from New York Fed economists explores the effects of student loan data restoration on credit scores amid rising financial pressures on young adults.  \n- The cost of borrowing is constraining public spending in developing economies, raising alarms about economic stability.  \n- Skepticism surrounding the \"build more\" movement emphasizes the need for government intervention in addressing housing affordability.  \n- Concerns over declining economic data quality may lead to higher unemployment and increased recession risks.",
-    "article_count": 37,
-    "topicality": 37.0,
-    "theme_weight": 1.0351351351351354,
-    "theme": "Consumer debt"
+    "title": "**Emerging Trends in Business and Venture Capital**",
+    "summary": "OVERVIEW:\nRecent articles highlight the evolving landscape of business and venture capital, focusing on major mergers, innovative sectors, and shifting investment strategies in various industries.\n\nKEY EXAMPLES:\n- Elon Musk's companies are merging to create a powerful firm valued at over $1 trillion, positioning it as an \"innovation engine.\"\n- Venture-capital firms are diversifying their investments into less glamorous sectors, including accounting and property management.\n- Stephen Ross and Ken Griffin are attracting businesses to South Florida to leverage its growing economic opportunities.",
+    "article_count": 36,
+    "topicality": 36.0,
+    "theme_weight": 1.0055555555555555,
+    "theme": "AI"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Federal Reserve Developments",
-    "summary": "OVERVIEW:\nRecent actions by the Federal Reserve Board highlight ongoing regulatory changes and approvals impacting banks and financial institutions in the U.S., emphasizing innovation, public input, and updated supervisory guidelines.\n\nKEY EXAMPLES:\n- The Federal Reserve Board withdrew a 2023 policy statement to facilitate responsible innovation for Board-supervised banks.\n- Approval was granted for applications from National Bank Holdings Corporation and Banco Inter, S.A.\n- The Federal Reserve is seeking public input on a new \"payment account\" to enhance payment clearing and settling.",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 1.115625,
-    "theme": "Bank lending and credit risk"
+    "title": "**AI Development and Innovation**",
+    "summary": "OVERVIEW:\nThe articles collectively discuss the ongoing advancements and implications of AI technologies, highlighting the excitement and challenges that come with integrating AI into various sectors.\n\nKEY EXAMPLES:\n- Moltbook showcases 32,000 AI bots exchanging jokes and tips, reflecting the social capabilities of AI.\n- Elon Musk's xAI is actively recruiting crypto specialists to enhance its AI models, indicating a push for diverse expertise in AI development.\n- Concerns are raised by software developers about AI's impact on human workload and job dynamics, suggesting a cautious approach to its integration.",
+    "article_count": 36,
+    "topicality": 36.0,
+    "theme_weight": 0.9833333333333335,
+    "theme": "AI"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Bitcoin Market Turmoil",
-    "summary": "OVERVIEW:\nRecent news highlights significant volatility in the Bitcoin market, characterized by a sharp decline in prices and growing concerns about liquidity. Analysts suggest that broader economic factors may be influencing this downturn rather than solely cryptocurrency-specific issues.\n\nKEY EXAMPLES:\n- Bitcoin fell to a nine-month low of $74,600, erasing over $9,000 over the weekend.\n- Analysts noted that Bitcoin's selling trends mirror those of SaaS stocks, indicating external market pressures.\n- Predictions indicate a 72% chance that Bitcoin could drop below $65,000 in 2026 due to bearish trends. \n- The market's reaction followed U.S. liquidity concerns and a change in Federal Reserve leadership.",
-    "article_count": 30,
-    "topicality": 30.0,
-    "theme_weight": 0.7999999999999999,
-    "theme": "Digital assets"
+    "title": "Market Trends and Performance",
+    "summary": "OVERVIEW:\nRecent news highlights fluctuations in corporate earnings and stock market dynamics, indicating varying investor sentiment and financial performance across different sectors.\n\nKEY EXAMPLES:\n- Wingstop's stock fell 12% due to profits not meeting expectations.\n- Plus500 reported an 11% revenue increase, indicating positive performance.\n- The S&P 500 saw record highs in positioning levels, raising concerns about potential pullbacks.\n- Novartis raised its sales and profit guidance for the year, reflecting strong market confidence.",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 0.9735294117647061,
+    "theme": "Inflation"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Bitcoin Market Volatility",
-    "summary": "OVERVIEW: \nRecent articles highlight the ongoing volatility in the Bitcoin market, with prices fluctuating significantly amid concerns over liquidity and external economic factors. Many traders remain on edge as Bitcoin struggles to maintain stability.\n\nKEY EXAMPLES:\n- Bitcoin briefly dipped to around $74,000 due to thin liquidity, keeping traders anxious.\n- Prices fell below $80,000, reflecting mounting liquidity concerns and broader market conditions.\n- Bitcoin stocks experienced a decline during pre-market trading while stabilizing around $77,000.\n- External influences, such as Trump's tariff threats, further impacted market sentiment and risk appetite.",
-    "article_count": 30,
-    "topicality": 30.0,
-    "theme_weight": 0.8599999999999999,
-    "theme": "Digital assets"
+    "title": "**Global Trade and Tariff Changes**",
+    "summary": "OVERVIEW:  \nRecent discussions around tariffs indicate both protective benefits for some industries and potential challenges for others in the global trade landscape. Experts emphasize the need for clarity on tariff policies and their broader impacts on international trade.\n\nKEY EXAMPLES:  \n- Indian industry reacted positively to lower tariffs, although experts urged caution pending further details.  \n- President Trump threatened to raise tariffs on South Korean exports, linking it to delayed trade agreements.  \n- The EU plans to introduce a Carbon Border Adjustment Mechanism to impose tariffs based on carbon emissions of imported goods.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 0.9774193548387097,
+    "theme": "Inflation"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "AI's Impact and Adaptation",
-    "summary": "OVERVIEW:\nThe articles highlight the growing influence of artificial intelligence (AI) across various industries, showcasing both enthusiasm and concern regarding its implications for the workforce, productivity, and business practices.\n\nKEY EXAMPLES:\n- Software developers express a mix of excitement and apprehension regarding AI integration.\n- Companies increasingly rely on AI in hiring processes, as seen in case interviews becoming AI-focused.\n- Layoffs linked to AI raise questions about the true impact of technology on employment.\n- A payments startup successfully utilized AI adoption to enhance profits and employee morale.",
+    "title": "Economic Indicators Update",
+    "summary": "OVERVIEW:  \nRecent analyses highlight new indicators and forecasts related to labor market tightness, job growth, and broader economic challenges, reflecting evolving issues such as wage inflation and the impacts of tariffs.\n\nKEY EXAMPLES:  \n- The New York Fed introduced a labor market tightness index that effectively predicts wage inflation through 2025.  \n- The Bureau of Labor Statistics released late data on nonfarm employment for 2025, which includes comprehensive job and wage statistics.  \n- Economic forecasts using the New York Fed\u2019s DSGE model anticipate stronger growth in 2025 driven by lower policy rates and higher productivity, despite rising inflation.  \n- Economists expressed concerns about the reliability of traditional economic indicators in forecasting future trends.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 1.006896551724138,
-    "theme": "AI"
+    "theme_weight": 1.0344827586206897,
+    "theme": "Recessionary pressures"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Trump Nominates Warsh for Fed Chair",
-    "summary": "OVERVIEW:\nPresident Donald Trump has nominated Kevin Warsh to lead the Federal Reserve, amidst ongoing concerns about the central bank's autonomy and potential implications for the U.S. dollar and monetary policy.\n\nKEY EXAMPLES:\n- Chinese economists express skepticism about a sustained recovery of the U.S. dollar under Warsh's leadership due to doubts about the Fed\u2019s independence.\n- Warsh is noted for potentially shifting the Fed's communication style, moving away from traditional dovish and hawkish rhetoric.\n- Trump's selection follows months of speculation on Powell's successor, emphasizing the administration's focus on lowering interest rates.\n- A rebound in the dollar was observed following Warsh's nomination, indicating some market optimism regarding Fed independence.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.9653846153846153,
-    "theme": "Inflation"
+    "title": "Bitcoin Market Volatility**",
+    "summary": "OVERVIEW:\nRecent market developments have led to significant fluctuations in Bitcoin's price, resulting in substantial losses for some investors and influencing broader financial sentiments. The combination of geopolitical tensions and economic indicators is exacerbating this volatility.\n\nKEY EXAMPLES:\n- Bitcoin's price decline to approximately $74,609 has caused a $7 billion loss for U.S. ETF holders.  \n- A decline in risk appetite was noted as Bitcoin slid to $94,000 amid concerns over potential tariffs from Trump.  \n- Public companies are amassing significant Ethereum holdings, with 6.5\u20137.0 million ETH noted by Everstake, impacting the broader cryptocurrency market.  \n- The \u201cBye America\u201d investment trend reflects a shift where global investors are reconsidering their exposure to U.S. assets, influencing Bitcoin's appeal as an alternative.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 0.8074074074074075,
+    "theme": "Digital assets"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Economic Market Fluctuations",
-    "summary": "OVERVIEW:\nRecent news articles highlight a decline in precious metal prices following their peak earlier this year, coupled with a falling value of the US dollar influenced by economic policies and global market conditions.\n\nKEY EXAMPLES:\n- Precious metals experienced a notable price drop after reaching record highs in January as investors sought safety.\n- The US dollar's depreciation is attributed to the economic policies of Trump, affecting financial markets globally.\n- Hedge funds are reevaluating their exposure in North America due to ongoing trade tensions and a weakening dollar.",
+    "title": "Gold Market Dynamics",
+    "summary": "OVERVIEW:\nThe recent fluctuations in the gold market highlight investor behavior influenced by economic policies, price volatility, and shifting market conditions. Despite recent declines, gold remains a focal point for investors seeking safety amidst economic uncertainly.\n\nKEY EXAMPLES:\n- Gold prices recently dropped from highs, yet many investors continue to seek refuge in the metal.\n- The rise and subsequent sell-off of gold has led to comparisons with \"meme stocks,\" illustrating its volatile nature.\n- Open interest in gold options surged as traders bet on dramatic price increases during a recent market upheaval.",
     "article_count": 26,
     "topicality": 26.0,
-    "theme_weight": 0.8846153846153846,
-    "theme": "Digital assets"
+    "theme_weight": 0.9192307692307693,
+    "theme": "Inflation"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Economic Developments in Asia**",
-    "summary": "OVERVIEW: \nRecent news highlights significant economic and political activities in Asia, particularly focusing on market strategies, government plans, and international cooperation.\n\nKEY EXAMPLES:\n- Hong Kong is creating its first five-year blueprint to align with China's national plan, signaling increased government involvement in local development.\n- Sir Keir Starmer's visit to China resulted in key agreements across various sectors, including finance and green technology, which underscores international collaboration.\n- Taiwan's opposition party is reinforcing its ties with mainland China, which has stirred discussions on cross-strait relations amidst a tense political climate.",
-    "article_count": 25,
-    "topicality": 25.0,
-    "theme_weight": 1.024,
-    "theme": "Others"
+    "title": "**Crypto Market Developments**",
+    "summary": "OVERVIEW:  \nRecent developments in the cryptocurrency market highlight significant investments, regulatory actions, and growing adoption across different regions, reflecting the complexities and evolving landscape of digital assets.\n\nKEY EXAMPLES:  \n- **Partnership for Compliance**: MoonPay expands its compliance operations by partnering with Chainalysis and Unit21 to handle increased crypto adoption.  \n- **UAE Investment in WLFI**: Sheikh Tahnoon bin Zayed al-Nahyan from Abu Dhabi is reportedly investing $500 million in World Liberty Financial, indicating the global interest in crypto governance tokens.  \n- **OFAC Designates Exchanges**: The U.S. Office of Foreign Assets Control (OFAC) has sanctioned two UK crypto exchanges for their involvement with Iran's financial sector, marking a significant regulatory move.  \n- **German Bank Embraces Crypto**: ING Deutschland is allowing millions of customers to purchase crypto exchange-traded notes, signaling increased mainstream acceptance and accessibility of cryptocurrencies in Europe.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 0.8153846153846154,
+    "theme": "Digital assets"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "**Recent Business Deals**",
-    "summary": "OVERVIEW:\nA series of significant business transactions and developments have been reported across various sectors, highlighting influential partnerships and investment opportunities.\n\nKEY EXAMPLES:\n- The administration's $1.6 billion deal with USA Rare Earth has drawn attention due to its connections to President Trump's commerce secretary's family.\n- Amazon's support for a film led to impressive weekend ticket sales, suggesting strong market presence in the entertainment industry.\n- The NFL's stake in Disney-owned ESPN is part of a major sports media merger, indicating strategic alliances in media and sports.",
+    "title": "House Committee Reports",
+    "summary": "OVERVIEW: \nThe articles collectively document the reports ordered by the House Committee on Foreign Affairs and the House Committee on the Judiciary, emphasizing their legislative activities on specific dates.\n\nKEY EXAMPLES:\n- All articles from the House Committee on Foreign Affairs date back to January 21, 2026.\n- One article is uniquely attributed to the House Committee on the Judiciary from December 18, 2025.",
     "article_count": 24,
     "topicality": 24.0,
-    "theme_weight": 0.9958333333333335,
-    "theme": "Others"
+    "theme_weight": 1.0333333333333334,
+    "theme": "Cyber attacks"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Financial Performance Updates",
-    "summary": "OVERVIEW:\nRecent financial reports indicate a mixed landscape for companies, with some exceeding expectations while others struggle with profit shortfalls.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% after reported profits fell short of forecasts.\n- Plus500 announced an 11% increase in quarterly revenue, affirming they will meet expectations.\n- Barclays reported an 18% rise in profits and raised its income guidance for the future.  \n- Novartis increased its sales and profit guidance for the year, indicating strong performance.",
+    "title": "** Bitcoin Market Analysis",
+    "summary": "**OVERVIEW:**\nRecent trends in the crypto market indicate a significant decline in spot trading volumes alongside volatility in Bitcoin prices. Analysts are debating the implications of various factors, including ETF inflows, liquidity issues, and market sentiment.\n\n**KEY EXAMPLES:**\n- Spot crypto trading volumes have plummeted by 50% since October, reflecting weakened investor engagement.\n- Despite recent drops, analysts predict potential rebounds in Bitcoin's price due to incoming ETF inflows, projecting levels up to $85,000.\n- Following a sharp weekend decline, Bitcoin's recovery may take months, suggesting prolonged volatility in the market.\n- Ether has also faced challenges, dropping by 21% as risk appetite shifted towards gold, influenced by a lack of leverage in the market.",
     "article_count": 24,
     "topicality": 24.0,
-    "theme_weight": 0.9666666666666668,
-    "theme": "Inflation"
+    "theme_weight": 0.8125,
+    "theme": "Digital assets"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Legislative Committee Reports",
-    "summary": "OVERVIEW:\nThe recent articles collectively highlight various reports from multiple congressional committees concerning proposed legislation and oversight activities. These reports reflect ongoing legislative processes across different committees.\n\nKEY EXAMPLES:\n- The House Committee on the Judiciary reported on legislation on November 20, 2025.\n- The Senate Committee on the Judiciary reported on January 15, 2026.\n- The House Committee on Foreign Affairs issued multiple reports on January 21, 2026.\n- The House Committee on Oversight and Government Reform submitted reports on December 2, 2025.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 1.0222222222222221,
-    "theme": "Cyber attacks"
+    "title": "Economic Challenges and Opportunities",
+    "summary": "OVERVIEW:\nA cluster of articles highlights the financial pressures faced by various sectors, including public spending in developing economies, the housing market affected by environmental risks, and the dynamics of borrowing and credit markets.\n\nKEY EXAMPLES:\n- The rise in borrowing costs is impacting public spending across developing countries.\n- Homeownership costs are becoming increasingly burdensome in areas susceptible to flooding and wildfires.\n- The private credit sector is drawing investor interest, particularly in the evolving sports and media industry.\n- Despite reforms in student loan bankruptcy processes, awareness remains low among borrowers.",
+    "article_count": 19,
+    "topicality": 19.0,
+    "theme_weight": 1.063157894736842,
+    "theme": "Consumer debt"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Global Crypto Developments",
-    "summary": "OVERVIEW:\nRecent developments in the cryptocurrency landscape highlight the tensions between regulation and illicit activities, while showcasing the growth of various crypto ecosystems around the world.\n\nKEY EXAMPLES:\n- A partnership between MoonPay and Chainalysis aims to enhance compliance operations amidst rising crypto adoption.\n- Chinese-language money laundering networks (CMLNs) have emerged as significant players, now accounting for 20% of crypto money laundering activity.\n- The U.S. Treasury's Office of Foreign Assets Control (OFAC) has designated two UK crypto exchanges for their involvement in Iran\u2019s financial sector, marking a notable action against digital asset firms.\n- Iran's crypto ecosystem has grown to over $7.78 billion, reflecting its response to geopolitical tensions and domestic instability.",
-    "article_count": 16,
-    "topicality": 16.0,
-    "theme_weight": 0.81875,
-    "theme": "Digital assets"
+    "title": "Controversies Surrounding Epstein and Bitcoin",
+    "summary": "OVERVIEW:\nRecent revelations about Jeffrey Epstein's connections with high-profile individuals and the cryptocurrency industry are raising significant questions and concerns. Various documents and emails are shedding light on secretive communications and potential disruptions within the cryptocurrency space, particularly surrounding Bitcoin and its challengers.\n\nKEY EXAMPLES:\n- A 2014 email involving Blockstream's Austin Hill suggests attempts to undermine projects like Ripple may have been influenced by Bitcoin advocates.\n- Newly released emails reveal social interactions between Epstein and prominent figures, including executives like Howard Lutnick and Elon Musk. \n- An investigative journalist's detention in China underscores ongoing issues of power abuse, which may resonate within the larger context of financial and political influence in the cryptocurrency realm.",
+    "article_count": 17,
+    "topicality": 17.0,
+    "theme_weight": 0.976470588235294,
+    "theme": "Others"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Arts Facility Remodelling",
-    "summary": "OVERVIEW:\nRecent developments highlight the ongoing transformation of significant cultural institutions in Washington, particularly under President Trump's administration.\n\nKEY EXAMPLES:\n- The Trump Kennedy Center will undergo a two-year closure for extensive renovations starting in July.\n- A reflection on the history and changes at the Kennedy Center since Trump took office.",
-    "article_count": 6,
-    "topicality": 6.0,
-    "theme_weight": 1.0333333333333334,
+    "title": "Escalating Tensions in Ukraine",
+    "summary": "OVERVIEW:\nRecent events highlight the ongoing conflict between Russia and Ukraine, marked by intensified military actions and geopolitical maneuvers as new diplomatic efforts emerge.\n\nKEY EXAMPLES:\n- Russia launched its largest drone and missile attack on Ukraine this year, causing significant damage and leaving many without heating amidst freezing temperatures.\n- European forces are prepared to support US military involvement if further Russian violations occur.\n- The last treaty limiting nuclear weapons deployments between the US and Russia is set to expire, increasing concerns about nuclear arms control.",
+    "article_count": 9,
+    "topicality": 9.0,
+    "theme_weight": 1.0444444444444445,
     "theme": "Others"
   }
 }
