@@ -2,68 +2,68 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Labor Market Weakness",
-    "summary": "OVERVIEW:\nRecent articles highlight the anticipated release of employment data that indicates weaker job growth projections for 2024 and 2025, suggesting a sluggish labor market with implications for monetary policy.\n\nKEY EXAMPLES:\n- Economists expect modest job gains in January, reflecting scarce opportunities in the labor market.\n- A new indicator of labor market tightness has been developed to better predict wage inflation, which is crucial for monetary policy calibration.\n- The upcoming jobs report is expected to show implications for the Federal Reserve\u2019s interest rate plans based on labor market performance.",
-    "article_count": 44,
-    "topicality": 44.0,
-    "theme_weight": 0.9977272727272729,
-    "theme": "Recessionary pressures"
+    "title": "**Crypto Adoption and Regulation**",
+    "summary": "OVERVIEW:\nRecent developments highlight the growing adoption of cryptocurrency and the regulatory framework surrounding it, as institutions and new technologies advance within the crypto space.\n\nKEY EXAMPLES:\n- BlackRock announced a partnership with Uniswap to enable trading of its $2.2 billion BUIDL fund on UniswapX, marking a significant integration of institutional funds into decentralized finance (DeFi).\n- MoonPay, serving over 30 million users, is enhancing its compliance operations through a partnership with Chainalysis and Unit21 to support the need for regulatory compliance in growing crypto payment systems.\n- Prediction markets surged fourfold in trading volume as they transitioned into institutional-scale products, demonstrating the maturation of this sector.\n- Thailand's regulatory approval for cryptocurrencies as underlying assets in derivatives markets signifies a pivotal shift toward broader acceptance and structured use of digital assets.",
+    "article_count": 55,
+    "topicality": 55.0,
+    "theme_weight": 0.7854545454545456,
+    "theme": "Digital assets"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Pricing and Economic Dynamics",
-    "summary": "OVERVIEW:\nThe collection of articles highlights various factors influencing pricing strategies among firms, the impact of carbon policies on trade, and the evolving dynamics of the U.S. economy amidst challenges such as inflation and international trade shifts.\n\nKEY EXAMPLES:\n- Firms are adjusting their prices in response to competitive pressures and fluctuating demand, as highlighted by qualitative research from the Federal Reserve Banks.\n- The EU's introduction of the Carbon Border Adjustment Mechanism (CBAM) aims to address the avoidance of carbon policies through high-emissions imports by imposing tariffs based on carbon content.",
-    "article_count": 42,
-    "topicality": 42.0,
-    "theme_weight": 0.9714285714285715,
-    "theme": "Inflation"
+    "title": "Rise of Kimwolf Botnet",
+    "summary": "OVERVIEW:\nA new botnet called Kimwolf has rapidly infected over two million devices, primarily targeting unofficial Android TV streaming boxes. This malicious botnet poses a significant threat to both corporate and government networks, exploiting vulnerabilities for large-scale cyber attacks.\n\nKEY EXAMPLES:\n- Kimwolf forces infected devices to participate in massive DDoS attacks and scan local networks for other IoT targets.\n- The botnet's operators boasted about compromising a large botnet (Badbox 2.0) linked to pre-installed malware on Android devices.\n- It has been linked to systemic vulnerabilities in exposed services, leading to increased risks for organizations.",
+    "article_count": 39,
+    "topicality": 39.0,
+    "theme_weight": 0.9948717948717948,
+    "theme": "Cyber attacks"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "**AI Challenges and Innovations**",
-    "summary": "OVERVIEW:\nThe articles highlight the evolving landscape of artificial intelligence, focusing on both the potential of AI to tackle complex tasks and the inherent challenges that arise, such as reliability and ethical concerns.\n\nKEY EXAMPLES:\n- Anthropic acknowledges the need for ethical AI training, hinting at possible suffering of AI models.\n- AI agents are being developed to handle numerous human tasks, although issues like hallucinations pose significant challenges.\n- A Web platform built using AI exposed sensitive data through a misconfigured API, illustrating the risks of automation without oversight. \n- Experts express a blend of excitement and apprehension about the rapid integration of AI in various sectors.",
-    "article_count": 33,
-    "topicality": 33.0,
+    "title": "**Trends in Chinese Market**",
+    "summary": "OVERVIEW:\nRecent articles highlight the evolving dynamics in the Chinese market, focusing on the rapid acceptance of AI technology in e-commerce, shifts in corporate strategies to enhance competitiveness, and regulatory challenges in various sectors.\n\nKEY EXAMPLES:\n- Chinese consumers placed over 120 million orders on Alibaba's AI app within days, showing a significant shift towards AI-powered shopping.\n- Major Chinese carmakers reduced supplier payment cycles from nearly a year to less than 60 days in response to competitive pressures and government oversight. \n- Polymarket traders estimate a 5% chance for the legalization of onshore Bitcoin purchases in China, reflecting ongoing regulatory uncertainty.",
+    "article_count": 30,
+    "topicality": 30.0,
     "theme_weight": 1.0,
-    "theme": "AI"
+    "theme": "Others"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Rise of the Kimwolf Botnet",
-    "summary": "OVERVIEW:\nRecent articles have reported on the rapid proliferation of the Kimwolf botnet, which has infected over two million devices, primarily through compromised Android TV streaming boxes. This botnet has significant implications for cybersecurity, exposing vulnerabilities in both consumer and organizational networks.\n\nKEY EXAMPLES:\n- Kimwolf forces infected devices to partake in distributed denial-of-service (DDoS) attacks and exploit local networks for further infections.\n- The cybercriminals behind Kimwolf have boasted about compromising the control panel of another botnet, Badbox 2.0, amplifying concerns about interconnected cyber threats.\n- Organizations exposing their Web Help Desk instances to the public have unintentionally created targets for attackers, similar to the vulnerabilities exploited by Kimwolf.\n- Researchers have noted that Kimwolf is particularly prevalent within government and corporate networks, highlighting the threat to critical infrastructure.",
-    "article_count": 33,
-    "topicality": 33.0,
-    "theme_weight": 1.012121212121212,
-    "theme": "Cyber attacks"
+    "title": "Economic Outlook and Challenges",
+    "summary": "OVERVIEW:\nRecent analyses from the CBO and the Federal Reserve provide insights into the U.S. economic outlook, highlighting key issues such as inflation, budget deficits, and the impact of tariffs. The articles reflect on economic projections and challenges facing different demographics.\n\nKEY EXAMPLES:\n- The CBO projects a federal budget deficit of $1.9 trillion for fiscal year 2026, with federal debt expected to reach 120% of GDP by 2036.\n- The New York Fed's updated economic forecasts indicate stronger growth for 2025 driven by lower policy rates and higher productivity, but also higher inflation due to cost-push shocks from tariffs.\n- Five of the most-read articles in 2025 analyzed issues such as the impact of tariffs on businesses and the financial pressures experienced by younger adults amidst trade tensions.\n- Research presented suggests that the Phillips curve is steeper than previously thought, indicating inflation responds more vigorously to economic conditions than conventional wisdom suggests.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 1.0166666666666666,
+    "theme": "Inflation"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Cryptocurrency Market Trends",
-    "summary": "OVERVIEW:  \nThe latest news highlights mixed sentiments in the cryptocurrency market as Bitcoin experiences volatility and resistance levels while Ethereum sees increased accumulation despite price drops. Investor behavior reflects cautious optimism for long-term holdings, contrasted with immediate bearish trends.\n\nKEY EXAMPLES:  \n- Despite a recent 14% rebound, Bitcoin traders remain skeptical and unwilling to take long positions, viewing the $69,000 mark as potential resistance.  \n- Ethereum holders are actively accumulating even as its price dips below $2,000, showing confidence in its long-term viability.  \n- Spot Bitcoin ETFs experienced significant inflows, nearly cancelling previous outflows, suggesting ongoing interest despite recent market declines.  \n- Canaan, a crypto miner, reported strong quarterly earnings yet saw a 7% drop in share prices, indicating investor dissatisfaction.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.8678571428571429,
-    "theme": "Digital assets"
+    "title": "Economic Divide Impacting Businesses",
+    "summary": "OVERVIEW:\nA growing divide between lower-income and wealthy consumers is influencing various industries, prompting businesses to adapt their strategies and offerings. This trend is reflected in the consumer preferences for more affordable options amidst economic challenges.\n\nKEY EXAMPLES:\n- Airlines and food packaging leaders are adjusting their business models due to shifting consumer demographics.\n- Fast-food companies are experiencing increased profits by catering to price-sensitive customers but may reduce financial support for franchisees.\n- Hong Kong restaurateurs anticipate stable or declining earnings from traditional family reunion dinners, citing a demand for less expensive menu items despite a rise in bookings.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 0.996551724137931,
+    "theme": "Recessionary pressures"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Evolving Landscape of Investment Sectors",
-    "summary": "OVERVIEW: \nRecent developments highlight a shift in investment strategies as firms explore new sectors, adopt innovative technologies, and pursue diverse funding structures, particularly in private equity and debt markets.\n\nKEY EXAMPLES:\n- Venture-capital firms are integrating AI into traditionally unglamorous fields like accounting and property management.\n- Great American Holdings acquired a risk solutions business, emphasizing asset-based lending management.\n- Private markets allocations are increasing, with Investec closing its second private debt fund.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 0.9851851851851853,
-    "theme": "Digital assets"
+    "title": "U.S. Stock Market Trends",
+    "summary": "OVERVIEW:\nRecent articles highlight contrasting movements in the U.S. stock market, influenced by various factors including corporate earnings, Federal Reserve policy, and investor sentiment related to political developments.\n\nKEY EXAMPLES:\n- U.S. stock futures increased despite a slump in Cisco's earnings as markets react to broader trends.\n- The Dow reached record highs, with optimism fueled by Trump's selection for Treasury Secretary.\n- Some analysts predict a potential decline in the dollar if the Fed makes aggressive cuts.\n- Despite recent ups and downs, Deutsche Bank predicts the S&P 500 could reach 7000 by 2025.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.013793103448276,
+    "theme": "Inflation"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "** China and Bitcoin Concerns",
-    "summary": "OVERVIEW:\nRecent developments highlight China's changing stance on US debt and the implications for Bitcoin traders. As China reconsidering its financial strategies becomes a focal point, market expectations around cryptocurrency regulations are also shifting.\n\nKEY EXAMPLES:\n- China is reportedly advising banks to reduce their exposure to US government debt, raising concerns amongst Bitcoin traders.\n- Traders on Polymarket are valuing the chances of China legalizing Bitcoin purchases at only 5%, reflecting skepticism about future regulatory changes.",
+    "title": "Tariffs and Carbon Policy Updates",
+    "summary": "OVERVIEW:\nRecent reports and developments indicate that tariffs imposed by the Trump administration are intended to address budgetary issues, while international responses to carbon emissions are evolving through new tariff structures aimed at reducing fossil fuel reliance.\n\nKEY EXAMPLES:\n- The Congressional Budget Office noted that Trump's tariffs will help mitigate the deficit effects of the GOP tax cuts.\n- The European Union plans to implement a Carbon Border Adjustment Mechanism in 2026 to tax high-emission imports, aiming to curb carbon leakage from existing emissions trading policies. \n- President Trump announced plans to impose additional tariffs on China to address the drug inflow issue.",
     "article_count": 27,
     "topicality": 27.0,
     "theme_weight": 0.9888888888888888,
@@ -72,81 +72,81 @@
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Dollar Volatility and Trends",
-    "summary": "OVERVIEW:\nRecent analysis indicates that the US dollar may experience significant fluctuations, particularly if the Federal Reserve makes aggressive rate cuts. This potential decline could lead investors to shift their capital towards alternative assets like Bitcoin.\n\nKEY EXAMPLES:\n- State Street warned that a more aggressive approach from the Fed could result in the dollar falling by 10%.\n- The dollar has shown signs of weakness ahead of critical economic data releases, such as the U.S. nonfarm payrolls report.\n- The yen has strengthened following a political event, contributing to the dollar's decline against other currencies.",
+    "title": "The Impact of AI on Employment",
+    "summary": "OVERVIEW:\nMultiple articles discuss the transformative effects of AI on various job sectors, highlighting the potential for automation to replace white-collar roles, the mixed feelings of software developers, and the significant investments being made by financial firms.\n\nKEY EXAMPLES:\n- A Big Tech AI chief forecasts that white-collar jobs could see automation within 18 months.\n- Finance giants are investing heavily in AI, which is already reshaping job roles on Wall Street.\n- There are worries about job cuts, with predictions that Big Tech may reduce its engineering workforce by 50%. \n- Concerns are raised about the risks associated with AI, including exposure of business operations and personal data vulnerabilities.",
     "article_count": 26,
     "topicality": 26.0,
-    "theme_weight": 1.0076923076923077,
-    "theme": "Inflation"
+    "theme_weight": 1.0,
+    "theme": "AI"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Legislative Committee Reports",
-    "summary": "OVERVIEW:\nThe cluster of articles highlights various reports and orders from different House and Senate Committees on topics related to energy, finance, and transportation. These reports showcase ongoing legislative activities as of early 2026.\n\nKEY EXAMPLES:\n- The House Committee on Energy and Commerce reported findings on January 30, 2026.\n- The House Committee on Financial Services submitted two reports in June and September 2025. \n- The House Committee on Transportation and Infrastructure had multiple reports on January 21 and September 17, 2026, indicating a focus on infrastructure-related matters. \n- The Senate Committee on Commerce addressed issues on July 30, 2025, contributing to the legislative discourse.",
+    "title": "Employment Data Insights**",
+    "summary": "OVERVIEW:\nRecent reports reveal varying trends in job growth, unemployment, and wage levels across the United States, highlighting the role of small businesses and the impact of economic revisions.\n\nKEY EXAMPLES:\n- A delayed jobs report indicated an unexpected boost in job opportunities, despite later revisions showing substantial job losses in 2024 and 2025.\n- The New York Fed introduced indicators for small business performance, underlining their significant contribution to job creation and the overall economy.\n- Labor force participation among workers with disabilities has increased post-pandemic, though they continue to earn significantly less than their non-disabled counterparts.",
     "article_count": 26,
     "topicality": 26.0,
-    "theme_weight": 1.0538461538461539,
-    "theme": "Inflation"
+    "theme_weight": 0.9961538461538461,
+    "theme": "Recessionary pressures"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Legal Challenges and Sentences**",
-    "summary": "OVERVIEW:   \nRecent news highlights various legal cases involving fraud, assault, and national security violations, showcasing significant developments and the implications of these incidents on individuals and organizations.\n\nKEY EXAMPLES:\n- Sam Bankman-Fried seeks a new trial for his FTX fraud case, claiming new witness testimony may affect his sentencing.\n- Thomas Smith, ex-CFO of SafeMoon, faces over 8 years in prison for defrauding investors, while a co-conspirator is still at large.\n- A man in Singapore is under scrutiny for assaulting a Filipino woman, drawing widespread outrage after a video of the attack went viral.\n- A Hong Kong activist's father has been convicted for attempting to access his daughter's financial assets, linked to her status as a wanted fugitive under national security law.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0166666666666666,
-    "theme": "Others"
+    "title": "Investment Market Movements",
+    "summary": "OVERVIEW: \nRecent news indicates significant developments in the investment market, with notable stock purchases, IPOs, and fluctuations in asset values affecting various companies.\n\nKEY EXAMPLES:\n- Post-cap assets have grown to $2.15 trillion, surpassing competitors in the same sector.\n- Ark Invest made headlines by purchasing Bullish stock for the ninth consecutive day, totaling an investment of $11.6 million.\n- Burberry shares increased following news that luxury brand Moncler might consider a bid for the company.\n- Wingstop faced a 12% drop in stock price after its profits fell short of analysts' estimates.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 0.8961538461538461,
+    "theme": "Digital assets"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Banking and Debt Trends**",
-    "summary": "OVERVIEW:\nRecent articles highlight significant trends in banking and household debt, noting an increase in criticized loans, rising household debt levels, and regulatory challenges. The banking industry faces scrutiny as it grapples with market demands and rising delinquency rates amid mentions of evolving banking practices.\n\nKEY EXAMPLES:\n- Criticized loans have reached a five-year high due to a $1.3 billion portfolio expansion.\n- Aggregate household debt balances increased by $191 billion, reaching $18.8 trillion, with rising mortgage and credit card balances.\n- Regulatory pushes are complicating borrowing dynamics, even as borrowing rose in the fourth quarter.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 1.0826086956521737,
-    "theme": "Consumer debt"
+    "title": "Market Reactions and Currency Trends**",
+    "summary": "OVERVIEW:\nRecent market developments reveal increasing speculation around central bank interest rate hikes, alongside fluctuating investor sentiment affecting both cryptocurrencies and traditional investments.\n\nKEY EXAMPLES:\n- Bank of America Securities anticipates a 25-basis-point rise in Bank of Japan's policy rate, setting a backdrop for future monetary policy shifts.\n- Bitcoin price experiences a decline to $94k amid heightened risk aversion due to geopolitical tensions from Trump's tariff threats.\n- Record gold demand highlights a stark contrast in investor behavior, as assets in gold ETFs surged while Bitcoin saw significant outflows.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 0.875,
+    "theme": "Inflation"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Institutional Engagement with DeFi",
-    "summary": "OVERVIEW:\nRecent developments highlight the increasing collaboration between decentralized finance (DeFi) and traditional finance institutions, showcasing efforts to adopt and integrate cryptocurrencies and stablecoins into mainstream financial practices.\n\nKEY EXAMPLES:\n- Ripple aims to enhance institutional familiarity with DeFi, leveraging XRP for compliance-focused solutions despite concerns about liquidity.\n- Franklin Templeton partners with Binance to allow the use of tokenized money market fund shares as collateral while keeping assets in off-exchange custody.\n- New U.S. legislation suggests payment stablecoins are on the verge of significant market adoption due to their operational capabilities on permissionless blockchains.\n- Spark launches lending solutions intended to attract institutional interest in using stablecoins for margin and credit lines.",
+    "title": "Legislative Committee Reports",
+    "summary": "OVERVIEW: \nMultiple House and Senate committees have reported on various legislative matters throughout 2025 and early 2026, focusing on financial services, transportation, energy, and commerce.\n\nKEY EXAMPLES:\n- The House Committee on Financial Services reported findings related to financial regulations on June 20 and June 4, 2025.\n- The House Committee on Transportation and Infrastructure provided ordered reports on infrastructure initiatives on September 17, 2025, and January 21, 2026.\n- The Senate Committee on Commerce, Science, and Transportation issued a report on July 30, 2025.\n- The House Committee on Energy and Commerce released findings on January 30, 2026.",
     "article_count": 22,
     "topicality": 22.0,
-    "theme_weight": 0.7136363636363634,
-    "theme": "Digital assets"
+    "theme_weight": 1.0636363636363635,
+    "theme": "Inflation"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Market Movements Amid Trump Tariffs",
-    "summary": "OVERVIEW:\nRecent market trends are influenced by concerns over potential tariffs from former President Trump and their impact on investor sentiment, particularly affecting technology stocks and cryptocurrencies.\n\nKEY EXAMPLES:\n- Bitcoin's price dropped to $94,000 as investor risk appetite weakened due to Trump tariff threats.\n- U.S. stocks saw declines, led by tech giants like Nvidia, which fell 16% amidst exaggerated panic in the market.\n- Alternative investment firms and business development companies are experiencing downturns, prompting caution among investors.",
-    "article_count": 19,
-    "topicality": 19.0,
-    "theme_weight": 0.8842105263157893,
-    "theme": "Digital assets"
+    "title": "Federal Reserve Developments",
+    "summary": "OVERVIEW:  \nRecent announcements from the Federal Reserve Board highlight approvals of applications from various banks, changes in policy statements, and requests for public input aimed at enhancing the banking sector's innovation and oversight.\n\nKEY EXAMPLES:  \n- The Federal Reserve approved applications from National Bank Holdings Corporation and Fifth Third Bancorp.  \n- A new policy statement regarding the treatment of certain supervised banks was issued, facilitating responsible innovation.  \n- The Federal Reserve is soliciting public input on a proposed \u201cpayment account\u201d for eligible financial institutions.  \n- The launch of a staff manual for supervising large banks was also announced.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 1.0999999999999996,
+    "theme": "Bank lending and credit risk"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Federal Reserve Actions",
-    "summary": "OVERVIEW:\nRecent announcements from the Federal Reserve Board highlight its ongoing activities, including the approval of applications from various banking institutions and the issuance of new policy statements aimed at fostering responsible banking practices and innovation.\n\nKEY EXAMPLES:\n- The Federal Reserve Board approved the application from National Bank Holdings Corporation.\n- Approval was also granted to Fifth Third Bancorp for its application.\n- The Board issued a new policy statement to facilitate responsible innovation among supervised banks.\n- The Federal Reserve has begun seeking public input on a new \u201cpayment account\u201d for certain financial institutions.",
-    "article_count": 19,
-    "topicality": 19.0,
-    "theme_weight": 1.094736842105263,
-    "theme": "Bank lending and credit risk"
+    "title": "**Government Accountability Concerns**",
+    "summary": "OVERVIEW:  \nThe articles highlight various instances of government and corporate actions that raise significant questions about accountability and transparency in public health, technology, and tax regulation.\n\nKEY EXAMPLES:\n- The FDA faced criticism for not reviewing an mRNA vaccine, reflecting broader concerns about agency transparency.\n- Missteps by the tax agency in disclosing sensitive information to immigration enforcement underline issues of data privacy and accountability.\n- Apple\u2019s CEO emphasized the need for industry action against misinformation, calling attention to the corporate responsibility in regulating content.",
+    "article_count": 20,
+    "topicality": 20.0,
+    "theme_weight": 1.0299999999999998,
+    "theme": "Others"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "**Trends in Crypto Compliance and Risks**",
-    "summary": "OVERVIEW:\nRecent developments in the cryptocurrency sector highlight the growing issue of compliance, the emergence of new risks related to money laundering and fraud, and the increasing involvement of traditional finance.\n\nKEY EXAMPLES:\n- Chinese-language money laundering networks have become a dominant force in crypto money laundering, driving 20% of global laundering activities.\n- MegaETH builders gained access to Hexagate, a real-time security solution aimed at addressing smart contract vulnerabilities in the Web3 ecosystem.\n- The UK is positioning itself to spearhead the global fight against crypto-enabled fraud, which cost victims $14 billion in 2025.",
-    "article_count": 17,
-    "topicality": 17.0,
-    "theme_weight": 0.8705882352941177,
-    "theme": "Digital assets"
+    "title": "Innovative City Concepts",
+    "summary": "OVERVIEW:\nRecent discussions around the creation of entirely new cities, whether on Earth or beyond, highlight innovative approaches to addressing housing and urban development challenges. These visionary projects aim to tackle pressing issues like housing shortages and sustainability.\n\nKEY EXAMPLES:\n- A billionaire envisions a self-sustaining city on the moon as a precursor to colonizing Mars.\n- Previous attempts to create cities from scratch have been proposed as potential solutions to housing crises.",
+    "article_count": 12,
+    "topicality": 12.0,
+    "theme_weight": 1.025,
+    "theme": "AI"
   }
 }
