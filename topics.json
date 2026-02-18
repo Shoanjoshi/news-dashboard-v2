@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Congressional Committee Reports",
-    "summary": "OVERVIEW:\nSeveral U.S. congressional committees have issued reports and orders regarding various legislative matters between December 2025 and February 2026, highlighting ongoing government oversight and infrastructure initiatives.\n\nKEY EXAMPLES:\n- The House Committee on Energy and Commerce released a report on February 4, 2026.\n- The Senate Committee on Commerce, Science, and Transportation reported on July 30, 2025.\n- Multiple reports were issued by the House Committee on Oversight and Government Reform on February 4, 2026, reflecting increased scrutiny. \n- The House Committee on Transportation and Infrastructure ordered reports on January 21, 2026, and December 18, 2025, discussing infrastructure needs.",
-    "article_count": 34,
-    "topicality": 34.0,
-    "theme_weight": 1.0705882352941178,
-    "theme": "Bank lending and credit risk"
+    "title": "Kimwolf Botnet Surge",
+    "summary": "OVERVIEW:\nRecent reports highlight the alarming growth of the Kimwolf botnet, which has compromised over two million devices, particularly targeting Android TV streaming boxes. Its ability to conduct large-scale DDoS attacks and infiltrate networks poses significant risks to both government and corporate sectors.\n\nKEY EXAMPLES:\n- Kimwolf has exploited vulnerabilities in unofficial Android TV streaming boxes to expand its reach rapidly, impacting a wide array of devices.\n- The botnet's operators have boasted about hacking into other botnets, indicating organized collaboration within cybercriminal circles.\n- It has notably infiltrated both corporate and government networks, raising concerns about the security of critical infrastructure.",
+    "article_count": 38,
+    "topicality": 38.0,
+    "theme_weight": 0.9789473684210527,
+    "theme": "Cyber attacks"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Business and Economic Regulations",
-    "summary": "OVERVIEW:\nRecent articles highlight tensions between political influence and business operations, focusing on the pressure on financial institutions and ongoing regulatory changes affecting various sectors.\n\nKEY EXAMPLES:\n- The president has directed major banks to cease exclusionary practices against conservative clients.\n- Democratic treasury officials have expressed concerns that ICE crackdowns could negatively impact business and tax revenue.\n- Nexo has returned to the U.S. market after resolving previous regulatory issues.",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 1.040625,
-    "theme": "Others"
+    "title": "AI Developments and Impacts",
+    "summary": "OVERVIEW:\nThe articles collectively reflect the mixed responses and profound implications of AI advancements in various sectors, highlighting both excitement and concerns over job displacement, security, and innovation.\n\nKEY EXAMPLES:\n- Software developers exhibit enthusiasm for AI advancements while also expressing concerns about its impact on employment and ethical implications.\n- Over 30 deceptive apps posed as legitimate AI tools, exposing risks in the proliferation of AI technologies.\n- Major corporations like HP and IBM have reported that AI could lead to workforce reductions as it begins to replace human roles.\n- Emerging AI tools have led to unprecedented vulnerabilities, such as recommendation poisoning incidents affecting multiple industries.",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 1.0028571428571431,
+    "theme": "AI"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "AI Adoption and Concerns",
-    "summary": "OVERVIEW:\nThere is a growing urgency among consulting firms and stakeholders to adopt and evaluate the value of AI, amid a mix of enthusiasm and apprehension within the tech community. Events and discussions focus on the implementation of AI in various sectors and the importance of responsible use.\n\nKEY EXAMPLES:\n- Major consulting firms like McKinsey and PwC are actively measuring the value of their newly adopted AI technologies.\n- Developers express both excitement for AI advancements and concerns about their implications and reliability.\n- The India AI Impact Summit aims to reframe AI as an essential public infrastructure, stressing collaboration for effective deployment.\n- A surge of counterfeit AI applications has been reported, misleading users and questioning the authenticity of AI tools.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 1.0,
-    "theme": "AI"
+    "title": "Bitcoin Price Volatility",
+    "summary": "OVERVIEW:\nRecent market fluctuations have seen Bitcoin prices oscillate significantly, including slipping below key thresholds like $67,000 and $60,000, amid broader economic concerns and varying trader behaviors across platforms.\n\nKEY EXAMPLES:\n- Bitcoin's price recently fell below $67,000 as stocks related to technology experienced declines.\n- A stress test highlighted behavioral differences among traders on Coinbase and Binance during a price drop towards $60,000.\n- Strategy, a significant Bitcoin proxy, claims it could endure a crash to $8,000, raising questions about long-term viability amidst price volatility.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.8636363636363636,
+    "theme": "Digital assets"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Corporate Investment Trends",
-    "summary": "OVERVIEW:\nCompanies from various sectors are increasingly making strategic investments in employee benefits, venture capital, and market positioning to navigate economic disparities and improve performance.\n\nKEY EXAMPLES:\n- Big Tech and hedge funds are boosting employee satisfaction through catered lunches, recognizing it as a smart investment.\n- Start-ups are gaining momentum as venture capital flows in, with many firms positioning themselves as potential leaders.\n- Companies in diverse industries are adapting their strategies due to a widening gap between wealthy and lower-income consumers.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 0.996774193548387,
-    "theme": "Others"
+    "title": "** Cryptocurrency Market Movements",
+    "summary": "**OVERVIEW:** \nRecent developments in the cryptocurrency market showcase an increase in institutional interest and varied investor sentiments. Factors such as ETF launches, tax refunds, and price analyses contribute to the overall dynamics influencing market behavior.\n\n**KEY EXAMPLES:**\n- eToro's Q4 earnings surged due to boosted crypto revenues, positioning the platform for an on-chain financial system.\n- Peter Thiel\u2019s Founders Fund sold its entire stake in ETHZilla, reflecting caution amidst market pressures.\n- Wells Fargo anticipates a revival of retail trading in Bitcoin and risk assets driven by larger US tax refunds.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.7939393939393938,
+    "theme": "Digital assets"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Economic Challenges and Tariff Impact",
-    "summary": "OVERVIEW:\nIn 2025, economic discussions have centered on tariffs, trade tensions, and the financial struggles of younger adults. Insights from various economic forecasts and analyses highlight the burden of tariffs on U.S. consumers and firms, alongside the implications for the federal budget and economic growth predictions.\n\nKEY EXAMPLES:\n- The average tariff rate on U.S. imports rose significantly from 2.6% to 13%, with nearly 90% of the economic burden falling on domestic firms and consumers.\n- CBO projects a federal budget deficit of $1.9 trillion for fiscal year 2026, exacerbated by higher tariffs and a strained economic outlook.\n- Research from the New York Fed reinforces that the financial impacts of tariffs are directly felt by U.S. consumers and companies, contrary to some governmental claims.",
+    "title": "Trump Administration Policy Shifts",
+    "summary": "OVERVIEW:\nThe Trump administration has implemented numerous policy changes that impact technology, free speech, and public health, contributing to a broader environment of skepticism and distrust in various sectors.\n\nKEY EXAMPLES:\n- Policy pivots have weakened national capabilities in cybersecurity, privacy, and addressing disinformation.\n- Trump's renewed commitment to U.S. tests is met with skepticism from administration officials.\n- The administration's stance has been noted to contribute to a significant exodus of PhDs from government positions.\n- Legal barriers faced by media entities, as shown by CBS's decision to not air an interview with a political candidate, reflect tensions in free speech issues.",
     "article_count": 31,
     "topicality": 31.0,
-    "theme_weight": 0.9935483870967742,
-    "theme": "Inflation"
+    "theme_weight": 1.0064516129032257,
+    "theme": "Others"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Bitcoin's Market Challenges",
-    "summary": "OVERVIEW:\nRecent analysis indicates that Bitcoin is experiencing one of its most bearish periods, characterized by declining prices, negative sentiment, and structural market changes. The cryptocurrency's behavior has shifted from acting as a safe haven to responding more to macroeconomic factors.\n\nKEY EXAMPLES:\n- Bitcoin is on track for a fifth consecutive monthly drop, with spot ETF flows turning negative, indicating a troubling market trend post-ETF approval.\n- Market sentiment has sunk to four-year lows, with indicators suggesting potential oversold conditions and seller exhaustion.\n- Analysts note that Bitcoin is trading less like \"digital gold\" and more like a risk asset, reflecting changing correlations with traditional assets like gold and USD.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 0.8758620689655172,
-    "theme": "Digital assets"
+    "title": "Legislative Committee Reports",
+    "summary": "OVERVIEW:\nRecent reports from various House committees indicate ongoing efforts to address critical issues in energy, transportation, and government oversight. The articles showcase multiple findings and proposals put forth for discussion and potential legislative actions.\n\nKEY EXAMPLES:\n- The House Committee on Energy and Commerce released a report on February 2, 2026, focusing on key developments in energy policy.\n- On February 4, 2026, multiple reports from the same committee highlighted additional legislative proposals related to energy regulation and consumer protection.\n- The House Committee on Transportation and Infrastructure reported on December 18, 2025, concerning infrastructure improvements and transportation initiatives.\n- A separate report by the Transportation and Infrastructure Committee on January 21, 2026, further elaborated on transportation policies aimed at enhancing safety and efficiency.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 1.0064516129032257,
+    "theme": "Inflation"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Private Debt and Market Trends",
-    "summary": "OVERVIEW:\nRecent articles highlight the growing interest in private debt as investors increase allocations amid evolving financial landscapes. Concurrently, the banking sector faces challenges in capital relief and adapting to alternative asset influences in credit markets.\n\nKEY EXAMPLES:\n- Investors are escalating their private debt investments despite ongoing concerns.\n- Banks are anticipated to miss out on potential capital relief due to gentler regulatory scenarios.\n- Private funds are gaining an influential role in credit markets, challenging the historical dominance of banks.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 1.1107142857142855,
-    "theme": "Bank lending and credit risk"
+    "title": "**Tech Industry Dynamics**",
+    "summary": "OVERVIEW:\nRecent developments highlight fierce competition and strategic shifts across the technology and telecom sectors, affecting investor sentiment and market strategies.\n\nKEY EXAMPLES:\n- Verizon's return to unlimited data plans is viewed negatively by investors, indicating intense competition in the telecom market.\n- A new wholesaler is assembling market-makers to challenge established firms like Citadel and Jane Street, increasing competition in trading.\n- Zscaler\u2019s acquisition of SquareX reflects a trend where firms such as CrowdStrike and Palo Alto Networks focus on securing browser technologies amid market rivalries.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 1.03,
+    "theme": "AI"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Kimwolf Botnet Threat",
-    "summary": "OVERVIEW:  \nThe emergence of the Kimwolf botnet, which has rapidly infected over two million devices, highlights a significant cybersecurity threat to organizations, including government and corporate networks. Its ability to compromise Internet-of-Things devices and execute large-scale cyber attacks underlines the urgent need for enhanced security measures.\n\nKEY EXAMPLES:\n- Kimwolf forces infected devices to participate in massive distributed denial-of-service (DDoS) attacks, targeting both private and public networks.\n- Cybercriminals behind Kimwolf have compromised other botnets and openly shared their exploits, indicating a collaborative approach to cybercrime.\n- Infections are prevalent among IoT devices, particularly in unsecured Android TV streaming boxes, raising concerns about the security of home and organizational networks.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.9964285714285713,
-    "theme": "Cyber attacks"
+    "title": "Economic Challenges in 2025",
+    "summary": "OVERVIEW:\nThe articles highlight the complex economic landscape in 2025, emphasizing rising prices, increasing household debt, and the impact of tariffs and trade tensions. These challenges create a difficult financial environment for many Americans, especially younger buyers facing higher costs.\n\nKEY EXAMPLES:\n- Car prices are at record highs, with older buyers struggling to secure affordable loans, and more loans are going bad.\n- The Federal Reserve Bank of New York reported a significant increase in household debt, showcasing trends like rising mortgage and credit card balances despite stability in delinquency rates.\n- Economic forecasts predict stronger growth for 2025 amid higher inflation due to cost-push shocks linked to tariffs.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.0482758620689654,
+    "theme": "Consumer debt"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Cryptocurrency and Crime Insights",
-    "summary": "OVERVIEW:\nRecent reports highlight the significant rise in cryptocurrency transactions linked to illicit activities, specifically human trafficking, as well as ongoing regulatory developments within the crypto industry that seek to address these issues.\n\nKEY EXAMPLES:\n- Cryptocurrencies flowing to suspected human trafficking services surged by 85% in 2025, raising alarms about the scale of this issue.\n- The U.S. Treasury, in coordination with the UK and Australia, sanctioned a Russian hosting provider tied to various cybercrimes, including ransomware and drug trafficking, highlighting the connection between cryptocurrency and organized crime.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 0.9629629629629629,
+    "title": "Economic Policy and Controversies",
+    "summary": "OVERVIEW:\nRecent news highlights significant shifts in economic policy and leadership accountability, alongside controversies surrounding personal connections and diversity initiatives.\n\nKEY EXAMPLES:\n- Jamieson Greer is taking active steps to reshape global economic policies at the direction of the president.\n- A Wall Street firm's retreat from diversity mandates signals a shift in priorities under CEO David Solomon.\n- Billionaire Thomas Pritzker acknowledged his poor judgment in maintaining ties with Jeffrey Epstein.",
+    "article_count": 28,
+    "topicality": 28.0,
+    "theme_weight": 1.0071428571428571,
     "theme": "Others"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "**EU Investigations into Tech Practices**",
-    "summary": "OVERVIEW:\nRecent news highlights the European Union's scrutiny of various online platforms for their sales practices and the sale of illegal products, reflecting an ongoing effort to regulate tech companies for consumer protection and ethical standards.\n\nKEY EXAMPLES:\n- The EU is investigating Shein over its sale of illegal products and addictive design techniques aimed at consumers.\n- The EU is also probing a different platform for similar issues related to illegal product offerings and sales tactics.\n- Additional scrutiny is being placed on major tech companies like X, Meta, and TikTok regarding the distribution of AI-generated child sexual abuse material.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 1.0037037037037038,
-    "theme": "Others"
+    "title": "Labor Market Insights",
+    "summary": "OVERVIEW:\nThe recent articles highlight significant updates on employment data and economic indicators from the Bureau of Labor Statistics and the New York Fed, emphasizing trends in job growth, the role of small businesses, and disparities in earnings among different demographic groups.\n\nKEY EXAMPLES:\n- The Bureau of Labor Statistics reported a surprising increase of 131,000 jobs in January 2026, following a modest annual addition of 181,000 new jobs.\n- The New York Fed introduced Economic Heterogeneity Indicators that showcase the pivotal role small businesses play in employment, contributing nearly 63 percent of new private sector jobs since 2005.\n- A study revealed that workers with disabilities earn significantly less than their non-disabled counterparts, highlighting ongoing economic disparities in the labor market.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 0.9961538461538461,
+    "theme": "Recessionary pressures"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Labor Market Trends",
-    "summary": "OVERVIEW:\nRecent articles highlight various aspects of the U.S. labor market, including employment data, job growth, small business performance, and the economic participation of workers with disabilities.\n\nKEY EXAMPLES:\n- The Bureau of Labor Statistics indicated a surprising increase of 131,000 jobs in January amidst a year of slow job growth.\n- New York Fed's Economic Heterogeneity Indicators revealed that small businesses accounted for nearly 63% of new private-sector jobs since 2005, emphasizing their importance in the economy.\n- Reports show that individuals with disabilities experience lower labor market participation and earnings compared to those without disabilities, although their participation has risen post-pandemic.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 0.9962962962962962,
-    "theme": "Recessionary pressures"
+    "title": "U.S. Tariffs and Trade Dynamics",
+    "summary": "OVERVIEW:\nThe cluster of articles highlights the significant impact of U.S. tariffs on domestic consumers and businesses, the moderation of international trade, and related trade policies affecting imports and exports.\n\nKEY EXAMPLES:\n- In 2025, U.S. tariffs increased sharply, with nearly 90% of the economic burden falling on U.S. firms and consumers.\n- Research indicates that U.S. companies and consumers are bearing the brunt of tariff costs, countering presidential claims.\n- The EU is expanding its carbon policies to include tariffs on high-emission imports, reflecting an emerging trend in trade relating to environmental concerns.",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 0.9869565217391304,
+    "theme": "Inflation"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Stablecoins and Market Adoption",
-    "summary": "OVERVIEW: Recent developments highlight the growing acceptance of stablecoins in the financial landscape, driven by new legislation and increased usage for income and payments, particularly in emerging markets.\n\nKEY EXAMPLES: \n- A global survey revealed that 39% of crypto users receive income in stablecoins, with 27% using them for everyday payments.\n- Following new U.S. legislation, stablecoins are poised for significant growth through permissionless blockchain systems.\n- There is a growing competitive landscape, with significant interest in how stablecoins integrate with traditional financial instruments like tokenized US Treasuries.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.7769230769230767,
-    "theme": "Digital assets"
+    "title": "Currency Market Dynamics",
+    "summary": "OVERVIEW: \nThe currency market is experiencing fluctuations as the U.S. dollar strengthens ahead of significant economic data releases, while the British pound faces challenges amid rising quit rates and varying economic forecasts.\n\nKEY EXAMPLES:\n- The dollar firmed up before a series of crucial economic announcements, impacting other currencies such as the sterling, which fell after a surge in quit rates.\n- Despite resilient UK data, Goldman Sachs anticipates continued underperformance of the sterling in the market.\n- The U.S. Treasury yields are influenced by market expectations, with analysts predicting higher yields moving forward, regardless of political developments.",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 0.9826086956521738,
+    "theme": "Inflation"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Market Movements and Economic Indicators",
-    "summary": "OVERVIEW:\nRecent news highlights fluctuations in the U.S. stock market influenced by various economic indicators, investor sentiment, and political factors, including actions from the Federal Reserve and developments related to trade tariffs.\n\nKEY EXAMPLES:\n- The Nasdaq index experienced significant declines, particularly in AI infrastructure stocks like Nvidia, which fell by 16%.\n- Despite recent market highs, analysts suggest that the Federal Reserve's monetary policies may play a more critical role than political events concerning President Trump. \n- U.S. stock futures and bond yields dropped following geopolitical tensions indicated by updates to Russia's nuclear doctrine.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.9384615384615385,
+    "title": "Corporate Financial Performance",
+    "summary": "OVERVIEW:\nThe articles highlight various companies improving their financial outlooks, including increased sales and profit expectations, as well as strategic investments that signal positive market responses.\n\nKEY EXAMPLES:\n- Novartis has raised its sales and profit guidance for the year, indicating strong performance.\n- Barclays reported an 18% rise in profit and subsequently lifted its income guidance.\n- Plus500 expects to meet its targets following an 11% increase in quarterly revenue.",
+    "article_count": 22,
+    "topicality": 22.0,
+    "theme_weight": 0.9772727272727273,
     "theme": "Inflation"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Currency Market Movements",
-    "summary": "OVERVIEW:\nRecent news highlights fluctuations in major currencies, driven by economic forecasts and labor market conditions. The articles discuss the strength of the Euro and Australian dollar against the backdrop of a weakening US dollar, as well as challenges faced by other currencies.\n\nKEY EXAMPLES:\n- Goldman Sachs predicts further upside for the Euro amid USD weakness.\n- The British pound weakens due to a disappointing labor market outlook.\n- Bank of America expects a continued downtrend for the EUR/NOK despite temporary gains. \n- Goldman Sachs raises its forecast for the Australian dollar as the Reserve Bank of Australia adopts a more hawkish stance.",
+    "title": "**Stablecoins Adoption Surge**",
+    "summary": "OVERVIEW:\nRecent developments indicate that stablecoins are transitioning from theoretical concepts to integral components of modern financial infrastructure. Legislative changes and new partnerships are driving their increased adoption and integration into mainstream payment systems.\n\nKEY EXAMPLES:\n- A Dutch electronic money issuer gains approval to issue stablecoin-linked debit cards in Europe, enhancing access to regulated tokens.\n- The U.S. legislation on payment stablecoins signals potential growth in market capitalization and adoption through permissionless blockchain systems.\n- Stripe's stablecoin firm, Bridge, receives initial approval for a national bank trust charter, enabling broader digital asset services.",
     "article_count": 18,
     "topicality": 18.0,
-    "theme_weight": 0.9888888888888889,
-    "theme": "Inflation"
+    "theme_weight": 0.9499999999999998,
+    "theme": "Digital assets"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Corporate Profit Updates",
-    "summary": "OVERVIEW:\nRecent reports indicate a mix of rising and falling profits among major companies, with some firms increasing their income forecasts while others face disappointing earnings.\n\nKEY EXAMPLES:\n- Metaplanet is predicted to see an 81% rise in operating profit by 2026 after a remarkable 17-fold increase last year.\n- Wingstop\u2019s stock dropped 12% as its profit for the recent quarter fell short of market estimates.\n- Barclays reported an 18% profit increase and raised its income guidance, indicating strong financial performance.\n- Novartis has increased its sales and profit guidance for the year, reflecting positive market conditions.",
+    "title": "Federal Reserve Approvals",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board has recently approved multiple banking applications and sought public input on payment accounts, highlighting its ongoing regulatory activities in the financial sector.\n\nKEY EXAMPLES:\n- Approval of National Bank Holdings Corporation's application.\n- Approval of Banco Inter, S.A.'s application.\n- Public request for feedback on payment account usage by eligible financial institutions.\n- Approval of applications from Fifth Third Bancorp and Cornerstone Capital Bancorp, Inc.",
     "article_count": 17,
     "topicality": 17.0,
-    "theme_weight": 0.9882352941176471,
-    "theme": "Inflation"
+    "theme_weight": 1.1294117647058823,
+    "theme": "Bank lending and credit risk"
   }
 }
