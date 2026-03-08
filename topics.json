@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Bitcoin Price Struggles",
-    "summary": "OVERVIEW:\nRecent fluctuations in Bitcoin prices indicate a struggle to maintain gains, with multiple reports highlighting difficulties in surpassing critical resistance levels such as $70,000 and $71,500.\n\nKEY EXAMPLES:\n- Analysts observed a significant sell-off that dropped Bitcoin below $70,000 after a brief rally, suggesting that recent peaks might be temporary.\n- Despite attempts to rise above $73,000, Bitcoin failed to sustain its momentum, reflecting the challenges faced within current market conditions.\n- Trader activities, including profit-taking by short-term investors, contributed to Bitcoin\u2019s decline, yet some signs hint at a potential for quick recovery from this dip.",
-    "article_count": 40,
-    "topicality": 40.0,
-    "theme_weight": 0.9450000000000001,
+    "title": "Stock Market Dynamics",
+    "summary": "OVERVIEW:\nRecent trends in the stock market reflect significant fluctuations, driven by a mix of corporate earnings reports, geopolitical influences, and evolving investment strategies. Investors are navigating the challenges posed by various financial metrics and market sentiments.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped by 12% after its profits failed to meet expectations.\n- A record one-day drop in Korea's equity markets occurred following a prolonged surge attributed to leveraged bets.\n- Citi warns of rising risks as S&P 500 positioning levels reach record highs.",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 0.9371428571428573,
     "theme": "Inflation"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Economic Challenges and Workforce Dynamics",
-    "summary": "OVERVIEW:\nRecent articles highlight evolving trends in the U.S. labor market, particularly focusing on small businesses, disability employment rates, and the impacts of rising costs on employment dynamics.\n\nKEY EXAMPLES:\n- The New York Fed's Economic Heterogeneity Indicators reveal the crucial role of small businesses, which account for a significant portion of job creation and employment.\n- Workers with disabilities are experiencing increased labor force participation post-pandemic, yet they earn significantly less than their counterparts without disabilities.\n- Rising employer-sponsored health insurance costs are influencing wage-setting decisions among businesses, contributing to broader economic challenges.",
-    "article_count": 33,
-    "topicality": 33.0,
-    "theme_weight": 0.9939393939393939,
-    "theme": "Consumer debt"
+    "title": "Kimwolf Botnet Threat",
+    "summary": "OVERVIEW:\nA significant new botnet known as Kimwolf has emerged, infecting over two million devices and executing extensive cyber attacks, including DDoS and doxing campaigns. This botnet's rapid proliferation poses substantial risks to both individual researchers and organizations due to its ability to exploit Internet-of-Things (IoT) devices.\n\nKEY EXAMPLES:\n- Kimwolf has been linked to coordinated attacks against a researcher who initially disclosed its vulnerabilities, including a SWAT incident.\n- The botnet has primarily spread through unofficial Android TV streaming boxes, significantly impacting government and corporate networks.\n- Recent intelligence revealed Kimwolf's operators have compromised other significant botnets, enhancing their capacity for cyber criminality.\n- Research indicates that the botnet's infrastructure includes exploitation of phishing techniques and legitimate services to conduct espionage.",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 0.9885714285714287,
+    "theme": "Cyber attacks"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Tariffs and Economic Impact**",
-    "summary": "OVERVIEW:\nRecent developments in U.S. tariffs, particularly in light of a Supreme Court ruling, highlight the complex interplay between import costs, local manufacturing, and international trade policies. The burden of tariffs predominantly falls on U.S. firms and consumers, raising concerns about job security and economic repercussions.\n\nKEY EXAMPLES:\n- The average tariff rate on U.S. imports increased significantly, with studies indicating that nearly 90% of the economic burden is borne by U.S. entities.\n- President Trump is attempting to restore his tariff program after the Supreme Court challenged key components of his economic strategy.\n- The European Union plans to implement a carbon-based tariff on imported goods to mitigate emissions, signaling a shift in international trade dynamics influenced by environmental policies.",
-    "article_count": 33,
-    "topicality": 33.0,
-    "theme_weight": 0.9757575757575758,
+    "title": "** Economic Impacts of Tariffs and Carbon Policies",
+    "summary": "**OVERVIEW:**  \nRecent articles highlight the complex landscape of tariffs and carbon policies, emphasizing their impacts on domestic industries, import costs, and overall economic pressures faced by businesses.\n\n**KEY EXAMPLES:**  \n- The U.S. tariff rate on imports saw a significant increase from 2.6% to 13% in 2025, with nearly 90% of the tariff burden falling on American firms and consumers.  \n- The EU's Carbon Border Adjustment Mechanism will impose tariffs on imports based on carbon content, aiming to reduce high-emission imports and encourage domestic production efficiency.  \n- U.S. manufacturers are experiencing heightened cost pressures due to tariffs on steel and other materials, limiting their competitiveness and risking job losses.  \n- In Canada, the auto industry is struggling with the dual impact of tariffs and the removal of subsidies for electric vehicles.",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 1.017142857142857,
     "theme": "Inflation"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Kimwolf Botnet Emergence",
-    "summary": "OVERVIEW:\nThe emergence and rapid proliferation of the Kimwolf botnet, which has infected over two million devices, underscores significant security vulnerabilities associated with Internet-of-Things (IoT) devices and raises concerns about coordinated cybercriminal activities and their implications for cybersecurity.\n\nKEY EXAMPLES:\n- The botnet grew by exploiting unofficial Android TV streaming boxes, facilitated by a vulnerability disclosed by a security researcher.\n- Kimwolf has orchestrated DDoS attacks and targeted individuals involved in its discovery, notably going after the researcher who exposed its vulnerabilities.\n- The botnet's presence in government and corporate networks indicates a serious risk to organizational cybersecurity.",
-    "article_count": 33,
-    "topicality": 33.0,
-    "theme_weight": 0.996969696969697,
-    "theme": "Cyber attacks"
+    "title": "Commercial Real Estate Debt Trends",
+    "summary": "OVERVIEW:\nSignificant commercial real estate debt is maturing amid a challenging market environment, with regional banks facing increased exposure. Various financial institutions and funds are navigating evolving risks in private credit and expanding their strategies.\n\nKEY EXAMPLES:\n- $875 billion of commercial and multifamily mortgages are set to mature in 2026, posing risks particularly for regional banks.\n- BlackRock's private credit fund faced challenges, impacting crypto prices and decentralized finance markets.\n- Banks are expected to enhance their credit spread risk coverage following new recommendations.",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 1.09375,
+    "theme": "Private credit"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Stock Market Fluctuations",
-    "summary": "OVERVIEW: Recent stock market movements are characterized by significant fluctuations influenced by corporate earnings reports and economic indicators, resulting in both sharp declines and notable gains across various sectors.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% after its profits fell short of expectations.\n- Barclays reported an 18% rise in profit, prompting an increase in its income guidance.\n- Novartis raised its sales and profit forecasts for the year. \n- A disappointing employment report negatively impacted overall market performance, particularly affecting cruise operators.",
+    "title": "Retirement and Financial Security",
+    "summary": "OVERVIEW:\nRecent articles highlight challenges and opportunities in retirement and financial planning, with a focus on the increasing number of 401(k) millionaires and the impact of aging demographics on job markets and housing.\n\nKEY EXAMPLES:\n- One article notes the rise of 401(k) millionaires amidst global uncertainties, suggesting that these financial habits can help savers.\n- Another discusses a retiree with limited savings relying solely on Social Security.\n- A report features four American women over 50 who found a lower cost of living and a fulfilling lifestyle in Europe after retirement.\n- Additionally, the aging population is creating demand for workers in medical and social care sectors, providing job stability.",
     "article_count": 31,
     "topicality": 31.0,
-    "theme_weight": 0.9774193548387097,
-    "theme": "Inflation"
+    "theme_weight": 1.0032258064516129,
+    "theme": "Consumer debt"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Crypto Industry Developments**",
-    "summary": "OVERVIEW:\nRecent developments in the crypto industry highlight significant regulatory discussions, movements within exchanges, and ongoing issues of fraud and crime, reflecting the dynamic and complex nature of the digital currency landscape.\n\nKEY EXAMPLES:\n- Kraken has successfully secured access to Federal payment systems, while MARA is clarifying its Bitcoin treasury strategies.\n- Nevin Shetty was sentenced to two years for diverting $35 million in startup funds to his own crypto venture for DeFi investments.\n- Senator Elizabeth Warren emphasizes the need for anti-corruption measures in upcoming crypto legislation following recent government settlements.",
+    "title": "Middle East Conflict and Economic Impact",
+    "summary": "OVERVIEW:\nThe ongoing conflict in the Middle East, particularly involving Iran, is driving up gas and heating oil prices, creating a heightened demand for safe-haven assets like the US dollar.\n\nKEY EXAMPLES:\n- Gas prices are surging due to military actions in Iran, risking significant oil production shutdowns in the region.\n- Heating oil costs have also increased, disproportionately affecting rural communities.\n- Overall, supply disruptions from the Gulf have led to price increases exceeding 80%.",
     "article_count": 30,
     "topicality": 30.0,
-    "theme_weight": 0.7799999999999998,
-    "theme": "Digital assets"
+    "theme_weight": 0.9700000000000001,
+    "theme": "Inflation"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Rising Gas Prices Due to Iran Crisis",
-    "summary": "OVERVIEW:\nGas prices are surging as tensions escalate between the U.S. and Iran, impacting oil production and leading to broader economic implications globally.\n\nKEY EXAMPLES:\n- President Trump's military actions against Iran are causing potential shutdowns of oil production, directly influencing gas prices.\n- The crisis has prompted various strategies for consumers to save money amid rising fuel costs.\n- High oil prices are affecting global government bonds and could lead to increased fuel and food prices.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 1.0035714285714286,
-    "theme": "Inflation"
+    "title": "**Hong Kong's Economic Future**",
+    "summary": "OVERVIEW:\nThe articles collectively discuss Hong Kong's strategic positioning within China's economic development framework, highlighting initiatives, investment trends, and the challenges faced. A focus on artificial intelligence and the local financial ecosystem suggests a transformative period for the city amid geopolitical shifts.\n\nKEY EXAMPLES:\n- Financial Secretary Paul Chan has emphasized adopting \u201cArtificial Intelligence+\u201d and \u201cFinance+\u201d to align with China's 15th five-year development plan, marking a pivotal moment for Hong Kong.\n- Venture-capital firms are innovating by introducing AI and dealmaking into traditionally overlooked sectors like accounting and property management.\n- Experts highlight Hong Kong's advantage over Singapore in gold trading, attributing it to access to mainland China's expansive market.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 0.9586206896551724,
+    "theme": "Others"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "AI's Impact on Employment and Industry",
-    "summary": "OVERVIEW:\nThe recent wave of articles highlights the significant changes AI is causing across various sectors, particularly in employment dynamics, industry practices, and regulatory frameworks. While some industries are adapting by up-skilling employees and integrating sophisticated AI tools, the overall effect is creating a divide in job opportunities.\n\nKEY EXAMPLES:\n- A Google engineer's experience emphasizes the importance of up-skilling in AI, leading to enhanced job security and opportunities.\n- Restaurant chains are leveraging AI technologies while striving to maintain a balance with traditional customer service values.\n- An analysis shows that while software-engineer job postings are increasing due to AI, entry-level job opportunities are declining, highlighting the sector's growing demand for high-skill roles.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 0.9962962962962962,
-    "theme": "AI"
+    "title": "Rising Tensions in Asia",
+    "summary": "OVERVIEW:\nRecent geopolitical conflicts in Asia, particularly regarding the Taiwan situation and the South China Sea, have heightened market volatility and prompted concerns over energy security. The interplay of rising oil prices and diplomatic tensions is affecting investor behavior and regional stability.\n\nKEY EXAMPLES:\n- The Iranian conflict and spiking oil prices are impacting emerging markets, leading to significant financial repercussions.\n- China\u2019s Foreign Minister issued stern warnings against foreign interference regarding Taiwan, indicating a tough diplomatic stance amid ongoing tensions with Japan. \n- Negotiations for a Code of Conduct in the South China Sea reached a critical phase, reflecting China's efforts to stabilize regional disputes but also highlighting ongoing geopolitical strains.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.0,
+    "theme": "Inflation"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Federal Reserve Actions",
-    "summary": "OVERVIEW:\nThe Federal Reserve Board has been actively involved in various regulatory actions, including terminations, approvals of applications, and enforcement actions against former bank employees.\n\nKEY EXAMPLES:\n- Enforcement action terminated with Wells Fargo.\n- Approval granted for Fifth Third Bancorp's application.\n- Enforcement action issued against a former employee of First Financial Bank.",
+    "title": "Labor Market Insights",
+    "summary": "OVERVIEW:\nRecent analyses highlight key indicators and trends in the U.S. labor market, focusing on labor market tightness, the role of small businesses, and disparities experienced by workers with disabilities, alongside state-level employment evaluations.\n\nKEY EXAMPLES:\n- The New York Fed introduced a new indicator of labor market tightness that predicts wage inflation more accurately than previous measures.\n- The Economic Heterogeneity Indicators (EHIs) now include data on small businesses, which have been vital for job creation in the region.\n- After the pandemic, labor market participation rates of workers with disabilities increased, though their earnings remain significantly lower than those of their counterparts without disabilities.",
     "article_count": 27,
     "topicality": 27.0,
-    "theme_weight": 1.1185185185185187,
-    "theme": "Bank lending and credit risk"
+    "theme_weight": 0.9777777777777777,
+    "theme": "Consumer debt"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Recent Business Acquisitions and Market Trends",
-    "summary": "OVERVIEW:\nThe articles cover various business acquisitions, market trends, and financial insights in sectors ranging from retail to telecommunications. They highlight significant buyout deals and shifts in market dynamics impacting major companies.\n\nKEY EXAMPLES:\n- Beyond plans to buy the rights to the Buy Buy Baby brand and reunite it with Bed Bath & Beyond.\n- Charter Communications announces a buyout deal for Liberty Broadband at improved terms.\n- Verizon reintroduces unlimited data plans, a move seen as pressure on its stock amid fierce competition.",
-    "article_count": 25,
-    "topicality": 25.0,
-    "theme_weight": 0.9839999999999999,
-    "theme": "Others"
+    "title": "AI Impact on Employment and Investments",
+    "summary": "OVERVIEW:\nRecent discussions emphasize the dual effect of artificial intelligence on the job market and investor sentiment, highlighting both skill demands and market volatility.\n\nKEY EXAMPLES:\n- Jim Mellon warned that the rapid development of AI serves as a caution for investors and advocates for proactive engagement from younger generations.  \n- An analysis indicated an increase in software-engineer job postings, suggesting a growing demand for skilled tech roles while threatening entry-level positions.  \n- Sam Altman criticized a rival AI competitor for being \"dishonest\" and \"authoritarian,\" reflecting tensions in the AI industry.  \n- Nvidia and other tech giants faced a selloff, which some analysts believe is an overreaction to market fears.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 1.0148148148148148,
+    "theme": "AI"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Escalating Military Tensions in the Middle East",
-    "summary": "OVERVIEW:\nRecent developments illustrate the rising military and cyber warfare activities involving Iran, the U.S., and Israel in the region. The use of drones and cyber tactics are increasingly blurring the lines between traditional and modern warfare.\n\nKEY EXAMPLES:\n- Iran is utilizing intelligence from Moscow to conduct drone and missile retaliatory attacks.\n- Military operations by Israel and the U.S. against Iranian targets have unintended consequences that threaten broader regional stability.\n- Iran employs cyber tactics, including hacking IP cameras, to strategize missile strikes against its adversaries. \n- There is a growing concern about the impact of drone warfare on civilian safety and infrastructure.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0083333333333333,
-    "theme": "Cyber attacks"
+    "title": "Regulatory Developments in Crypto",
+    "summary": "OVERVIEW:\nRecent reports highlight the evolving landscape of cryptocurrency regulation, focusing on privacy enhancements, illicit activities, and the legitimization of decentralized finance (DeFi) strategies. The U.S. Treasury's ongoing analysis reflects the increasing intersection of regulatory oversight and technological innovation in the sector.\n\nKEY EXAMPLES:\n- The U.S. Treasury's report discusses legitimate uses of crypto mixers as part of efforts under the GENIUS stablecoin regulatory framework.\n- A surge in sanctioned entities' transaction volume by 694% in 2025 indicates growing challenges in combating criminal activities using cryptocurrencies.\n- Trump's National Cyber Strategy addresses mixers, privacy coins, and the threats posed by quantum computing to Bitcoin's security, signaling a shift in regulatory focus.\n- Recent spikes in Iranian crypto outflows in response to geopolitical events underline the significance of national security concerns in shaping crypto regulations.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 0.8185185185185184,
+    "theme": "Digital assets"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Legislative Committee Reports",
-    "summary": "OVERVIEW:\nThis cluster of articles highlights recent reports and orders from various U.S. Congressional committees, focusing on important legislative actions and recommendations made throughout 2025 and early 2026.\n\nKEY EXAMPLES:\n- The House Committee on Natural Resources reported on February 24, 2026, addressing critical environmental issues.\n- The Senate Committee on Energy and Natural Resources ordered a report on December 17, 2025, regarding energy policy developments.\n- The House Committee on Foreign Affairs released findings on July 22, 2025, related to international relations.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 1.0217391304347827,
-    "theme": "Inflation"
+    "title": "Bitcoin Price Fluctuations",
+    "summary": "OVERVIEW:\nRecent news highlights significant volatility in Bitcoin's price influenced by various market factors, including geopolitical tensions, investor sentiment, and macroeconomic conditions.\n\nKEY EXAMPLES:\n- Bitcoin whales have sold approximately 66% of their recently acquired Bitcoin, contributing to price instability.\n- Ongoing geopolitical issues and weaknesses in private credit markets have raised concerns about Bitcoin potentially dropping to $65,000.\n- Despite a brief rally above $73,000, signals indicate a possible fading of this momentum, reminiscent of previous bear market rebounds.\n- Bitcoin's price dropped below $68,000, as the U.S. dollar experienced its steepest weekly gain in a year, suggesting a strong correlation with broader market trends.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 0.8583333333333334,
+    "theme": "Digital assets"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Private Credit Market Struggles",
-    "summary": "OVERVIEW:\nRecent developments in the private credit market indicate significant instability, with major funds halting redemptions and firms like BlackRock facing challenges. Despite this turmoil, some investors remain eager to allocate funds toward private credit.\n\nKEY EXAMPLES:\n- Blue Owl Capital's OBDC II fund permanently halted redemptions and plans to return a significant portion of net asset value through asset sales.\n- BlackRock's private credit fund is also experiencing difficulties, impacting crypto prices and decentralized finance (DeFi) markets.\n- Fund allocators like Goldman Sachs are shifting focus toward rising private debt general partner consolidation amidst negative headlines.",
+    "title": "Congressional Committees Reports",
+    "summary": "OVERVIEW:\nRecent reports from various congressional committees highlight ongoing legislative activities addressing environmental, financial, foreign affairs, and healthcare issues. These developments reflect a concerted effort to manage pressing national concerns.\n\nKEY EXAMPLES:\n- The House Committee on Natural Resources published updates on environmental matters on February 24, 2026.\n- Reports from the Senate Committee on Health, Education, Labor, and Pensions were released on January 28, 2026, focusing on education and labor issues.",
     "article_count": 21,
     "topicality": 21.0,
-    "theme_weight": 1.0857142857142854,
-    "theme": "Private credit"
+    "theme_weight": 1.0142857142857142,
+    "theme": "Inflation"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Rising Business Costs and Inflation",
-    "summary": "OVERVIEW: \nRecent discussions highlight the rising cost pressures faced by businesses, particularly in relation to tariffs, insurance, and utilities, and their mixed expectations for future inflation. Despite experiencing significant cost increases, firms are more optimistic about inflation rates compared to previous years.\n\nKEY EXAMPLES:\n- Businesses in the New York-Northern New Jersey region reported substantial cost increases, particularly in employee health insurance and utilities, leading to adjusted prices.\n- Economists argue that a steep Phillips curve indicates inflation reacts strongly to economic conditions, influencing monetary policy approaches.\n- Evidence suggests that large cost shocks result in nonlinear inflation dynamics, complicating the relationship between costs and price inflation.",
-    "article_count": 14,
-    "topicality": 14.0,
-    "theme_weight": 1.0,
-    "theme": "Inflation"
+    "title": "Federal Reserve Actions",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board has been active in approving applications from several banking institutions while also addressing enforcement actions against former employees associated with various banks.\n\nKEY EXAMPLES:\n- Approval of Banco Inter, S.A. by the Federal Reserve Board.\n- Enforcement action issued against a former employee of First Financial Bank.\n- Approval of Fulton Financial Corporation's application.\n- Enforcement actions taken regarding employees from East Cambridge Savings Bank and United Bank.",
+    "article_count": 18,
+    "topicality": 18.0,
+    "theme_weight": 1.1555555555555554,
+    "theme": "Bank lending and credit risk"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "** Global Community Responses",
-    "summary": "**OVERVIEW:**\nRecent news highlights the diverse reactions of communities around the world to local and global events, revealing emotional ties, cultural exchanges, and shifting societal norms.\n\n**KEY EXAMPLES:**\n- An Iranian expat in Hong Kong expresses anxiety over escalating tensions in Iran, fearing for his family's safety.\n- The vibrant atmosphere in Da Nang's Han Market showcases friendly cultural exchanges between South Korean tourists and local Vietnamese vendors.\n- Viral stories of female cohabitation in China prompt conversations about alternative living arrangements and female empowerment.\n- Amidst the Iran conflict, a traveler finds herself stranded in Doha and reflects on the gravity of her situation despite luxury accommodations.\n- A rapper-turned-politician in Nepal leads a significant electoral contest, symbolizing a shift toward younger leadership.\n- The rising trend of malatang dining among foreigners illustrates the growing popularity of Sichuan cuisine and cultural fusion.\n- A nurse in Ohio discusses the benefits of medical tourism in Asia, emphasizing cost-saving advantages.",
-    "article_count": 12,
-    "topicality": 12.0,
-    "theme_weight": 1.0,
-    "theme": "Others"
+    "title": "Cryptocurrency Market Dynamics",
+    "summary": "OVERVIEW:\nRecent news highlights the interplay between cryptocurrency, macroeconomic factors, and regulatory strategies as the market reacts to various pressures, including fluctuating funding rates and emerging technologies like AI.\n\nKEY EXAMPLES:\n- Bitcoin's derivatives market showed negative funding rates, indicating a bearish sentiment prior to the US jobs report.\n- Wall Street experts predict an upcoming rotation influenced by AI technologies, as Bitcoin seeks a significant role in the evolving market landscape.\n- Trump's new cyber strategy aims to secure cryptocurrencies, reflecting increasing governmental focus on blockchain security.",
+    "article_count": 16,
+    "topicality": 16.0,
+    "theme_weight": 0.8687499999999999,
+    "theme": "Digital assets"
   }
 }
