@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "U.S.-Iran Conflict Effects",
-    "summary": "OVERVIEW:\nThe U.S.-Iran military conflict is causing significant economic repercussions, notably rising oil prices and a predicted impact on various consumer goods and global trade. As tensions escalate, the strain on energy and shipping markets is likely to persist.\n\nKEY EXAMPLES:\n- Israel's recent airstrikes on Iran come amid U.S. pressure to secure the Strait of Hormuz, a critical oil passage.\n- The conflict has resulted in sharp increases in oil prices, raising concerns about the broader cost of living.\n- A slowdown in trade in 2026 could worsen if the conflict continues, affecting global markets.\n- The heightened tensions are straining the region's natural gas supplies, already at historically low levels.",
-    "article_count": 45,
-    "topicality": 45.0,
-    "theme_weight": 0.9866666666666668,
-    "theme": "Inflation"
+    "title": "Cybersecurity Threats and Incidents",
+    "summary": "OVERVIEW:\nRecent reports highlight a surge in cyber threats, including highly disruptive botnets, data breaches, and exploitation of vulnerable systems by both criminal and nation-state actors. The implications of these incidents underscore the increasing complexity and scale of cybersecurity challenges faced by organizations.\n\nKEY EXAMPLES:\n- The Kimwolf botnet, controlled by an individual known as \"Dort,\" has been involved in extensive DDoS attacks and targeted harassment against researchers.\n- A collaborative effort by the U.S. Justice Department and international allies dismantled four significant botnets responsible for compromising over three million IoT devices.\n- A hack into Hong Kong's Correctional Services Department exposed the personal data of 6,800 employees, highlighting vulnerabilities in governmental IT systems.",
+    "article_count": 48,
+    "topicality": 48.0,
+    "theme_weight": 0.9812499999999998,
+    "theme": "Cyber attacks"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Market Fluctuations and Bitcoin Trends",
-    "summary": "OVERVIEW:\nRecent market dynamics are heavily influenced by key economic factors, including corporate earnings, geopolitical tensions, and cryptocurrency trends. Notably, Bitcoin is affecting investor sentiment, alongside concerns around tariffs and market positioning.\n\nKEY EXAMPLES:\n- Bitcoin's price fell to $94k amid increased risk aversion due to potential Trump tariffs.\n- Strategy's dividend equity rebounds, facilitating increased Bitcoin purchases as it surpasses historical averages.\n- Corporate earnings are impacting stock prices, like Wingstop, which saw a 12% drop after missing profit estimates.\n- Bitcoin's supply in profit metric dipping below 50% suggests potential for future accumulation based on historical patterns.",
-    "article_count": 37,
-    "topicality": 37.0,
-    "theme_weight": 0.9378378378378381,
+    "title": "Stock Market Trends",
+    "summary": "OVERVIEW:\nRecent financial reports highlight notable declines in key equity indexes, notably the S&P 500, which is experiencing significant downturns and approaching correction territory, while individual stocks like Wingstop have also faced steep losses.\n\nKEY EXAMPLES:\n- Wingstop\u2019s stock fell 12% as its profits did not meet expectations.\n- The S&P 500 is down nearly 9% from its January high, marking its worst weekly losing streak in about four years.\n- Major indexes dropped 5% in March, with some short bets yielding gains. \n- Goldman Sachs identifies crucial questions regarding market performance in the upcoming quarter.",
+    "article_count": 39,
+    "topicality": 39.0,
+    "theme_weight": 0.9692307692307696,
     "theme": "Inflation"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Cybersecurity Threats and Vulnerabilities",
-    "summary": "OVERVIEW:\nRecent news highlights the escalating risks associated with cybersecurity, focusing on the emergence and dismantling of major botnets, as well as the vulnerabilities that allow such threats to proliferate. The responsibility of organizations in securing their digital infrastructure has come under scrutiny, revealing common missteps that lead to significant breaches.\n\nKEY EXAMPLES:\n- The U.S. Justice Department, alongside international partners, dismantled the Kimwolf botnet, which was linked to numerous DDoS attacks.\n- A security researcher faced harassment and threats from \"Dort,\" the handler of the Kimwolf botnet, after disclosing its vulnerability.\n- Critical bugs are often exploited quickly by threat actors, underscoring the need for timely vulnerability management.",
+    "title": "Impact of War on Oil Prices",
+    "summary": "OVERVIEW:\nThe ongoing military conflict involving the U.S., Israel, and Iran is significantly influencing oil prices, leading to broader concerns about inflation and the cost of living for consumers and businesses worldwide.\n\nKEY EXAMPLES:\n- Forecasts indicate that oil prices could soar to $200 a barrel as the conflict extends.\n- The war is expected to affect the prices of essential goods such as food and medicine.\n- A potential slowdown in trade by 2026 may exacerbate economic challenges due to the ongoing conflict.\n- The escalating situation poses risks of prolonged economic downturns and higher inflation, complicating the Federal Reserve's efforts to stabilize prices.",
     "article_count": 36,
     "topicality": 36.0,
-    "theme_weight": 0.9833333333333333,
-    "theme": "Cyber attacks"
+    "theme_weight": 1.0,
+    "theme": "Inflation"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "**Labor Market Dynamics**",
-    "summary": "OVERVIEW:\nThe recent articles highlight the evolving labor market conditions, including job growth, inflationary pressures, and cost dynamics faced by businesses, revealing the interconnectedness of these factors in shaping economic forecasts and monetary policy.\n\nKEY EXAMPLES:\n- The Bureau of Labor Statistics regularly reports job growth data, which is closely monitored by financial market participants to assess economic conditions.\n- A new indicator of labor market tightness introduced by the New York Fed has proven effective in predicting wage inflation, emphasizing the importance of accurate labor market measurements.\n- In 2025, businesses in the New York-Northern New Jersey region faced significant cost pressures, particularly from tariffs and rising operational costs, which influenced their pricing strategies.",
-    "article_count": 33,
-    "topicality": 33.0,
-    "theme_weight": 0.996969696969697,
-    "theme": "Inflation"
+    "title": "Bitcoin Market Volatility",
+    "summary": "OVERVIEW:\nRecent market dynamics have led to significant drops in Bitcoin prices, primarily driven by geopolitical tensions, rising Treasury yields, and impending major options expirations. This volatility reflects broader uncertainties in both the cryptocurrency and traditional financial markets.\n\nKEY EXAMPLES:\n- Bitcoin fell to around $66,484 as tensions in the Middle East and high oil prices prompted investors to reduce risk exposure.\n- A $14.1 billion expiration of Bitcoin options coincided with rising macroeconomic pressures, exacerbating the price decline.\n- Bitcoin is currently facing broken near-term market structures and strong macroeconomic pressures, forecasting potential further declines.",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 0.8645161290322579,
+    "theme": "Digital assets"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Corporate Crypto Challenges",
-    "summary": "OVERVIEW:\nRecent developments indicate that major corporate investments in cryptocurrency are facing significant challenges, with notable institutions retracting or struggling with their crypto asset strategies.\n\nKEY EXAMPLES:\n- MicroStrategy remains the only substantial corporate buyer of Bitcoin as other companies significantly reduce their holdings.\n- Circle's market cap plummeted by $5 billion due to new regulatory concerns impacting stablecoins, particularly its product, USD Coin.\n- XRP exchange-traded funds are experiencing their first net outflows, disrupting previous growth trends and highlighting investor hesitance.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 0.825806451612903,
-    "theme": "Digital assets"
+    "title": "Rising Business Costs in 2025",
+    "summary": "OVERVIEW:\nIn 2025, businesses reported significant cost pressures driven by rising expenses related to insurance, utilities, and tariffs. Despite these challenges, firms' expectations for future inflation have moderated, indicating a complex economic landscape.\n\nKEY EXAMPLES:\n- Businesses in the New York-Northern New Jersey region noted pronounced cost increases across various sectors, particularly manufacturing, and anticipated a moderation in cost growth moving into 2026.\n- The average tariff rate on U.S. imports surged from 2.6% to 13%, with nearly 90% of the tariff burden falling on American firms and consumers.\n- A survey indicated that firms expected inflation to be around 3% over the next year, a decrease from previous expectations.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 0.99,
+    "theme": "Inflation"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Middle East Conflict and Markets",
-    "summary": "OVERVIEW:\nRecent escalation in the Middle East has triggered volatility across financial markets, with particular impacts on Bitcoin and inflation concerns. The interplay of geopolitical tensions and economic uncertainties is reshaping investor sentiment.\n\nKEY EXAMPLES:\n- Bitcoin's value dropped below $68,500 amid fears surrounding the ongoing conflict.\n- Traders have reacted to the conflict's potential to worsen inflation, complicating the Federal Reserve's efforts to manage the economy.\n- The conflict has also affected energy markets, with oil rebounding as hopes for peace faded.",
-    "article_count": 30,
-    "topicality": 30.0,
-    "theme_weight": 0.9666666666666666,
-    "theme": "Inflation"
+    "title": "Private Credit Market Dynamics",
+    "summary": "OVERVIEW:\nRecent discussions highlight the evolving landscape of private credit, examining investor demand, structural challenges, and opportunities arising from stress in the market.\n\nKEY EXAMPLES:\n- A white paper suggests that stress in private equity funds may create opportunities for opportunistic credit managers.\n- There's a noted investor push toward the convergence of public and private debt, although fund structuring issues must be addressed.\n- An in-depth analysis reveals varying demand for different private credit strategies among limited partners.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 0.9482758620689655,
+    "theme": "Digital assets"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Legislative Committee Reports",
-    "summary": "OVERVIEW:\nMultiple legislative committees, including the Senate Committee on Energy and Natural Resources and the House Committee on Oversight and Government Reform, have recently reported on various matters, signaling ongoing discussions and actions in Congress.\n\nKEY EXAMPLES:\n- The Senate Committee on Energy and Natural Resources reported on multiple occasions on February 4, 2026.\n- The House Committee on Oversight and Government Reform produced several reports on February 4 and 5, 2026.\n- The House Committee on House Administration issued a report on February 3, 2026.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.9964285714285713,
-    "theme": "Inflation"
+    "title": "Stablecoin Market Dynamics**",
+    "summary": "**OVERVIEW:**\nThe current landscape for stablecoins is marked by regulatory challenges, institutional developments, and shifting market strategies. These factors are influencing both the legislative environment and corporate investment behaviors in the cryptocurrency sector.\n\n**KEY EXAMPLES:**\n- The stalling of the CLARITY Act, primarily due to Coinbase's objections regarding stablecoin rewards, is delaying comprehensive regulations for the entire U.S. crypto market.\n- Institutional pressure around stablecoins is increasing despite regulatory uncertainty, with predictions indicating significant growth in stablecoin trading volumes, potentially reaching $56.6 trillion by 2030.\n- A notable decrease in corporate Bitcoin investments, heavily reliant on a few key players like MicroStrategy, shows a shift in market dynamics affecting cryptocurrency valuations and strategies.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 0.8259259259259258,
+    "theme": "Digital assets"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Private Equity and Credit Strategies",
-    "summary": "OVERVIEW:\nRecent analyses highlight the evolving landscape of private equity and credit markets, emphasizing the challenges and opportunities emerging in these sectors, particularly due to market stresses and regulatory changes.\n\nKEY EXAMPLES:\n- A white paper suggests that stress in private equity might create opportunities for credit managers.\n- Reports indicate a rise in demand for certain private credit strategies, reflecting shifting investor preferences.\n- Agencies are addressing regulatory capital frameworks, which could impact the treatment of private market assets.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 0.9333333333333331,
-    "theme": "Digital assets"
+    "title": "Rising Costs of Events and Housing",
+    "summary": "OVERVIEW:\nRecent reports highlight the increasing expenses associated with prom preparations and home ownership, particularly in areas prone to environmental risks like flooding and wildfires.\n\nKEY EXAMPLES:\n- An economist has analyzed the rising costs of prom-related items, such as dresses and flowers, advising potential spenders.\n- The financial implications of owning a house in vulnerable neighborhoods are becoming increasingly evident, revealing significant risks for homeowners.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 1.0192307692307692,
+    "theme": "Consumer debt"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "**Global Trade Dynamics**",
-    "summary": "OVERVIEW:\nThe articles highlight various challenges and opportunities in global trade, including the tensions between tech companies and local communities, China\u2019s maritime insurance needs, and the shifting trade relationships between Europe and China amidst geopolitical tensions.\n\nKEY EXAMPLES:\n- Tech companies face increased resistance from local communities, hindering their promised growth.\n- China's urgent need for a robust maritime insurance industry is emphasized due to disruptions caused by geopolitical conflicts.\n- Germany signals potential support for a long-term trade deal with China as the EU navigates its relationship with a rising tide of Chinese imports.\n- Kenya secures trade agreements with China while facing challenges related to debt and balancing international relations.",
-    "article_count": 25,
-    "topicality": 25.0,
-    "theme_weight": 0.9640000000000001,
-    "theme": "AI"
+    "title": "**Regional Cooperation and Tensions**",
+    "summary": "OVERVIEW:\nThe recent news highlights significant diplomatic engagements and geopolitical tensions in Asia, emphasizing the importance of regional cooperation while cautioning against taking advantage of international rivalries.\n\nKEY EXAMPLES:\n- Singapore's Prime Minister Lawrence Wong met with Hong Kong leaders to foster closer ties between the two financial centers.\n- A Chinese political scientist warned Southeast Asian nations to avoid exploiting China-US tensions for short-term gains, as it could have unintended consequences.\n- Southeast Asian countries are racing to control data flows, driven by nationalism and security, but this may hinder foreign investment and innovation.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 0.9884615384615384,
+    "theme": "Others"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Tech Industry Trends and Challenges",
-    "summary": "OVERVIEW:\nRecent articles highlight ongoing challenges and shifts within the tech and telecom industries, focusing on competitive dynamics, market perceptions, and regulatory scrutiny.\n\nKEY EXAMPLES:\n- Broadcom asserts that market misinterpretations are affecting the industry's perception of tech giants' performance.\n- Verizon's reintroduction of unlimited data plans highlights fierce competition in the telecom sector, impacting investor confidence.\n- A competitive landscape has led to a panic selloff of tech stocks like Nvidia and Broadcom, which some experts consider overblown. \n- Regulatory actions raise concerns about the future of social media marketing strategies used by companies like Benefit Cosmetics.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0208333333333333,
-    "theme": "Others"
+    "title": "Committee Reports Overview",
+    "summary": "OVERVIEW:\nThe articles collectively detail various legislative actions reported by different congressional committees, primarily focusing on natural resources, energy, and judicial matters.\n\nKEY EXAMPLES:\n- The House Committee on Natural Resources reported multiple items on March 5, 2026.\n- The Senate Committee on Energy and Natural Resources conducted reports both on February 4 and December 17, 2025.\n- The House Committee on the Judiciary issued a report on January 8, 2026.\n- The House Committee on Veterans\u2019 Affairs reported its findings on February 12, 2026.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.012,
+    "theme": "Inflation"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Rise of AI Agents in Software Development",
-    "summary": "OVERVIEW:\nThe emergence of AI agents in the software development sector is revolutionizing traditional practices, presenting both opportunities and challenges in automation, security, and workforce dynamics.\n\nKEY EXAMPLES:\n- Wayfound.ai, led by CEO Tatyana Mamut, is challenging the SaaS model by utilizing AI agents to enhance software development processes.\n- The popularity of AI-based assistants among developers is prompting organizations to reevaluate security priorities due to the potential risks associated with these powerful tools.\n- The Cloud Security Alliance has responded to the rise of autonomous AI agents by establishing a nonprofit aimed at managing their ecosystems through risk intelligence and certification.",
+    "title": "Iran Conflict's Market Impact",
+    "summary": "OVERVIEW:\nRecent developments concerning the Iran conflict and President Trump's statements have led to fluctuations in various financial markets, including stocks, the U.S. dollar, and cryptocurrencies. The mixed signals from peace talks are causing uncertainty among traders.\n\nKEY EXAMPLES:\n- President Trump's willingness to de-escalate tensions has limited stock losses in March.\n- The U.S. dollar is experiencing gains as traders react to conflicting news regarding U.S.-Iran peace negotiations.\n- Bitcoin has seen a decline as Trump extends the Iran deadline amidst ongoing war risks.",
     "article_count": 23,
     "topicality": 23.0,
-    "theme_weight": 1.0,
-    "theme": "AI"
+    "theme_weight": 0.9739130434782608,
+    "theme": "Inflation"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Federal Reserve Actions Overview",
-    "summary": "OVERVIEW:\nRecent announcements from the Federal Reserve Board highlight a mix of enforcement actions, approvals, and terminations concerning various banks and their employees. The actions reflect ongoing regulatory oversight and adjustments within the banking sector.\n\nKEY EXAMPLES:\n- The Federal Reserve approved an application by Associated Banc-Corp.\n- Enforcement actions were issued against former employees of First Financial Bank and Ally Bank.\n- The Federal Reserve terminated enforcement actions with Wells Fargo and multiple branches of Standard Chartered PLC.",
+    "title": "**Market Misconceptions and Strategies**",
+    "summary": "OVERVIEW:\nRecent discussions highlight misconceptions about market realities, particularly regarding tech giants like Broadcom and Nvidia. Amid panic selling, industry leaders assert that the crisis is exaggerated and focus on broader strategic shifts within companies.\n\nKEY EXAMPLES:\n- Broadcom criticizes the portrayal of market conditions, claiming it misrepresents the realities.\n- Experts suggest the panic surrounding Nvidia and Broadcom's stock selloff is unfounded and overblown.\n- The parent company of CNBC and MS NOW is expanding its operations beyond traditional cable TV services to adapt to changing media landscapes.",
     "article_count": 21,
     "topicality": 21.0,
-    "theme_weight": 1.1476190476190473,
-    "theme": "Bank lending and credit risk"
+    "theme_weight": 1.0095238095238095,
+    "theme": "AI"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "**Global Crypto Fraud Trends**",
-    "summary": "OVERVIEW:\nRecent reports highlight a growing concern about fraudulent activities within the cryptocurrency space, involving significant sums of illicit transactions, market manipulation, and inadequate regulatory oversight.\n\nKEY EXAMPLES:\n- Vietnam has arrested suspects linked to ONUS for alleged token fraud, involving price manipulation and false promotions.\n- The UK reports that the Xinbi platform processed nearly $20 billion in illicit transactions, indicating its connections to various criminal services.\n- U.S. lawmaker Stephen Lynch has criticized the SEC for its diminished enforcement actions against crypto firms under the current administration.",
-    "article_count": 20,
-    "topicality": 20.0,
-    "theme_weight": 0.9049999999999999,
-    "theme": "Digital assets"
+    "title": "**AI's Impact on Employment and Business**",
+    "summary": "OVERVIEW:\nRecent discussions highlight the transformative role of artificial intelligence in the workforce and various industries. Experts warn about the subtle threats to employment and wages, while simultaneously observing a shift in operational practices as organizations incorporate AI technologies.\n\nKEY EXAMPLES:\n- Ekkehard Ernst from the International Labour Organization cautioned against the underestimated effects of AI, suggesting it may lead to wage erosion rather than mass unemployment.\n- The rise of AI agents is changing security priorities for organizations, complicating the distinction between trusted practices and potential threats.\n- Bitcoin miners are pivoting towards AI-driven models, leveraging their cryptocurrency for funding this transition. \n- Venture-capital firms are increasingly investing in integrating AI into traditional sectors like accounting and property management.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.9857142857142857,
+    "theme": "AI"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "** Housing Affordability and Debt",
-    "summary": "**OVERVIEW:** \nThe articles collectively discuss the challenges surrounding housing affordability, the growing complexities of home ownership in high-risk neighborhoods, and rising household debt levels. Issues of economic stability and financial planning in relation to homeownership are also highlighted.\n\n**KEY EXAMPLES:**\n- The Federal Reserve Bank reports a significant increase in household debt, with mortgage balances rising by $98 billion.\n- A debate in the Senate\u2019s housing bill concerns the ownership and occupancy of single-family homes, reflecting societal tensions around housing access.\n- Concerns are raised about the real costs associated with owning a home in areas susceptible to flooding and wildfires.",
-    "article_count": 15,
-    "topicality": 15.0,
-    "theme_weight": 1.0066666666666666,
-    "theme": "Consumer debt"
+    "title": "Federal Reserve Activities",
+    "summary": "OVERVIEW:\nRecent announcements from the Federal Reserve Board highlight various approvals and terminations of enforcement actions involving multiple banking institutions, reflecting ongoing regulatory developments and oversight.\n\nKEY EXAMPLES:\n- The Federal Reserve Board approved an application by Associated Banc-Corp.\n- The Federal Reserve Board terminated enforcement actions with Wells Fargo.\n- Additionally, it announced approval for CBS Banc-Corp and Home BancShares.\n- Enforcement actions were also terminated for several international banks, including Standard Chartered PLC.",
+    "article_count": 20,
+    "topicality": 20.0,
+    "theme_weight": 1.1449999999999998,
+    "theme": "Bank lending and credit risk"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Trump's Signature on Currency",
-    "summary": "OVERVIEW:  \nThe U.S. Treasury Department plans to add President Donald Trump's signature to U.S. currency, marking a significant change in a tradition that has been in place since 1861. This move will begin with the $100 bill in June.\n\nKEY EXAMPLES:  \n- Trump will be the first sitting president to have his signature on U.S. currency.\n- The new currency will feature his signature alongside Treasury Secretary Scott Bessent.  \n- This change signifies a break from a 165-year tradition.",
-    "article_count": 13,
-    "topicality": 13.0,
-    "theme_weight": 0.8923076923076921,
-    "theme": "Digital assets"
+    "title": "Compensation and Legal Challenges",
+    "summary": "OVERVIEW:\nRecent reports highlight issues surrounding compensation and legal disputes involving financial entities and their obligations to various stakeholders. Affected parties have raised concerns over unclaimed funds and accountability in handling sensitive cases.\n\nKEY EXAMPLES:\n- Lloyds Bank acknowledged oversight in compensation payments and apologized to the Treasury Select Committee.\n- Individuals reported difficulties in claiming funds from deceased relatives' premium bond investments, indicating systemic issues in financial claims processes.\n- A lawsuit against a bank alleged negligence in monitoring accounts linked to criminal activities, emphasizing the need for financial institutions to be vigilant in their oversight.",
+    "article_count": 10,
+    "topicality": 10.0,
+    "theme_weight": 1.0099999999999998,
+    "theme": "Others"
   }
 }
