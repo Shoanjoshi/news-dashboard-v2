@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "US-Iran Ceasefire Impact",
-    "summary": "OVERVIEW:\nA conditional ceasefire between the U.S. and Iran has resulted in a temporary shift in market dynamics, affecting currencies and risk assets across various sectors.\n\nKEY EXAMPLES:\n- The U.S. dollar fell significantly following the announcement of the ceasefire, causing a temporary relief rally in global equities and cryptocurrencies.\n- Bitcoin rebounded above $70,000 amidst the optimism from the ceasefire, although analysts warn that this rally may be fragile due to ongoing tensions in the region.\n- Despite the ceasefire, the overall economic landscape remains unstable, as evidenced by the U.S. dollar's struggle to recover fully from its losses.",
-    "article_count": 44,
-    "topicality": 44.0,
-    "theme_weight": 0.922727272727273,
-    "theme": "Inflation"
+    "title": "** Crypto Regulation and Adoption",
+    "summary": "**OVERVIEW:**  \nRecent developments in the cryptocurrency landscape highlight a global trend toward increased regulatory oversight and growing acceptance, with countries like Japan and Hong Kong advancing legal frameworks to accommodate digital assets, while major financial institutions explore stablecoin integration.\n\n**KEY EXAMPLES:**  \n- Japan has implemented stronger regulations, including insider-trading bans, amid rising institutional interest in crypto markets.  \n- Hong Kong has granted its first stablecoin licenses to companies like Anchorpoint and HSBC, signaling a regulatory shift towards embracing digital currencies.  \n- The US Treasury is enhancing cybersecurity measures to protect the increasingly targeted crypto industry.  \n- Major companies like Visa and Mastercard are investing in stablecoins, indicating a move towards mainstream adoption in payment systems.",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 0.7705882352941176,
+    "theme": "Digital assets"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Stock Market Movements and Forecasts",
-    "summary": "OVERVIEW: \nRecent articles highlight a mix of positive and negative developments in the stock market, with some companies exceeding expectations while others face challenges. Analysts express varied predictions on earnings growth and market positions.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% after reporting profits below estimates.\n- Plus500 reported an 11% revenue increase and confirmed it would meet expectations.\n- Novartis raised its annual sales and profit guidance.\n- Deutsche Bank considers Wall Street's earnings forecasts to be overly conservative.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.9846153846153848,
-    "theme": "Inflation"
+    "title": "Cybersecurity Threats Overview",
+    "summary": "OVERVIEW: \nCurrent cybersecurity threats primarily involve sophisticated cyber espionage and large-scale botnet attacks exploiting vulnerabilities in internet-connected devices, particularly older routers. A significant concern is the use of these exploits by state-sponsored groups and financially motivated cybercriminals.\n\nKEY EXAMPLES:\n- Russian hackers are using vulnerabilities in older Internet routers to harvest authentication tokens from over 18,000 networks without deploying malware.\n- The U.S. Justice Department dismantled four botnets that had compromised over three million IoT devices, contributing to record DDoS attacks.\n- Threat actors, including Russia's APT28, have demonstrated the ability to conduct cyber espionage without traditional malware by leveraging simple modifications to DNS settings.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.9727272727272728,
+    "theme": "Cyber attacks"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Federal Reserve Enforcement Actions",
-    "summary": "OVERVIEW:\nThe Federal Reserve Board has been active in managing enforcement actions against banking institutions and former employees, highlighting both the termination of certain actions and the initiation of new ones.\n\nKEY EXAMPLES:\n- The Federal Reserve terminated enforcement actions against Industrial and Commercial Bank of China Ltd. and Standard Chartered PLC.\n- Enforcement actions were issued against former employees of various banks, including First Financial Bank and Equity Bank.\n- The Federal Reserve approved applications from Associated Banc-Corp and CBS Banc-Corp.",
-    "article_count": 30,
-    "topicality": 30.0,
-    "theme_weight": 1.0733333333333335,
-    "theme": "Bank lending and credit risk"
+    "title": "AI's Impact on Security",
+    "summary": "OVERVIEW:\nRecent discussions highlight the growing role of AI in cybersecurity, focusing on its applications, challenges, and the ongoing importance of human oversight in the field.\n\nKEY EXAMPLES:\n- The RSAC 2026 Conference underscored the debate among industry leaders regarding AI's evolving role in security and the need for human decision-making.\n- AI-based assistants are enhancing automation for developers and IT workers, altering security priorities, and raising concerns about insider threats.\n- Malicious actors are leveraging AI to expedite criminal activities such as fraud and money laundering, prompting urgent responses from organizations. \n- The CIA has incorporated AI in over 300 projects to improve data processing and intelligence gathering.",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 1.00625,
+    "theme": "AI"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Fundraising Trends and Market Insights",
-    "summary": "OVERVIEW:\nRecent news highlights sustained momentum in fundraising across various sectors, despite challenges like redemption issues in funds and market sentiments affecting business development companies (BDCs). The focus on alternative investments and innovative strategies is reshaping the financial landscape.\n\nKEY EXAMPLES:\n- Fundraising is gaining traction as investors seek alternatives to direct lending, according to Jess Larsen of Briarcliffe Credit Partners.\n- Despite AI disruptions in traditional sectors, venture-capital firms are making strides in industries like accounting and property management.\n- Hamilton Lane has received approval for an interval fund amidst prevailing market challenges.",
+    "title": "US-Iran Ceasefire Impact",
+    "summary": "OVERVIEW:\nRecent developments regarding a temporary ceasefire between the U.S. and Iran have significantly affected financial markets. While there are signs of optimism and risk-taking among investors, uncertainties remain about the long-term implications for the economy.\n\nKEY EXAMPLES:\n- The U.S. dollar has weakened as hopes for a stable Iran ceasefire lead to increased investment in risk assets.\n- Global equity markets and cryptocurrencies like Bitcoin have seen rallies due to a perceived reduction in tensions from the ceasefire, although concerns about oil prices persist.\n- Skepticism among ordinary Iranians reflects broader fears about the durability of peace negotiations and the potential for economic fallout.\n- Analysts warn of potential long-lasting economic damage stemming from ongoing conflicts, despite short-term market relief.",
     "article_count": 30,
     "topicality": 30.0,
-    "theme_weight": 0.9499999999999998,
-    "theme": "Digital assets"
+    "theme_weight": 0.95,
+    "theme": "Inflation"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Bitcoin Market Dynamics",
-    "summary": "OVERVIEW:\nRecent developments have significantly impacted Bitcoin's price, intertwined with geopolitical events and shifting investor sentiments. A ceasefire agreement involving the U.S. and Iran led to fluctuating trading patterns across cryptocurrencies and traditional markets.\n\nKEY EXAMPLES:\n- Bitcoin surged to $72,734 after the ceasefire news, reflecting increased market confidence (Article 1).\n- Concerns over an impending energy crisis dissipated when the ceasefire was announced, resulting in a correlated rise in Bitcoin and oil prices (Article 2).\n- Analysts indicate Bitcoin needs higher trading volumes to reclaim $80,000 for sustained recovery (Article 5).\n- Morgan Stanley's Bitcoin ETF attracted $30.6 million in inflows, highlighting ongoing interest in cryptocurrency investments (Article 8).",
+    "title": "Economic Outlook and Challenges",
+    "summary": "OVERVIEW:\nThe articles discuss the current state and forecasts of the U.S. economy, reflecting contrasting trends in growth and inflation alongside monetary policy responses. While growth projections for 2026 are optimistic, inflation persists at elevated levels, complicating financial conditions.\n\nKEY EXAMPLES:\n- The Federal Reserve Bank of New York projects stronger growth in 2026 driven by investment, but inflation is anticipated to be higher due to cost-push factors.\n- A revision of fourth quarter 2025 GDP growth revealed a significant slowdown to 0.5%, creating concerns about economic momentum.\n- Investors expect rate hikes from the European Central Bank and the Bank of England due to ongoing inflation challenges.\n- A report highlighted the relationship between the Federal Reserve's monetary policy tools and money market conditions, underscoring their impact on financing amid a shifting economic landscape.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 0.8655172413793103,
-    "theme": "Digital assets"
+    "theme_weight": 1.0517241379310345,
+    "theme": "Inflation"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "** Rising Oil Prices and Inflation",
-    "summary": "**OVERVIEW:**\nRecent conflicts in the Middle East, particularly involving Iran, have led to increasing oil prices, which in turn are driving up costs across various sectors, including fuel, energy, and food. This situation has prompted concerns about inflation and its broader implications for the cost of living.\n\n**KEY EXAMPLES:**\n- The US military campaign against Iran has significantly impacted oil prices, raising questions about its effects on consumer inflation.\n- Rising petrol and household energy costs have been linked directly to the ongoing conflict in the region.\n- In the UK, petrol prices have surged due to the US-Israel war with Iran, though a ceasefire might bring prices down. \n- Fertilizer prices are rising due to disruptions caused by the conflict, threatening global food supplies and consequently increasing food prices.",
+    "title": "Bitcoin Market Developments",
+    "summary": "OVERVIEW:\nRecent news highlights significant developments in the Bitcoin market, including a successful ETF launch by Morgan Stanley, contrasting narratives about Bitcoin investments from firms like Strategy, and fluctuations in Bitcoin's price amidst ongoing market dynamics.\n\nKEY EXAMPLES:\n- Morgan Stanley launched its Bitcoin ETF, MSBT, which traded 1.6 million shares and purchased 430 Bitcoin on its first day, indicating strong investor interest.\n- Strategy claimed nearly $2 billion in gains from Bitcoin, although regulatory filings reveal substantial unrealized losses, painting a complex financial picture.\n- Bitcoin's rebound to around $71,000 raises concerns about its sustainability, with analysts noting that the network's fee market has remained stagnant despite price increases.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 0.9862068965517242,
-    "theme": "Recessionary pressures"
+    "theme_weight": 0.8310344827586206,
+    "theme": "Digital assets"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Trade Dynamics and Cost Pressures",
-    "summary": "OVERVIEW:\nRecent articles highlight significant changes in U.S. trade dynamics, particularly concerning tariffs and the impact on domestic businesses, as well as China's evolving export landscape, particularly in advanced technology sectors.\n\nKEY EXAMPLES:\n- U.S. imports from China have decreased significantly, yet issues of accounting manipulations and fraud play a role in this shift.\n- The average tariff rate on U.S. imports rose sharply in 2025, causing nearly 90% of the economic burden to fall on U.S. firms and consumers.\n- Chinese exports, especially in energy storage technologies, surged due to increasing global demand for energy independence amid geopolitical tensions.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.9928571428571429,
-    "theme": "Inflation"
+    "title": "Rising Business Costs in 2025",
+    "summary": "OVERVIEW:  \nIn 2025, U.S. businesses faced significant cost pressures due to increased tariffs, along with substantial rises in expenses for employee health insurance and utilities. These factors contributed to a notable increase in the prices of goods and services across various sectors.\n\nKEY EXAMPLES:  \n- The average tariff rate on U.S. imports surged from 2.6% to 13%, burdening U.S. firms and consumers with nearly 90% of the tariffs' economic impact.  \n- Firms in the New York-Northern New Jersey region reported the sharpest cost increases in employee health insurance and utilities, leading to accelerated price hikes, particularly in the manufacturing sector.  \n- Despite rising costs, firms' inflation expectations have moderated, predicting an inflation rate of 3% for the upcoming year, which is lower than previous estimates.",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.0,
+    "theme": "Recessionary pressures"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Cybersecurity Threats and Responses",
-    "summary": "OVERVIEW:\nRecent reports highlight a range of cybersecurity threats, with attackers leveraging vulnerabilities in outdated devices and exploiting security weaknesses to execute disruptive campaigns. This includes espionage techniques and large-scale botnet operations impacting global organizations.\n\nKEY EXAMPLES:\n- Russian hackers are using known flaws in Internet routers to harvest authentication tokens from Microsoft Office users without deploying malicious code.\n- The U.S. Justice Department, along with international partners, dismantled four botnets linked to attacks on over three million IoT devices, responsible for record DDoS attacks. \n- A security researcher revealed a vulnerability exploited to create Kimwolf, a significant botnet that has since targeted the researcher with harassment campaigns.",
+    "title": "Federal Reserve Board Updates",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board recently announced various actions including approvals of applications, terminations of enforcement actions, and findings related to banking institutions and their compliance processes.\n\nKEY EXAMPLES:\n- The Federal Reserve approved Associated Banc-Corp's application.\n- Enforcement actions were terminated for several banks including Cr\u00e9dit Agricole and Standard Chartered.\n- Joint findings were made with the OCC regarding Morgan Stanley Bank's exemption request.",
     "article_count": 28,
     "topicality": 28.0,
-    "theme_weight": 0.9678571428571427,
-    "theme": "Cyber attacks"
+    "theme_weight": 1.0857142857142856,
+    "theme": "Bank lending and credit risk"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "AI's Impact on Security",
-    "summary": "OVERVIEW:\nThe rise of AI technologies is reshaping cybersecurity dynamics, highlighting the tension between emerging AI applications and the necessity for human oversight in security decision-making. As AI tools become more prevalent, they also introduce new risks and challenges for organizations striving to protect their systems.\n\nKEY EXAMPLES:\n- At RSAC 2026, industry leaders discussed the critical balance between AI capabilities and human involvement in cybersecurity.\n- AI-driven agents are becoming popular but pose new security threats, as illustrated by incidents of unauthorized access enabled by these tools.\n- Organizations in various sectors, including healthcare, are encouraged to strengthen their security measures in response to the increasing use of AI to handle workloads.",
+    "title": "Bitcoin Price Fluctuations",
+    "summary": "OVERVIEW:\nRecent developments in the economic and political landscape have led to significant fluctuations in Bitcoin's price, influenced by factors such as tariff threats, inflation data, and geopolitical events.\n\nKEY EXAMPLES:\n- Bitcoin dropped to $94,000 as investor sentiment weakened due to Trump's tariff threats.\n- Bitcoin surged above $72,000 following optimism around a ceasefire in the Middle East.\n- Additional market volatility was noted with sharp declines in Circle and Bullish despite Bitcoin's gains.",
     "article_count": 28,
     "topicality": 28.0,
-    "theme_weight": 0.9892857142857142,
-    "theme": "AI"
+    "theme_weight": 0.8892857142857142,
+    "theme": "Digital assets"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Federal Reserve and Financial Stability",
-    "summary": "OVERVIEW:\nRecent activities and analyses highlight the Federal Reserve's influence on economic conditions and household financial health, particularly through monetary policy measures and the implications of rising household debt and mortgage rates.\n\nKEY EXAMPLES:\n- The Federal Reserve employed changes in administrative rates and its balance sheet to manage financing conditions while influencing economic landscapes.\n- Household debt balances rose significantly, with notable increases in mortgage and credit card debt, alongside rising delinquency rates especially in the mortgage sector.\n- The legalization of mobile sports betting in various states has led to increased household financial strain, with spillover effects affecting credit delinquency rates even in non-legalized states.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0291666666666666,
-    "theme": "Consumer debt"
+    "title": "**Impact of Rising Oil Prices**",
+    "summary": "OVERVIEW:\nRecent military conflicts involving Iran have led to significant increases in oil prices, affecting various sectors and driving up costs for consumers globally.\n\nKEY EXAMPLES:\n- Delta Air Lines and Amazon reported price hikes due to increased energy costs linked to the crisis in Iran.\n- UK petrol prices have surged as a result of the US-Israel conflict, although a potential ceasefire may lead to decreases in prices.\n- Fertilizer costs are on the rise, jeopardizing global food supplies as disruptions in the Middle East continue.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 1.0,
+    "theme": "Inflation"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Job Market Trends",
-    "summary": "OVERVIEW:\nRecent data indicates a concerning trend in the U.S. job market, with significant job losses reported alongside a decrease in job openings, particularly for skilled positions. As labor supply adjusts to economic conditions, consumer confidence in finding new employment also appears to be waning.\n\nKEY EXAMPLES:\n- The Bureau of Labor Statistics reported a loss of 92,000 non-farm payroll jobs in February, including a notable decrease in health care jobs.\n- Despite ongoing demand for skilled electricians, plumbers, and factory workers, the number of available job openings has declined significantly.\n- Economists express concerns about the slow-moving job market potentially leading to broader economic instability.\n- Americans are increasingly apprehensive about their job prospects, with many believing they won't find new employment in the near future.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 0.9863636363636363,
-    "theme": "Recessionary pressures"
+    "title": "AI Market Trends and Concerns",
+    "summary": "OVERVIEW:\nRecent discussions highlight the robust demand for high-end AI chips while addressing market instabilities related to major tech companies. Industry commentary suggests that investor fears over market selloffs may be exaggerated.\n\nKEY EXAMPLES:\n- Broadcom criticized claims about market realities and pointed to a robust demand for AI chips despite current fears.\n- A surge in venture-capital investments shows AI's potential to transform various sectors, including traditionally mundane industries like accounting.\n- Analysts believe that the panic over major tech companies, such as Nvidia and Broadcom, is unfounded.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.004,
+    "theme": "AI"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Stablecoins and Regulation",
-    "summary": "OVERVIEW:\nRecent discussions and initiatives around stablecoins have centered on regulatory measures and their increasing integration into mainstream payment systems. The U.S. Treasury's proposed rules target compliance for stablecoin issuers, while major payment processors invest in stablecoin technologies.\n\nKEY EXAMPLES:\n- The U.S. Treasury proposes that stablecoin firms establish AML/CFT programs to manage illicit financial activities.\n- Visa, Stripe, and Mastercard are making significant investments in stablecoin technologies, indicating a shift towards more widespread use in payments.\n- South Korea is also moving towards regulatory frameworks for stablecoins, suggesting a global trend towards stricter oversight.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 0.868181818181818,
-    "theme": "Digital assets"
+    "title": "Government Policies and Controversies",
+    "summary": "OVERVIEW:\nRecent articles highlight various governmental measures and corporate actions impacting political speech, financial practices, and labor markets, often facing significant public backlash or judicial scrutiny.\n\nKEY EXAMPLES:\n- The president's proposed spending cuts meet resistance in Congress, reflecting ongoing budgetary challenges.\n- A senior judge criticized the Trump administration for its perceived suppression of political discourse.\n- The Trump administration's new visa fee structure has disrupted the skilled worker program, affecting companies like Walmart.\n- A Malaysian association faces criticism for opposing work-from-home measures intended to reduce fuel consumption.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 1.0166666666666666,
+    "theme": "Others"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Legislative Committee Reports",
-    "summary": "OVERVIEW:\nRecent actions by the House Committee on Foreign Affairs and the Senate Committee on Veterans\u2019 Affairs highlight ongoing legislative developments in U.S. foreign policy and veterans' issues.\n\nKEY EXAMPLES:\n- The House Committee on Foreign Affairs reported several items on March 26, 2026, reflecting legislative priorities in foreign relations.\n- The Senate Committee on Veterans\u2019 Affairs submitted multiple reports on March 18, 2026, addressing key concerns affecting veterans.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 1.0285714285714285,
-    "theme": "Others"
+    "title": "Fundraising and Market Trends",
+    "summary": "OVERVIEW:\nRecent developments highlight a strong momentum in fundraising, particularly in alternative investments, alongside shifts in market sentiment and sector-specific challenges. Analysts predict continued growth in fundraising activities despite ongoing economic uncertainties.\n\nKEY EXAMPLES:\n- Investors are expected to continue building on 2025's fundraising momentum, focusing on alternatives to direct lending.\n- Hamilton Lane has received approval for an interval fund, signaling investor confidence.\n- Despite gloomy news from Moody's on the BDC market, overall fundraising remains robust.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 0.9958333333333335,
+    "theme": "Inflation"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Legal Actions in Crypto",
-    "summary": "OVERVIEW:\nRecent developments in the cryptocurrency sector highlight a number of legal disputes and regulatory challenges, particularly involving South Korean exchanges and significant NFT lawsuits.\n\nKEY EXAMPLES:\n- Bithumb has initiated legal proceedings to recover 7 BTC linked to a payout error, requesting a court to freeze associated assets.\n- Yuga Labs settled a lawsuit against artists accused of creating and selling imitation NFTs of its popular Bored Ape Yacht Club images.\n- A South Korean court has lifted a suspension placed on Upbit, addressing regulatory concerns that had persisted for over a year.",
-    "article_count": 19,
-    "topicality": 19.0,
-    "theme_weight": 0.8473684210526314,
-    "theme": "Digital assets"
+    "title": "** Current Trends in China",
+    "summary": "**OVERVIEW:**  \nRecent news highlights the dynamics of investment opportunities in Chinese markets, the evolving political landscape with Taiwan, and cultural experiences attracting foreign visitors.\n\n**KEY EXAMPLES:**  \n- The Hang Seng Healthcare Index has surged, reflecting increased investment in China's healthcare sector as a safe haven amid global uncertainty.  \n- Chinese President Xi Jinping recently met with leaders of Taiwan\u2019s opposition party, emphasizing a desire for peaceful relations amidst heightened military tensions.  \n- Foreign visitors are increasingly attracted to China's spa centers, noted for their unique offerings and affordability.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.9714285714285713,
+    "theme": "Others"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Chinese Crypto Scams and Technology Advances**",
-    "summary": "OVERVIEW:  \nRecent developments highlight the Chinese government's efforts to tackle illicit cryptocurrency activities and showcase advances in technology, such as AI and new commerce platforms.\n\nKEY EXAMPLES:  \n- The UK government has labeled Xinbi as a key illicit guarantee marketplace for Chinese-language crypto scams, indicating increased identification and accountability efforts.  \n- Taiwan's opposition leader emphasized learning from mainland China's use of AI during a business visit, underscoring the significance of technological advancements in the region.  \n- Visa is launching a platform that enables autonomous AI shopping, signaling a leap in e-commerce technology.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 0.9722222222222222,
-    "theme": "Others"
+    "title": "Congressional Committee Actions",
+    "summary": "OVERVIEW:\nSeveral House committees have recently reported on various legislative actions, focusing on foreign affairs, judiciary matters, and oversight initiatives. These reports indicate a concerted effort by Congress to address pressing issues through formal committee reviews.\n\nKEY EXAMPLES:\n- The House Committee on Foreign Affairs reported on multiple initiatives on March 26, 2026.\n- The House Committee on the Judiciary moved forward with a report on January 13, 2026.\n- The House Committee on Oversight and Government Reform submitted a report on March 18, 2026.\n- The House Committee on Energy and Commerce delivered reports on March 5, 2026.",
+    "article_count": 19,
+    "topicality": 19.0,
+    "theme_weight": 1.0421052631578949,
+    "theme": "Inflation"
   }
 }
