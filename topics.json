@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "DeFi Vulnerabilities and Market Shifts",
-    "summary": "OVERVIEW:\nRecent exploits in decentralized finance (DeFi) have led to significant market retreats and investor jitters, raising concerns over the sector's stability. This trend is marked by a substantial hack at KelpDAO and shifts in investment strategies among major cryptocurrency players.\n\nKEY EXAMPLES:\n- A $292 million hack at KelpDAO caused users to withdraw $10 billion from DeFi, signaling a crisis of confidence in the market.\n- Publicly listed Bitcoin miners sold over 32,000 Bitcoin in Q1 2026, redirecting funds towards artificial intelligence, reflecting broader industry shifts amidst mining profitability pressures.\n- Charles Schwab announced it will sell Bitcoin and Ethereum to its clients, integrating cryptocurrency with traditional financial products.\n- Michael Saylor's firm is expected to make significant Bitcoin purchases, hinting at a potential bullish trend amidst the DeFi turmoil.",
-    "article_count": 44,
-    "topicality": 44.0,
-    "theme_weight": 0.8454545454545456,
-    "theme": "Digital assets"
-  },
-  "T1": {
-    "topic_id": "T1",
-    "bertopic_id": 1,
-    "title": "Cybersecurity Threats and Developments",
-    "summary": "OVERVIEW:\nRecent reports highlight a range of cybersecurity threats involving state-sponsored hacking, botnets, and vulnerabilities in AI tools and internet infrastructure, indicating an escalating battle between cybercriminals and security agencies.\n\nKEY EXAMPLES:\n- Russian military intelligence hackers exploited flaws in older internet routers to harvest Microsoft Office authentication tokens from over 18,000 networks.\n- The U.S. Justice Department, alongside Canadian and German authorities, dismantled botnets responsible for significant DDoS attacks, impacting millions of IoT devices.\n- Vulnerabilities in AI tools like Salesforce Agentforce and Microsoft Copilot were found, allowing potential data leaks through prompt injections.",
+    "title": "Cybersecurity Threats and Vulnerabilities",
+    "summary": "OVERVIEW:\nRecent news highlights a range of cybersecurity threats, including state-sponsored hacking, vulnerabilities in AI tools, and security flaws in software platforms. These incidents underscore the evolving landscape of cybersecurity challenges faced by organizations today.\n\nKEY EXAMPLES:\n- Russian hackers are exploiting flaws in internet routers to steal authentication tokens from over 18,000 networks without using malware.\n- Prompt injection vulnerabilities in Salesforce and Microsoft tools could have leaked sensitive data to external attackers.\n- A viral AI tool allowed attackers to gain unauthorized admin access, complicating security measures.\n- Flaws in Lovable's system led to user data exposure and a public outcry over the response.",
     "article_count": 43,
     "topicality": 43.0,
     "theme_weight": 1.0,
     "theme": "Cyber attacks"
   },
+  "T1": {
+    "topic_id": "T1",
+    "bertopic_id": 1,
+    "title": "Iran Crisis and Economic Impact",
+    "summary": "OVERVIEW:\nThe ongoing conflict in Iran is significantly influencing global economic dynamics, affecting the US dollar and financial markets as traders remain hopeful for peace. Despite stock market gains, many Americans are feeling the financial strain due to the repercussions of the war.\n\nKEY EXAMPLES:\n- The US dollar has seen fluctuations, dropping amid trader optimism for peace in Iran while also temporarily gaining safe-haven status during periods of heightened tension.\n- Reports indicate that while stocks are rising, the conflict in Iran has economically impacted many Americans, leading to increased financial pressure.\n- Iran's parliament speaker publicly criticized US Treasuries amidst the crisis, highlighting the intersection of economic discussions and wartime narratives.",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 0.9571428571428573,
+    "theme": "Inflation"
+  },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "U.S.-Iran War Impact",
-    "summary": "OVERVIEW:\nRecent tensions between the U.S. and Iran are leading to increased volatility in oil prices and affecting various sectors, including transportation and finance. The conflict has prompted actions in both traditional and cryptocurrency markets as investors respond to potential supply disruptions. \n\nKEY EXAMPLES:\n- Crude oil prices surged over 5% following heightened military threats from Tehran, impacting wholesale costs for drivers.\n- Airfare prices are expected to rise as the ongoing conflict disrupts fuel supplies in both the U.S. and overseas.\n- Crypto traders engaged in over $500 million in synthetic oil futures betting on rising crude prices amid fears of supply constraints due to Iran closing the Strait of Hormuz.",
-    "article_count": 41,
-    "topicality": 41.0,
-    "theme_weight": 0.948780487804878,
+    "title": "Rising Costs and Inflation",
+    "summary": "OVERVIEW:  \nRecent articles highlight escalating cost pressures on businesses and consumers, driven by higher fuel prices and tariffs amidst geopolitical instability, specifically referencing the ongoing conflict in Iran. This has led to increased prices for goods, services, and travel, even as some firms moderate their inflation expectations.\n\nKEY EXAMPLES:\n- Businesses in the New York-Northern New Jersey region report sharp price increases due to rising insurance, utility costs, and tariffs, with a notable 3% anticipated inflation in the coming year.\n- Delta Air Lines, Amazon, and the United States Postal Service are among companies raising prices in response to increased energy costs stemming from the war in Iran.\n- Fuel prices have seen significant increases, impacting both consumer costs and the operations of fuel station owners trying to recover losses from prior surges.",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 1.0,
     "theme": "Inflation"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Market Movements and Insights",
-    "summary": "OVERVIEW:\nRecent news highlights a range of factors influencing market dynamics, including stock performance, cryptocurrency trends, and corporate controversies, reflecting a complex landscape for investors.\n\nKEY EXAMPLES:\n- Bitcoin is experiencing a rally as its major conference nears, although historical data suggests such gains may be temporary.\n- Wingstop's stock fell 12% due to profits not meeting expectations, indicating volatility in company performance.\n- Broadcom has criticized a group for allegedly misrepresenting market realities, showcasing corporate tensions shaping investor sentiment.",
+    "title": "AI Adoption and Challenges",
+    "summary": "OVERVIEW:\nThe articles highlight the rapid integration of AI across various industries, focusing on its potential to enhance operations, while also addressing the challenges posed by cybersecurity threats and regulatory complexities.\n\nKEY EXAMPLES:\n- Financial institutions like ING, JP Morgan, and Standard Chartered are using AI to improve customer onboarding processes.\n- A new deal aims to boost AI adoption and cybersecurity strategies among hyperscalers competing for data center dominance.\n- Venture-capital firms are applying AI innovations to traditionally overlooked sectors such as accounting and property management.\n- There is a growing concern about the misuse of AI in accelerating fraud, leading to calls for swift regulatory action.",
     "article_count": 33,
     "topicality": 33.0,
-    "theme_weight": 0.9515151515151515,
-    "theme": "Inflation"
+    "theme_weight": 0.9606060606060606,
+    "theme": "AI"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Market Volatility and Tensions",
-    "summary": "OVERVIEW:\nRecent news highlights a complex interplay of geopolitical tensions and fluctuating stock markets. Investor sentiment is being impacted by international conflicts, economic policies, and shifting dynamics in major markets.\n\nKEY EXAMPLES:\n- US stock futures declined amid escalating tensions in the Middle East.\n- Asian markets fell significantly after President Trump's tariff threats, with Japan's Nikkei experiencing substantial losses.\n- Concerns about nuclear policy revisions from Russia contributed to declines in U.S. stock futures and bond yields.",
+    "title": "Corporate Profit Trends",
+    "summary": "OVERVIEW: \nSeveral companies recently reported their earnings, revealing a mixed outlook on profitability, with some exceeding expectations while others fell short due to various market pressures.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% after its profit was lower than expected.\n- Novartis raised its sales and profit outlook for the year.\n- GE Aerospace's stock surged as profits beat forecasts, driven by its strong commercial-engines segment.\n- Barclays reported an 18% increase in profit and raised its income guidance.",
     "article_count": 31,
     "topicality": 31.0,
-    "theme_weight": 0.9806451612903225,
+    "theme_weight": 1.0290322580645161,
     "theme": "Inflation"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "AI in Cybersecurity and Finance",
-    "summary": "OVERVIEW:\nRecent discussions highlight the rapid integration of AI in cybersecurity and finance, revealing both its potential benefits and the threats posed by malicious actors. As companies and organizations invest in AI technologies, the race to harness these tools intensifies against a backdrop of emerging vulnerabilities.\n\nKEY EXAMPLES:\n- A company's claim that its AI tool can outperform humans in hacking has raised concerns within the financial sector.\n- Major financial institutions share strategies for leveraging AI to enhance processes like onboarding and compliance.\n- Bad actors are increasingly utilizing AI for fraudulent activities, underscoring the necessity for rapid countermeasures.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 0.9862068965517241,
-    "theme": "AI"
+    "title": "Cryptocurrency Market Shifts",
+    "summary": "OVERVIEW:\nRecent news highlights a significant shift in the cryptocurrency market as institutional investors begin to diversify away from Bitcoin and Ethereum, focusing on alternative cryptocurrencies like XRP. This transition occurs amid fluctuating market conditions influenced by geopolitical tensions and economic indicators.\n\nKEY EXAMPLES:\n- Institutional investors have channeled $55.39 million into XRP-focused investment vehicles, reflecting a growing interest in altcoins.\n- Bitcoin's price drop to $94k occurs amidst concerns over Trump's tariff threats, signaling shifting risk appetites.\n- Michael Saylor's firm, Strategy, indicates potential plans for a significant Bitcoin purchase, which could influence market dynamics.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 0.8466666666666666,
+    "theme": "Digital assets"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Federal Reserve Actions",
-    "summary": "OVERVIEW: The Federal Reserve Board has been actively involved in enforcement actions, approvals, and regulatory proposals affecting various banks and financial institutions.\n\nKEY EXAMPLES:\n- The Federal Reserve issued enforcement actions against Community Bankshares, Inc.\n- Approvals were granted for applications from Associated Banc-Corp and CBS Banc-Corp.\n- Enforcement actions were terminated with multiple institutions, including Cr\u00e9dit Agricole S.A. and Goldman Sachs Group, Inc.\n- The Federal Reserve is seeking public comment on a proposal to enhance the FedNow Service for fund transfers.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 1.1153846153846154,
-    "theme": "Bank lending and credit risk"
+    "title": "Congressional Committee Reports",
+    "summary": "OVERVIEW:\nA series of reports from various Congressional committees detail legislative actions taken on specific dates in March and February 2026.\n\nKEY EXAMPLES:\n- The House Committee on Foreign Affairs issued multiple reports on March 26, 2026.\n- The Senate Committee on Health, Education, Labor, and Pensions reported on February 26, 2026.\n- The House Committee on Oversight and Government Reform released two reports, one on March 18, 2026, and another on February 4, 2026.",
+    "article_count": 28,
+    "topicality": 28.0,
+    "theme_weight": 1.0107142857142857,
+    "theme": "Inflation"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Economic Trends and Challenges",
-    "summary": "OVERVIEW:\nThe articles highlight various economic conditions and challenges influencing global markets, from growth expectations to job market dynamics, while addressing underlying issues such as accounting practices and funding crises.\n\nKEY EXAMPLES:\n- Experts discuss the shrinking window for economic growth and its implications for various markets.\n- Greece faces a potential financial crisis with warnings about running out of money again.\n- Job openings for skilled labor, such as electricians and plumbers, have decreased despite ongoing demand.",
-    "article_count": 25,
-    "topicality": 25.0,
-    "theme_weight": 1.016,
-    "theme": "Inflation"
+    "title": "Federal Reserve Actions",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board has been actively issuing enforcement actions, approving applications, and terminating previous enforcement actions with various banks and financial institutions.\n\nKEY EXAMPLES:\n- The Federal Reserve issued an enforcement action against Community Bankshares, Inc.\n- Approval was announced for applications by Associated Banc-Corp and FirstSun Capital Bancorp.\n- Enforcement actions were terminated with various institutions including Industrial and Commercial Bank of China Ltd. and Standard Chartered PLC.",
+    "article_count": 28,
+    "topicality": 28.0,
+    "theme_weight": 1.1249999999999998,
+    "theme": "Bank lending and credit risk"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Rising Business Costs in 2025**",
-    "summary": "**OVERVIEW:**\nThe year 2025 saw a significant increase in business costs across various sectors due to sharp rises in tariffs, insurance, and utilities. Despite these pressures, firms' expectations for inflation appear to have moderated compared to previous years.\n\n**KEY EXAMPLES:**\n- Businesses in the New York-Northern New Jersey region reported substantial increases in the costs of employee health insurance, utilities, and goods, with manufacturers particularly affected by tariffs.\n- The average tariff rate on U.S. imports rose dramatically from 2.6% to 13%, placing nearly 90% of the economic burden on U.S. firms and consumers.\n- Companies anticipate a slowdown in cost growth for 2026, signaling a potential easing of financial pressures.\n- The Federal Reserve's economic forecasts predict more robust growth and persistent inflation driven by stronger investment and cost-push shocks, including the impact of tariffs.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0,
-    "theme": "Inflation"
+    "title": "DeFi Exploits and Crypto Scams",
+    "summary": "OVERVIEW:\nRecent events have highlighted vulnerabilities in decentralized finance (DeFi) as a significant exploit at KelpDAO has caused a massive withdrawal of funds from the sector, alongside a rise in various scams affecting the crypto market.\n\nKEY EXAMPLES:\n- A $292 million exploit at KelpDAO led to nearly $10 billion withdrawal from the DeFi market, prompting market freezes.\n- The KelpDAO attacker began laundering $175 million worth of stolen Ether following the exploit.\n- Shipping companies near the Strait of Hormuz have been targeted by scammers demanding cryptocurrency for safe passage.\n- There has been an increase in physical crypto threats, as illustrated by a fake police raid that resulted in a $1 million Bitcoin theft.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 0.9037037037037037,
+    "theme": "Cyber attacks"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Hong Kong Real Estate Revival",
-    "summary": "OVERVIEW:\nRecent news indicates a substantial recovery in Hong Kong's real estate market, marked by rising property values and strong interest from developers in new projects.\n\nKEY EXAMPLES:\n- A forecast by Morgan Stanley now aligns with industry consensus, predicting a 10% increase in secondary home values for the year.\n- The MTR Corporation received eight bids for a commercial and residential development project, surpassing expectations and reflecting developers' enthusiasm for the Northern Metropolis initiative.\n- Chow Yun-fat's sale of a flat in Mid-Levels marked a significant gain, further highlighting the strengthening secondary housing market.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 1.0636363636363635,
-    "theme": "Commercial real estate"
+    "title": "Legal and Business Developments",
+    "summary": "OVERVIEW:\nRecent news highlights significant legal actions and business activities involving high-profile figures and companies, underscoring the intersection of law and commerce.\n\nKEY EXAMPLES:\n- The Hong Kong government is seeking to confiscate HK$56.5 million from former media boss Jimmy Lai, following his conviction under the national security law.\n- Elon Musk has initiated a lawsuit against Sam Altman, aiming to remove him as CEO of OpenAI amidst potential financial repercussions for the company.\n- AT&T and Verizon faced penalties for failures in consumer data protection, contesting the lack of a jury trial in their defense.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 1.0481481481481483,
+    "theme": "Others"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Market Trends and Corporate Updates",
-    "summary": "OVERVIEW:\nRecent reports highlight various shifts in corporate performance and market positioning, indicating both optimism and caution in different sectors of the economy.\n\nKEY EXAMPLES:\n- The S&P 500 has reached record high positioning levels, raising concerns about potential pullbacks, according to Citi.\n- Plus500 anticipates meeting expectations as it reports an 11% increase in quarterly revenue despite market fluctuations.\n- The retail boom in private credit is leading to significant staffing increases, but a pullback from investors is causing stress within the industry.\n- Novartis has raised its sales and profit guidance, signaling strong growth prospects.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 1.0499999999999998,
-    "theme": "Inflation"
+    "title": "Market Outlook and Optimism",
+    "summary": "OVERVIEW:\nMarkets are experiencing significant fluctuations and a mix of optimism and caution, with experts projecting an uncertain macroeconomic environment for the U.S. and various predictions for the S&P 500's future performance.\n\nKEY EXAMPLES:\n- Deutsche Bank describes the macro outlook for 2025 as \"murky at best\" while forecasting the S&P 500 to reach 7000 by the same year.\n- JPMorgan has raised its S&P 500 target due to renewed AI momentum and geopolitical stability, reflecting a positive market sentiment.\n- Citi warns that with S&P 500 positioning at record highs, the risks of a market pullback are increasing.\n- The Dow Jones has reached record levels, fueled by optimism surrounding Trump's Treasury Department pick.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 1.0538461538461539,
+    "theme": "Bank lending and credit risk"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Economic Impacts of Global Conflict",
-    "summary": "OVERVIEW:\nRecent conflicts, particularly in the Middle East, are intensifying global economic concerns, contributing to inflation and increasing pressures on essential commodities. This situation highlights the disparities in the resilience of emerging market economies and their vulnerabilities amidst ongoing shocks.\n\nKEY EXAMPLES:\n- The International Monetary Fund warns that the conflict could lead to another spike in inflation.\n- Rising pressures from Middle Eastern conflicts are driving up costs for petrol, household energy, and food.\n- There is significant economic vulnerability among many countries despite some emerging markets showing improved resilience due to reforms.\n- The impact of these shocks on international trade dynamics has led to renewed scrutiny of existing policies, such as NAFTA.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 0.9666666666666667,
-    "theme": "Inflation"
+    "title": "**Crypto Market Developments**",
+    "summary": "OVERVIEW:\nCryptocurrency markets are witnessing significant shifts as regulatory stances evolve, investments grow, and innovative financial products are introduced.\n\nKEY EXAMPLES:\n- Under Paul Atkins, the SEC has dropped several cases against crypto companies but seeks clearer authority through a new market structure bill.\n- Tether has invested in Bitcoin mining finance platform Antalpha, indicating its continued expansion into crypto infrastructure.\n- The value of tokenized real-world assets on public blockchains has increased to over $29 billion, reflecting a rising interest in digital asset integration.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 0.92,
+    "theme": "Digital assets"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "House Committee Proceedings",
-    "summary": "OVERVIEW:\nThe articles detail various proceedings ordered reported by the House Committees on Foreign Affairs and Financial Services, highlighting legislative activities conducted on specific dates.\n\nKEY EXAMPLES:\n- Multiple articles from the House Committee on Foreign Affairs all reporting proceedings on March 26, 2026.\n- One article from the House Committee on Financial Services detailing proceedings from January 22, 2026.",
+    "title": "Tim Cook's Departure",
+    "summary": "OVERVIEW:\nTim Cook, after a nearly 15-year tenure as Apple CEO, is stepping down, prompting discussions about his legacy, achievements, and the challenges facing his successor.\n\nKEY EXAMPLES:\n- Under Cook's leadership, Apple launched transformative products but also faced some setbacks, as noted in industry analyses.\n- Cook's unique approach in balancing his strengths with Steve Jobs' values reshaped Apple's culture and operational success.\n- The incoming CEO, head of hardware, faces the challenge of navigating the evolving tech landscape as well as addressing issues like misinformation in the industry.",
     "article_count": 21,
     "topicality": 21.0,
-    "theme_weight": 1.0047619047619047,
-    "theme": "Cyber attacks"
+    "theme_weight": 1.0285714285714285,
+    "theme": "AI"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Stablecoins and Banking Regulations",
-    "summary": "OVERVIEW:\nRecent developments underscore the complex relationship between stablecoins and the banking sector, focusing on regulatory challenges, financial risks, and institutional responses.\n\nKEY EXAMPLES:\n- A prohibition on yield-bearing stablecoins in the US suggests they will not significantly threaten banks' market share.\n- The BIS warns that US dollar stablecoins may pose risks to financial stability and calls for coordinated global regulation.\n- A White House official criticized traditional banks for opposing stablecoin yield proposals, accusing them of pursuing selfish interests.",
-    "article_count": 20,
-    "topicality": 20.0,
-    "theme_weight": 1.0799999999999996,
-    "theme": "Bank lending and credit risk"
+    "title": "U.S. Employment Trends",
+    "summary": "OVERVIEW:\nRecent reports from the Bureau of Labor Statistics highlight fluctuations in job growth, unemployment rates, and employment data revisions, revealing key insights into the current employment landscape in the U.S.\n\nKEY EXAMPLES:\n- The Bureau of Labor Statistics released its monthly job growth report, a highly anticipated indicator for financial markets.\n- An annual benchmark revision revealed positive job growth in over two-thirds of U.S. states for 2025.\n- A company aiming for 25,000 new jobs by 2038 has successfully created over 7,000 so far.\n- Despite high demand for skilled workers such as electricians and plumbers, the number of job openings has recently decreased.",
+    "article_count": 19,
+    "topicality": 19.0,
+    "theme_weight": 1.0105263157894737,
+    "theme": "Recessionary pressures"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Immigrant Legislation Challenges",
-    "summary": "OVERVIEW:\nThis cluster of articles highlights the challenges faced by legislation aimed at targeting immigrants in the United States, particularly emphasizing the stalling of numerous bills despite efforts from various advocacy groups.\n\nKEY EXAMPLES:\n- Roughly 200 bills targeting immigrants have stalled or died this year with support from business and Christian groups.\n- Recent Republican laws on immigration have become more noticeable as tax filing season begins, impacting perceptions among Americans.",
-    "article_count": 14,
-    "topicality": 14.0,
-    "theme_weight": 1.0285714285714285,
-    "theme": "Consumer debt"
+    "title": "Political Tensions and Appointments",
+    "summary": "OVERVIEW:\nRecent articles highlight escalating political tensions in various spheres, including financial institutions, international diplomacy, and the role of media. Disputes over appointments and accountability are central themes.\n\nKEY EXAMPLES:\n- The president urged Bank of America and JPMorgan Chase to cease business restrictions on conservatives.\n- A former official revealed pressure from UK Prime Minister Keir Starmer regarding the appointment of a controversial ambassador to the US. \n- Kevin M. Warsh's potential rise to chair of the Federal Reserve is hindered by a criminal investigation into the bank. \n- A former head of the Foreign Office criticized the vetting process for diplomatic appointments, linking it to leadership accountability.",
+    "article_count": 15,
+    "topicality": 15.0,
+    "theme_weight": 0.98,
+    "theme": "Others"
   }
 }
