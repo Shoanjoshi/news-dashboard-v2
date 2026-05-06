@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Cybersecurity Threats and Vulnerabilities",
-    "summary": "OVERVIEW:\nRecent reports highlight a variety of cybersecurity threats ranging from state-sponsored hacking campaigns to the exploitation of vulnerable systems by criminal groups. The incidents underscore the ongoing risks posed by both sophisticated actors and organized cybercrime.\n\nKEY EXAMPLES:\n- Russian military intelligence hackers are exploiting flaws in outdated internet routers to harvest Microsoft Office authentication tokens from over 18,000 networks.\n- The U.S. Justice Department collaborated with international authorities to dismantle botnets responsible for compromising millions of IoT devices and conducting record-breaking DDoS attacks. \n- A Brazilian tech firm was implicated in enabling a botnet for massive DDoS attacks, allegedly resulting from a security breach.",
-    "article_count": 40,
-    "topicality": 40.0,
-    "theme_weight": 0.985,
-    "theme": "Cyber attacks"
+    "title": "** Rising Business Costs",
+    "summary": "**OVERVIEW:**  \nBusinesses faced significant cost pressures in 2025 due to increased expenses in insurance, utilities, and tariffs, impacting pricing strategies. Despite these pressures, firms in the New York-Northern New Jersey region moderated their inflation expectations compared to the previous year.\n\n**KEY EXAMPLES:**  \n- Firms reported the sharpest cost increases for employee health insurance and utilities, particularly in the manufacturing sector.\n- U.S. trade policy changes with China had little effect on the overall trade deficit, which remained stable at $1.2 trillion by the end of 2025.  \n- High-income households have driven retail spending growth, showcasing a K-shaped economic recovery where lower-income households continue to face higher inflation.",
+    "article_count": 45,
+    "topicality": 45.0,
+    "theme_weight": 0.9955555555555556,
+    "theme": "Recessionary pressures"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Bitcoin Reaches $80,000",
-    "summary": "OVERVIEW:  \nBitcoin has surged past the $80,000 mark, marking a pivotal moment in its trading journey, influenced by various market factors, including bullish sentiments in the Asian markets and strengthening metrics within the crypto space.\n\nKEY EXAMPLES:  \n- Bitcoin briefly touched an intraday high of $80,529 before settling around $79,621, reflecting a cautious yet robust upward trend.  \n- The rally was closely linked to strong performances in Asian equities and AI sectors, showcasing a potential shift in Bitcoin's correlation with traditional markets.  \n- Analysts suggest that if Bitcoin's price can sustain above $80,000, it may pave the way for further gains, aiming for the $85,000 level amid improving miner and options market conditions.  \n- The psychological level of $80,000 has been a significant milestone, but short-term holders need gains to solidify a bullish trend.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.907692307692308,
-    "theme": "Inflation"
+    "title": "** Cryptocurrency Developments",
+    "summary": "**OVERVIEW:**\nRecent articles highlight significant movements in the cryptocurrency sector, including investment strategies, market trends, and regulatory actions impacting the ecosystem.\n\n**KEY EXAMPLES:**\n- BG Wealth Sharing is under investigation for promoting a $150 million Ponzi scheme related to crypto trading guidance.\n- Andreessen Horowitz has raised $2.2 billion to support sustainable crypto projects amid fluctuating market interest.\n- Anchorage launched a banking service allowing AI access to financial resources across traditional and crypto markets.\n- Bitcoin's market activity shows potential upward trends, with recent reports indicating possible movement toward $90,000 amidst bullish sentiment.",
+    "article_count": 37,
+    "topicality": 37.0,
+    "theme_weight": 0.827027027027027,
+    "theme": "Digital assets"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "AI's Impact on Security and Economy",
-    "summary": "OVERVIEW: \nRecent discussions focus on the dual nature of artificial intelligence (AI) as both a transformative economic force and a potential cybersecurity threat. Industry leaders express concerns over the rapid integration of AI without adequate security testing and the implications for global financial systems.\n\nKEY EXAMPLES:\n- Concerns about AI agent integrations highlight risks from inadequate security testing before deployment (Article 1).\n- Experts caution that a new AI model may pose significant challenges to cybersecurity, although not all are alarmed by the threat (Article 5).\n- High levels of investment in AI research continue to elevate the United States' leadership in the tech arena (Article 3).\n- Insights from financial experts suggest AI is fundamentally reshaping the global economy (Article 4).",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 0.9781249999999999,
-    "theme": "AI"
+    "title": "Bitcoin Market Dynamics",
+    "summary": "OVERVIEW:\nRecent developments in the Bitcoin market showcase a tension between long-term holders taking profits and the strong institutional demand driven by ETF investments, creating a complex market environment with potential for significant price movements.\n\nKEY EXAMPLES:\n- Bitcoin's recent rise above $80,000 is accompanied by increased selling from long-term holders, but ETF-related demand supports a push towards $90,000.\n- Bitcoin surpassed $82,000, alongside notable gains in other cryptocurrencies like ZEC and DASH.",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 0.9558823529411766,
+    "theme": "Inflation"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "Financial Market Highlights",
-    "summary": "OVERVIEW:\nRecent developments in the financial markets indicate a mix of strong corporate earnings and cautious trading strategies. While some companies exceed revenue expectations, others face declines, impacting stock performance.\n\nKEY EXAMPLES:\n- KKR reported profits that beat forecasts, benefiting from accelerated deals and asset growth.\n- Wingstop's stock fell by 12% due to profits falling short of estimates.\n- Plus500 announced a quarterly revenue increase of 11%, reaffirming its performance expectations.\n- Thomson Reuters' revenue rose by 10% in Q1, while Novartis increased its sales and profit guidance for the year.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 0.996774193548387,
-    "theme": "Inflation"
+    "title": "Federal Reserve Enforcement Actions",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board has been actively issuing enforcement actions against various entities and individuals, specifically targeting former employees of multiple banks and addressing compliance issues with Community Bankshares, Inc.\n\nKEY EXAMPLES:\n- Enforcement action issued against Community Bankshares, Inc.\n- Actions taken against former employees from banks such as First Financial Bank and Ally Bank.\n- Enforcement measures also involve personnel from United Bank and Equity Bank.",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 1.134375,
+    "theme": "Bank lending and credit risk"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Middle East Oil Tensions",
-    "summary": "OVERVIEW:\nRecent military conflicts and geopolitical tensions in the Middle East are significantly impacting global oil prices, leading to volatility in financial markets.\n\nKEY EXAMPLES:\n- Iran's attacks on shipping routes have pushed Brent crude prices to $114.44, heightening concerns over oil supply stability.\n- The U.S. dollar has shown resilience as risk appetite remains low amid escalating U.S.-Iran tensions.\n- The Canadian dollar has weakened due to uncertainties surrounding the Strait of Hormuz, a crucial oil transit route.",
-    "article_count": 30,
-    "topicality": 30.0,
-    "theme_weight": 0.9600000000000001,
-    "theme": "Inflation"
+    "title": "AI's Transformative Impact",
+    "summary": "OVERVIEW:\nThe rise of AI technologies is fundamentally changing business operations across various industries, influencing management practices, workforce dynamics, and the nature of business transactions.\n\nKEY EXAMPLES:\n- Companies like Twilio and Navan are adapting to the AI shift, with predictions that not all will survive.\n- Managers are taking proactive steps to integrate AI into their teams to enhance adoption.\n- Venture-capital firms are introducing AI into traditionally less glamorous sectors such as accounting and property management.\n- The spread of generative AI tools is reshaping workplace productivity, with many workers seeking essential training and access to these technologies.",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 0.990625,
+    "theme": "AI"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Legislative Committee Reports",
-    "summary": "OVERVIEW:\nThe articles collectively detail a series of reports ordered by various congressional committees, indicating ongoing legislative activities in multiple areas of governance during 2026.\n\nKEY EXAMPLES:\n- The House Committee on Financial Services reported on April 21, 2026.\n- The Senate Committee on Commerce, Science, and Transportation reported on April 14, 2026.\n- The House Committee on Foreign Affairs issued multiple reports on March 26 and April 22, 2026. \n- The House Committee on Natural Resources reported on April 21, 2026.",
-    "article_count": 30,
-    "topicality": 30.0,
-    "theme_weight": 0.9533333333333333,
-    "theme": "Others"
+    "title": "**Iran Conflict and Global Markets**",
+    "summary": "OVERVIEW:\nRecent developments regarding the Iran peace deal have led to significant fluctuations in global stock markets and the price of oil, affecting various sectors from energy to cryptocurrencies.\n\nKEY EXAMPLES:\n- Global stocks surged while oil prices dropped following reports of a peace deal involving Iran.\n- The conflict in the Middle East has caused disruptions in the supply chain, leading to increased costs in fuel, freight, and fertilizer.\n- Bitcoin is experiencing pressure due to increased Treasury yields resulting from geopolitical tensions linked to Iran. \n- Shipping through the Strait of Hormuz has collapsed, contributing to a potential food crisis in Asia as associated costs rise sharply.",
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 0.9888888888888888,
+    "theme": "Inflation"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "AI's Impact on Investment",
-    "summary": "OVERVIEW:\nThe articles discuss the growing influence of artificial intelligence in various sectors, particularly in investment management and financial services, highlighting how venture capital firms are integrating AI into traditional industries.\n\nKEY EXAMPLES:\n- Venture-capital firms are enhancing fields like accounting and property management with AI and dealmaking strategies.\n- Haun Ventures emphasizes the need for services to adapt as AI begins to perform economic activities autonomously.\n- Depository Trust & Clearing Corporation seeks to incorporate tokenization into the financial system, leveraging AI's capabilities. \n- Major investors such as Blackstone and Goldman Sachs are backing efforts to integrate advanced AI technology into their operational frameworks.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 0.9620689655172413,
+    "title": "GameStop's Bid for eBay",
+    "summary": "OVERVIEW:\nGameStop has made a significant move by offering a $55.5 billion bid to acquire eBay, signaling their intention to expand into a larger e-commerce platform and explore new payment methods like Bitcoin. This potential acquisition aims to position GameStop as a major competitor against established players like Amazon.\n\nKEY EXAMPLES:\n- GameStop's offer includes a cash-and-stock proposal valued at $125 per share.\n- CEO Ryan Cohen believes acquiring eBay could transform it into a more formidable rival to Amazon.\n- The bid comes amid GameStop's challenges with falling revenue and store closures, indicating a strategic pivot to online growth.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 0.8999999999999999,
     "theme": "Digital assets"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Economic Pressures and Inequality",
-    "summary": "OVERVIEW:\nRecent analyses highlight significant cost pressures faced by businesses and a divergence in consumer spending growth, indicating a K-shaped economic recovery where high-income households are experiencing faster growth compared to lower-income households.\n\nKEY EXAMPLES:\n- Businesses in the New York-Northern New Jersey region reported substantial cost increases in 2025, particularly in employee health insurance, utilities, and raw materials, leading to adjusted pricing strategies.\n- Retail spending growth since 2023 has been predominantly driven by high-income households, reflecting a K-shaped economy where wealth disparities are widening.",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 0.9888888888888888,
-    "theme": "Recessionary pressures"
+    "title": "Recent Legislative Actions",
+    "summary": "OVERVIEW:\nA series of articles detail recent reports ordered by various House and Senate committees throughout 2026 and late 2025, highlighting ongoing legislative activities across different sectors.\n\nKEY EXAMPLES:\n- The House Committee on Financial Services reported on April 21, 2026.\n- The House Committee on Foreign Affairs issued two reports on March 26 and April 22, 2026.\n- The Senate Committee on Commerce, Science, and Transportation reported on April 14, 2026.\n- The Senate Committee on Energy and Natural Resources reported on March 4, 2026, and December 17, 2025.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 0.992,
+    "theme": "Others"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "GameStop's eBay Bid",
-    "summary": "OVERVIEW:\nGameStop has made a bold $55.5 billion bid for eBay, aiming to expand its e-commerce presence and explore innovative payment methods like Bitcoin. However, the feasibility of this acquisition has been met with skepticism from analysts.\n\nKEY EXAMPLES:\n- GameStop's proposal includes a cash-and-stock offer of $125 per share for eBay, positioning it to leverage a broader resale network.\n- With GameStop's significant Bitcoin holdings, the acquisition could serve as a test case for using cryptocurrency in consumer payments.\n- Analysts express doubts regarding the viability of GameStop's ambitious takeover given eBay's size and market dominance.",
-    "article_count": 25,
-    "topicality": 25.0,
-    "theme_weight": 0.9399999999999998,
-    "theme": "Digital assets"
+    "title": "Cybersecurity Breaches and Risks",
+    "summary": "OVERVIEW:\nRecent reports highlight a surge in cyberattacks exploiting vulnerabilities in various technologies and tools, impacting numerous organizations and prompting urgent calls for enhanced security measures.\n\nKEY EXAMPLES:\n- Attackers are using remote monitoring and management tools to launch campaigns affecting over 80 organizations.\n- Daemon Tools users are advised to check for hidden infections to protect their systems.\n- A new AI-driven tool has enabled hackers to gain unauthorized admin access without detection.",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 1.0,
+    "theme": "Cyber attacks"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "**Rural Housing and Economic Impacts**",
-    "summary": "OVERVIEW:  \nThe cluster of articles discusses the intricacies of housing economics, particularly focusing on rural housing demographics, the influence of federal credit programs, and the economic implications of natural disasters on homeownership.\n\nKEY EXAMPLES:  \n- The CBO\u2019s analysis highlights federal credit programs that support rural housing and their budgetary effects.  \n- The Federal Reserve's interest rate policies are shown to affect critical loans such as those for homes and cars, influencing overall economic conditions.  \n- A study on homeowner's insurance reveals important insights into how policies are structured to mitigate property risks against natural disasters.  \n- The increased awareness of the real costs associated with owning homes in disaster-prone areas highlights growing concerns for homeowners.",
+    "title": "Housing Market Dynamics",
+    "summary": "OVERVIEW:\nRecent discussions highlight the complexities of the housing market, focusing on the financial implications of property ownership in disaster-prone areas, trends in residential development, and the structure of homeowner\u2019s insurance. These factors illustrate the interplay between market recovery, affordability, and protecting investments.\n\nKEY EXAMPLES:\n- The financial risks of owning homes in areas vulnerable to flooding and wildfires are increasingly evident, affecting home values and insurance costs.\n- In Hong Kong, developers are engaged in competitive bidding for residential plots, indicating a recovering market despite concerns over financial discipline.\n- Homeowner's insurance contracts, crucial for safeguarding assets, are being examined for their effectiveness in covering risks associated with property damage.",
     "article_count": 24,
     "topicality": 24.0,
-    "theme_weight": 1.0958333333333334,
-    "theme": "Consumer debt"
+    "theme_weight": 1.0791666666666668,
+    "theme": "Others"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Federal Reserve Enforcement Actions",
-    "summary": "OVERVIEW: \nThe Federal Reserve Board has taken a series of enforcement actions against various banking institutions and former employees across different banks, reflecting ongoing regulatory oversight in the banking sector.\n\nKEY EXAMPLES:\n- Enforcement action issued against Community Bankshares, Inc.\n- Actions taken against former employees of First Financial Bank and United Bank.\n- Multiple enforcement actions involving former employees of Ally Bank and Regions Bank.\n- The Federal Reserve terminated enforcement actions with Cr\u00e9dit Agricole S.A. and others.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.1125,
-    "theme": "Bank lending and credit risk"
+    "title": "Earnings Reports and Outlooks",
+    "summary": "OVERVIEW:\nRecent earnings reports highlight a mix of financial performances across various companies, with some exceeding expectations while others face challenges. Several firms have adjusted their profit and sales guidance, reflecting their differing outlooks on market conditions.\n\nKEY EXAMPLES:\n- Wingstop's stock dropped 12% after reporting profits that fell short of estimates.\n- Barclays reported an 18% profit rise and lifted its income guidance.\n- Disney exceeded earnings estimates as its new CEO detailed a growth strategy.\n- Plus500 announced a quarterly revenue increase of 11%, confirming it will meet expectations.",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 0.9826086956521738,
+    "theme": "Inflation"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Regulatory Changes in Financial Trading",
-    "summary": "OVERVIEW:\nThe recent discussions at the ISDA Annual General Meeting highlight ongoing concerns regarding the impact of divergent regulatory frameworks on financial trading practices, particularly within the context of Basel III rules and the oversight of non-bank entities.\n\nKEY EXAMPLES:\n- Bankers from Goldman Sachs and JP Morgan are advocating for modifications to cross-product netting and risk charge regulations.\n- A new proposal suggests that category III and IV banks could opt-out of certain regimes, although this could penalize intragroup trades. \n- UK regulators are currently reviewing proposed rules from the US and EU in relation to the Initial Margin Agreement (IMA).\n- Researchers are emphasizing the need for stronger supervision of the non-bank sector to mitigate potential risks before they manifest.",
+    "title": "Bitcoin Market Dynamics",
+    "summary": "OVERVIEW:\nRecent developments indicate that Bitcoin is showing signs of decoupling from traditional U.S. stock market trends amidst fluctuating geopolitical and macroeconomic conditions. With prices ranging above $80,000, the cryptocurrency's performance raises questions about its role as an inflation hedge.\n\nKEY EXAMPLES:\n- Bitcoin's price dropped to $94,000, influenced by concerns over Trump's tariff threats.\n- Contrarily, Bitcoin remained above $80,000 despite a declining U.S. stock market, indicating a potential shift in its trading behavior.\n- The cryptocurrency edged closer to $82,000 as oil prices fell sharply due to peace deal optimism regarding Iran.",
     "article_count": 22,
     "topicality": 22.0,
-    "theme_weight": 0.9818181818181816,
-    "theme": "Others"
+    "theme_weight": 0.9454545454545453,
+    "theme": "Inflation"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Legal Actions in Crypto Industry",
-    "summary": "OVERVIEW:\nRecent events in the cryptocurrency sector highlight a surge in legal disputes and enforcement actions, with companies and regulatory bodies actively addressing fraud and allegations of misconduct.\n\nKEY EXAMPLES:\n- World Liberty Financial has initiated a defamation lawsuit against Justin Sun following disputes over frozen tokens initially valued at over $1 billion.\n- The U.S. government has launched a coordinated operation to shut down Southeast Asian crypto fraud networks, reflecting the growing concern over scam activities in the industry.\n- A British national linked to a cybercrime group pleaded guilty to wire fraud and identity theft, demonstrating the extent of criminal activities targeting cryptocurrency investors.",
-    "article_count": 20,
-    "topicality": 20.0,
-    "theme_weight": 0.9650000000000001,
-    "theme": "Cyber attacks"
+    "title": "Crypto Industry Insights",
+    "summary": "OVERVIEW:\nRecent discussions at Consensus Miami highlight the ongoing challenges and opportunities within the crypto industry, focusing on the importance of transparency, trust, and the evolving landscape influenced by technology and market conditions.\n\nKEY EXAMPLES:\n- Panelists at Consensus Miami emphasized that transparency, not just technology, is key to driving crypto adoption.\n- Discussions revealed that diverse perspectives in product, policy, and hiring can significantly impact the outcomes within the crypto market.\n- Trust in cryptocurrencies continues to be identified as a major barrier to broader adoption, as noted by experts at the Consensus Miami 2026 panel. \n- Coinbase announced a significant workforce reduction of 14%, attributing the layoffs to crypto market volatility and the transition to an AI-driven work environment.",
+    "article_count": 19,
+    "topicality": 19.0,
+    "theme_weight": 0.9157894736842105,
+    "theme": "Digital assets"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "U.S.-China Trade Dynamics",
-    "summary": "OVERVIEW:\nRecent developments in U.S. trade policy with China have led to significant changes in trade flows, although the overall trade deficit remains largely unchanged. This has prompted shifts in bilateral balances, particularly highlighting China's advances in electric technology industries and its growing trade surplus.\n\nKEY EXAMPLES:\n- The U.S. trade deficit remained at $1.2 trillion at the end of 2025, with China\u2019s trade surplus increasing from $1 trillion to $1.2 trillion.\n- China\u2019s investments in electric vehicle and battery technologies have boosted global demand, contributing to its trade surplus.\n- Japan and Australia are collaborating to counter China's dominance in critical minerals and energy security, reflecting the broader geopolitical implications of trade dynamics.",
+    "title": "**Crypto Fraud and Enforcement**",
+    "summary": "OVERVIEW:\nRecent reports highlight significant ongoing efforts to combat crypto fraud and illicit activities, with major enforcement actions initiated by international authorities against scam operations and hackers. This includes a variety of cases involving theft, sanctions, and the legal complexities surrounding the recovery of stolen assets.\n\nKEY EXAMPLES:\n- The U.S. government unveiled enforcement actions aimed at Southeast Asian scam centers and cryptocurrency fraud networks.\n- North Korea's Lazarus Group executed a cyberattack, stealing approximately $292 million from KelpDAO\u2019s platform.\n- The EU introduced a new sanctions package targeting Russia-based cryptocurrency services to curb illicit financial activities.",
     "article_count": 19,
     "topicality": 19.0,
-    "theme_weight": 0.9684210526315788,
-    "theme": "Recessionary pressures"
+    "theme_weight": 0.9210526315789473,
+    "theme": "Cyber attacks"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Media Achievements and Trends",
-    "summary": "OVERVIEW:\nRecent news highlights significant achievements in the media industry alongside reflections on its evolution and current cultural phenomena. The stories showcase award-winning journalism, the lasting impact of quality content, and contemporary social media interactions.\n\nKEY EXAMPLES:\n- The Post won a prestigious award for the second time in five years, with former staff photographer Jahi Chikwendiu also earning recognition for feature photography.\n- Dark Reading celebrates its 20th anniversary, reflecting on its history and contributions to the industry since its launch.\n- A tourist drew criticism for removing a MacLehose Trail sign during a holiday, sparking discussions about social media behavior and respect for public spaces.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 0.9888888888888887,
+    "title": "Employment Discrimination Allegations",
+    "summary": "OVERVIEW:\nRecent reports indicate the Equal Employment Opportunity Commission (EEOC) has accused a newspaper of unlawful employment practices, specifically alleging reverse discrimination in the denial of a promotion to a White male employee in relation to Diversity, Equity, and Inclusion (DEI) policies.\n\nKEY EXAMPLES:\n- The EEOC stated the newspaper engaged in \u201cunlawful employment practices\u201d against an employee who sought a promotion.\n- The commission referred a reverse-discrimination complaint regarding the denied promotion to its legal unit for further review. \n- Allegations suggest that DEI initiatives contributed to the violation of civil rights laws regarding employment practices.",
+    "article_count": 17,
+    "topicality": 17.0,
+    "theme_weight": 1.0,
     "theme": "Others"
   }
 }
