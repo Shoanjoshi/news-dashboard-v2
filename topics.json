@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Middle East Tensions and Market Impact",
-    "summary": "OVERVIEW:\nRecent military conflicts and geopolitical tensions in the Middle East, particularly surrounding Iran and the Strait of Hormuz, are causing unease among investors, influencing currency stability and driving up oil prices.\n\nKEY EXAMPLES:\n- The war in Iran has resulted in a surge in global energy prices, significantly affecting American consumers.\n- As tensions exist, dollar strength reflects investor caution amid potential disruptions in oil supply.\n- Stock investors remain optimistic about companies profiting from the situation, while bond investors express concerns about market volatility.",
+    "title": "Russian Cyberespionage and DDoS Attacks",
+    "summary": "OVERVIEW:\nRecent cybersecurity incidents highlight the vulnerabilities in Internet routers and the use of sophisticated hacking techniques by state-backed groups. These attacks not only compromise personal data but also disrupt critical infrastructure across various sectors.\n\nKEY EXAMPLES:\n- Russian military intelligence hackers exploited flaws in older routers to harvest authentication tokens from Microsoft Office users across 18,000 networks.\n- The U.S. Justice Department, alongside international partners, dismantled four botnets that had compromised over three million IoT devices, facilitating extensive DDoS attacks.\n- An education technology platform, Canvas, suffered a data extortion attack, threatening to leak information on 275 million individuals.",
     "article_count": 44,
     "topicality": 44.0,
     "theme_weight": 0.9931818181818183,
-    "theme": "Inflation"
+    "theme": "Cyber attacks"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Federal Reserve Actions and Market Impacts",
-    "summary": "OVERVIEW:\nRecent actions by the Federal Reserve and its impact on the banking sector highlight both regulatory enforcement efforts and the stress experienced by financial institutions, particularly concerning nonbank financial institutions (NBFIs).\n\nKEY EXAMPLES:\n- The Federal Reserve issued enforcement actions against Community Bankshares, Inc. and former employees of First Financial Bank, Ally Bank, and Regions Bank.\n- Despite recent bankruptcies in the NBFI sector, the overall sentiment suggests these stresses will not lead to systemic issues for banks, though they may face some strain.\n- Regulatory bodies are seeking feedback on proposals to modernize the banking capital framework to ensure system stability.",
-    "article_count": 34,
-    "topicality": 34.0,
-    "theme_weight": 1.161764705882353,
-    "theme": "Bank lending and credit risk"
+    "title": "Bitcoin's Market Volatility",
+    "summary": "OVERVIEW:\nRecent fluctuations in Bitcoin's price, brief dips below $80,000, and a decline in Ethereum's DeFi market share highlight the current challenges in the cryptocurrency market amidst changing investor sentiment.\n\nKEY EXAMPLES:\n- Bitcoin's price briefly dipped below $80,000, raising concerns, but options traders remain optimistic about a quick recovery.\n- Ethereum's total value locked (TVL) in DeFi has decreased from 63.5% to around 54%, indicating increased competition from rival chains.\n- XRP is in a fragile base-building phase, with hopes of breaking its all-time high, contingent on future market catalysts.",
+    "article_count": 38,
+    "topicality": 38.0,
+    "theme_weight": 0.9500000000000002,
+    "theme": "Inflation"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Bitcoin Market Fluctuations",
-    "summary": "OVERVIEW: \nRecent news highlights significant fluctuations in Bitcoin's price amid profit-taking and concerns over market conditions linked to macroeconomic factors. The cryptocurrency's value has seen declines, mirrored by shifts in investor sentiment and market dynamics.\n\nKEY EXAMPLES:\n- Bitcoin's price retreated below $80,000, contributing to the liquidation of $300 million in futures bets.\n- The cryptocurrency's movement is increasingly tied to traditional market trends, including those affecting the S&P 500, which is at new highs despite economic uncertainties.\n- Bitcoin dipped to $79,000 as negative funding rates reached a decade high, with other cryptocurrencies like DOGE experiencing significant losses.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 0.9451612903225806,
+    "title": "U.S.-China Trade Tensions",
+    "summary": "OVERVIEW:\nRecent articles highlight the ongoing fluctuations and challenges in trade relations between the U.S. and China, particularly in light of the tariffs imposed by President Trump and their impacts on import and export dynamics.\n\nKEY EXAMPLES:\n- The U.S. Court of International Trade recently ruled against Trump\u2019s 10 percent global import tax after a Supreme Court defeat on tariffs.\n- China's merchandise exports to the U.S. decreased by 10.2 percent in early 2026, indicating strained economic relations ahead of Trump's visit to Beijing.\n- Despite tariffs and policy changes, the overall U.S. trade deficit remains steady at $1.2 trillion, reflecting limited immediate impacts on trade balances.",
+    "article_count": 36,
+    "topicality": 36.0,
+    "theme_weight": 0.9916666666666667,
     "theme": "Inflation"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "**AI and Investment Trends**",
-    "summary": "OVERVIEW:\nRecent reports highlight the competitive landscape of AI investment, particularly focusing on the disparity between U.S. and Asian market benefits, and the expanding involvement of international firms in China\u2019s growing AI sector.\n\nKEY EXAMPLES:\n- Despite attractive ROI in AI infrastructure, investment benefits are skewed towards Asia instead of the U.S. \n- Chinese firms are outpacing South Korean companies in technological advancements, prompting calls for greater collaboration in sectors like AI.\n- A significant surge in profits for overseas-invested securities in China indicates a thriving market, driven by reforms in capital restrictions.\n- The Trump family is channeling investments into AI and drone industries, reflecting a growing interest in technology sectors.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 0.9586206896551724,
-    "theme": "Others"
+    "title": "Regulatory Actions and Banking Stress",
+    "summary": "OVERVIEW:\nRecent enforcement actions by the Federal Reserve Board alongside concerns regarding nonbank financial institutions (NBFIs) highlight ongoing regulatory scrutiny and potential stresses in the banking sector.\n\nKEY EXAMPLES:\n- The Federal Reserve Board issued enforcement actions against Community Bankshares, Inc. and former employees of various banks.\n- Despite concerns over NBFI bankruptcies and their impacts on banks, experts believe systemic risks remain manageable.\n- Agencies are seeking feedback on proposals to modernize the regulatory capital framework to ensure banking system stability.",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 1.1285714285714288,
+    "theme": "Bank lending and credit risk"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "K-Shaped Economic Recovery**",
-    "summary": "**OVERVIEW:**\nRecent analysis indicates a diverging pattern in consumer spending and economic growth amongst different income groups, highlighting a K-shaped recovery where high-income households benefit more than lower-income households.\n\n**KEY EXAMPLES:**\n- Since 2023, high-income households have driven retail spending growth, while low-income households are facing increased inflation burdens.\n- Consumers in different income brackets show varied responses to rising gasoline prices, with high-income households increasing spending while low-income households cut back on real consumption.\n- Aggregate consumer spending growth appears solid, but heavily depends on a small segment of high-income earners, revealing potential macroeconomic risks.",
+    "title": "K-Shaped Economic Recovery",
+    "summary": "OVERVIEW:  \nRecent analyses highlight a divergence in retail spending patterns during the economic recovery, where high-income households are driving growth while low-income households face increasing inflation and stagnating wages. This phenomenon is often referred to as a \"K-shaped economy.\"\n\nKEY EXAMPLES:  \n- Consumer spending has increased overall since 2023, primarily benefiting households earning over $125,000 annually, reflecting a K-shaped economy dynamic.  \n- Despite added jobs and positive employment reports, the economic growth appears concentrated among higher-income groups, raising concerns about macroeconomic risks for broader segments.  \n- Discussions surrounding the interplay of the labor share of income and interest rates suggest deeper systemic issues affecting wage distribution and economic stability.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 0.9793103448275862,
+    "theme_weight": 0.9862068965517241,
     "theme": "Recessionary pressures"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Financial Growth and Expectations",
-    "summary": "OVERVIEW:\nRecent reports highlight a series of positive financial developments across various companies, with notable increases in revenue, profit guidance, and funding rounds in the market, indicating a bullish outlook for several sectors.\n\nKEY EXAMPLES:\n- Plus500 anticipates continued success after reporting an 11% increase in quarterly revenue.\n- Barclays experienced an 18% rise in profits and raised its income guidance.\n- Novartis has upgraded its sales and profit estimates for the year.\n- A prediction market platform secured $1 billion in funding and is now valued at $22 billion.",
+    "title": "Cryptocurrency Market Trends**",
+    "summary": "OVERVIEW:\nRecent developments in the cryptocurrency market highlight a resurgence of institutional interest, renewed volatility in Bitcoin prices, and ongoing regulatory advancements. Key themes include the performance of Bitcoin, technological adoption in finance, and potential regulatory improvements.\n\nKEY EXAMPLES:\n- Institutional capital is returning to crypto with the popularity of Bitcoin ETFs and the advancement of tokenized finance.\n- Bitcoin traders are observing a \"healthy bullish backtest\" amidst uncertainty about reclaiming the $80,000 threshold.\n- The relative strength index for Bitcoin has signaled a potential price top not observed since early 2026, raising caution among traders.",
     "article_count": 28,
     "topicality": 28.0,
-    "theme_weight": 1.0,
-    "theme": "Inflation"
+    "theme_weight": 0.9071428571428571,
+    "theme": "Digital assets"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "** Bitcoin Market Dynamics",
-    "summary": "**OVERVIEW:**  \nRecent developments in the Bitcoin market reveal both a resurgence in institutional interest and fluctuating investor sentiment. While significant inflows into Bitcoin ETFs and a drop in exchange reserves indicate increasing demand, companies like Coinbase face challenges amidst earnings misses and service disruptions.\n\n**KEY EXAMPLES:**  \n- Institutional investors are boosting crypto allocations, particularly in Bitcoin, reflecting a rebound in market sentiment (Article 1).\n- Bitcoin's price fell below $80,000 after hitting resistance at $82,800, despite a record weekly inflow into spot Bitcoin ETFs (Article 2).\n- Block Inc. reported unexpectedly strong Q1 earnings despite a drop in Bitcoin revenue, highlighting shifts in trading dynamics (Article 3).\n- Nearly 100,000 Bitcoin recently left major exchanges, indicating a tightening supply and increasing demand from accumulator addresses (Article 6).",
+    "title": "Middle East Tensions Impact Energy Prices",
+    "summary": "OVERVIEW:\nThe ongoing conflict in Iran and its implications on the Strait of Hormuz are causing significant disruptions in the global energy market, resulting in rising oil prices and economic instability worldwide.\n\nKEY EXAMPLES:\n- The closure of the Strait of Hormuz due to the Iran war has led to a frenzy in global energy prices, significantly affecting American consumers.\n- Increased military conflict in the Middle East has historically been linked to oil supply disruptions, contributing to higher price volatility.\n- Reports indicate that inflation is rising globally as a direct consequence of the Iranian conflict, alongside slowed economic growth.\n- Despite these challenges, some energy companies are reporting substantial profit increases driven by the current volatility in oil prices.",
     "article_count": 26,
     "topicality": 26.0,
-    "theme_weight": 0.8384615384615384,
-    "theme": "Digital assets"
+    "theme_weight": 0.9846153846153847,
+    "theme": "Inflation"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "**Housing Affordability and Risks**",
-    "summary": "OVERVIEW:  \nRecent discussions highlight the complexities of housing affordability against the backdrop of natural disaster risks and government interventions in the housing market.\n\nKEY EXAMPLES:  \n- Article 1 discusses the escalating costs of homeownership in areas prone to flooding and wildfires.  \n- Article 4 showcases local governments creating permanently affordable housing by redefining traditional housing programs.  \n- Article 5 provides an analysis of how homeowner's insurance is structured to mitigate risks from natural disasters, emphasizing the lack of comprehensive understanding in this area.  \n- Article 3 illustrates the overall narrative of home affordability in the U.S. from a personal perspective.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0291666666666668,
-    "theme": "Consumer debt"
+    "title": "**Crypto Regulation and Innovation**",
+    "summary": "OVERVIEW:\nRecent developments in the cryptocurrency landscape highlight the ongoing push for regulation and innovation within the sector. Key legislative efforts and market adaptations reflect the evolving relationship between cryptocurrencies and regulatory bodies.\n\nKEY EXAMPLES:\n- The CLARITY Act is advancing towards a Senate markup but faces complications due to proposed ethics restrictions for officials connected to crypto.\n- SEC Chair Paul Atkins indicated potential for an \"innovation pathway\" for on-chain trading systems, linking it to past electronic trading regulations.\n- European authorities issued warnings regarding Zondacrypto, citing customer withdrawal issues linked to an investigation by Polish law enforcement.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 0.9076923076923076,
+    "theme": "Digital assets"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Legislative Committee Reports",
-    "summary": "OVERVIEW:\nThe articles summarize various measures reported by House Committees, highlighting legislative activities and proceedings on specific dates in 2026.\n\nKEY EXAMPLES:\n- Multiple articles indicate reports by the House Committee on Ways and Means on April 29, 2026.\n- An additional report was issued by the House Committee on Financial Services on April 21, 2026.\n- Another significant report comes from the House Committee on Foreign Affairs, dated March 26, 2026.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 1.0043478260869565,
+    "title": "Legislative Reports Overview",
+    "summary": "OVERVIEW:\nThe articles focus on recent reports issued by the House Committee on Ways and Means and the House Committee on Foreign Affairs, highlighting legislative actions taken on specific dates in April 2026.\n\nKEY EXAMPLES:\n- The House Committee on Ways and Means reported multiple measures on April 29, 2026.\n- The House Committee on Foreign Affairs issued reports on April 22, 2026.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.004,
     "theme": "Consumer debt"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "AI Adoption in Business",
-    "summary": "OVERVIEW:\nThe articles illustrate the growing integration of AI technologies across various sectors, highlighting both the benefits and challenges associated with their adoption. Companies are exploring innovative uses of AI, while concerns about access and training persist.\n\nKEY EXAMPLES:\n- Goldman Sachs' CIO discusses the importance of tracking AI adoption among engineers to enforce its use.\n- Disney employees share effective ways they are using AI agents for productivity.\n- The Aptos Foundation emphasizes the need for infrastructure to support AI agent adoption with rapid responses.  \n- Venture-capital firms are applying AI to traditionally less glamorous fields like accounting and property management.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 0.9608695652173912,
-    "theme": "AI"
+    "title": "Coinbase Challenges and Crypto Outlook",
+    "summary": "OVERVIEW:\nCoinbase, a leading cryptocurrency exchange, is facing significant challenges after a poor quarterly performance and service disruptions. Despite these setbacks, market optimism remains regarding the future of crypto legislation and stablecoins.\n\nKEY EXAMPLES:\n- Coinbase reported a quarterly loss that missed Wall Street estimates and experienced an outage due to AWS issues.\n- Bulls are hopeful about the potential impact of upcoming crypto legislation and the adoption of stablecoins to boost investor confidence.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 0.852,
+    "theme": "Digital assets"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "U.S. Trade Policy Developments",
-    "summary": "OVERVIEW:\nRecent legal rulings and policy shifts reflect significant changes in U.S. trade strategy, particularly regarding tariffs implemented by President Trump. These developments have influenced trade balances, relationships with China, and the implications for various industries.\n\nKEY EXAMPLES:\n- The U.S. Court of International Trade ruled against Trump's 10 percent global import tax, citing legal violations of U.S. law.\n- Following a Supreme Court decision, both exports and imports increased after many of Trump's highest tariffs were struck down. \n- China has enhanced its electric technology industries, boosting its trade surplus, especially through electric vehicles and lithium batteries.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 0.9869565217391304,
-    "theme": "Inflation"
+    "title": "AI's Impact on Workforce Dynamics",
+    "summary": "OVERVIEW:\nRecent discussions highlight the transformative influence of AI technology on the workplace, including shifts in employment, productivity, and the adoption of digital tools across various sectors. This trend suggests both opportunities and challenges for workers and employers alike.\n\nKEY EXAMPLES:\n- Mark Zuckerberg and other CEOs emphasize how AI is changing coding practices among engineers.\n- The Army faces challenges in getting personnel to adopt new digital tools, indicating a broader issue of technology adoption.\n- Many companies are encouraging workers to utilize AI, simultaneously preparing for workforce reductions.\n- Venture-capital firms are investing in AI for traditional sectors like accounting and property management, showing a push towards modernization.",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.008,
+    "theme": "AI"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Cybersecurity Threats and Attacks",
-    "summary": "OVERVIEW:\nRecent news highlights a surge in cybersecurity threats, showcasing various forms of attacks and the exploitation of vulnerabilities in digital infrastructure, including targets ranging from government networks to educational platforms.\n\nKEY EXAMPLES:\n- Russian military hackers exploited flaws in older Internet routers to harvest Microsoft Office authentication tokens undetected across 18,000 networks.\n- The U.S. Justice Department, in collaboration with Canada and Germany, dismantled four botnets that had compromised over three million IoT devices, facilitating record-breaking DDoS attacks.\n- A Brazilian tech firm unintentionally enabled a botnet due to a security breach, impacting network operators within Brazil through large-scale DDoS attacks.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "title": "Wealth Strategies and Predictions",
+    "summary": "OVERVIEW:\nRecent articles discuss various perspectives on wealth, including investment strategies for early retirement and theories about the behavior of the ultra-rich during potential crises.\n\nKEY EXAMPLES:\n- A former Googler shared investment strategies that enabled him to retire early, challenging the notion that only startup success leads to financial independence.\n- Artist Kyle McDonald theorizes that the ultra-rich may evacuate city centers in anticipation of an apocalyptic event, highlighting societal divides and potential future trends.",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 1.0217391304347827,
+    "theme": "Others"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Cryptocurrency Market Surge",
-    "summary": "OVERVIEW:\nRecent developments in the cryptocurrency market highlight significant growth and heightened interest among institutional investors and retail traders, particularly in response to global financial challenges and technological advancements.\n\nKEY EXAMPLES:\n- Zcash experienced a 40% price surge, evolving from a niche privacy tool to a major hedge against financial surveillance concerns.\n- Bitcoin surpassed $80,000, prompting discussions on its volatility in response to public health risks, influenced by a hantavirus outbreak.\n- Major financial institutions like Morgan Stanley and Charles Schwab are expanding into crypto trading due to rising demand from their clients.",
+    "title": "Growth in Private Debt",
+    "summary": "OVERVIEW:\nRecent discussions at the 2026 Europe Summit indicate a growing interest in private debt as an asset class, with institutional investors exploring various financing solutions amidst evolving market conditions.\n\nKEY EXAMPLES:\n- The PDI Europe Summit highlighted key trends regarding impact and sustainability in private debt.\n- Managing director Yasuyuki Fujita noted that US private credit developments are prompting deeper evaluations of market structures by investors.\n- Despite a generally positive outlook, some concerns about the private debt market were raised during the summit.",
     "article_count": 21,
     "topicality": 21.0,
-    "theme_weight": 0.8190476190476188,
-    "theme": "Digital assets"
+    "theme_weight": 1.0428571428571427,
+    "theme": "Commercial real estate"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "**International Crypto Enforcement Actions**",
-    "summary": "OVERVIEW:  \nRecent developments showcase a significant global crackdown on crypto-related fraud and sanctions, particularly targeting entities linked to Russia and Southeast Asia, while also highlighting evolving cyber threats associated with cryptocurrency.\n\nKEY EXAMPLES:\n- The U.S. Department of Justice launched major enforcement actions against Southeast Asian scam centers and crypto fraud networks.\n- The EU announced a comprehensive ban on Russia-based crypto service providers in its latest sanctions package.\n- Grinex, a recently sanctioned Russian exchange, halted operations amid claims of a cyberattack.\n- North Korean hackers, linked to the Lazarus Group, stole approximately $292 million from KelpDAO in a significant exploit.",
-    "article_count": 17,
-    "topicality": 17.0,
-    "theme_weight": 0.9588235294117647,
-    "theme": "Cyber attacks"
+    "title": "US Sanctions on Chinese Entities",
+    "summary": "OVERVIEW:\nThe United States has imposed sanctions on several Chinese and Hong Kong entities for their involvement in supporting Iran's military, particularly concerning drone manufacturing and military logistics.\n\nKEY EXAMPLES:\n- Nine companies and individuals were sanctioned for facilitating Iran's military efforts, including securing materials for drones.\n- The sanctions may complicate diplomatic relations, especially with an impending visit by Donald Trump to China.\n- Reports suggest that the measures could be symbolic, as the targeted entities have longstanding ties within the Iranian trade network.",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.9857142857142857,
+    "theme": "Others"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Hong Kong Governance and Legal Issues",
-    "summary": "OVERVIEW:\nRecent news highlights ongoing governance challenges in Hong Kong, including controversies surrounding government operations in London, scrutiny over fire safety regulations, and issues of employment discrimination. These topics reflect broader concerns about accountability and effective management in the region.\n\nKEY EXAMPLES:\n- A British court convicted two individuals affiliated with Hong Kong\u2019s Economic and Trade Office in London for spying on activists, yet operations are expected to continue unaffected.\n- An inquiry into a deadly fire revealed that Hong Kong\u2019s building authorities adhered to outdated safety guidelines, resulting in tragic consequences.\n- The Equal Employment Opportunity Commission addressed unlawful practices in employment, indicating systemic issues within an organization.",
-    "article_count": 15,
-    "topicality": 15.0,
-    "theme_weight": 1.0799999999999998,
-    "theme": "Others"
+    "title": "IRS Penalties and Budget Updates",
+    "summary": "OVERVIEW:\nRecent news highlights the opportunity for individuals charged penalties during the pandemic to reclaim their funds from the IRS while also addressing updates on federal budget deficits and defense spending.\n\nKEY EXAMPLES:\n- Individuals have until July 10 to request refunds from the IRS for penalties incurred during the pandemic.\n- The CBO estimates a $955 billion federal budget deficit for the first seven months of fiscal year 2026, a decrease from the previous year.\n- The Department of Defense's 2026 budget request is noted as one of the largest in recent history, totaling $961 billion.",
+    "article_count": 16,
+    "topicality": 16.0,
+    "theme_weight": 1.05625,
+    "theme": "Bank lending and credit risk"
   }
 }
