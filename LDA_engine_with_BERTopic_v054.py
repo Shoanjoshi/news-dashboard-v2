@@ -7,7 +7,7 @@ from collections import Counter
 from textwrap import wrap
 
 import pandas as pd
-from openai import OpenAI
+import anthropic
 from bertopic import BERTopic
 from sklearn.cluster import KMeans
 from umap import UMAP
@@ -17,24 +17,17 @@ from sentence_transformers import SentenceTransformer
 import plotly.graph_objects as go
 
 # ============================================================
-# OpenAI client — unified key loading + required User-Agent
+# Anthropic client
 # ============================================================
 
-_api_key = (
-    os.getenv("OPENAI_API_KEY")
-    or os.getenv("OPEN_AI_KEY_V2")
-    or os.getenv("OPEN_API_KEY_V2")
-)
+_api_key = os.getenv("ANTHROPIC_API_KEY")
 
 if not _api_key:
     raise RuntimeError(
-        "No OpenAI API key found. Set one of: OPENAI_API_KEY, OPEN_AI_KEY_V2, OPEN_API_KEY_V2."
+        "No Anthropic API key found. Set ANTHROPIC_API_KEY."
     )
 
-client = OpenAI(
-    api_key=_api_key,
-    default_headers={"User-Agent": "Mozilla/5.0"}
-)
+client = anthropic.Anthropic(api_key=_api_key)
 
 # ============================================================
 # CONFIG
@@ -237,12 +230,13 @@ ARTICLES:
 """
 
     try:
-        resp = client.chat.completions.create(
-            model="gpt-4o-mini",
+        resp = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=1024,
             messages=[{"role": "user", "content": prompt}],
             timeout=30,
         )
-        out = resp.choices[0].message.content or ""
+        out = resp.content[0].text if resp.content else ""
 
         if "TITLE:" in out:
             _, after = out.split("TITLE:", 1)
@@ -252,7 +246,7 @@ ARTICLES:
             return {"title": title, "summary": summary}
 
     except Exception as e:
-        print(f"GPT error for topic {topic_id}: {e}")
+        print(f"Claude error for topic {topic_id}: {e}")
 
     return {"title": f"TOPIC {topic_id}", "summary": "Summary unavailable."}
 

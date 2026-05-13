@@ -63,10 +63,100 @@
             max-height: 620px;
             overflow-y: auto;
         }
+
+        /* ---------- REFRESH BUTTON ---------- */
+        .refresh-bar {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px;
+            background: #f9f9f9;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #refresh-btn {
+            padding: 7px 18px;
+            font-size: 14px;
+            font-weight: bold;
+            background: #2a6ebb;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #refresh-btn:disabled {
+            background: #888;
+            cursor: not-allowed;
+        }
+
+        #refresh-status {
+            font-size: 13px;
+            color: #444;
+        }
     </style>
 </head>
 
 <body>
+
+<div class="refresh-bar">
+    <button id="refresh-btn" onclick="triggerRefresh()">&#x27F3; Refresh Dashboard</button>
+    <span id="refresh-status"></span>
+</div>
+
+<script>
+    const OWNER = "Shoanjoshi";
+    const REPO  = "news-dashboard-v2";
+    const WORKFLOW = "schedule.yml";
+
+    function getToken() {
+        let token = localStorage.getItem("gh_dispatch_token");
+        if (!token) {
+            token = prompt("Enter a GitHub Personal Access Token with 'actions: write' permission:");
+            if (token) localStorage.setItem("gh_dispatch_token", token.trim());
+        }
+        return token ? token.trim() : null;
+    }
+
+    async function triggerRefresh() {
+        const btn = document.getElementById("refresh-btn");
+        const status = document.getElementById("refresh-status");
+        const token = getToken();
+        if (!token) { status.textContent = "No token provided."; return; }
+
+        btn.disabled = true;
+        status.textContent = "Triggering refresh...";
+
+        try {
+            const res = await fetch(
+                `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${WORKFLOW}/dispatches`,
+                {
+                    method: "POST",
+                    headers: {
+                        "Authorization": `Bearer ${token}`,
+                        "Accept": "application/vnd.github+json",
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ ref: "main" }),
+                }
+            );
+
+            if (res.status === 204) {
+                status.textContent = "✅ Refresh triggered — dashboard will update in ~5 minutes.";
+            } else if (res.status === 401) {
+                localStorage.removeItem("gh_dispatch_token");
+                status.textContent = "❌ Invalid token — please try again.";
+            } else {
+                const body = await res.json().catch(() => ({}));
+                status.textContent = `❌ Error ${res.status}: ${body.message || "unknown error"}`;
+            }
+        } catch (e) {
+            status.textContent = `❌ Request failed: ${e.message}`;
+        } finally {
+            btn.disabled = false;
+        }
+    }
+</script>
 
 <div class="dashboard-grid">
 
