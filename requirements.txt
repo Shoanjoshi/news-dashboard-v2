@@ -1,7 +1,7 @@
 bertopic
 numpy
 pandas
-openai>=1.14.0
+anthropic>=0.25.0
 feedparser
 lxml_html_clean
 newspaper3k
