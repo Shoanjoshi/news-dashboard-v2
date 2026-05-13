@@ -4,39 +4,39 @@
     "bertopic_id": 0,
     "title": "TOPIC 0",
     "summary": "Summary unavailable.",
-    "article_count": 48,
-    "topicality": 48.0,
-    "theme_weight": 0.99375,
-    "theme": "Cyber attacks"
+    "article_count": 40,
+    "topicality": 40.0,
+    "theme_weight": 1.0625,
+    "theme": "Bank lending and credit risk"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
     "title": "TOPIC 1",
     "summary": "Summary unavailable.",
-    "article_count": 39,
-    "topicality": 39.0,
-    "theme_weight": 0.8820512820512822,
-    "theme": "Digital assets"
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 1.006060606060606,
+    "theme": "Inflation"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
     "title": "TOPIC 2",
     "summary": "Summary unavailable.",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 0.93125,
-    "theme": "Digital assets"
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 1.0,
+    "theme": "Cyber attacks"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
     "title": "TOPIC 3",
     "summary": "Summary unavailable.",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 1.0064516129032257,
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 0.86875,
     "theme": "Inflation"
   },
   "T4": {
@@ -46,18 +46,18 @@
     "summary": "Summary unavailable.",
     "article_count": 30,
     "topicality": 30.0,
-    "theme_weight": 0.9600000000000001,
-    "theme": "Inflation"
+    "theme_weight": 1.0233333333333332,
+    "theme": "Recessionary pressures"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
     "title": "TOPIC 5",
     "summary": "Summary unavailable.",
-    "article_count": 30,
-    "topicality": 30.0,
-    "theme_weight": 1.0799999999999998,
-    "theme": "Private credit"
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 0.9275862068965516,
+    "theme": "Digital assets"
   },
   "T6": {
     "topic_id": "T6",
@@ -66,87 +66,87 @@
     "summary": "Summary unavailable.",
     "article_count": 29,
     "topicality": 29.0,
-    "theme_weight": 1.0827586206896551,
-    "theme": "Consumer debt"
+    "theme_weight": 0.9689655172413792,
+    "theme": "Inflation"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
     "title": "TOPIC 7",
     "summary": "Summary unavailable.",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 1.0034482758620689,
-    "theme": "Others"
+    "article_count": 28,
+    "topicality": 28.0,
+    "theme_weight": 0.9785714285714285,
+    "theme": "Cyber attacks"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
     "title": "TOPIC 8",
     "summary": "Summary unavailable.",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.9785714285714285,
-    "theme": "Inflation"
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 1.1307692307692307,
+    "theme": "Bank lending and credit risk"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
     "title": "TOPIC 9",
     "summary": "Summary unavailable.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 1.0038461538461538,
-    "theme": "Recessionary pressures"
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 0.9520000000000001,
+    "theme": "Digital assets"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
     "title": "TOPIC 10",
     "summary": "Summary unavailable.",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 0.7391304347826085,
-    "theme": "Digital assets"
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.028,
+    "theme": "AI"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
     "title": "TOPIC 11",
     "summary": "Summary unavailable.",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 1.0,
-    "theme": "AI"
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 1.0125,
+    "theme": "Consumer debt"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
     "title": "TOPIC 12",
     "summary": "Summary unavailable.",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 1.1428571428571428,
-    "theme": "Bank lending and credit risk"
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 0.9869565217391304,
+    "theme": "Inflation"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
     "title": "TOPIC 13",
     "summary": "Summary unavailable.",
-    "article_count": 18,
-    "topicality": 18.0,
-    "theme_weight": 1.0333333333333334,
-    "theme": "Consumer debt"
+    "article_count": 22,
+    "topicality": 22.0,
+    "theme_weight": 0.768181818181818,
+    "theme": "Digital assets"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
     "title": "TOPIC 14",
     "summary": "Summary unavailable.",
-    "article_count": 13,
-    "topicality": 13.0,
-    "theme_weight": 0.9538461538461538,
-    "theme": "Others"
+    "article_count": 20,
+    "topicality": 20.0,
+    "theme_weight": 0.9800000000000001,
+    "theme": "AI"
   }
 }
