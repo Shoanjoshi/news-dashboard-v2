@@ -1,5 +1,6 @@
 import os
 import json
+import traceback
 import feedparser
 import requests
 import numpy as np
@@ -28,6 +29,17 @@ if not _api_key:
     )
 
 client = anthropic.Anthropic(api_key=_api_key)
+
+# Quick connectivity check — fails fast if key/model is wrong
+try:
+    _test = client.messages.create(
+        model="claude-haiku-4-5-20251001",
+        max_tokens=10,
+        messages=[{"role": "user", "content": "ping"}],
+    )
+    print(f"✅ Anthropic API reachable. Model: claude-haiku-4-5-20251001")
+except Exception as _e:
+    raise RuntimeError(f"Anthropic API connectivity check failed: {type(_e).__name__}: {_e}")
 
 # ============================================================
 # CONFIG
@@ -246,7 +258,8 @@ ARTICLES:
             return {"title": title, "summary": summary}
 
     except Exception as e:
-        print(f"Claude error for topic {topic_id}: {e}")
+        print(f"Claude error for topic {topic_id}: {type(e).__name__}: {e}")
+        traceback.print_exc()
 
     return {"title": f"TOPIC {topic_id}", "summary": "Summary unavailable."}
 
