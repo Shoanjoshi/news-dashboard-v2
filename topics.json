@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Trump's China Trade Policy Shift",
-    "summary": "OVERVIEW:\nThe Trump administration entered office planning aggressive trade measures specifically targeting China but has had to moderate this approach. As Trump prepares for a summit with Chinese President Xi Jinping in Beijing, both nations are maneuvering strategically while navigating multiple sources of tension including trade imbalances, technology disputes, and broader geopolitical crises.\n\nKEY EXAMPLES:\n- U.S. trade policy with China has undergone significant changes over the past year, yet the U.S. trade deficit remains largely unchanged at $1.2 trillion, while China's global trade surplus actually increased to $1.2 trillion\n- Both the U.S. and China have been \"picking up some chits\" ahead of the summit\u2014building leverage for negotiations while trying to avoid appearing as deal killers\n- The summit is complicated by the U.S.-Iran conflict, which disrupts global energy supplies and adds economic uncertainty to Washington-Beijing relations\n- Trump's first presidential visit to Beijing in nine years occurs amid tensions over trade, technology, and geopolitical rivalry",
-    "article_count": 48,
-    "topicality": 48.0,
-    "theme_weight": 0.9979166666666667,
-    "theme": "Inflation"
+    "title": "** K-Shaped Recovery and Income Inequality",
+    "summary": "**OVERVIEW:**\nSince 2023, the U.S. economy has experienced unequal growth, with high-income households driving retail spending gains while lower-income households lag behind. This divergence reflects broader structural economic challenges including wealth concentration, differential inflation impacts, and labor market dynamics.\n\n**KEY EXAMPLES:**\n- High-income households (earning >$125,000) have driven retail spending growth since 2023, while lower-income households have seen slower consumption increases\n- Wealth increased most for high-income households while inflation rose most for low-income households, explaining divergent spending patterns\n- In March 2026, high-income households maintained real gasoline consumption during energy price spikes, while low-income households reduced real consumption despite higher nominal spending\n- Long-term structural changes affecting interest rates (R*) also influence labor share and wages, with implications for macroeconomic outcomes",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 1.042857142857143,
+    "theme": "Recessionary pressures"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Evolving Cyber Threats and Infrastructure Attacks",
-    "summary": "OVERVIEW:\nRecent cybersecurity incidents reveal escalating threats from state-backed hackers, criminal botnets, and AI-augmented attacks targeting critical infrastructure and sensitive systems. Meanwhile, major software makers are racing to patch vulnerabilities at record rates as attackers employ increasingly sophisticated methods including social engineering and automated tools.\n\nKEY EXAMPLES:\n- Russian military intelligence hackers harvested authentication tokens from Microsoft Office users across 18,000+ networks using flaws in older routers\n- U.S. and international authorities dismantled four botnets (Aisuru, Kimwolf, JackSkid, Mossad) controlling over 3 million compromised IoT devices responsible for record-breaking DDoS attacks\n- A cybercrime group defaced Canvas education platform's login page demanding ransom while threatening to leak data from 275 million students and faculty\n- AI-powered threat campaigns targeted entities in Mexico and Brazil, demonstrating automated cyberattack evolution\n- A Brazilian DDoS protection firm was found enabling botnets in attacks against competing network operators",
-    "article_count": 46,
-    "topicality": 46.0,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "title": "** Federal Reserve Regulatory Actions and Operations",
+    "summary": "**OVERVIEW:**\nThe Federal Reserve continues to exercise its supervisory and enforcement authority over financial institutions while managing monetary policy tools and operational systems. The cluster covers enforcement actions, application approvals, and updates to payment infrastructure and policy frameworks.\n\n**KEY EXAMPLES:**\n- Federal Reserve issues enforcement action with Community Bankshares, Inc. and a former employee of First Financial Bank\n- Federal Reserve approves application by Burke & Herbert Financial Services Corp. and terminates enforcement actions with Cr\u00e9dit Agricole entities, Mega International Commercial Bank, and Goldman Sachs Group\n- Federal Reserve invites public comment on proposal allowing banks and credit unions to use intermediaries for FedNow Service fund transfers\n- Federal Reserve releases annual audited financial statements",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 1.1114285714285719,
+    "theme": "Bank lending and credit risk"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "** K-Shaped Economy and Income Inequality",
-    "summary": "**OVERVIEW:**\nRecent U.S. economic data reveals a widening divergence in consumer spending and economic outcomes between high-income and low-income households since 2023. This \"K-shaped\" pattern\u2014where higher earners experience stronger growth than lower earners\u2014reflects differences in wealth accumulation, inflation exposure, and spending behavior across income groups.\n\n**KEY EXAMPLES:**\n- High-income households (earning over $125,000 annually) have driven retail spending growth since 2023, while lower-income households have lagged behind\n- During the March 2026 energy price surge, high-income households maintained real gasoline consumption while low-income households reduced consumption despite higher nominal spending\n- Wealth has increased most for high-income households while inflation has risen most for low-income households, explaining divergent spending patterns\n- Earnings growth has been mixed, though the highest earners have experienced faster income growth than the lowest earners",
-    "article_count": 34,
-    "topicality": 34.0,
-    "theme_weight": 1.026470588235294,
-    "theme": "Recessionary pressures"
+    "title": "Cerebras IPO Pricing Success",
+    "summary": "OVERVIEW:\nCerebras Systems priced its initial public offering at $185 per share, significantly exceeding its initial guidance range. The chipmaker raised $5.55 billion and achieved a $40 billion valuation, reflecting strong investor demand for AI-focused companies.\n\nKEY EXAMPLES:\n- Cerebras priced its IPO at $185 per share, well above the $150-$160 range previously announced\n- The company raised $5.55 billion in the offering\n- Cerebras achieved a $40 billion valuation, signaling high demand for AI stocks",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.9454545454545454,
+    "theme": "Digital assets"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "** Iran Conflict Drives Oil Prices and Inflation",
-    "summary": "**OVERVIEW:**\nMilitary tensions in the Middle East, particularly involving Iran, have disrupted global oil supplies and caused significant economic ripple effects. Rising oil prices are driving increased costs across consumer goods and services, from grocery stores to air travel.\n\n**KEY EXAMPLES:**\n- Global oil prices climbed nearly 50% since late February due to the Iran conflict\n- Gasoline price surges pushed April inflation to its highest level since late 2023\n- Air travel costs are increasing as oil prices remain elevated following US-Israel conflict with Iran\n- Consumer goods in grocery stores are reflecting higher prices due to war-related supply disruptions",
-    "article_count": 30,
-    "topicality": 30.0,
+    "title": "** Evolving Cyber Threats and Infrastructure Vulnerabilities",
+    "summary": "**OVERVIEW:**\nSecurity experts are reporting a surge in sophisticated cyber attacks exploiting both aging network infrastructure and emerging technologies. State-backed hackers, botnets, and AI-powered adversaries are targeting everything from routers to IoT devices, while also leveraging social engineering and new tools to compromise systems at scale.\n\n**KEY EXAMPLES:**\n- Russian military intelligence units harvested authentication tokens from 18,000+ Microsoft Office networks by exploiting known router vulnerabilities\n- Four major botnets (Aisuru, Kimwolf, JackSkid, and Mossad) compromised over 3 million IoT devices and launched record-breaking DDoS attacks, prompting coordinated takedowns by U.S., Canadian, and German authorities\n- A Brazilian DDoS protection firm's network was breached, enabling botnet attacks against other operators in the country\n- Major software makers including Apple, Google, Microsoft, Mozilla, and Oracle are releasing patches at record volumes as attackers increasingly use AI and large language models to discover vulnerabilities\n- Daemon Tools users face stealthy malware infections requiring immediate system checks",
+    "article_count": 32,
+    "topicality": 32.0,
     "theme_weight": 1.0,
-    "theme": "Inflation"
+    "theme": "Cyber attacks"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Tech Layoffs Driven by AI Investment",
-    "summary": "OVERVIEW:\nMajor technology companies are reducing their workforces to fund artificial intelligence initiatives and operational restructuring. These layoffs reflect broader corporate shifts toward AI-driven efficiency and automation, despite gaps in worker access to AI tools and training.\n\nKEY EXAMPLES:\n- Cisco announced cuts of approximately 4,000 jobs as it refocuses on AI investments following strong earnings\n- Amazon cut additional jobs in its retail business while pursuing AI-driven efficiency gains\n- Snap and Coinbase attributed recent staff reductions to AI-related strategy changes\n- A survey found that many employers are not yet providing workers with access to AI tools or training despite widespread adoption efforts",
+    "title": "** Bitcoin Volatility Amid Macro Headwinds",
+    "summary": "**OVERVIEW:**\nBitcoin has experienced significant price volatility, fluctuating around the $80,000 mark amid multiple macroeconomic pressures and geopolitical developments. Key drivers include inflation data, trade policy uncertainty, and high-level diplomatic negotiations affecting market risk appetite.\n\n**KEY EXAMPLES:**\n- Bitcoin fell below $80,000 following a hotter-than-expected US PPI inflation print of 6%, matching 2022 levels\n- Bitcoin price slipped to $94,000 as risk appetite soured on Trump tariff threats\n- Trump's high-stakes China visit with Xi Jinping created uncertainty about whether Bitcoin's risk rally could sustain through a volatile macro week\n- Bitcoin tested the $82,000 resistance zone as a key level for potential major breakouts",
     "article_count": 30,
     "topicality": 30.0,
-    "theme_weight": 1.0333333333333334,
-    "theme": "AI"
+    "theme_weight": 0.9133333333333332,
+    "theme": "Digital assets"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "Federal Reserve Enforcement and Banking Actions",
-    "summary": "## OVERVIEW:\nThe Federal Reserve has issued multiple enforcement actions against financial institutions while simultaneously terminating several prior enforcement actions. Additionally, the Fed is advancing modernizations to banking infrastructure and monitoring emerging risks in the nonbank financial sector.\n\n## KEY EXAMPLES:\n- Federal Reserve issued enforcement action with Community Bankshares, Inc. and former employee of First Financial Bank\n- Federal Reserve terminated enforcement actions with F & M Holding Company, Inc., Thread Bancorp, Inc., Cr\u00e9dit Agricole S.A., Cr\u00e9dit Agricole Corporate and Investment Bank, Mega International Commercial Bank Co., Ltd, and the Goldman Sachs Group, Inc.\n- Federal Reserve announced approval of application by Burke & Herbert Financial Services Corp.\n- Federal Reserve invited public comment on proposal allowing U.S. banks and credit unions to use intermediaries for FedNow Service fund transfers\n- Federal Reserve released annual audited financial statements and is monitoring potential stress impacts from nonbank financial institution bankruptcies on banking sector stability",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 1.107142857142857,
-    "theme": "Bank lending and credit risk"
+    "title": "** Crypto Market Catalysts and Institutional Momentum",
+    "summary": "**OVERVIEW:**\nMultiple factors are driving cryptocurrency market movements, including institutional adoption through tokenized funds, regulatory progress via the CLARITY Act, and mixed trader sentiment on price direction. Major financial institutions and crypto platforms are positioning for potential upside while some traders express caution on near-term pullbacks.\n\n**KEY EXAMPLES:**\n- JPMorgan and BlackRock tokenized fund moves, plus Fidelity International's Moody's-rated tokenized fund launch on Chainlink, signal institutional capital entering crypto markets\n- The CLARITY Act advancing in US Congress after industry-bank negotiations, with traders expecting a \"fast move\" to $90K following the vote\n- Strategy's potential 3,127 BTC purchase this week amid falling stablecoin dominance suggests increased capital inflows into Bitcoin\n- Wall Street buying XRP while retail traders on Binance bet against it, indicating a split between institutional and crypto-native market participants\n- Bitcoin pullback expected near $79,000 support despite short-term selling pressure, with long-term support from Fed balance sheet growth and inflation",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 0.7965517241379308,
+    "theme": "Digital assets"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "** Crypto Market Momentum Amid Regulatory Progress",
-    "summary": "**OVERVIEW:**\nCryptocurrency markets are experiencing bullish sentiment driven by institutional adoption of tokenized funds and anticipated passage of the CLARITY Act, which could provide regulatory clarity for digital assets. Major players including JPMorgan, BlackRock, and Fidelity are launching blockchain-based financial products, while traders expect significant price movements in Bitcoin and Ethereum.\n\n**KEY EXAMPLES:**\n- JPMorgan and BlackRock tokenized fund moves fueling fresh Ethereum upside toward $2.3K\n- Fidelity International launched a Moody's-rated tokenized liquidity fund on Chainlink with JPMorgan providing NAV data\n- Bitcoin traders expect a \"fast move\" to $90K following the CLARITY Act vote, with short-term selling pressure fading\n- XRP receiving institutional inflows from Wall Street while retail traders on Binance remain bearish\n- Strategy's potential 3,127 BTC purchase this week alongside falling stablecoin dominance suggesting increased capital entry",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 0.7925925925925924,
-    "theme": "Digital assets"
+    "title": "** Energy Risk Awards 2026 Winners",
+    "summary": "**OVERVIEW:**\nThe 2026 Energy Risk Awards recognize innovation and excellence across energy markets, risk management, and sustainable finance. Winners span new financial vehicles, advanced data analytics, exchange infrastructure, green financing, and AI-driven market intelligence.\n\n**KEY EXAMPLES:**\n- Parameter Climate launches a new vehicle connecting corporate hedgers with capacity providers\n- North American hedgers adopt AEGIS platform, driven by superior data and volatile markets\n- Exchange receives recognition for reliability and rapid innovation supporting liquid energy contracts\n- Romanian energy company issues country's largest corporate green bond to address risk management challenges\n- AI start-up develops dynamic, auditable carbon market intelligence to help clients navigate policy-driven markets\n- Veyt assists clients in identifying signal within noise in environmental markets\n- Indian national oil company transforms its derivatives offering despite geopolitical challenges",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.0586206896551724,
+    "theme": "AI"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "Mixed Earnings Drive Market Volatility",
-    "summary": "## OVERVIEW:\nCorporate earnings reports delivered mixed results, with some companies beating expectations while others disappointed, creating divergent market movements across sectors. AI-related stocks experienced particular turbulence, swinging between gains from strong chip demand and losses from software earnings concerns.\n\n## KEY EXAMPLES:\n- Chipmaker valued at $40bn amid high AI demand, while Nvidia fell 16% as AI infrastructure stocks suffered steep declines\n- Novartis and Barclays raised guidance after strong results, contrasting with Wingstop's 12% stock slide from profit shortfalls\n- ServiceNow and IBM earnings triggered software sector selloff, though S&P 500 and Nasdaq reached record closing highs boosted by chip stocks\n- Plus500 met expectations with 11% quarterly revenue growth",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.9999999999999999,
+    "title": "U.S.-China Trade Tensions and Supply Chain Vulnerabilities",
+    "summary": "OVERVIEW:\nThe U.S. faces complex trade challenges with China amid weapons stockpile rebuilding needs, shifting trade policies, and global supply chain disruptions. These pressures involve rare-earth mineral dependencies, tariff legal issues, and vulnerabilities in Asian supply chains critical to U.S. infrastructure development.\n\nKEY EXAMPLES:\n- The U.S. needs rare-earth minerals dominated by China to rebuild weapons stockpiles depleted by the Iran war\n- China's trade surplus increased from $1 trillion to $1.2 trillion despite U.S. trade policy changes, while the U.S. trade deficit remained at $1.2 trillion\n- Middle East conflicts threaten southeast Asian supply chains that are critical suppliers for U.S. AI infrastructure and heavily dependent on Middle East energy\n- China's government-developed electric vehicle, lithium battery, and solar panel industries have expanded global trade, with EVs and batteries driving much of China's recent trade surplus growth\n- The U.S. government must return approximately $160 billion in duties collected from tariffs deemed illegal, with potential additional losses from related cases",
+    "article_count": 28,
+    "topicality": 28.0,
+    "theme_weight": 0.9892857142857142,
     "theme": "Inflation"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Energy Risk Awards 2026 Winners",
-    "summary": "OVERVIEW:\nThe Energy Risk Awards 2026 recognize companies and platforms that have demonstrated innovation and resilience in energy risk management, hedging, and derivatives trading. Winners span corporate energy hedging, financial infrastructure, sustainable finance, and emerging market solutions.\n\nKEY EXAMPLES:\n- Parameter Climate launched a new vehicle connecting corporate hedgers with capacity providers\n- AEGIS attracted North American hedgers through superior data amid volatile markets\n- A Romanian energy company issued the country's largest corporate green bond to address risk management challenges\n- An exchange achieved liquid contract offerings through reliability and rapid innovation\n- Veyt developed tools to help clients navigate policy-driven environmental markets\n- An energy swap platform achieved record volumes despite regulatory changes\n- An Indian national oil company transformed its derivatives offering amid geopolitical challenges",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0666666666666667,
-    "theme": "AI"
+    "title": "Hot Inflation Data Reshapes Markets",
+    "summary": "OVERVIEW:\nStronger-than-expected inflation readings have revived expectations of prolonged or additional Federal Reserve rate hikes, shifting market dynamics across cryptocurrencies, currencies, and bonds. Central banks face mounting pressure as persistent inflation and geopolitical risks constrain policy options.\n\nKEY EXAMPLES:\n- April headline CPI rose 3.8% year over year, above forecasts of 3.7%, putting rate cuts off the table and supporting the U.S. dollar\n- Producer inflation data similarly exceeded expectations, keeping rate hikes in play and strengthening the dollar against sterling\n- Bitcoin dropped below $80,000 as bond yields returned to 1998 stress levels amid financial crisis concerns\n- Tokenized Treasuries reached $15 billion as investors shifted away from volatile crypto assets due to Fed rate-rise concerns\n- The Federal Reserve's economic forecasts now project more persistent inflation in 2026 than previously expected, driven partly by cost-push shocks",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 0.9884615384615384,
+    "theme": "Inflation"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Global Crypto Enforcement and Sanctions Surge",
-    "summary": "OVERVIEW:\nGovernments and law enforcement agencies worldwide are intensifying crackdowns on cryptocurrency-related crime and illicit activity, from prosecuting individual executives to imposing broad sectoral sanctions and seizing record amounts of digital assets. These coordinated efforts span multiple jurisdictions and target diverse threats including scam networks, state-sponsored theft, sanctions evasion, and financial crimes.\n\nKEY EXAMPLES:\n- U.S. Department of Justice and Treasury launched sweeping enforcement actions against Southeast Asian scam centers and crypto fraud networks\n- Lazarus Group (North Korea-linked) stole approximately $292 million in rsETH from KelpDAO's LayerZero bridge in April 2026\n- EU imposed a total sectoral ban on Russia-based crypto service providers and decentralized platforms in its 20th sanctions package\n- OFAC seized a record $344 million in Tether from Iran's Central Bank and updated its designation\n- Former Celsius chief revenue officer Roni Cohen-Pavon agreed to forfeit $1 million in proceeds from his crimes ahead of sentencing",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 0.9913043478260868,
-    "theme": "Others"
+    "title": "** Iran Conflict Drives Oil and Inflation Surge",
+    "summary": "**OVERVIEW:**\nMilitary conflict in the Middle East involving Iran has triggered significant increases in global oil prices and US inflation, with ripple effects across consumer goods and services. The disruption has pushed inflation to its highest levels in roughly a year and affected pricing in multiple sectors of the economy.\n\n**KEY EXAMPLES:**\n- Gasoline prices surged, pushing April inflation to the highest level since late 2023\n- Global oil prices climbed nearly 50% since the end of February, with an estimated loss of nearly 1 billion barrels since the start of the Iran war 75 days ago\n- Air travel costs are rising as oil prices remain elevated following the US and Israel's conflict with Iran\n- Inflation effects are visible in grocery stores as consumers feel the impact of the conflict",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.0,
+    "theme": "Inflation"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "TOPIC 10",
-    "summary": "Summary unavailable.",
+    "title": "** Tech Companies Cut Jobs for AI Investments",
+    "summary": "**OVERVIEW:**\nMajor technology companies are reducing their workforces while simultaneously investing heavily in artificial intelligence capabilities. These layoffs span multiple sectors and are explicitly tied to companies' strategies to prioritize AI-driven efficiency and automation.\n\n**KEY EXAMPLES:**\n- Snap and Coinbase have attributed recent staff reductions to AI\n- Amazon cut jobs in its retail business while doubling down on AI-driven efficiency gains\n- LinkedIn is cutting marketing roles and reducing paid media spend as it leans on AI\n- Cisco announced job cuts affecting roughly 4,000 staff as CEO Chuck Robbins shifts focus to AI investments",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 1.032,
+    "theme": "AI"
+  },
+  "T11": {
+    "topic_id": "T11",
+    "bertopic_id": 11,
+    "title": "Legal Cases Across Multiple Domains",
+    "summary": "OVERVIEW:\nRecent court proceedings span employment discrimination, regulatory conflicts, criminal sentencing, and international legal matters. These cases involve government agencies, corporate entities, and individuals facing charges ranging from fraud to espionage.\n\nKEY EXAMPLES:\n- The EEOC found a paper engaged in unlawful employment practices by denying a man a promotion.\n- A former Celsius executive agreed to forfeit $1 million after pleading guilty to crimes.\n- A Utah mother was sentenced to life without parole for murdering her husband by lacing his cocktail with lethal fentanyl.\n- A Chinese-American was convicted of acting as a Chinese agent in connection with an illegal police station operation in New York's Chinatown.",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 1.026086956521739,
+    "theme": "Others"
+  },
+  "T12": {
+    "topic_id": "T12",
+    "bertopic_id": 12,
+    "title": "House Committee Reports and Orders",
+    "summary": "## OVERVIEW:\nMultiple House committees issued ordered reports and reports across 2025 and 2026. These include actions from the Committees on Education and Workforce, Foreign Affairs, Financial Services, and Rules.\n\n## KEY EXAMPLES:\n- House Committee on Education and Workforce ordered reports on March 17, 2026\n- House Committee on Foreign Affairs ordered reports on April 22, 2026\n- House Committee on Rules reported on April 28, 2026\n- House Committee on Financial Services ordered report on July 22, 2025",
     "article_count": 23,
     "topicality": 23.0,
     "theme_weight": 1.026086956521739,
     "theme": "Cyber attacks"
   },
-  "T11": {
-    "topic_id": "T11",
-    "bertopic_id": 11,
-    "title": "** IPO Market Activity and Crypto Trading Expansion",
-    "summary": "**OVERVIEW:**\nThe market is experiencing mixed IPO activity, with some companies moving forward with public offerings while others face headwinds or take alternative approaches. Meanwhile, cryptocurrency services are expanding into retail markets.\n\n**KEY EXAMPLES:**\n- Cerebras priced its IPO at $185 per share to raise $5.55 billion\n- Ledger postponed its U.S. IPO plans due to market conditions\n- Blackstone Digital Infrastructure Trust priced a $1.75 billion IPO at $20 per share\n- Charles Schwab launched U.S. spot crypto trading for retail customers\n- QXO pursued a direct shareholder offer after being rejected multiple times",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 0.8818181818181816,
-    "theme": "Digital assets"
-  },
-  "T12": {
-    "topic_id": "T12",
-    "bertopic_id": 12,
-    "title": "Hot Inflation Data Pressures Markets",
-    "summary": "OVERVIEW:\nStronger-than-expected U.S. inflation readings have revived expectations of higher interest rates for longer, strengthening the dollar while pressuring cryptocurrencies and global currencies. Central banks face constraints from both domestic inflation concerns and geopolitical tensions in the Middle East.\n\nKEY EXAMPLES:\n- April headline CPI rose 3.8% year over year, above forecasts, putting rate hikes back on the table after markets had anticipated cuts\n- Producer inflation data also came in hotter than expected, supporting dollar strength and pushing back rate-cut timelines\n- Bitcoin and crypto markets have been capped by the higher-for-longer rates outlook, with Bitcoin dropping below $80,000\n- Sterling weakened against the dollar as hot inflation data and political uncertainty (Starmer pressure) weighed on the pound\n- Tokenized Treasuries surged to $15 billion as investors reassess Fed policy amid rate-rise concerns and geopolitical risks including the U.S.-Iran impasse",
-    "article_count": 22,
-    "topicality": 22.0,
-    "theme_weight": 0.9909090909090907,
-    "theme": "Inflation"
-  },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "Bitcoin Volatile Around $80,000 Amid Macro Headwinds",
-    "summary": "OVERVIEW:\nBitcoin has fluctuated around the $80,000 level as macroeconomic pressures\u2014particularly higher-than-expected US producer price inflation hitting 6%\u2014weigh on crypto markets. The currency is being tested by multiple risk factors including geopolitical tensions and upcoming high-stakes trade negotiations.\n\nKEY EXAMPLES:\n- Bitcoin fell below $80,000 after April US PPI data reached 6%, matching 2022 inflation levels and stoking broader market concerns\n- President Trump's visit to Beijing for talks with Chinese leader Xi Jinping is being viewed as a critical test for whether Bitcoin's recent rally can sustain through a difficult macro week\n- Bitcoin is testing key resistance around $81,000\u2013$82,000 as traders navigate inflation fears and geopolitical uncertainty",
-    "article_count": 20,
-    "topicality": 20.0,
-    "theme_weight": 0.9049999999999999,
-    "theme": "Digital assets"
+    "title": "** Trump's Beijing Summit Amid US-China Tensions",
+    "summary": "**OVERVIEW:**\nPresident Trump is visiting China for a landmark summit with Xi Jinping amid escalating geopolitical tensions, including the US-Iran conflict and trade disputes. Both nations are positioning themselves strategically ahead of negotiations, with analysts noting that neither side wants to appear as a deal killer while attempting to build leverage.\n\n**KEY EXAMPLES:**\n- The US-Iran war is disrupting global energy supplies and adding strain to Washington-Beijing relations\n- Trump arrived in Beijing for a two-day summit clouded by trade and technology conflicts\n- Trump scaled back his initial plans for harsher trade moves specifically targeting China\n- Trade and technology issues remain the biggest sources of tension between the two nations ahead of the first summit in nine years",
+    "article_count": 22,
+    "topicality": 22.0,
+    "theme_weight": 1.0,
+    "theme": "Inflation"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "Warsh Confirmed Fed Chair Amid Economic Challenges",
-    "summary": "OVERVIEW:\nKevin Warsh was confirmed as Federal Reserve chairman in a narrow 54-45 Senate vote, taking leadership of the central bank during a period of persistent inflation, growing household debt, and questions about the Fed's independence. His confirmation marks the end of a contentious selection process for the nation's top monetary policy position.\n\nKEY EXAMPLES:\n- The Senate confirmed Warsh with Republicans holding a slim majority to replace Jerome Powell as Fed chairman\n- The New York Fed's economic model forecasts stronger 2026 growth but more persistent inflation than previously predicted, with tariffs cited as a key factor\n- Household debt reached $18.8 trillion in Q1 2026, with student loan defaults rising and the delinquency rate nearing pre-pandemic levels of just over 10 percent\n- Warsh, once known as an inflation \"hawk,\" has shifted toward supporting Trump's push for lower interest rates",
-    "article_count": 13,
-    "topicality": 13.0,
-    "theme_weight": 1.0615384615384613,
-    "theme": "Inflation"
+    "title": "** Escalating Crypto and Cyber Threats Globally",
+    "summary": "**OVERVIEW:**\nGlobal cryptocurrency exchanges, financial systems, and digital infrastructure face intensifying attacks from state-sponsored actors, criminal networks, and financially motivated threat groups. These incidents span from major crypto platform breaches to geopolitical cyber operations and regulatory crackdowns on sanctioned entities.\n\n**KEY EXAMPLES:**\n- Grinex, a Russia-linked exchange, suspended operations following a claimed 1 billion ruble cyberattack\n- North Korea's Lazarus Group stole approximately $292 million in rsETH tokens from KelpDAO's LayerZero bridge\n- The U.S. government launched coordinated enforcement actions against Southeast Asian scam centers and crypto fraud networks\n- The EU implemented a 20th Russia sanctions package with sectoral bans on Russia-based crypto service providers\n- Iran's Islamic Revolutionary Guard Corps began extracting cryptocurrency tolls from the Strait of Hormuz\n- A data theft and extortion group deployed a worm targeting systems with Iran's time zone or Farsi language settings\n- End-of-life routers were compromised across 120 countries",
+    "article_count": 22,
+    "topicality": 22.0,
+    "theme_weight": 0.9727272727272727,
+    "theme": "Cyber attacks"
   }
 }
