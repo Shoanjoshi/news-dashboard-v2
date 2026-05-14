@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "** Rising Threats in Cybersecurity Landscape",
-    "summary": "**OVERVIEW:**\nRecent cyberattacks demonstrate an escalating threat environment involving state-backed hackers, botnets, AI-enhanced attacks, and social engineering tactics targeting critical infrastructure, educational institutions, and network systems globally. Security vulnerabilities are being discovered and exploited at record rates, while defenders increasingly rely on AI to identify flaws before attackers do.\n\n**KEY EXAMPLES:**\n- Russian military intelligence hackers harvested authentication tokens from Microsoft Office users across 18,000+ networks by exploiting known router vulnerabilities\n- U.S., Canadian, and German authorities dismantled four major botnets (Aisuru, Kimwolf, JackSkid, Mossad) controlling over 3 million compromised IoT devices responsible for record-breaking DDoS attacks\n- A cybercrime group conducted a data extortion attack on Canvas education platform, threatening to leak data from 275 million students across nearly 9,000 institutions\n- Two threat campaigns leveraged AI agents to support attacks against targets in Mexico and Brazil",
+    "title": "State-Sponsored and Criminal Cyber Attacks Surge Globally",
+    "summary": "OVERVIEW:\nMultiple coordinated law enforcement actions and security disclosures reveal a widespread landscape of sophisticated cyber threats spanning state-sponsored espionage, ransomware gangs, botnets, and financially motivated extortion campaigns targeting critical infrastructure, cryptocurrency platforms, and networks worldwide.\n\nKEY EXAMPLES:\n- Russian military intelligence hackers harvested authentication tokens from over 18,000 Microsoft Office networks using known router vulnerabilities without deploying malware\n- U.S., Canadian, and German authorities dismantled four botnets (Aisuru, Kimwolf, JackSkid, Mossad) that compromised over 3 million IoT devices and conducted record-breaking DDoS attacks\n- North Korean Lazarus Group stole approximately $292 million in cryptocurrency from KelpDAO's LayerZero bridge in April 2026\n- German authorities identified Russian cybercriminal Daniil Maksimovich Shchukin as the operator behind ransomware groups GandCrab and REvil, responsible for at least 130 extortion attacks between 2019-2021\n- A financially motivated hacking group deployed a worm targeting Iran-configured systems through poorly secured cloud services",
     "article_count": 45,
     "topicality": 45.0,
-    "theme_weight": 1.0,
+    "theme_weight": 0.9800000000000002,
     "theme": "Cyber attacks"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Trump's China Summit Amid Trade Shifts",
-    "summary": "OVERVIEW:\nPresident Trump is visiting Beijing for a high-level summit with Chinese leader Xi Jinping as US-China trade policy undergoes significant changes, though with limited effect on overall trade deficits. The meeting occurs amid geopolitical tensions, including the US-Iran conflict and longstanding trade disputes.\n\nKEY EXAMPLES:\n- Trump scaled back harsher trade moves on China than originally planned upon taking office\n- US trade deficit remained at $1.2 trillion in 2025 despite major policy changes, while China's global trade surplus increased to $1.2 trillion\n- The US-Iran war is disrupting global energy supplies and adding strain to Washington-Beijing ties, with the US hoping China will play a more active role in resolving the crisis\n- Both countries have accumulated negotiating positions ahead of the summit, with neither side wanting to appear as a \"deal killer\"",
-    "article_count": 44,
-    "topicality": 44.0,
-    "theme_weight": 0.9931818181818183,
-    "theme": "Inflation"
+    "title": "** Institutional Crypto Adoption and Market Dynamics",
+    "summary": "**OVERVIEW:**\nMajor financial institutions and corporations are increasingly entering the crypto market through Bitcoin ETFs, tokenized assets, and strategic holdings, while simultaneously exposing structural vulnerabilities in Bitcoin's price dynamics and liquidity. The sector is experiencing competing forces of institutional inflows and retail volatility that are reshaping market fundamentals.\n\n**KEY EXAMPLES:**\n- JPMorgan increased Bitcoin ETF holdings by 174% in Q1, with BlackRock's IBIT leading institutional exposure, while also filing for a new tokenized fund as RWAs cross $32 billion\n- MicroStrategy's preferred-stock funding mechanism enabled it to accumulate 818,869 BTC and potentially purchase $30 billion more in 2026, positioning it as a structural demand force alongside ETF flows\n- Bitcoin ETFs experienced $635 million in outflows as BTC dipped below $80,000, with BlackRock's IBIT leading redemptions despite institutional accumulation elsewhere\n- Wall Street is buying XRP through ETF inflows while crypto-native traders on Binance bet against it, revealing a split between traditional finance and crypto-native sentiment\n- Bitcoin lost $80,000 support and fell to $78,759.70 while the S&P 500 hit new all-time highs, exposing Bitcoin's decoupling from equities despite being treated as a high-beta proxy",
+    "article_count": 43,
+    "topicality": 43.0,
+    "theme_weight": 0.8000000000000002,
+    "theme": "Digital assets"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "** Bitcoin Falls Below $80K Amid Inflation Surge",
-    "summary": "**OVERVIEW:**\nBitcoin has declined below the $80,000 level following higher-than-expected US inflation data, including a Producer Price Index (PPI) that hit 6%\u2014matching 2022 levels. The stronger-than-anticipated inflation readings have revived concerns about prolonged higher interest rates, offsetting earlier expectations for Federal Reserve rate cuts and creating headwinds for crypto markets.\n\n**KEY EXAMPLES:**\n- Bitcoin price slipped from the low $81,000s to $79,706 following April's hotter-than-expected US inflation print, with $80,000 becoming a key intraday support level\n- April headline CPI rose 3.8% year-over-year (above the expected 3.7%), putting rate hikes back on the table instead of the rate cuts crypto markets had anticipated\n- US PPI inflation hit 6% in April, the highest level since 2022, compounding inflation concerns alongside geopolitical tensions including US-Iran conflict and elevated oil prices\n- Trump's visit to Beijing and tariff threats added additional market uncertainty during an already volatile macro week for Bitcoin trading",
-    "article_count": 43,
-    "topicality": 43.0,
-    "theme_weight": 0.9069767441860467,
-    "theme": "Inflation"
+    "title": "TOPIC 2",
+    "summary": "Summary unavailable.",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 1.0558823529411767,
+    "theme": "Consumer debt"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "K-Shaped Economic Divergence and Pressures",
-    "summary": "OVERVIEW:\nRecent economic data reveals a widening gap between high-income and low-income households since 2023, with consumer spending and wealth gains concentrated among higher earners while lower-income groups face greater inflation pressures. This K-shaped pattern reflects structural economic shifts affecting wages, prices, and macroeconomic stability.\n\nKEY EXAMPLES:\n- Retail spending growth since 2023 has been driven primarily by high-income households earning over $125,000 annually, while lower-income households lag behind\n- In March 2026, energy price surges created divergent gasoline spending patterns: high-income households maintained real consumption while low-income households reduced consumption despite higher nominal spending\n- Wealth has increased most for high-income households since 2023, while inflation has risen most for low-income households, exacerbating the divergence in real spending power",
-    "article_count": 42,
-    "topicality": 42.0,
-    "theme_weight": 1.030952380952381,
-    "theme": "Recessionary pressures"
+    "title": "U.S.-China Trade Tensions and Supply Chain Shifts",
+    "summary": "OVERVIEW:\nDespite significant changes to U.S. trade policy toward China over the past year, overall trade deficits have remained largely unchanged, while China's global trade surplus actually increased. However, bilateral trade flows between the U.S., China, and Southeast Asia have shifted substantially, with broader geopolitical challenges\u2014including Middle East conflicts and critical mineral dependencies\u2014complicating U.S.-China trade relations.\n\nKEY EXAMPLES:\n- The U.S. twelve-month trade deficit ended 2025 at $1.2 trillion, nearly unchanged from 2024, while China's global trade surplus rose from $1 trillion to $1.2 trillion\n- China's advanced technology industries (electric vehicles, lithium batteries, solar panels) have driven increases in its trade surplus through improved price and quality\n- The U.S. faces dependency on China for rare-earth minerals needed to rebuild weapons stockpiles, particularly following conflicts in the Middle East\n- Southeast Asian supply chains, critical for AI infrastructure and heavily reliant on Middle East energy, present vulnerabilities to global supply shocks\n- The administration has had to scale back initially planned harsh trade moves on China while considering additional tariffs, such as a proposed 10% tariff over drug inflow",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.9818181818181818,
+    "theme": "Inflation"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "Market Movements in AI and Tech Stocks",
-    "summary": "OVERVIEW:\nRecent market activity shows strong investor enthusiasm for AI-related companies, particularly chipmakers, alongside mixed performance in other tech sectors. Several companies have experienced significant stock movements driven by earnings reports, IPO pricing, and strategic announcements.\n\nKEY EXAMPLES:\n- Cerebras priced its IPO at $185 per share, well above its $150-$160 range, raising $5.55 billion and achieving a $40 billion valuation amid high demand for AI stocks\n- Cisco's stock reached record levels following an upbeat earnings report and announcement of increased AI investment\n- Wingstop's stock declined 12% after profit fell short of estimates",
-    "article_count": 34,
-    "topicality": 34.0,
-    "theme_weight": 0.9470588235294118,
-    "theme": "Digital assets"
+    "title": "Bitcoin Volatility Amid Macro Headwinds",
+    "summary": "OVERVIEW:\nBitcoin is experiencing significant price volatility around the $80,000 level, driven by macroeconomic factors including unexpected inflation readings, Federal Reserve policy expectations, and trade tensions. Market participants face liquidation risks as leverage positions become crowded in volatile conditions.\n\nKEY EXAMPLES:\n- Bitcoin fell to $78,725 after hotter-than-expected US inflation data, pushing approximately $1 billion of leveraged long positions toward liquidation\n- Bitcoin slipped to $94,000 as risk appetite declined due to Trump tariff threats\n- Trump's high-stakes Beijing visit with Xi Jinping is being viewed as a critical test of whether Bitcoin's recent rally can sustain through a challenging macroeconomic week",
+    "article_count": 32,
+    "topicality": 32.0,
+    "theme_weight": 0.9281250000000001,
+    "theme": "Inflation"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "AI Adoption Reshaping Workforce and Business",
-    "summary": "OVERVIEW:\nCompanies across multiple sectors are restructuring operations to leverage artificial intelligence, leading to staff reductions in certain roles while simultaneously investing heavily in AI infrastructure and applications. This shift is affecting everything from retail and marketing to emerging sectors like accounting and property management.\n\nKEY EXAMPLES:\n- Snap and Coinbase have attributed recent layoffs to AI implementation\n- Amazon is cutting retail jobs as it pursues AI-driven efficiency gains\n- LinkedIn is reducing marketing and paid media roles while adopting AI capabilities\n- Venture-capital firms are deploying AI in traditionally non-tech fields like accounting and property management",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 1.021875,
-    "theme": "AI"
+    "title": "TOPIC 5",
+    "summary": "Summary unavailable.",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 0.9833333333333332,
+    "theme": "Others"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "TOPIC 6",
-    "summary": "Summary unavailable.",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.8115384615384614,
-    "theme": "Digital assets"
+    "title": "Federal Reserve Enforcement and Regulatory Actions",
+    "summary": "OVERVIEW:\nThe Federal Reserve Board has issued multiple enforcement actions against banking institutions and employees while also terminating previous enforcement actions with several major financial organizations. The Board continues regulatory oversight through applications approvals and service expansion initiatives.\n\nKEY EXAMPLES:\n- Enforcement action issued against Community Bankshares, Inc.\n- Enforcement actions terminated with Cr\u00e9dit Agricole S.A., Goldman Sachs Group, Inc., and Mega International Commercial Bank Co., Ltd.\n- Enforcement actions issued against former employees of First Financial Bank and United Bank\n- Approval granted for Burke & Herbert Financial Services Corp. application",
+    "article_count": 29,
+    "topicality": 29.0,
+    "theme_weight": 1.0827586206896553,
+    "theme": "Bank lending and credit risk"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
     "title": "TOPIC 7",
     "summary": "Summary unavailable.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0250000000000001,
-    "theme": "Consumer debt"
+    "article_count": 27,
+    "topicality": 27.0,
+    "theme_weight": 1.0148148148148148,
+    "theme": "Recessionary pressures"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Federal Reserve Policy and Banking Sector Stress",
-    "summary": "OVERVIEW:\nRecent developments in monetary policy, regulatory changes, and financial sector stress are reshaping the banking landscape. The Federal Reserve is managing economic conditions through multiple policy tools while policymakers monitor emerging risks from nonbank financial institutions and broader market uncertainties.\n\nKEY EXAMPLES:\n- The Fed's 2022-23 tightening cycle used both administrative rate changes and balance sheet adjustments to influence money market financing conditions\n- Nonbank financial institution (NBFI) bankruptcies and fund wind-downs, including Tricolor, First Brands, and Blue Owl Capital Corp II, have directly impacted bank stocks despite assessments that systemic risk remains limited\n- Kevin Warsh was confirmed as Federal Reserve chairman amid ongoing concerns about central bank independence and inflation at three-year highs\n- Regulators are modernizing capital frameworks and enhancing leverage ratios for community banks to strengthen the banking system\n- The Senate Banking Committee's CLARITY Act cryptocurrency bill faces over 100 amendments, reflecting tensions between banks, Democrats, and crypto industry groups over stablecoin regulation",
-    "article_count": 23,
-    "topicality": 23.0,
-    "theme_weight": 1.0956521739130434,
-    "theme": "Bank lending and credit risk"
+    "title": "Market Trends Across Finance and Tech",
+    "summary": "OVERVIEW:\nFinancial and technology markets are experiencing significant shifts, including increased investment in security infrastructure, evolving trading practices, and cautious optimism amid earnings season and regulatory discussions.\n\nKEY EXAMPLES:\n- Security startups attracted more investment dollars than M&A value in 1Q26, marking a rare shift in deal activity\n- Buy-side firms are exploring direct connectivity with liquidity providers to reduce trading costs\n- Tech sector faces overbought warnings ahead of major earnings announcements\n- Regulators are considering guardrails for trading and advice algorithms to balance innovation with oversight",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 1.0038461538461538,
+    "theme": "Private credit"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "Global Crypto Enforcement and Sanctions Surge",
-    "summary": "OVERVIEW:\nGovernments and international bodies are intensifying enforcement actions against cryptocurrency-related criminal activity, sanctioned entities, and illicit use of digital assets. Actions span from targeting scam networks and stolen funds to implementing sectoral bans and asset seizures.\n\nKEY EXAMPLES:\n- The U.S. DOJ and Treasury launched coordinated enforcement against Southeast Asian scam centers and crypto fraud networks\n- The EU's 20th Russia sanctions package introduced a sectoral ban on Russia-based crypto service providers and decentralized platforms\n- OFAC seized a record $344 million in Tether from Iran's Central Bank and updated its designation\n- Lazarus Group stole approximately $292 million in rsETH from KelpDAO's LayerZero bridge exploit\n- Grinex, a sanctioned Russian exchange successor to Garantex, suspended operations following an alleged cyberattack\n- A former Celsius executive agreed to forfeit $1 million in proceeds from his crimes ahead of sentencing",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 0.9904761904761903,
-    "theme": "Others"
+    "title": "Fraud Cases and Enforcement Actions",
+    "summary": "OVERVIEW:\nMultiple fraud-related legal cases and enforcement efforts are underway across different sectors, including high-profile criminal charges, civil settlements, and victim lawsuits. Authorities and platforms are also implementing measures to detect and prevent fraudulent activity.\n\nKEY EXAMPLES:\n- US authorities are moving to drop criminal fraud charges against Indian billionaire Gautam Adani and settle related SEC civil cases after more than a year\n- FTX victims are suing law firm Fenwick & West for $525M, alleging the firm helped build infrastructure that enabled the fraud\n- Quantexa won a \u00a3175m contract to detect fraud and tax return errors through its financial data platform\n- XRP Ledger users face a surge in fake airdrop scams and fraud attempts, prompting warnings from Ripple insiders",
+    "article_count": 24,
+    "topicality": 24.0,
+    "theme_weight": 0.9874999999999999,
+    "theme": "Digital assets"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "Iran Conflict Drives Oil and Inflation Surge",
-    "summary": "OVERVIEW:\nMilitary conflict involving Iran has disrupted global oil supplies, causing oil prices to climb nearly 50% since late February and creating widespread inflationary pressures across the economy. The supply disruption has resulted in an estimated loss of nearly 1 billion barrels over 75 days, with consequences rippling through consumer prices.\n\nKEY EXAMPLES:\n- Gasoline prices surged, pushing April inflation to its highest level since late 2023\n- Grocery store prices have increased as effects of the war ripple through the economy\n- Airline ticket prices are rising due to sustained high oil prices from the US and Israel's conflict with Iran\n- US inflation reached its highest level since May 2023 as consumers feel the broader economic impact",
-    "article_count": 21,
-    "topicality": 21.0,
-    "theme_weight": 1.0,
-    "theme": "Inflation"
+    "title": "** Energy Risk Awards 2026 Innovation Winners",
+    "summary": "**OVERVIEW:**\nThe Energy Risk Awards 2026 highlight organizations across the energy and commodities sectors that have implemented innovative solutions to manage market risks and regulatory challenges. Winners range from fintech start-ups to established exchanges and financial institutions, each addressing critical needs in hedging, carbon markets, and derivatives trading.\n\n**KEY EXAMPLES:**\n- Parameter Climate launched a new vehicle connecting corporate hedgers with capacity providers\n- A start-up developed AI-driven dynamic carbon market intelligence with audit capabilities\n- Romanian energy company issued the country's largest corporate green bond to address risk management\n- An exchange maintained liquid contracts through reliability and rapid innovation\n- An energy swap platform achieved record volumes despite regulatory constraints\n- An Indian national oil company transformed its derivatives offering amid geopolitical shifts",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 1.0347826086956522,
+    "theme": "AI"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "Regulatory Pushback on Business Practices",
-    "summary": "OVERVIEW:\nGovernment officials and regulators are intervening in various industries to prevent what they view as harmful business practices, from financial exclusion to consumer protection concerns. These actions span banking, fintech, acquisitions, and consumer products.\n\nKEY EXAMPLES:\n- The president directed major banks to stop denying services to conservative businesses\n- NYC's mayor opposed a money transfer company's acquisition, citing potential harm to immigrants' remittance costs\n- A regulatory official warned that trading and advice algorithms will require guardrails to prevent misuse\n- A spokesperson cautioned the president against allowing flavored e-cigarette sales due to appeal to children",
+    "title": "AI's Expanding Role in Security and Workplace",
+    "summary": "## OVERVIEW:\nArtificial intelligence is demonstrating significant capabilities in identifying software vulnerabilities and reshaping workplace dynamics, while major technology companies are integrating AI tools into their operations. However, adoption remains uneven across workers and organizations, and evidence of broad labor market disruption remains limited.\n\n## KEY EXAMPLES:\n- Apple, Google, Microsoft, Mozilla, and Oracle are fixing record volumes of security bugs after AI identified vulnerabilities in their code\n- A November 2025 survey found that while some workers have access to AI tools at work, many employers have not yet provided AI training or access to their employees\n- Job posting data shows no distinct AI-driven decline in labor demand since ChatGPT's release in late 2022, despite overall hiring slowdown\n- Boston Consulting Group developed an AI agent trained on both the best and worst behaviors of its top salespeople",
     "article_count": 20,
     "topicality": 20.0,
-    "theme_weight": 1.02,
-    "theme": "Others"
+    "theme_weight": 1.01,
+    "theme": "AI"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "** Energy Risk Awards 2026 Winners",
-    "summary": "**OVERVIEW:**\nThe Energy Risk Awards 2026 recognize innovations and achievements across the energy sector's risk management and hedging landscape. Winners span new platforms, exchanges, and financial instruments designed to help corporations and institutions navigate volatile markets and regulatory environments.\n\n**KEY EXAMPLES:**\n- Parameter Climate launches a new vehicle connecting corporate hedgers with capacity providers\n- An energy swap platform achieves record volumes despite regulatory changes\n- A Romanian energy company issues the country's largest corporate green bond to address risk management\n- A US banking giant advances sustainable finance goals amid political challenges\n- An exchange provides liquid contracts through reliability and rapid innovation\n- North American hedgers adopt AEGIS platform amid volatile markets and superior data offerings\n- Veyt helps clients navigate policy-driven environmental markets\n- An Indian national oil company transforms its derivatives offering following geopolitical shifts",
-    "article_count": 15,
-    "topicality": 15.0,
-    "theme_weight": 1.0666666666666664,
-    "theme": "Commercial real estate"
+    "title": "** Xi-Trump Beijing Summit on Stability",
+    "summary": "**OVERVIEW:**\nChinese President Xi Jinping and US President Donald Trump held their first summit in nine years in Beijing on Thursday, agreeing to prioritize stability in bilateral relations. However, the two leaders emphasized markedly different priorities, with the US focusing on trade, fentanyl, and Iran, while China stressed Taiwan, relationship stabilization, and personal diplomatic gestures.\n\n**KEY EXAMPLES:**\n- Xi raised the \"Taiwan question\" early in talks, warning that mishandling it could lead to conflict and push relations into an \"extremely dangerous situation,\" with a notably tougher tone than their 2017 summit\n- Trump said Xi offered to help broker an end to the Iran conflict and ensure freedom of navigation through the Strait of Hormuz\n- The two leaders agreed to make stability a key goal of relations over the next three years and beyond, with Trump inviting Xi and first lady Peng Liyuan to visit the White House\n- The summit took place amid broader geopolitical tensions, including US-Iran conflict disrupting global energy supplies and adding strain to Washington-Beijing ties",
+    "article_count": 20,
+    "topicality": 20.0,
+    "theme_weight": 1.0,
+    "theme": "Inflation"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "** Risk Management and Market Uncertainty",
-    "summary": "**OVERVIEW:**\nMarket participants and financial institutions are navigating heightened uncertainty across multiple sectors, from political transitions to digital asset regulation. Risk assessment tools and management strategies are becoming increasingly important as investors seek clarity and stability.\n\n**KEY EXAMPLES:**\n- UK leadership uncertainty has unsettled investors and driven bond yields higher, with Andy Burnham identified as a risk factor for government bonds\n- Digital asset markets require regulatory clarity to support risk management and hedging through prediction market signals\n- Enterprise risk management implementation is a key consideration for multinational corporations facing transitional challenges\n- Financial services sector transitions require coordination with national authorities to mitigate personnel and operational risks",
-    "article_count": 14,
-    "topicality": 14.0,
-    "theme_weight": 1.0714285714285712,
-    "theme": "Private credit"
+    "title": "Markets Navigate Competing Pressures",
+    "summary": "OVERVIEW:\nGlobal financial markets are experiencing volatility driven by competing forces\u2014geopolitical tensions and policy uncertainty creating nervous investor sentiment, while some sectors like equities show strength on optimism around government appointments. Bond yields and asset prices are fluctuating as central banks face constraints from inflation concerns.\n\nKEY EXAMPLES:\n- Bond yields hit 1998 stress levels and Bitcoin dropped below $80,000 amid global financial crisis fears\n- The Dow hit record highs following Trump's Treasury secretary pick, though the 10-year Treasury yield fell\n- Stock futures and bond yields dropped sharply on reports of Putin updating nuclear doctrine\n- Vestas Wind Systems stock declined as the company guided margins to the low end of guidance",
+    "article_count": 19,
+    "topicality": 19.0,
+    "theme_weight": 1.0052631578947366,
+    "theme": "Recessionary pressures"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "** Federal Reserve Board Regulatory Actions",
-    "summary": "**OVERVIEW:**\nThe Federal Reserve Board has issued multiple enforcement actions against banking institutions and individuals for regulatory violations, while also approving applications from other financial entities and terminating previous enforcement actions with certain banks.\n\n**KEY EXAMPLES:**\n- Enforcement action issued with Community Bankshares, Inc.\n- Enforcement actions issued with former employees of First Financial Bank, United Bank, Ally Bank, and Regions Bank\n- Enforcement actions terminated with F & M Holding Company, Inc., Thread Bancorp, Inc., Cr\u00e9dit Agricole S.A., Cr\u00e9dit Agricole Corporate and Investment Bank, Mega International Commercial Bank Co., Ltd., and Goldman Sachs Group, Inc.\n- Applications approved for Burke & Herbert Financial Services Corp. and Columbia Bank MHC/Columbia Financial, Inc.",
-    "article_count": 13,
-    "topicality": 13.0,
-    "theme_weight": 1.1230769230769229,
-    "theme": "Bank lending and credit risk"
+    "title": "Testing Postponements and Congressional Education Reports",
+    "summary": "## OVERVIEW:\nEducational institutions nationwide are delaying end-of-year examinations, while the House Committee on Education and Workforce has issued multiple reports on education matters in early 2026.\n\n## KEY EXAMPLES:\n- Schools and colleges across the country postponing year-end tests\n- House Committee on Education and Workforce reports issued April 6, 2026\n- House Committee on Education and Workforce reports issued March 17, 2026",
+    "article_count": 7,
+    "topicality": 7.0,
+    "theme_weight": 1.0,
+    "theme": "AI"
   }
 }
