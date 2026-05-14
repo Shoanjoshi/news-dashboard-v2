@@ -140,6 +140,7 @@ jobs:
           git status
 
           git commit -m "Update data files and dashboard HTML" || echo "No changes to commit"
+          git pull --rebase origin main
           git push origin main
 
       # -------------------------------------------------------
