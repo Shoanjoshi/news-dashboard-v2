@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How the Dashboard Works</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 60px;
+  }
+
+  h1 { font-size: 22px; color: #1a2a3a; margin-bottom: 6px; letter-spacing: 0.5px; }
+  .subtitle { font-size: 13px; color: #7a8a9a; margin-bottom: 40px; }
+
+  /* ── SECTION LABELS ── */
+  .section-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #9aabbb;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* ── STEP CARDS ── */
+  .step {
+    background: #fff;
+    border-radius: 16px;
+    padding: 18px 22px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border-left: 5px solid #ccc;
+    transition: transform 0.15s;
+  }
+  .step:hover { transform: translateX(4px); }
+  .step.sources   { border-color: #4a90d9; }
+  .step.collect   { border-color: #27ae60; }
+  .step.topics    { border-color: #8e44ad; }
+  .step.themes    { border-color: #2980b9; }
+  .step.ai        { border-color: #e67e22; }
+  .step.heatmap   { border-color: #16a085; }
+  .step.outputs   { border-color: #c0392b; }
+
+  .icon { font-size: 30px; min-width: 40px; text-align: center; padding-top: 2px; }
+  .text h2 { font-size: 14px; font-weight: 700; color: #1a2a3a; margin-bottom: 3px; }
+  .text p  { font-size: 11.5px; color: #6a7a8a; line-height: 1.55; }
+  .text .tag {
+    display: inline-block;
+    font-size: 10px;
+    background: #eef2ff;
+    color: #5568aa;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin: 4px 3px 0 0;
+  }
+
+  .arrow { font-size: 20px; color: #c5d0da; margin: 5px 0; text-align: center; }
+
+  /* ── SPLIT TRACK (topics + themes in parallel) ── */
+  .split-row {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+  }
+  .split-col { flex: 1; display: flex; flex-direction: column; align-items: center; }
+  .split-arrow { font-size: 18px; color: #c5d0da; margin: 4px 0; }
+
+  .merge-arrow-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    margin: 4px 0;
+  }
+  .merge-line {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #c5d0da;
+    font-size: 18px;
+    gap: 0;
+  }
+  .merge-line span { line-height: 1.1; }
+  .merge-center { font-size: 20px; color: #c5d0da; padding-top: 4px; }
+
+  /* ── OUTPUT GRID ── */
+  .outputs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin-top: 4px;
+  }
+  .output-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    border-top: 3px solid #c0392b;
+    text-align: center;
+  }
+  .output-card .icon { font-size: 22px; min-width: unset; }
+  .output-card h3 { font-size: 12px; font-weight: 700; color: #1a2a3a; margin: 6px 0 3px; }
+  .output-card p  { font-size: 10.5px; color: #7a8a9a; line-height: 1.45; }
+  .output-card.highlight { border-top-color: #16a085; }
+
+  /* ── TRIGGER STRIP ── */
+  .trigger-section { margin-top: 40px; width: 100%; max-width: 580px; }
+  .trigger-row { display: flex; align-items: center; justify-content: center; gap: 0; }
+  .trigger-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    flex: 1;
+  }
+  .trigger-box .icon { font-size: 22px; min-width: unset; }
+  .trigger-box strong { font-size: 12px; color: #1a2a3a; display: block; margin: 4px 0 2px; }
+  .trigger-box p { font-size: 10.5px; color: #6a7a8a; line-height: 1.4; }
+  .trigger-arrow { font-size: 18px; color: #b0bec5; padding: 0 8px; flex-shrink: 0; }
+
+  .footer { margin-top: 32px; font-size: 11px; color: #aab; text-align: center; }
+
+  .container { width: 100%; max-width: 580px; display: flex; flex-direction: column; align-items: center; }
+</style>
+</head>
+<body>
+
+<h1>How the Dashboard Works</h1>
+<p class="subtitle">From raw news to risk intelligence</p>
+
+<div class="container">
+
+  <!-- STEP 1: Sources -->
+  <div class="step sources">
+    <div class="icon">🌐</div>
+    <div class="text">
+      <h2>50+ News Sources</h2>
+      <p>Live feeds from Reuters, FT, WSJ, NYT, IMF, BIS, CoinDesk and more are checked every time you hit Refresh.</p>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <!-- STEP 2: Collect -->
+  <div class="step collect">
+    <div class="icon">📥</div>
+    <div class="text">
+      <h2>Article Collection</h2>
+      <p>Hundreds of article summaries are pulled in automatically — no manual curation needed.</p>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <!-- SPLIT: Topics + Themes in parallel -->
+  <div class="section-label">Two parallel analyses run on the same articles</div>
+
+  <div class="split-row">
+
+    <!-- LEFT: Topic clustering -->
+    <div class="split-col">
+      <div class="step topics" style="width:100%">
+        <div class="icon">🔬</div>
+        <div class="text">
+          <h2>Topic Clustering</h2>
+          <p>AI automatically groups articles that cover the same story — purely from the text, with no predefined categories.</p>
+          <span class="tag">BERTopic</span>
+        </div>
+      </div>
+      <div class="split-arrow">↓</div>
+      <div class="step ai" style="width:100%">
+        <div class="icon">✨</div>
+        <div class="text">
+          <h2>Claude Summarises</h2>
+          <p>Claude reads each group and writes a plain-English title and summary of what's happening.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Theme scoring -->
+    <div class="split-col">
+      <div class="step themes" style="width:100%">
+        <div class="icon">🏷️</div>
+        <div class="text">
+          <h2>Theme Scoring</h2>
+          <p>Each article is scored against 9 predefined risk themes using AI similarity.</p>
+          <span class="tag">Inflation</span><span class="tag">Credit</span><span class="tag">AI</span><span class="tag">Cyber</span><span class="tag">+5 more</span>
+        </div>
+      </div>
+      <div class="split-arrow">↓</div>
+      <div class="step themes" style="width:100%; border-color:#1a6fa8">
+        <div class="icon">📈</div>
+        <div class="text">
+          <h2>Theme Signals</h2>
+          <p>Volume and centrality are calculated for each theme — showing which risks are rising or falling vs. yesterday.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MERGE ARROW -->
+  <div class="merge-arrow-row">
+    <div class="merge-line"><span>↘</span></div>
+    <div class="merge-center">↓</div>
+    <div class="merge-line"><span>↙</span></div>
+  </div>
+
+  <!-- HEATMAP -->
+  <div class="step heatmap">
+    <div class="icon">🟦</div>
+    <div class="text">
+      <h2>Theme × Topic Affinity Heatmap</h2>
+      <p>The two tracks are crossed: for every topic cluster, the heatmap shows <em>which risk themes</em> its articles relate to — and how strongly. A dark cell means that topic is heavily associated with that theme.</p>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <!-- OUTPUT GRID -->
+  <div class="section-label">What you see on the dashboard</div>
+  <div class="outputs-grid">
+    <div class="output-card">
+      <div class="icon">🗺️</div>
+      <h3>Intertopic Map</h3>
+      <p>Spatial view of how close topic clusters are to each other</p>
+    </div>
+    <div class="output-card highlight">
+      <div class="icon">🟦</div>
+      <h3>Affinity Heatmap</h3>
+      <p>Which topics are driving which risk themes</p>
+    </div>
+    <div class="output-card">
+      <div class="icon">📋</div>
+      <h3>Topic Summaries</h3>
+      <p>Plain-English title &amp; summary for every story cluster</p>
+    </div>
+    <div class="output-card">
+      <div class="icon">🎯</div>
+      <h3>Theme Signals</h3>
+      <p>Centrality vs. volume change — which themes are most connected</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- TRIGGER STRIP -->
+<div class="trigger-section">
+  <div class="section-label">How to get fresh data</div>
+  <div class="trigger-row">
+    <div class="trigger-box">
+      <div class="icon">🖱️</div>
+      <strong>Click Refresh</strong>
+      <p>on the dashboard</p>
+    </div>
+    <div class="trigger-arrow">→</div>
+    <div class="trigger-box">
+      <div class="icon">⚙️</div>
+      <strong>Pipeline Runs</strong>
+      <p>automatically on GitHub</p>
+    </div>
+    <div class="trigger-arrow">→</div>
+    <div class="trigger-box">
+      <div class="icon">⏱️</div>
+      <strong>~5 Minutes</strong>
+      <p>then reload the page</p>
+    </div>
+    <div class="trigger-arrow">→</div>
+    <div class="trigger-box">
+      <div class="icon">✅</div>
+      <strong>All Updated</strong>
+      <p>fresh summaries &amp; signals</p>
+    </div>
+  </div>
+</div>
+
+<p class="footer">Data is only as fresh as the last refresh &nbsp;·&nbsp; Powered by Claude AI &amp; BERTopic</p>
+
+</body>
+</html>
