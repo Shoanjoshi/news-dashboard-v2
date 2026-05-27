@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Methodology & Architecture</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    padding: 40px 20px 60px;
+    color: #1a2a3a;
+  }
+
+  .page { max-width: 720px; margin: 0 auto; }
+
+  /* Header */
+  .header { margin-bottom: 36px; }
+  .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+  .header p  { font-size: 13px; color: #7a8a9a; line-height: 1.6; max-width: 560px; }
+
+  /* Section */
+  .section {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-left: 5px solid #ccc;
+  }
+  .section.blue   { border-color: #4a90d9; }
+  .section.green  { border-color: #27ae60; }
+  .section.purple { border-color: #8e44ad; }
+  .section.orange { border-color: #e67e22; }
+  .section.teal   { border-color: #16a085; }
+  .section.red    { border-color: #c0392b; }
+  .section.steel  { border-color: #2980b9; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .section-icon { font-size: 26px; }
+  .section-header h2 { font-size: 15px; font-weight: 700; }
+  .section-header .badge {
+    font-size: 10px;
+    background: #f0f4ff;
+    color: #5568aa;
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  ul li {
+    font-size: 12.5px;
+    color: #4a5a6a;
+    line-height: 1.6;
+    padding-left: 18px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #b0bec5;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  ul li strong { color: #1a2a3a; }
+
+  /* Connector callout */
+  .connector {
+    background: #f8fafc;
+    border: 1px dashed #c5d5e5;
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin-top: 12px;
+    font-size: 11.5px;
+    color: #7a8a9a;
+    line-height: 1.55;
+  }
+  .connector strong { color: #4a6a8a; }
+
+  /* Flow connector between sections */
+  .flow-connector {
+    text-align: center;
+    font-size: 18px;
+    color: #c5d0da;
+    margin: 2px 0;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 32px;
+    font-size: 11px;
+    color: #aab;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>Methodology &amp; Architecture</h1>
+    <p>A brief overview of the key decisions behind the dashboard — what was chosen, why, and how the pieces connect.</p>
+  </div>
+
+  <!-- 1. DATA SOURCING -->
+  <div class="section blue">
+    <div class="section-header">
+      <div class="section-icon">🌐</div>
+      <h2>Data Sourcing — RSS Feeds</h2>
+      <span class="badge">Why RSS?</span>
+    </div>
+    <ul>
+      <li><strong>50+ curated feeds</strong> chosen to cover systemic risk themes: macro (Reuters, FT, WSJ, NYT), regulatory (BIS, IMF, Federal Reserve, EBA), credit &amp; private markets (PitchBook, Preqin), crypto (CoinDesk, CoinTelegraph) and cybersecurity (Krebs, Dark Reading).</li>
+      <li><strong>RSS was chosen over web scraping</strong> because feeds are structured, lightweight and publisher-sanctioned — no rate-limiting, legal grey areas or fragile HTML parsing.</li>
+      <li>Each feed is fetched fresh on every pipeline run, so the dashboard always reflects the current news cycle rather than a cached snapshot.</li>
+    </ul>
+    <div class="connector">
+      <strong>→ Connects to:</strong> Article collection. Up to 20 entries per feed are extracted and truncated to 1,200 characters — enough context for AI analysis without token bloat.
+    </div>
+  </div>
+
+  <div class="flow-connector">↓</div>
+
+  <!-- 2. CLEANUP -->
+  <div class="section green">
+    <div class="section-header">
+      <div class="section-icon">🧹</div>
+      <h2>Data Cleanup &amp; Filtering</h2>
+      <span class="badge">Quality gate</span>
+    </div>
+    <ul>
+      <li><strong>Minimum length filter:</strong> articles under 50 characters are discarded — these are typically navigation labels or empty feed entries, not real content.</li>
+      <li><strong>Field fallback:</strong> the pipeline tries <em>summary → description → title</em> in order, so even minimal feed entries contribute something meaningful.</li>
+      <li><strong>Length capping at 1,200 characters</strong> keeps token usage predictable when text is later passed to the AI, and prevents one verbose article from dominating a topic cluster.</li>
+    </ul>
+    <div class="connector">
+      <strong>→ Connects to:</strong> Topic clustering. Clean, consistent text improves the quality of semantic grouping — garbage in, garbage out applies strongly to embedding-based models.
+    </div>
+  </div>
+
+  <div class="flow-connector">↓</div>
+
+  <!-- 3. TOPIC CLUSTERING -->
+  <div class="section purple">
+    <div class="section-header">
+      <div class="section-icon">🔬</div>
+      <h2>Topic Clustering — BERTopic</h2>
+      <span class="badge">Unsupervised AI</span>
+    </div>
+    <ul>
+      <li><strong>BERTopic</strong> was chosen because it discovers topics from the data itself — no predefined list of story types needed. This means the dashboard captures emerging narratives automatically.</li>
+      <li>Articles are converted into <strong>semantic embeddings</strong> (numerical representations of meaning) using a sentence-transformer model, then grouped by similarity using K-Means clustering into 15 topic buckets.</li>
+      <li><strong>UMAP</strong> reduces those embeddings to two dimensions for the Intertopic Distance Map — topics that appear close together on the map share conceptual overlap.</li>
+      <li>The most representative articles from each cluster (closest to the cluster centre) are selected as inputs for the AI summarisation step.</li>
+    </ul>
+    <div class="connector">
+      <strong>→ Connects to:</strong> Claude AI. Only the 8 most central articles per topic are sent to Claude, keeping API calls focused and cost-efficient.
+    </div>
+  </div>
+
+  <div class="flow-connector">↓ &nbsp; (runs in parallel with theme scoring)</div>
+
+  <!-- 4. THEME SCORING -->
+  <div class="section steel">
+    <div class="section-header">
+      <div class="section-icon">🏷️</div>
+      <h2>Theme Scoring — Predefined Risk Themes</h2>
+      <span class="badge">Supervised layer</span>
+    </div>
+    <ul>
+      <li><strong>9 risk themes</strong> were manually defined to reflect the systemic risks most relevant to the intended use case: Inflation, Recessionary pressures, Private credit, AI, Cyber attacks, Commercial real estate, Consumer debt, Bank lending &amp; credit risk, Digital assets.</li>
+      <li>Each theme has a <strong>short description</strong> that acts as a semantic anchor. Articles are compared to these descriptions using <strong>cosine similarity</strong> — a measure of how closely two pieces of text point in the same conceptual direction.</li>
+      <li>An article can match <strong>multiple themes</strong> simultaneously if its similarity score exceeds the threshold (0.15), reflecting the reality that news stories often span several risk categories.</li>
+      <li><strong>Theme weights</strong> (e.g. Private credit = 1.2×, Digital assets = 0.7×) allow manual calibration of how prominently each theme is surfaced relative to raw volume.</li>
+    </ul>
+    <div class="connector">
+      <strong>→ Connects to:</strong> The heatmap. Theme scores are computed per article, then aggregated per topic cluster to produce the affinity percentages shown in the heatmap grid.
+    </div>
+  </div>
+
+  <div class="flow-connector">↓</div>
+
+  <!-- 5. ANTHROPIC API -->
+  <div class="section orange">
+    <div class="section-header">
+      <div class="section-icon">✨</div>
+      <h2>AI Summarisation — Anthropic API</h2>
+      <span class="badge">Claude Haiku</span>
+    </div>
+    <ul>
+      <li><strong>Claude Haiku</strong> (claude-haiku-4-5) was selected for summarisation — it is fast, cost-efficient and capable enough for structured text generation tasks like this.</li>
+      <li>The model is given a <strong>structured prompt</strong> asking for a 3–5 word title, a 1–2 sentence overview, and key examples drawn only from the supplied articles — keeping outputs grounded and factual.</li>
+      <li>The <strong>API key</strong> is stored as an encrypted GitHub Actions secret (<code>ANTHROPIC_API_KEY</code>) and is never exposed in code or logs.</li>
+      <li>If a single topic call fails, the pipeline continues and falls back gracefully — the dashboard publishes with a placeholder rather than crashing entirely.</li>
+    </ul>
+    <div class="connector">
+      <strong>→ Connects to:</strong> Topic summaries table on the dashboard and the topic labels on the Intertopic Distance Map.
+    </div>
+  </div>
+
+  <div class="flow-connector">↓</div>
+
+  <!-- 6. HEATMAP -->
+  <div class="section teal">
+    <div class="section-header">
+      <div class="section-icon">🟦</div>
+      <h2>Theme × Topic Affinity Heatmap</h2>
+      <span class="badge">The connective layer</span>
+    </div>
+    <ul>
+      <li>The heatmap is where the <strong>two analytical tracks meet</strong>: the unsupervised topic clusters (rows) are crossed with the supervised risk themes (columns).</li>
+      <li>Each cell shows the <strong>percentage of articles in that topic cluster</strong> that were also tagged with that risk theme — a simple but powerful way to see which stories are driving which risks.</li>
+      <li>A <strong>dark cell</strong> means strong association: e.g. a "central bank policy" topic cluster with a dark cell under "Inflation" confirms that topic is primarily an inflation story.</li>
+      <li>This layer was added specifically to bridge the gap between bottom-up discovery (what is being talked about?) and top-down risk monitoring (does it matter to us?).</li>
+    </ul>
+  </div>
+
+  <div class="flow-connector">↓</div>
+
+  <!-- 7. INFRASTRUCTURE -->
+  <div class="section red">
+    <div class="section-header">
+      <div class="section-icon">⚙️</div>
+      <h2>Infrastructure — GitHub Actions &amp; Pages</h2>
+      <span class="badge">Zero server cost</span>
+    </div>
+    <ul>
+      <li><strong>GitHub Actions</strong> runs the entire pipeline on demand — it spins up a cloud machine, installs dependencies, runs the Python scripts, and shuts down. No always-on server is needed.</li>
+      <li>The pipeline is triggered by a <strong>Refresh button</strong> on the dashboard itself, which calls the GitHub API to launch a new run — putting control in the user's hands.</li>
+      <li><strong>GitHub Pages</strong> hosts the static dashboard for free. After each run, the generated HTML files are pushed to a dedicated branch and served publicly.</li>
+      <li>Secrets (API keys) are managed by GitHub's encrypted secrets store — they are injected into the pipeline at runtime and are never written to any file or log.</li>
+    </ul>
+    <div class="connector">
+      <strong>End-to-end flow:</strong> Button click → GitHub API → Actions runner → Python pipeline → static HTML → gh-pages → live dashboard. Typical end-to-end time: <strong>~5 minutes</strong>.
+    </div>
+  </div>
+
+  <div class="footer">Systemic Risk Dashboard &nbsp;·&nbsp; Powered by Claude AI, BERTopic &amp; GitHub Actions</div>
+
+</div>
+</body>
+</html>
