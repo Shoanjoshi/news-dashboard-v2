@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How the Dashboard Works</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+    color: #1a2a3a;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: #7a8a9a;
+    margin-bottom: 40px;
+  }
+
+  .flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .step {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px 28px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border-left: 5px solid #ccc;
+    transition: transform 0.15s;
+  }
+
+  .step:hover { transform: translateX(4px); }
+
+  .step.sources  { border-color: #4a90d9; }
+  .step.fetch    { border-color: #5bb85b; }
+  .step.cluster  { border-color: #9b59b6; }
+  .step.ai       { border-color: #e67e22; }
+  .step.dashboard{ border-color: #e74c3c; }
+
+  .icon {
+    font-size: 34px;
+    min-width: 44px;
+    text-align: center;
+  }
+
+  .text h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a2a3a;
+    margin-bottom: 3px;
+  }
+
+  .text p {
+    font-size: 12px;
+    color: #6a7a8a;
+    line-height: 1.5;
+  }
+
+  .arrow {
+    font-size: 22px;
+    color: #b0bec5;
+    margin: 6px 0;
+    user-select: none;
+  }
+
+  /* Trigger box */
+  .trigger-section {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .trigger-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9aabbb;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .trigger-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .trigger-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 14px 18px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    flex: 1;
+  }
+
+  .trigger-box .icon { font-size: 24px; }
+  .trigger-box p { font-size: 11px; color: #6a7a8a; margin-top: 4px; line-height: 1.4; }
+  .trigger-box strong { font-size: 13px; color: #1a2a3a; display: block; margin-top: 2px; }
+
+  .trigger-arrow {
+    font-size: 18px;
+    color: #b0bec5;
+    padding: 0 10px;
+    flex-shrink: 0;
+  }
+
+  .footer {
+    margin-top: 36px;
+    font-size: 11px;
+    color: #aab;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>How the Dashboard Works</h1>
+<p class="subtitle">A simple overview of the pipeline</p>
+
+<div class="flow">
+
+  <div class="step sources">
+    <div class="icon">🌐</div>
+    <div class="text">
+      <h2>News Sources</h2>
+      <p>50+ live feeds from Reuters, FT, WSJ, NYT, BIS, IMF and more — automatically collected every time you refresh.</p>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="step fetch">
+    <div class="icon">📥</div>
+    <div class="text">
+      <h2>Article Collection</h2>
+      <p>Hundreds of article summaries are pulled in and cleaned up, ready for analysis.</p>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="step cluster">
+    <div class="icon">🔬</div>
+    <div class="text">
+      <h2>Topic Clustering (AI)</h2>
+      <p>An AI model automatically groups articles covering the same story or theme — no manual tagging needed.</p>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="step ai">
+    <div class="icon">✨</div>
+    <div class="text">
+      <h2>Claude AI Summarises</h2>
+      <p>For each cluster, Claude reads the articles and writes a concise title and summary of what's happening.</p>
+    </div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="step dashboard">
+    <div class="icon">📊</div>
+    <div class="text">
+      <h2>Dashboard Updates</h2>
+      <p>Charts, topic summaries, theme signals and the affinity heatmap are all rebuilt and published live.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Trigger flow -->
+<div class="trigger-section">
+  <div class="trigger-label">How to trigger a refresh</div>
+  <div class="trigger-row">
+
+    <div class="trigger-box">
+      <div class="icon">🖱️</div>
+      <strong>Click Refresh</strong>
+      <p>on the dashboard</p>
+    </div>
+
+    <div class="trigger-arrow">→</div>
+
+    <div class="trigger-box">
+      <div class="icon">⚙️</div>
+      <strong>Pipeline Runs</strong>
+      <p>automatically on GitHub</p>
+    </div>
+
+    <div class="trigger-arrow">→</div>
+
+    <div class="trigger-box">
+      <div class="icon">✅</div>
+      <strong>~5 Minutes</strong>
+      <p>then reload the page</p>
+    </div>
+
+  </div>
+</div>
+
+<p class="footer">Data is only as fresh as the last refresh · Powered by Claude AI &amp; BERTopic</p>
+
+</body>
+</html>
