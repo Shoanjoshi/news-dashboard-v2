@@ -2,151 +2,151 @@
   "T0": {
     "topic_id": "T0",
     "bertopic_id": 0,
-    "title": "Bitcoin Momentum Stalls Amid Market Pressure",
-    "summary": "OVERVIEW:\nBitcoin has experienced repeated dips below key price levels in May, with on-chain data indicating weakening momentum. The declines have been driven by spot ETF outflows, forced liquidations, and broader market sell-offs, even as retail investors attempt to buy the dips.\n\nKEY EXAMPLES:\n- Bitcoin slipped below $75,000 for the second time in May, touching an intraday low near $74,200 after spot ETF outflows and forced liquidations\n- Investors selling across spot, futures, and ETF markets pushed Bitcoin to monthly range lows near $72,000\n- Bitcoin slides to April lows amid divergence from record-chasing U.S. equities, with record consecutive days of ETF outflows signaling waning demand",
-    "article_count": 43,
-    "topicality": 43.0,
-    "theme_weight": 0.9418604651162791,
-    "theme": "Inflation"
+    "title": "** Income Inequality and Economic Divergence",
+    "summary": "**OVERVIEW:**\nRecent U.S. economic growth has been concentrated among high-income households, creating a K-shaped economy where upper earners spend and accumulate wealth faster than lower-income groups. This divergence reflects structural economic shifts including wealth concentration, differential inflation impacts, and evolving labor market dynamics.\n\n**KEY EXAMPLES:**\n- Retail spending growth since 2023 has been driven primarily by households earning over $125,000 annually, while lower-income households lag behind\n- High-income households experienced greater wealth increases while low-income households faced higher inflation rates, both contributing to spending divergence\n- Underlying wage inflation (TWIn) has declined from 2021 peaks but shows signs of stabilizing, with recent decoupling emerging across different sectors",
+    "article_count": 39,
+    "topicality": 39.0,
+    "theme_weight": 1.0256410256410258,
+    "theme": "Recessionary pressures"
   },
   "T1": {
     "topic_id": "T1",
     "bertopic_id": 1,
-    "title": "Russian State Hackers & Global Cyber Threats",
-    "summary": "OVERVIEW:\nState-backed Russian hackers are conducting widespread cyberattacks targeting critical infrastructure and stealing authentication credentials, while cybercriminals globally are exploiting vulnerabilities in software and network systems. These campaigns range from token harvesting on Microsoft networks to botnet operations and ransomware attacks.\n\nKEY EXAMPLES:\n- Russian military intelligence hackers exploited known router flaws to harvest authentication tokens from 18,000+ Microsoft Office networks without deploying malware\n- Dutch authorities arrested hosting company co-owners for operating infrastructure used by Russia for cyberattacks, influence operations, and disinformation campaigns in the EU\n- A Brazilian DDoS protection firm was found enabling a botnet responsible for massive DDoS attacks against other Brazilian network operators\n- The Shai-Hulud worm, operated by cybercrime group TeamPCP, has caused significant damage to the open source ecosystem\n- A remote access Trojan is being distributed via an operator licensing model with a no-code interface for malware development",
-    "article_count": 42,
-    "topicality": 42.0,
-    "theme_weight": 1.0,
-    "theme": "Cyber attacks"
+    "title": "Middle East Crisis and Global Supply Disruptions",
+    "summary": "OVERVIEW:\nThe Middle East conflict has triggered a global supply shock affecting energy prices and goods availability, with particular vulnerability in Asian supply chains critical to U.S. AI infrastructure and consumer goods. The disruption comes amid broader shifts in U.S. trade policy with China and potential sanctions relief elsewhere, creating uncertainty about long-term economic realignment.\n\nKEY EXAMPLES:\n- Southeast Asian countries heavily reliant on Middle East energy imports face supply chain vulnerabilities for AI infrastructure components needed by the U.S.\n- Gas and commodity prices could remain elevated for months, creating political challenges for the White House ahead of midterm elections\n- Persian Gulf oil producers are developing alternative export routes as they assess regional safety conditions\n- U.S. trade deficit with China remained stable at $1.2 trillion despite policy changes, while China's global trade surplus grew to $1.2 trillion and bilateral flows shifted toward southeast Asia",
+    "article_count": 35,
+    "topicality": 35.0,
+    "theme_weight": 1.0057142857142858,
+    "theme": "Recessionary pressures"
   },
   "T2": {
     "topic_id": "T2",
     "bertopic_id": 2,
-    "title": "Crypto Market Divergence: Corporate Strategy Shifts and Regulatory Progress",
-    "summary": "## OVERVIEW:\nThe cryptocurrency market is experiencing conflicting trends, with some corporations expanding digital asset holdings while others liquidate positions amid price pressure and regulatory developments. Meanwhile, institutional adoption is advancing through regulatory approvals and framework implementations globally.\n\n## KEY EXAMPLES:\n- Sequans Communications abandoned its Bitcoin treasury strategy after the asset fell over 30% in a year, planning to liquidate holdings\n- Bit Digital purchased $20 million in Ethereum, becoming the fourth-largest public corporate holder of Ether, surpassing Coinbase Global\n- The SEC approved Paxos as a blockchain-native clearing agency, marking a critical infrastructure development for Wall Street's crypto integration\n- France's AMF regulator set a June 30 deadline for MiCA licensing compliance under the EU's Markets in Crypto Assets regulations\n- Bitcoin major holders are halting purchases as demand slows, with deteriorating holding structures historically preceding sustained price weakness",
-    "article_count": 32,
-    "topicality": 32.0,
-    "theme_weight": 0.7374999999999999,
-    "theme": "Digital assets"
+    "title": "Federal Reserve Regulatory Actions and Policy Updates",
+    "summary": "OVERVIEW:\nThe Federal Reserve has undertaken multiple regulatory and operational initiatives, including enforcement actions against bank employees, a proposal for a new payment account system, and coordination with other federal agencies on emerging financial technologies.\n\nKEY EXAMPLES:\n- A Trump-appointed Fed official addressed Bank of America clients during the Fed's restricted \"quiet period\" when monetary policy discussion is prohibited\n- The Fed issued enforcement actions against former employees of multiple financial institutions including Bank of Eufaula, Manufacturers and Traders Trust Company, Commerce Bank, Atlantic Union Bank, and Frost Bank\n- The Federal Reserve Board proposed establishing a \"payment account\" for eligible financial institutions to use for clearing and settling payments\n- Three federal agencies (Treasury, OCC, and FDIC) proposed rules requiring stablecoin issuers to operate with bank-like compliance measures, including anti-money-laundering programs and financial reporting requirements",
+    "article_count": 34,
+    "topicality": 34.0,
+    "theme_weight": 0.9970588235294119,
+    "theme": "Bank lending and credit risk"
   },
   "T3": {
     "topic_id": "T3",
     "bertopic_id": 3,
-    "title": "US-China Trade and Strategic Tensions",
-    "summary": "OVERVIEW:\nThe United States and China are navigating complex trade negotiations and geopolitical tensions, with Trump's recent Beijing visit yielding mixed results. While the visit was promoted as a breakthrough, underlying disputes over Taiwan, trade imbalances, and strategic supply chains remain unresolved.\n\nKEY EXAMPLES:\n- Beijing pressed Washington to reduce arms sales to Taiwan and slow their pace during Trump's visit negotiations\n- US trade deficit with China remained largely unchanged at $1.2 trillion despite policy changes, while China's global trade surplus grew from $1 trillion to $1.2 trillion\n- China's dominance in rare-earth minerals creates US dependence as America rebuilds weapons stockpiles\n- Middle East supply shocks threaten Asian supply chains critical to US AI infrastructure and goods sourcing, with southeast Asian countries vulnerable due to their reliance on Middle East energy\n- Trump plans to impose additional 10% tariffs on China related to drug inflow",
-    "article_count": 31,
-    "topicality": 31.0,
-    "theme_weight": 0.9903225806451613,
-    "theme": "Recessionary pressures"
+    "title": "AI's Economic Impact and Adoption",
+    "summary": "OVERVIEW:\nCompanies are rapidly investing in AI across industries\u2014from accounting to film production\u2014while simultaneously grappling with high capital costs that exceed current operational returns. The technology's effects on labor demand remain mixed, with evidence of workplace disruption emerging alongside ongoing skill development among tech workers.\n\nKEY EXAMPLES:\n- Venture-capital firms are deploying AI in unglamorous fields like accounting and property management\n- America's largest tech firms spent more on capital investment than they earned from operations in Q3 2025, as AI absorbs resources faster than generating returns\n- Job postings for AI-exposed occupations have not shown distinct decline since ChatGPT's release, despite overall hiring slowdown\n- Tech workers are spending personal time learning AI tools to remain competitive as the industry rapidly evolves",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.9696969696969697,
+    "theme": "AI"
   },
   "T4": {
     "topic_id": "T4",
     "bertopic_id": 4,
-    "title": "TOPIC 4",
-    "summary": "Summary unavailable.",
-    "article_count": 30,
-    "topicality": 30.0,
-    "theme_weight": 1.0366666666666666,
-    "theme": "Others"
+    "title": "Market Highs Amid Mixed Corporate Results",
+    "summary": "OVERVIEW:\nMarkets are reaching record levels driven by multiple factors including strong performer gains and Federal Reserve policy, though individual companies show divergent earnings results and sector headwinds are emerging.\n\nKEY EXAMPLES:\n- Micron's profit growth is accelerating S&P 500 gains at \"nearly pure profit\" margins\n- Wingstop's stock fell 12% after missing profit estimates\n- S&P 500 positioning is at record highs, prompting warnings of pullback risks from Citi\n- Goldman Sachs lowered smartphone market forecasts due to rising memory costs\n- Plus500 confirmed it will meet expectations with 11% quarterly revenue growth",
+    "article_count": 33,
+    "topicality": 33.0,
+    "theme_weight": 0.9939393939393941,
+    "theme": "Inflation"
   },
   "T5": {
     "topic_id": "T5",
     "bertopic_id": 5,
-    "title": "K-Shaped Economy and Income Inequality",
-    "summary": "OVERVIEW:\nRecent U.S. economic growth has been driven primarily by high-income households, creating a \"K-shaped\" divergence where affluent consumers spend and earn significantly more than lower-income groups. This unequal distribution reflects broader structural economic challenges including wealth concentration, differential inflation impacts, and rising food insecurity among vulnerable populations.\n\nKEY EXAMPLES:\n- High-income households (earning >$125,000/year) drove retail spending growth since 2023, while lower-income households saw stagnant or declining real consumption\n- During the March 2026 energy price surge, high-income households maintained real gasoline consumption while low-income households cut consumption despite higher nominal spending due to inflation\n- Food insecurity surged among lower-educated and lower-income households, correlating with increased consumer pessimism in these groups\n- Wealth gains concentrated among high-income households since 2023, while inflation hit lower-income households hardest\n- K-shaped spending patterns observed both nationally and in the Second District region",
-    "article_count": 29,
-    "topicality": 29.0,
-    "theme_weight": 1.010344827586207,
-    "theme": "Recessionary pressures"
+    "title": "Global Cybercrime Operations Escalating",
+    "summary": "OVERVIEW:\nCybercriminals are conducting widespread attacks across multiple sectors and platforms, from malware distribution and ransomware extortion to cryptocurrency theft and money laundering. Law enforcement agencies are simultaneously working to dismantle major criminal networks, though new gangs continue to emerge and evolve their tactics.\n\nKEY EXAMPLES:\n- Malware combining banking fraud with device surveillance distributed via fake TikTok and Chrome downloads\n- Ransomware attack on Canvas education platform threatening to leak data from 275 million students across nearly 9,000 institutions\n- The Gentlemen ransomware gang rapidly recruiting hackers with 90% ransom-sharing incentives\n- $7.5 million drained from Ethereum's Jaredfromsubway MEV bot through authorized token spending\n- International law enforcement dismantled the \"AudiA6\" cryptocurrency laundering network linked to ransomware gangs\n- At least $36.7 million stolen from unverified smart contracts in six months",
+    "article_count": 31,
+    "topicality": 31.0,
+    "theme_weight": 0.9774193548387096,
+    "theme": "Cyber attacks"
   },
   "T6": {
     "topic_id": "T6",
     "bertopic_id": 6,
-    "title": "Global Financial Stability Concerns",
-    "summary": "OVERVIEW:\nFinancial institutions and analysts are flagging multiple emerging risks across global markets, including weakening currencies, non-bank financial institution stress, regional banking vulnerabilities, and macroeconomic uncertainty. These concerns span developed economies and are prompting cautious positioning despite continued investor engagement.\n\nKEY EXAMPLES:\n- JPMorgan and Euroclear executives warn the dollar is set to weaken long-term, while Europe faces structural challenges\n- Recent bankruptcies in the NBFI sector (Tricolor, First Brands) and fund wind-downs (Blue Owl Capital Corp II) are creating \"stress and strain\" for banks with NBFI exposure\n- Bank of America strategists are negative on European equities due to AI boom-and-bust dynamics\n- UniCredit warns Europe may struggle to contain a potential crypto-banking crisis under MiCA regulatory rules\n- Greece faces renewed risk of running out of money\n- Deutsche Bank characterizes the 2025 US macro outlook as \"murky at best\"",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 1.0607142857142855,
-    "theme": "Bank lending and credit risk"
+    "title": "Bitcoin Price Decline Amid Market Pressures",
+    "summary": "OVERVIEW:\nBitcoin has experienced significant downward pressure in recent weeks, falling from $94k to below $63k as multiple macroeconomic factors and reduced institutional demand weigh on the cryptocurrency. ETF outflows and weakening investor confidence have accompanied the sharp sell-offs.\n\nKEY EXAMPLES:\n- Bitcoin slipped to $94k amid concerns over Trump tariff threats affecting risk appetite\n- US-listed spot Bitcoin ETFs recorded their largest 30-day net outflow since 2024 launch, coinciding with a 17% monthly decline\n- Bitcoin fell below $63k as broader risk asset sell-offs intensified and weekly gains reversed\n- A resilient jobs market and strong employment data have paradoxically triggered Bitcoin sell signals rather than bullish sentiment",
+    "article_count": 30,
+    "topicality": 30.0,
+    "theme_weight": 0.8033333333333331,
+    "theme": "Digital assets"
   },
   "T7": {
     "topic_id": "T7",
     "bertopic_id": 7,
-    "title": "AI Implementation Across Industries",
-    "summary": "OVERVIEW:\nOrganizations across manufacturing, finance, technology, and energy sectors are grappling with how to implement artificial intelligence effectively, balancing productivity gains with safety concerns and navigating complex regulatory environments.\n\nKEY EXAMPLES:\n- Schneider Electric uses AI in manufacturing to enhance worker productivity rather than replace employees\n- DeFi security experts warn that AI agents may pose systemic risks to the $148 billion decentralized finance sector\n- Asian technology firms face compliance challenges adapting to divergent AI regulations between the EU and US\n- Cisco is restructuring its 20,000-employee customer experience division to operate in the AI era\n- Companies are beginning to adopt agentic AI frameworks while tools for safe and secure implementation are still emerging",
-    "article_count": 28,
-    "topicality": 28.0,
-    "theme_weight": 0.9892857142857142,
-    "theme": "AI"
+    "title": "TOPIC 7",
+    "summary": "Summary unavailable.",
+    "article_count": 26,
+    "topicality": 26.0,
+    "theme_weight": 1.0076923076923079,
+    "theme": "Consumer debt"
   },
   "T8": {
     "topic_id": "T8",
     "bertopic_id": 8,
-    "title": "Market Volatility Across Tech, Finance, and Crypto",
-    "summary": "OVERVIEW:\nFinancial markets are experiencing significant shifts across multiple sectors, with dramatic price movements in tech stocks, cryptocurrency platforms, and space industry investments, while regulatory pressures and strategic corporate moves reshape competitive landscapes.\n\nKEY EXAMPLES:\n- Hyperliquid's SpaceX-related contracts experienced a 45% flash crash, liquidating $1.5 million in positions\n- $14 billion flowed into funds holding stakes in a rocket company as new ETF products launch\n- A Chinese e-commerce platform faces a $230 million penalty from the European Commission over consumer safety concerns\n- OKX Ventures acquired a $53 million stake in Korea's Coinone cryptocurrency exchange\n- Barclays analysts warn of additional downside risk for digital IT services companies\n- Tech sector panic over Nvidia and Broadcom is being characterized as overblown by market observers",
-    "article_count": 27,
-    "topicality": 27.0,
-    "theme_weight": 1.0,
-    "theme": "Digital assets"
+    "title": "Crypto Compliance and Law Enforcement Cooperation",
+    "summary": "OVERVIEW:\nGlobal authorities and blockchain analysis firms are strengthening efforts to combat cryptocurrency crime, fraud, and sanctions violations through enhanced investigation capabilities, international partnerships, and on-chain monitoring tools. These initiatives span law enforcement agencies, regulatory bodies, and financial crime prevention organizations across multiple regions.\n\nKEY EXAMPLES:\n- Chainalysis signed a Memorandum of Understanding with the Korean National Police Agency to deepen virtual asset investigation capabilities\n- Ghana's Economic and Organised Crime Office and UK National Crime Agency used blockchain analysis to recover $15 million for fraud victims\n- Chainalysis published guidance on pre- and post-designation sanctions screening in cryptocurrency compliance\n- Brazil's growing crypto market is experiencing emerging money laundering and crime threats requiring regulatory attention",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 0.96,
+    "theme": "Others"
   },
   "T9": {
     "topic_id": "T9",
     "bertopic_id": 9,
-    "title": "** Iran Ceasefire Deal Impacts Markets",
-    "summary": "**OVERVIEW:**\nReports of a potential U.S.-Iran ceasefire extension agreement have created uncertainty across global financial markets, with mixed effects on currencies, cryptocurrencies, and commodities. Geopolitical tensions and peace deal developments are driving volatility in dollar strength, oil prices, and other assets.\n\n**KEY EXAMPLES:**\n- The pound fell against the dollar as Iran deal uncertainty shifted market sentiment\n- Oil prices dropped following reports of an extended ceasefire agreement subject to Trump's approval\n- Bitcoin remained pinned below $73,000 despite potential U.S.-Iran deal news\n- U.S. stock futures and bond yields declined on reports of Putin updating nuclear doctrine",
-    "article_count": 26,
-    "topicality": 26.0,
-    "theme_weight": 0.9884615384615384,
-    "theme": "Inflation"
+    "title": "AI Security Vulnerabilities Surge",
+    "summary": "OVERVIEW:\nMajor software companies are releasing record numbers of security patches as AI systems discover widespread vulnerabilities in computer code, while simultaneously proving vulnerable themselves to social engineering and prompt-injection attacks. The industry faces a dual challenge: leveraging AI's ability to find bugs while addressing new AI-specific security risks.\n\nKEY EXAMPLES:\n- Microsoft released nearly 200 security fixes in a single Patch Tuesday cycle, with nearly three dozen rated \"critical\" and exploit code already publicly available\n- A three-stage AI prompt-injection attack using hidden URLs and variables was discovered and patched as part of a new class of LLM security issues\n- SearchLeak exploit demonstrates systemic failures in the industry's approach to large language model security\n- Fragmented security stacks and manual workarounds increase human errors in identifying vulnerabilities",
+    "article_count": 25,
+    "topicality": 25.0,
+    "theme_weight": 0.988,
+    "theme": "Cyber attacks"
   },
   "T10": {
     "topic_id": "T10",
     "bertopic_id": 10,
-    "title": "TOPIC 10",
-    "summary": "Summary unavailable.",
-    "article_count": 24,
-    "topicality": 24.0,
-    "theme_weight": 1.0125,
-    "theme": "Consumer debt"
+    "title": "Pension Funds Diversifying Investment Strategies",
+    "summary": "**OVERVIEW:**\nMajor pension funds and institutional investors are expanding their asset allocation strategies to include alternative investments and new asset classes. These moves reflect efforts to manage risk, improve returns, and navigate evolving market conditions.\n\n**KEY EXAMPLES:**\n- A Japanese corporate pension fund with ~1,200 participating small and medium-sized businesses plans to allocate roughly 1% of assets to cryptocurrency\n- California's $620bn pension fund is implementing an increasingly diversified program expected to perform well despite software exposure concerns\n- An endowment is optimistic about resilient office assets and potential market rebound amid renewed leasing momentum",
+    "article_count": 23,
+    "topicality": 23.0,
+    "theme_weight": 1.043478260869565,
+    "theme": "Others"
   },
   "T11": {
     "topic_id": "T11",
     "bertopic_id": 11,
-    "title": "AI Investment Outpacing Economic Returns",
-    "summary": "OVERVIEW:\nMajor firms are aggressively investing in AI infrastructure and R&D, but the technology is currently consuming resources faster than generating measurable returns. This spending boom is reshaping business strategy across sectors while raising concerns about near-term productivity and profitability.\n\nKEY EXAMPLES:\n- America's largest tech firms spent more on capital investment than operational earnings in Q3 2025 for the first time, with AI absorbing resources faster than generating returns\n- Venture capitalists are deploying AI in unglamorous fields like accounting and property management to drive dealmaking\n- Uber's COO expressed concern that despite major AI spending, companies aren't seeing meaningful returns\n- Over 30 companies conducted layoffs in 2026 as AI and economic conditions reshape the business landscape",
-    "article_count": 20,
-    "topicality": 20.0,
-    "theme_weight": 0.9800000000000001,
-    "theme": "AI"
+    "title": "Regulatory and Market Shifts Across Sectors",
+    "summary": "OVERVIEW:\nFinancial regulators and market participants are advocating for regulatory changes and adjustments across multiple sectors, including derivatives trading, cryptocurrency frameworks, and energy markets. Meanwhile, companies are making strategic moves on fees, compensation, and compliance.\n\nKEY EXAMPLES:\n- Trade bodies are pushing for further changes to cross-product netting and default risk charge mechanisms\n- The European Commission is seeking feedback on potential tweaks to MiCA, its crypto and blockchain regulatory framework\n- Morgan Stanley filed for Ethereum and Solana ETF trusts with a proposed 0.14% annual fee, described as the lowest globally for these products\n- A German energy firm is urging the EU to follow the UK in delegating position limit powers to trading venues",
+    "article_count": 21,
+    "topicality": 21.0,
+    "theme_weight": 0.9571428571428571,
+    "theme": "Inflation"
   },
   "T12": {
     "topic_id": "T12",
     "bertopic_id": 12,
-    "title": "Prediction Markets Face Legal Challenges",
-    "summary": "OVERVIEW:\nPrediction market platforms are embroiled in legal disputes with state and federal authorities over the legality of their operations. Multiple lawsuits suggest the conflict may escalate to the US Supreme Court.\n\nKEY EXAMPLES:\n- Kalshi sued Minnesota over a state law criminalizing prediction markets\n- The CFTC filed suit against Rhode Island in a related legal challenge\n- Legal wrangling between platforms and state-level authorities appears headed toward Supreme Court review",
+    "title": "** SpaceX IPO Raises Governance and Risk Concerns",
+    "summary": "**OVERVIEW:**\nSpaceX's anticipated public offering is generating scrutiny over corporate governance issues, concentrated ownership under Elon Musk, and various investor concerns including geopolitical ties and speculative valuations. The company's structure and leadership raise questions about shareholder protections and strategic direction.\n\n**KEY EXAMPLES:**\n- SpaceX's structure appears to benefit Musk at the expense of other shareholders\n- One previously unreported SpaceX investor has ties to Chinese military contractors\n- Musk's posts about politics and culture wars coincide with the company going public\n- The company's deep commitment to Mars colonization makes it an exceptionally speculative investment",
     "article_count": 20,
     "topicality": 20.0,
-    "theme_weight": 0.9949999999999999,
+    "theme_weight": 0.9349999999999999,
     "theme": "Others"
   },
   "T13": {
     "topic_id": "T13",
     "bertopic_id": 13,
-    "title": "** Government Crypto Enforcement and Sanctions Actions",
-    "summary": "**OVERVIEW:**\nGovernment agencies worldwide are intensifying enforcement actions against cryptocurrency-related crimes, including drug trafficking, fraud, sanctions evasion, and tax schemes. These coordinated efforts involve OFAC, the DOJ, international regulators, and blockchain intelligence tools to target criminal networks and illicit financial activity.\n\n**KEY EXAMPLES:**\n- OFAC sanctioned individuals and entities in the Sinaloa Cartel's fentanyl trafficking and cryptocurrency laundering network\n- U.S. government launched coordinated enforcement against Southeast Asian scam centers and crypto fraud networks\n- U.K. sanctioned 18 cryptocurrency exchanges and payment providers for helping Russia evade trade blockades\n- Italian authorities used blockchain intelligence to uncover a million-euro Bitcoin Ordinals tax fraud scheme\n- OFAC updated Iran Central Bank designation following a record $344 million Tether seizure",
-    "article_count": 16,
-    "topicality": 16.0,
-    "theme_weight": 0.85,
-    "theme": "Digital assets"
+    "title": "Creator Economy & Content Trends",
+    "summary": "OVERVIEW:\nIndependent creators and established media companies are reshaping how content is produced, distributed, and monetized across platforms. Meanwhile, consumer behavior is being driven by social media trends and community-based sharing models.\n\nKEY EXAMPLES:\n- Independent creators are building sustainable media businesses through newsletters\n- People Inc. (Food & Wine, Southern Living) is countering AI bots by emphasizing authentic recipes from its culinary hub\n- Creators are gaining prominence at Cannes Lions, reflecting their increased importance in marketing\n- Ina Garten's new show sparked a bidding war as video podcasts and talk shows converge\n- TikTok trends like \"protein-maxxing\" are driving consumer demand spikes (cottage cheese shortage)\n- Community gifting groups like \"Buy Nothing\" on Facebook are helping consumers access free goods",
+    "article_count": 18,
+    "topicality": 18.0,
+    "theme_weight": 1.0333333333333332,
+    "theme": "Others"
   },
   "T14": {
     "topic_id": "T14",
     "bertopic_id": 14,
-    "title": "TOPIC 14",
-    "summary": "Summary unavailable.",
-    "article_count": 15,
-    "topicality": 15.0,
-    "theme_weight": 1.0599999999999996,
-    "theme": "Bank lending and credit risk"
+    "title": "** Dollar Surge Amid Hawkish Fed Signals",
+    "summary": "**OVERVIEW:**\nThe U.S. dollar has reached multi-year highs as hawkish Federal Reserve outlook strengthens the currency, while other major currencies weaken. Meanwhile, U.S. Treasury yields remain elevated, and global markets show mixed reactions to geopolitical tensions and sanctions developments.\n\n**KEY EXAMPLES:**\n- Dollar hits over one-year high as hawkish Fed signals overshadow other developments\n- Japanese yen falls to 40-year low amid Fed rate-hike expectations\n- Canadian dollar drops to 14-month low on Fed rate outlook\n- British pound reaches lowest level since April as hawkish Fed lifts dollar\n- U.S. shortdated Treasury yields hold at one-year highs on Fed rate-hike concerns\n- Stock futures and bond yields decline following reports of Putin updating nuclear doctrine\n- Oil edges lower as U.S. sanctions against Russia show limited impact on exports",
+    "article_count": 17,
+    "topicality": 17.0,
+    "theme_weight": 0.9823529411764705,
+    "theme": "Inflation"
   }
 }
